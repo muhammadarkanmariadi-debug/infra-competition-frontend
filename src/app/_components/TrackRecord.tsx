@@ -70,7 +70,7 @@ const TrackRecord: React.FC<{ datas: TrackRecordProps[] }> = ({ datas }) => {
       </div>
       <div className="text-center pb-[30px] pt-[60px]">
         <h4 className="font-[500] text-[15px] text-white/61">
-          Event & Achievements
+          Prestasi Siswa
         </h4>
         <h1 className="font-[700] text-[45px] text-white">Track Record</h1>
       </div>

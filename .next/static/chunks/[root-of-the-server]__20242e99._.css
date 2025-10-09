@@ -1248,6 +1248,13 @@
     margin-left: calc(var(--spacing) * 3);
   }
 
+  .line-clamp-2 {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+
   .block {
     display: block;
   }
@@ -1302,6 +1309,10 @@
 
   .h-28 {
     height: calc(var(--spacing) * 28);
+  }
+
+  .h-56 {
+    height: calc(var(--spacing) * 56);
   }
 
   .h-127 {
@@ -1895,6 +1906,10 @@
     background-color: var(--color-gray-50);
   }
 
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
@@ -1917,6 +1932,10 @@
 
   .bg-red-100 {
     background-color: var(--color-red-100);
+  }
+
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
 
   .bg-secondary {
@@ -2560,6 +2579,12 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
 
+  .transition-shadow {
+    transition-property: box-shadow;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -2621,6 +2646,12 @@
   @media (hover: hover) {
     .hover\:bg-red-700:hover {
       background-color: var(--color-red-700);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-red-500:hover {
+      color: var(--color-red-500);
     }
   }
 
@@ -2863,6 +2894,12 @@
   @media (width >= 64rem) {
     .lg\:ms-\[52px\] {
       margin-inline-start: 52px;
+    }
+  }
+
+  @media (width >= 64rem) {
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 
