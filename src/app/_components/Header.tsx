@@ -67,13 +67,6 @@ export default function Header () {
 
           <div className='2xl:top-[-700px] 2xl:right-[400px] 2xl:relative kanan'>
             <Image
-              src='/assets/image/right-triangle.png'
-              alt='triangle kanan'
-              width={318}
-              height={283.5}
-              className='max-md:hidden top-[377px] right-[104px] min-xl:absolute'
-            />
-            <Image
               src='/assets/image/desktop.png'
               alt='desktop'
               width={65}
@@ -87,13 +80,6 @@ export default function Header () {
               height={28}
               className='max-md:hidden top-[183px] right-[295px] min-xl:absolute rotate-[-5deg]'
             />
-            <Image
-              src='/assets/image/triangle-lg.png'
-              alt='triangle besar'
-              width={90}
-              height={81}
-              className='max-md:hidden top-[264px] right-[108px] min-xl:absolute'
-            />
           </div>
 
           <Image
@@ -102,13 +88,6 @@ export default function Header () {
             width={161}
             height={32}
             className='max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[800px] min-xl:absolute'
-          />
-          <Image
-            src='/assets/image/panah-kanan.png'
-            alt='panah kanan'
-            width={161}
-            height={32}
-            className='max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[900px] min-xl:absolute'
           />
         </div>
       </div>
