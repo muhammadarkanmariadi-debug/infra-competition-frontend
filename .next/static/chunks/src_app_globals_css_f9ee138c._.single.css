@@ -99,7 +99,6 @@
     --container-md: 28rem;
     --container-xl: 36rem;
     --container-4xl: 56rem;
-    --container-5xl: 64rem;
     --container-7xl: 80rem;
     --text-sm: .875rem;
     --text-sm--line-height: calc(1.25 / .875);
@@ -386,10 +385,6 @@
     top: 248px;
   }
 
-  .top-\[264px\] {
-    top: 264px;
-  }
-
   .top-\[280px\] {
     top: 280px;
   }
@@ -418,10 +413,6 @@
     top: 370px;
   }
 
-  .top-\[377px\] {
-    top: 377px;
-  }
-
   .top-\[400px\] {
     top: 400px;
   }
@@ -436,10 +427,6 @@
 
   .top-\[450px\] {
     top: 450px;
-  }
-
-  .top-\[485px\] {
-    top: 485px;
   }
 
   .top-\[520px\] {
@@ -502,14 +489,6 @@
     right: 85px;
   }
 
-  .right-\[104px\] {
-    right: 104px;
-  }
-
-  .right-\[108px\] {
-    right: 108px;
-  }
-
   .right-\[120px\] {
     right: 120px;
   }
@@ -552,10 +531,6 @@
 
   .right-\[350px\] {
     right: 350px;
-  }
-
-  .right-\[375px\] {
-    right: 375px;
   }
 
   .right-\[449px\] {
@@ -878,10 +853,6 @@
     margin-bottom: calc(var(--spacing) * 14);
   }
 
-  .mb-16 {
-    margin-bottom: calc(var(--spacing) * 16);
-  }
-
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -1133,10 +1104,6 @@
     max-width: var(--container-4xl);
   }
 
-  .max-w-5xl {
-    max-width: var(--container-5xl);
-  }
-
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
@@ -1242,10 +1209,6 @@
     flex-direction: row-reverse;
   }
 
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-
   .items-center {
     align-items: center;
   }
@@ -1298,16 +1261,8 @@
     gap: calc(var(--spacing) * 8);
   }
 
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
-
   .gap-13 {
     gap: calc(var(--spacing) * 13);
-  }
-
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
   }
 
   .gap-\[9px\] {
@@ -2486,12 +2441,6 @@
   }
 
   @media (width >= 40rem) {
-    .sm\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (width >= 40rem) {
     .sm\:gap-6 {
       gap: calc(var(--spacing) * 6);
     }
@@ -2684,12 +2633,6 @@
   }
 
   @media (width >= 96rem) {
-    .\32 xl\:top-\[650px\] {
-      top: 650px;
-    }
-  }
-
-  @media (width >= 96rem) {
     .\32 xl\:top-\[900px\] {
       top: 900px;
     }
@@ -2698,12 +2641,6 @@
   @media (width >= 96rem) {
     .\32 xl\:right-\[400px\] {
       right: 400px;
-    }
-  }
-
-  @media (width >= 96rem) {
-    .\32 xl\:right-\[900px\] {
-      right: 900px;
     }
   }
 
