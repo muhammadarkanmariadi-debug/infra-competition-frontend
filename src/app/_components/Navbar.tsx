@@ -90,7 +90,7 @@ export default function Navbar () {
             </div>
           </Link>
           <Link
-            href={'https://www.tiktok.com/@meticmerangkulsemuaorang'}
+            href={'https://www.tiktok.com/@smktelkommalang?is_from_webapp=1&sender_device=pc'}
             className='min-xl:mt-[36px]'
           >
             <div className='hidden xl:block bg-primary rounded-full text-transparent pointer-events-none select-none'>
@@ -98,7 +98,7 @@ export default function Navbar () {
             </div>
           </Link>
           <Link
-            href={'https://www.instagram.com/meticmoklet/'}
+            href={'https://www.instagram.com/smktelkommalang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}
             className='xl:mt-[36px]'
           >
             <div className='hidden xl:block bg-primary rounded-full text-transparent pointer-events-none select-none'>

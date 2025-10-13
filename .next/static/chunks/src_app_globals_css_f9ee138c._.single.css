@@ -541,6 +541,10 @@
     right: 550px;
   }
 
+  .right-\[575px\] {
+    right: 575px;
+  }
+
   .right-\[590px\] {
     right: 590px;
   }
@@ -755,8 +759,24 @@
     margin-top: calc(var(--spacing) * 8);
   }
 
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
+
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
+  }
+
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+
+  .mt-25 {
+    margin-top: calc(var(--spacing) * 25);
   }
 
   .mt-28 {
@@ -1180,6 +1200,14 @@
 
   .w-\[339px\] {
     width: 339px;
+  }
+
+  .w-\[400px\] {
+    width: 400px;
+  }
+
+  .w-\[450px\] {
+    width: 450px;
   }
 
   .w-\[550px\] {
@@ -2410,6 +2438,15 @@
   }
 
   @media (hover: hover) {
+    .hover\:scale-70:hover {
+      --tw-scale-x: 70%;
+      --tw-scale-y: 70%;
+      --tw-scale-z: 70%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:scale-105:hover {
       --tw-scale-x: 105%;
       --tw-scale-y: 105%;
@@ -2889,6 +2926,27 @@
   }
 
   @media (width >= 96rem) {
+<<<<<<< HEAD
+    .\32 xl\:right-\[500px\] {
+      right: 500px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:right-\[700px\] {
+      right: 700px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:right-\[900px\] {
+      right: 900px;
+    }
+  }
+
+  @media (width >= 96rem) {
+=======
+>>>>>>> origin/main
     .\32 xl\:left-\[300px\] {
       left: 300px;
     }
