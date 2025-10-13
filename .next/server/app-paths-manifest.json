@@ -1,6 +1,10 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+<<<<<<< HEAD
   "/page": "app/page.js",
   "/registration/page": "app/registration/page.js"
+=======
+  "/post/page": "app/post/page.js"
+>>>>>>> origin/main
 }
