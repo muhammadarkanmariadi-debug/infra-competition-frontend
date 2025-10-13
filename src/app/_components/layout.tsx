@@ -1,0 +1,121 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Bars3Icon, BuildingOfficeIcon, CalendarIcon, DocumentIcon, DocumentTextIcon, FlagIcon, HomeIcon, LinkIcon, PhotoIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
+const navigation = [
+  { name: 'Dashboard', href: '/', icon: HomeIcon},
+  { name: 'Post', href: '/post', icon: DocumentTextIcon },
+  { name: 'Link Shortener', href: '/link-shortener', icon: LinkIcon },
+  { name: 'Formulir', href: '/formulir', icon: DocumentIcon },
+  { name: 'Twibbon', href: '/twibbon', icon: PhotoIcon },
+  { name: 'Info Organ Setup', href: '/info-organ', icon: BuildingOfficeIcon },
+  { name: 'Aspirasi', href: '/aspirasi', icon: FlagIcon },
+  { name: 'Period Config', href: '/period-config', icon: CalendarIcon },
+  { name: 'Users', href: '/users', icon: UsersIcon },
+]
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const pathname = usePathname()
+
+  return (
+    <div className="flex h-screen bg-gray-50">
+      {/* Mobile sidebar backdrop */}
+      {sidebarOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+
+      {/* Sidebar */}
+      <aside
+        className={`fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform ${
+          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+        } lg:translate-x-0 transition-transform duration-300 ease-in-out`}
+      >
+        <div className="flex flex-col h-full">
+          {/* Logo */}
+          <div className="p-6 border-b">
+            <div className="flex items-center space-x-2">
+              <div className="w-10 h-10 bg-gradient-to-br from-red-400 to-orange-500 rounded-lg flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 2l2.39 4.88L18 7.62l-4 3.87.94 5.51L10 14.12 5.06 17l.94-5.51-4-3.87 5.61-.74L10 2z" />
+                </svg>
+              </div>
+              <span className="text-xl font-semibold text-gray-800">Moklet.org</span>
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <nav className="flex-1 p-4">
+            <div className="mb-2 text-sm font-medium text-gray-500 uppercase">Menu</div>
+            <ul className="space-y-1">
+              {navigation.map((item) => {
+                const isActive = pathname === item.href
+                return (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
+                        isActive
+                          ? 'bg-red-50 text-red-600'
+                          : 'text-gray-700 hover:bg-gray-100'
+                      }`}
+                    >
+                      <item.icon className="w-5 h-5" />
+                      <span className="font-medium">{item.name}</span>
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </nav>
+
+          {/* Logout Button */}
+          <div className="p-4">
+            <button className="w-full bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-4 rounded-lg transition-colors">
+              Log Out
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      {/* Main content */}
+      <div className="flex-1 flex flex-col lg:ml-64">
+        {/* Header */}
+        <header className="bg-white shadow-sm border-b">
+          <div className="flex items-center justify-between px-6 py-4">
+            <div className="flex items-center space-x-4">
+              <button
+                onClick={() => setSidebarOpen(!sidebarOpen)}
+                className="lg:hidden p-2 rounded-md hover:bg-gray-100"
+              >
+                {sidebarOpen ? (
+                  <XMarkIcon className="w-6 h-6 text-gray-600" />
+                ) : (
+                  <Bars3Icon className="w-6 h-6 text-gray-600" />
+                )}
+              </button>
+              <nav className="hidden md:flex items-center space-x-2 text-sm">
+                <Link href="/" className="text-gray-600 hover:text-gray-900">
+                  Home
+                </Link>
+                <span className="text-gray-400">/</span>
+                <span className="text-gray-900 font-medium">Admin</span>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        {/* Page content */}
+        <main className="flex-1 overflow-y-auto">
+          {children}
+        </main>
+      </div>
+    </div>
+  )
+}
