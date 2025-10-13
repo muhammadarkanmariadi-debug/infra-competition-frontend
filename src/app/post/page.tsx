@@ -243,7 +243,31 @@ export default function News() {
             </p>
           </div>
         </div>
-        <div className="w-[40%]"></div>
+        <div className="w-[40%]">
+
+
+               <div className="pt-20 pb-[24px] gap-4 flex flex-col">
+
+                  <p>
+              <img
+                alt="user image"
+                loading="lazy"
+                src="https://www.moklet.org/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmokletorg%2Fimage%2Fupload%2Fv1753081392%2Fapp_media%2Ffile_rk0plj.png&w=1920&q=75"
+                width="600"
+                height="600"
+                decoding="async"
+                data-nimg="1"
+                className="pointer-events-none object-cover bg-center bg-no-repeat w-full"
+                style={{ color: "transparent" }}
+              />
+              🙌 Di Balik Keseruan Ini… MPLS 2025 dapat berjalan sukses berkat
+              kolaborasi luar biasa antara: 👨‍🏫 Guru-Guru Kesiswaan SMK Telkom
+              Malang 🧢 Pengurus OSIS SMK Telkom Malang
+            </p>
+
+              </div>
+
+        </div>
       </div>
     </>
   );
