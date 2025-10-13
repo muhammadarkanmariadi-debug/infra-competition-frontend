@@ -522,7 +522,40 @@ function News() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-[40%]"
+                    className: "w-[40%]",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "pt-20 pb-[24px] gap-4 flex flex-col",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    alt: "user image",
+                                    loading: "lazy",
+                                    src: "https://www.moklet.org/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmokletorg%2Fimage%2Fupload%2Fv1753081392%2Fapp_media%2Ffile_rk0plj.png&w=1920&q=75",
+                                    width: "600",
+                                    height: "600",
+                                    decoding: "async",
+                                    "data-nimg": "1",
+                                    className: "pointer-events-none object-cover bg-center bg-no-repeat w-full",
+                                    style: {
+                                        color: "transparent"
+                                    }
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/post/page.tsx",
+                                    lineNumber: 252,
+                                    columnNumber: 15
+                                }, this),
+                                "🙌 Di Balik Keseruan Ini… MPLS 2025 dapat berjalan sukses berkat kolaborasi luar biasa antara: 👨‍🏫 Guru-Guru Kesiswaan SMK Telkom Malang 🧢 Pengurus OSIS SMK Telkom Malang"
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/post/page.tsx",
+                            lineNumber: 251,
+                            columnNumber: 19
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/post/page.tsx",
+                        lineNumber: 249,
+                        columnNumber: 16
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/post/page.tsx",
                     lineNumber: 246,

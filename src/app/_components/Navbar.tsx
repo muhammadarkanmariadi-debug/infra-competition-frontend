@@ -52,7 +52,7 @@ export default function Navbar () {
               scrolled
                 ? (pathname === '/post' ? 'relative' : 'max-w-[900px] 2xl:max-w-[900px]')
                 : '  max-w-[700px] 2xl:max-w-[800px]'
-            } -translate-x-1/2 rounded-full border border-neutral-300 bg-white px-[50px] py-3 drop-shadow-[0_3px_11px_rgba(0,0,0,0.25)]`
+            } -translate-x-1/2 rounded-full border border-neutral-300 bg-white px-[50px] py-3 drop-shadow-[0_3px_6px_rgba(0,0,0,0.25)]`
           )}
         >
           {scrolled && (
