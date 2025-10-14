@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
+import ScrollTop from "./_components/ScrollTop";
 config.autoAddCss = false;
 
 const geistSans = Geist({
@@ -25,9 +26,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Moklet Portal",
-  description:
-    "",
+  description: "oluihykgjfth",
 };
+
 
 export default function RootLayout({
   children,
@@ -42,6 +43,11 @@ export default function RootLayout({
         <Navbar />
         <main className="overflow-x-hidden">{children}</main>
         <Footer />
+
+        {/* Tombol Scroll to Top */}
+        <div className="fixed bottom-10 right-10 z-[300]">
+          <ScrollTop />
+        </div>
       </body>
     </html>
   );

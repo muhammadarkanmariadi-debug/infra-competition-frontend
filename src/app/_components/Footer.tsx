@@ -4,15 +4,15 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <>
-      <footer>
-        <div className="py-31 max-sm:py-15 px-32 max-sm:px-7">
+      <footer className="">
+        <div className="pt-31 max-sm:pt-15 py-10 px-32 max-sm:px-7">
           <div className="flex justify-between min-xl:items-center">
             <div className="flex flex-col max-sm:w-[50%] gap-7">
               <Image
-                src="/assets/image/logo-metic-footer.png"
+                src="/assets/image/logo.png"
                 alt="Logo Metic"
-                width={81}
-                height={40}
+                width={125}
+                height={62.5}
                 className=""
               />
               <h1 className="text-black font-[500] text-[18px]">

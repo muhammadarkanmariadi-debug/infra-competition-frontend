@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Visi />
-      <DivisionSection />
       <TrackRecord datas={TrackData} />
+      <DivisionSection />
+      <Visi />
       <Leader datas={LeadersData} />
       <Faq />
     </>
