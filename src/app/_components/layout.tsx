@@ -46,7 +46,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <path d="M10 2l2.39 4.88L18 7.62l-4 3.87.94 5.51L10 14.12 5.06 17l.94-5.51-4-3.87 5.61-.74L10 2z" />
                 </svg>
               </div>
-              <span className="text-xl font-semibold text-gray-800">Moklet.org</span>
+              <span className="text-xl font-semibold text-gray-800">Moklet Portal</span>
             </div>
           </div>
 
