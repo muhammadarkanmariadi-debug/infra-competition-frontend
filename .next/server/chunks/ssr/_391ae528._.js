@@ -1086,7 +1086,7 @@ function Header() {
                     className: "text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "font-[700] text-[50px] text-primary 2xl:text-[60px]",
+                            className: "font-[700] text-[30px] text-primary 2xl:text-[60px] xl:text-[50px]",
                             children: "The Real Informatics School!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Header.tsx",
@@ -1094,7 +1094,7 @@ function Header() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "mt-[2px] font-[700] text-[30px] text-primary 2xl:text-[40px]",
+                            className: "mt-[2px] px-1 xl:px-0 font-[600] xl:font-[700] text-[22px] text-primary 2xl:text-[40px]",
                             children: "Pelopor SMK Bidang Teknologi dan Informatika di Indonesia"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Header.tsx",
@@ -1102,7 +1102,7 @@ function Header() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mt-[20px] font-[400] text-black text-sm 2xl:text-xl",
+                            className: "mt-[20px] px-4 xl:px-0 font-[400] text-black text-sm 2xl:text-xl",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                     className: "text-primary",
@@ -1147,7 +1147,7 @@ function Header() {
                             alt: "Arrow Down",
                             width: 400,
                             height: 0,
-                            className: "z-[-1] relative mx-auto mt-[38px] hover:scale-105 transition-transform duration-300"
+                            className: "z-[-1] relative mx-auto mt-[38px] w-[300px] xl:w-[400px] hover:scale-105 transition-transform duration-300"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Header.tsx",
                             lineNumber: 22,
@@ -1155,7 +1155,7 @@ function Header() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "/registration",
-                            className: "flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-8 rounded-full w-[550px] font-bold text-white text-4xl hover:scale-105 transition-all duration-300",
+                            className: "flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-5 xl:py-8 rounded-full w-[400px] xl:w-[550px] font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300",
                             children: "Ikuti Kami!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Header.tsx",

@@ -5,13 +5,13 @@ export default function Header () {
     <>
       <div className='mt-28'>
         <div className='text-center'>
-          <h1 className='font-[700] text-[50px] text-primary 2xl:text-[60px]'>
+          <h1 className='font-[700] text-[30px] text-primary 2xl:text-[60px] xl:text-[50px]'>
             The Real Informatics School!
           </h1>
-          <h3 className='mt-[2px] font-[700] text-[30px] text-primary 2xl:text-[40px]'>
+          <h3 className='mt-[2px] px-1 xl:px-0 font-[600] xl:font-[700] text-[22px] text-primary 2xl:text-[40px]'>
             Pelopor SMK Bidang Teknologi dan Informatika di Indonesia
           </h3>
-          <p className='mt-[20px] font-[400] text-black text-sm 2xl:text-xl'>
+          <p className='mt-[20px] px-4 xl:px-0 font-[400] text-black text-sm 2xl:text-xl'>
             <b className='text-primary'>Moklet Portal</b> adalah pusat informasi
             digital <b>SMK Telkom Malang</b> yang menyajikan berita, agenda,
             pengumuman, dan <br /> prestasi sekolah secara cepat dan mudah
@@ -24,11 +24,11 @@ export default function Header () {
             alt='Arrow Down'
             width={400}
             height={0}
-            className='z-[-1] relative mx-auto mt-[38px] hover:scale-105 transition-transform duration-300'
+            className='z-[-1] relative mx-auto mt-[38px] w-[300px] xl:w-[400px] hover:scale-105 transition-transform duration-300'
           />
           <a
             href='/registration'
-            className='flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-8 rounded-full w-[550px] font-bold text-white text-4xl hover:scale-105 transition-all duration-300'
+            className='flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-5 xl:py-8 rounded-full w-[400px] xl:w-[550px] font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300'
           >
             Ikuti Kami!
           </a>
