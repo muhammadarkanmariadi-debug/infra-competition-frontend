@@ -187,11 +187,11 @@ const TrackRecord = ({ datas })=>{
         length
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative bg-secondary w-full mt-31",
+        className: "relative bg-secondary mt-31 w-full",
         id: "track",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute -top-[15px] left-0 w-full overflow-hidden leading-none",
+                className: "-top-[15px] left-0 absolute w-full overflow-hidden leading-none",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                     width: "1440",
                     height: "60",
@@ -255,11 +255,11 @@ const TrackRecord = ({ datas })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "text-center pb-[30px] pt-[60px]",
+                className: "pt-[60px] pb-[30px] text-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                         className: "font-[500] text-[15px] text-white/61",
-                        children: "Event & Achievements"
+                        children: "Prestasi Siswa"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
                         lineNumber: 72,
@@ -280,13 +280,13 @@ const TrackRecord = ({ datas })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center max-sm:flex-col w-full mt-[30px] pb-[30px]",
+                className: "flex max-sm:flex-col items-center mt-[30px] pb-[30px] w-full",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "max-sm:block min-xl:hidden w-full text-center",
+                        className: "min-xl:hidden max-sm:block w-full text-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                className: "text-[15px] text-white/61 font-[500]",
+                                className: "font-[500] text-[15px] text-white/61",
                                 children: "Event & Achievements"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
@@ -294,7 +294,7 @@ const TrackRecord = ({ datas })=>{
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-white font-[700] text-[45px]",
+                                className: "font-[700] text-[45px] text-white",
                                 children: "Our Event"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
@@ -308,7 +308,7 @@ const TrackRecord = ({ datas })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative shrink-0 min-xl:w-[60%] max-sm:w-full overflow-x-hidden max-sm:px-3.5 max-sm:py-7 rounded-[18px]",
+                        className: "xl:relative xl:px-0 rounded-[18px] min-xl:w-[60%] overflow-x-hidden shrink-0",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-row-reverse gap-[43px] transition-transform duration-300",
                             style: {
@@ -341,17 +341,17 @@ const TrackRecord = ({ datas })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-150 h-127 absolute right-0 mt-[-90px] rotate-[2.17deg] bg-[radial-gradient(ellipse_39.33%_39.33%_at_49.95%_56.31%,_rgba(255,_255,_255,_0.20)_12%,_rgba(255,_255,_255,_0)_100%)]"
+                        className: "right-0 absolute bg-[radial-gradient(ellipse_39.33%_39.33%_at_49.95%_56.31%,_rgba(255,_255,_255,_0.20)_12%,_rgba(255,_255,_255,_0)_100%)] mt-[-90px] w-150 h-127 rotate-[2.17deg]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
                         lineNumber: 99,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "max-sm:hidden min-xl:block w-[40%] mt-[-150px] text-center",
+                        className: "max-sm:hidden min-xl:block mt-[-150px] w-[40%] text-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                className: "text-[15px] text-white/61 font-[500]",
+                                className: "font-[500] text-[15px] text-white/61",
                                 children: "Event & Achievements"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
@@ -359,7 +359,7 @@ const TrackRecord = ({ datas })=>{
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-white font-[700] text-[45px]",
+                                className: "font-[700] text-[45px] text-white",
                                 children: "Our Event"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
@@ -379,14 +379,14 @@ const TrackRecord = ({ datas })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex max-sm:flex-col items-center w-full mt-[70px] pb-[30px]",
+                className: "flex max-sm:flex-col items-center mt-[70px] pb-[30px] w-full",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         src: "/assets/image/meca-international.png",
                         alt: "Arrow Down",
                         width: 490,
                         height: 390,
-                        className: "max-sm:hidden min-xl:absolute mt-[-58px] drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] left-0 z-[1]"
+                        className: "max-sm:hidden left-0 z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[-58px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
                         lineNumber: 108,
@@ -397,7 +397,7 @@ const TrackRecord = ({ datas })=>{
                         alt: "Arrow Down",
                         width: 110,
                         height: 110,
-                        className: "max-sm:hidden min-xl:absolute mt-[-420px] drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] left-[360px] z-[1]"
+                        className: "max-sm:hidden left-[360px] z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[-420px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
                         lineNumber: 115,
@@ -408,16 +408,16 @@ const TrackRecord = ({ datas })=>{
                         alt: "Arrow Down",
                         width: 87,
                         height: 87,
-                        className: "max-sm:hidden min-xl:absolute mt-[88.5px] drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] left-[401px] z-[1]"
+                        className: "max-sm:hidden left-[401px] z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[88.5px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
                         lineNumber: 122,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "max-sm:hidden min-xl:absolute left-[364px] mt-[-90px] z-[222]",
+                        className: "max-sm:hidden left-[364px] z-[222] min-xl:absolute mt-[-90px]",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "w-[245px] h-[54px] px-[28px] py-[15px] bg-[#ffffff] border-[1px] border-[E04E4E] font-[600] text-secondary-text text-[15px] text-center rounded-[12px_12px_0px_12px]",
+                            className: "bg-[#ffffff] px-[28px] py-[15px] border-[1px] border-[E04E4E] rounded-[12px_12px_0px_12px] w-[245px] h-[54px] font-[600] text-[15px] text-secondary-text text-center",
                             children: "Metic Go Internasional?"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/TrackRecord.tsx",
@@ -437,10 +437,10 @@ const TrackRecord = ({ datas })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "max-sm:block min-xl:hidden w-full text-center",
+                        className: "min-xl:hidden max-sm:block w-full text-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                className: "text-[15px] text-white/61 font-[500]",
+                                className: "font-[500] text-[15px] text-white/61",
                                 children: "Event & Achievements"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
@@ -448,7 +448,7 @@ const TrackRecord = ({ datas })=>{
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-white font-[700] text-[45px]",
+                                className: "font-[700] text-[45px] text-white",
                                 children: "Metic Go International!"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
@@ -462,7 +462,7 @@ const TrackRecord = ({ datas })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative max-sm:w-full max-sm:px-3.5 max-sm:py-7 rounded-[18px] gap-[43px] shrink-0 w-[50%] overflow-x-hidden",
+                        className: "relative gap-[43px] max-sm:px-3.5 max-sm:py-7 rounded-[18px] w-[50%] max-sm:w-full overflow-x-hidden shrink-0",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex gap-[43px] transition-transform duration-300",
                             style: {
@@ -536,13 +536,13 @@ const CardLeader = ({ data })=>{
         className: "flex flex-col items-center",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-28 h-28 rounded-full overflow-hidden mb-4 shadow-md",
+                className: "shadow-md mb-4 rounded-full w-28 h-28 overflow-hidden",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: data.image,
                     alt: data.name,
                     width: 112,
                     height: 112,
-                    className: "object-cover w-full h-full"
+                    className: "w-full h-full object-cover"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
                     lineNumber: 9,
@@ -554,7 +554,7 @@ const CardLeader = ({ data })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: "text-md font-semibold",
+                className: "font-semibold text-md",
                 children: data.name
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/card.tsx",
@@ -562,7 +562,7 @@ const CardLeader = ({ data })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-sm mt-1 bg-red-100 text-red-600 px-3 py-1 rounded-full",
+                className: "bg-red-100 mt-1 px-3 py-1 rounded-full text-red-600 text-sm",
                 children: data.role
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/card.tsx",
@@ -579,16 +579,16 @@ const CardLeader = ({ data })=>{
 _c = CardLeader;
 const CardTeam = ({ data })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex items-center gap-4 bg-white rounded-xl px-4 py-3 shadow-md border border-[#E2E8F0]",
+        className: "flex items-center gap-4 bg-white shadow-md px-4 py-3 border border-[#E2E8F0] rounded-xl",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-16 h-16 rounded-full overflow-hidden",
+                className: "rounded-full w-16 h-16 overflow-hidden",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: data.image,
                     alt: data.name,
                     width: 64,
                     height: 64,
-                    className: "object-cover w-full h-full"
+                    className: "w-full h-full object-cover"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
                     lineNumber: 31,
@@ -603,7 +603,7 @@ const CardTeam = ({ data })=>{
                 className: "text-left",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-base font-semibold text-[#A10000]",
+                        className: "font-semibold text-[#A10000] text-base",
                         children: data.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
@@ -611,7 +611,7 @@ const CardTeam = ({ data })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-sm text-[#A10000] opacity-70",
+                        className: "opacity-70 text-[#A10000] text-sm",
                         children: data.role
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
@@ -634,15 +634,15 @@ const CardTeam = ({ data })=>{
 _c1 = CardTeam;
 function PortfolioCard({ portfolio }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative bg-white rounded-2xl shadow-lg overflow-hidden max-w-md h-[450px] flex flex-col my-5",
+        className: "relative flex flex-col bg-white shadow-lg my-5 rounded-2xl max-w-md h-[450px] overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative h-[55%] w-full overflow-hidden",
+                className: "relative w-full h-[55%] overflow-hidden",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: portfolio.image,
                     alt: portfolio.title,
                     fill: true,
-                    className: "object-cover"
+                    className: "w-full h-full object-cover"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
                     lineNumber: 61,
@@ -654,7 +654,7 @@ function PortfolioCard({ portfolio }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "px-6 pt-4 pb-6 flex-1 flex flex-col justify-between",
+                className: "flex flex-col flex-1 justify-between px-6 pt-4 pb-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-3",
@@ -662,7 +662,7 @@ function PortfolioCard({ portfolio }) {
                             className: "flex justify-between items-center gap-2 py-2 break-words",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-[18px] text-[#A2181C] w-[70%] font-semibold leading-snug",
+                                    className: "w-[70%] font-semibold text-[#A2181C] text-[18px] leading-snug",
                                     children: portfolio.title
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
@@ -670,7 +670,7 @@ function PortfolioCard({ portfolio }) {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-gray-400 z-10",
+                                    className: "z-10 text-gray-400 text-sm",
                                     children: portfolio.date
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
@@ -689,34 +689,24 @@ function PortfolioCard({ portfolio }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center justify-between",
+                        className: "flex justify-between items-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center gap-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-6 h-6 rounded-md overflow-hidden",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/assets/image/ig-logo.png",
-                                            alt: "Instagram",
-                                            width: 24,
-                                            height: 24
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/_components/card.tsx",
-                                            lineNumber: 84,
-                                            columnNumber: 15
-                                        }, this)
+                                        className: "rounded-md w-6 h-6 overflow-hidden"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
                                         lineNumber: 83,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-gray-800 font-medium",
+                                        className: "font-medium text-gray-800",
                                         children: portfolio.sosmed
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -727,7 +717,7 @@ function PortfolioCard({ portfolio }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: portfolio.link,
-                                className: "bg-[#A2181C] hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ml-3 flex items-center gap-2",
+                                className: "flex items-center gap-2 bg-[#A2181C] hover:bg-red-700 ml-3 px-4 py-2 rounded-full font-medium text-white text-sm transition-colors duration-200",
                                 children: [
                                     "Explore more",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -742,18 +732,18 @@ function PortfolioCard({ portfolio }) {
                                             d: "M9 5l7 7-7 7"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/card.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 100,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 95,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/card.tsx",
-                                lineNumber: 96,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -778,17 +768,17 @@ function PortfolioCard({ portfolio }) {
 _c2 = PortfolioCard;
 function FAQCard({ profileImg, question, response }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-col items-end gap-3 max-w-xl mx-auto",
+        className: "flex flex-col items-end gap-3 mx-auto max-w-xl",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center gap-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "bg-white/30 text-white px-4 py-2 rounded-2xl text-sm",
+                        className: "bg-white/30 px-4 py-2 rounded-2xl text-white text-sm",
                         children: question
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 130,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -799,20 +789,20 @@ function FAQCard({ profileImg, question, response }) {
                         className: "rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 133,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 129,
+                lineNumber: 124,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-start gap-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/assets/image/mecaKeren.png" // ganti dengan path yang sesuai
+                        src: "/assets/image/mecaKeren.png" // telkom 
                         ,
                         alt: "Mascot",
                         width: 40,
@@ -820,43 +810,43 @@ function FAQCard({ profileImg, question, response }) {
                         className: "rounded-md"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 144,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col gap-y-2",
                         children: response.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white rounded-xl p-4 shadow-md",
+                                className: "bg-white shadow-md p-4 rounded-xl",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sm text-gray-700",
+                                    className: "text-gray-700 text-sm",
                                     dangerouslySetInnerHTML: {
                                         __html: item
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/src/app/_components/card.tsx",
-                                lineNumber: 154,
+                                lineNumber: 149,
                                 columnNumber: 11
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 151,
+                        lineNumber: 146,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 143,
+                lineNumber: 138,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/card.tsx",
-        lineNumber: 127,
+        lineNumber: 122,
         columnNumber: 5
     }, this);
 }
@@ -1019,6 +1009,31 @@ const LeadersData = [
         name: "Muhammad Radika A. B.",
         role: "Medcom General Manager",
         image: "/assets/image/Leadmedcom.png"
+    },
+    {
+        name: "Arsyad Ali M.",
+        role: "Merch General Manager",
+        image: "/assets/image/LeadMerch.png"
+    },
+    {
+        name: "Arsyad Ali M.",
+        role: "Merch General Manager",
+        image: "/assets/image/LeadMerch.png"
+    },
+    {
+        name: "Arsyad Ali M.",
+        role: "Merch General Manager",
+        image: "/assets/image/LeadMerch.png"
+    },
+    {
+        name: "Arsyad Ali M.",
+        role: "Merch General Manager",
+        image: "/assets/image/LeadMerch.png"
+    },
+    {
+        name: "Arsyad Ali M.",
+        role: "Merch General Manager",
+        image: "/assets/image/LeadMerch.png"
     },
     {
         name: "Arsyad Ali M.",

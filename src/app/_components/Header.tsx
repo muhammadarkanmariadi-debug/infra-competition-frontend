@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-export default function Header () {
+export default function Header() {
   return (
     <>
       <div className='mt-28'>
@@ -28,7 +28,7 @@ export default function Header () {
           />
           <a
             href='/registration'
-            className='flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-5 xl:py-8 rounded-full w-[400px] xl:w-[550px] font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300'
+            className='flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-5 xl:py-8 rounded-full w-[400px] max-sm:w-[350px] xl:w-[550px] font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300'
           >
             Ikuti Kami!
           </a>
@@ -112,6 +112,25 @@ export default function Header () {
           />
         </div>
       </div>
+
+      {/* Segitiga dekorasi atas */}
+      <Image
+        src="/assets/image/Group14556.png"
+        alt="triangle top left"
+        width={80}
+        height={80}
+        className="hidden md:block top-16 md:top-20 left-10 md:left-24 absolute"
+      />
+      <Image
+        src="/assets/image/Group1395.png"
+        alt="triangle top right"
+        width={80}
+        height={80}
+        className="hidden md:block top-16 md:top-20 right-10 md:right-24 absolute"
+      />
+
+     
     </>
-  )
+  
+  );
 }

@@ -39,8 +39,8 @@ const TrackRecord: React.FC<{ datas: TrackRecordProps[] }> = ({ datas }) => {
     return () => clearInterval(timer);
   }, [length]);
   return (
-    <div className="relative bg-secondary w-full mt-31" id="track">
-      <div className="absolute -top-[15px] left-0 w-full overflow-hidden leading-none">
+    <div className="relative bg-secondary mt-31 w-full" id="track">
+      <div className="-top-[15px] left-0 absolute w-full overflow-hidden leading-none">
         <svg
           width="1440"
           height="60"
@@ -68,20 +68,20 @@ const TrackRecord: React.FC<{ datas: TrackRecordProps[] }> = ({ datas }) => {
           </defs>
         </svg>
       </div>
-      <div className="text-center pb-[30px] pt-[60px]">
+      <div className="pt-[60px] pb-[30px] text-center">
         <h4 className="font-[500] text-[15px] text-white/61">
-          Event & Achievements
+          Prestasi Siswa
         </h4>
         <h1 className="font-[700] text-[45px] text-white">Track Record</h1>
       </div>
-      <div className="flex items-center max-sm:flex-col w-full mt-[30px] pb-[30px]">
-        <div className="max-sm:block min-xl:hidden w-full text-center">
-          <h4 className="text-[15px] text-white/61 font-[500]">
+      <div className="flex max-sm:flex-col items-center mt-[30px] pb-[30px] w-full">
+        <div className="min-xl:hidden max-sm:block w-full text-center">
+          <h4 className="font-[500] text-[15px] text-white/61">
             Event & Achievements
           </h4>
-          <h1 className="text-white font-[700] text-[45px]">Our Event</h1>
+          <h1 className="font-[700] text-[45px] text-white">Our Event</h1>
         </div>
-        <div className="relative shrink-0 min-xl:w-[60%] max-sm:w-full overflow-x-hidden max-sm:px-3.5 max-sm:py-7 rounded-[18px]">
+        <div className="xl:relative xl:px-0 rounded-[18px] min-xl:w-[60%] overflow-x-hidden shrink-0">
           <div
             className="flex flex-row-reverse gap-[43px] transition-transform duration-300"
             style={{
@@ -96,49 +96,49 @@ const TrackRecord: React.FC<{ datas: TrackRecordProps[] }> = ({ datas }) => {
             ))}
           </div>
         </div>
-        <div className="w-150 h-127 absolute right-0 mt-[-90px] rotate-[2.17deg] bg-[radial-gradient(ellipse_39.33%_39.33%_at_49.95%_56.31%,_rgba(255,_255,_255,_0.20)_12%,_rgba(255,_255,_255,_0)_100%)]"></div>
-        <div className="max-sm:hidden min-xl:block w-[40%] mt-[-150px] text-center">
-          <h4 className="text-[15px] text-white/61 font-[500]">
+        <div className="right-0 absolute bg-[radial-gradient(ellipse_39.33%_39.33%_at_49.95%_56.31%,_rgba(255,_255,_255,_0.20)_12%,_rgba(255,_255,_255,_0)_100%)] mt-[-90px] w-150 h-127 rotate-[2.17deg]"></div>
+        <div className="max-sm:hidden min-xl:block mt-[-150px] w-[40%] text-center">
+          <h4 className="font-[500] text-[15px] text-white/61">
             Event & Achievements
           </h4>
-          <h1 className="text-white font-[700] text-[45px]">Our Event</h1>
+          <h1 className="font-[700] text-[45px] text-white">Our Event</h1>
         </div>
       </div>
-      <div className="flex max-sm:flex-col items-center w-full mt-[70px] pb-[30px]">
+      <div className="flex max-sm:flex-col items-center mt-[70px] pb-[30px] w-full">
         <Image
           src="/assets/image/meca-international.png"
           alt="Arrow Down"
           width={490}
           height={390}
-          className="max-sm:hidden min-xl:absolute mt-[-58px] drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] left-0 z-[1]"
+          className="max-sm:hidden left-0 z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[-58px]"
         />
         <Image
           src="/assets/image/icon-piala.png"
           alt="Arrow Down"
           width={110}
           height={110}
-          className="max-sm:hidden min-xl:absolute mt-[-420px] drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] left-[360px] z-[1]"
+          className="max-sm:hidden left-[360px] z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[-420px]"
         />
         <Image
           src="/assets/image/icon-global.png"
           alt="Arrow Down"
           width={87}
           height={87}
-          className="max-sm:hidden min-xl:absolute mt-[88.5px] drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] left-[401px] z-[1]"
+          className="max-sm:hidden left-[401px] z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[88.5px]"
         />
-        <div className="max-sm:hidden min-xl:absolute left-[364px] mt-[-90px] z-[222]">
-          <div className="w-[245px] h-[54px] px-[28px] py-[15px] bg-[#ffffff] border-[1px] border-[E04E4E] font-[600] text-secondary-text text-[15px] text-center rounded-[12px_12px_0px_12px]">
+        <div className="max-sm:hidden left-[364px] z-[222] min-xl:absolute mt-[-90px]">
+          <div className="bg-[#ffffff] px-[28px] py-[15px] border-[1px] border-[E04E4E] rounded-[12px_12px_0px_12px] w-[245px] h-[54px] font-[600] text-[15px] text-secondary-text text-center">
             Metic Go Internasional?
           </div>
         </div>
         <div className="min-w-[50%]"></div>
-        <div className="max-sm:block min-xl:hidden w-full text-center">
-          <h4 className="text-[15px] text-white/61 font-[500]">
+        <div className="min-xl:hidden max-sm:block w-full text-center">
+          <h4 className="font-[500] text-[15px] text-white/61">
             Event & Achievements
           </h4>
-          <h1 className="text-white font-[700] text-[45px]">Metic Go International!</h1>
+          <h1 className="font-[700] text-[45px] text-white">Metic Go International!</h1>
         </div>
-        <div className="relative max-sm:w-full max-sm:px-3.5 max-sm:py-7 rounded-[18px] gap-[43px] shrink-0 w-[50%] overflow-x-hidden">
+        <div className="relative gap-[43px] max-sm:px-3.5 max-sm:py-7 rounded-[18px] w-[50%] max-sm:w-full overflow-x-hidden shrink-0">
           <div
             className="flex gap-[43px] transition-transform duration-300"
             style={{

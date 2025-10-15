@@ -148,8 +148,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+            className: "",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "py-31 max-sm:py-15 px-32 max-sm:px-7",
+                className: "pt-31 max-sm:pt-15 py-10 px-32 max-sm:px-7",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex justify-between min-xl:items-center",
                     children: [
@@ -157,10 +158,10 @@ function Footer() {
                             className: "flex flex-col max-sm:w-[50%] gap-7",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/assets/image/logo-metic-footer.png",
+                                    src: "/assets/image/logo.png",
                                     alt: "Logo Metic",
-                                    width: 81,
-                                    height: 40,
+                                    width: 125,
+                                    height: 62.5,
                                     className: ""
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
@@ -400,11 +401,11 @@ function Footer() {
     }, void 0, false);
 }
 }}),
-"[project]/src/app/layout.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/src/app/layout.tsx [app-rsc] (ecmascript)": (function(__turbopack_context__) {
 
-var { g: global, __dirname } = __turbopack_context__;
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
+<<<<<<< HEAD
 __turbopack_context__.s({
     "default": (()=>RootLayout),
     "metadata": (()=>metadata)
@@ -468,6 +469,13 @@ function RootLayout({ children }) {
     }, this);
 }
 }}),
+=======
+const e = new Error(`Could not parse module '[project]/src/app/layout.tsx'
+
+Unexpected token `html`. Expected jsx identifier`);
+e.code = 'MODULE_UNPARSEABLE';
+throw e;}}),
+>>>>>>> 3a0ef25d5db8ea2b305dad09204edc8c5cbf8156
 
 };
 

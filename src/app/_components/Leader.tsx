@@ -36,17 +36,19 @@ const Leader: React.FC<{ datas: LeaderComponent[] }> = ({ datas }) => {
 
       {/* Baris 2: Ketua */}
       <div className="flex justify-center gap-20 mb-14 flex-wrap">
-        {datas.slice(1, 3).map((leader, index) => (
-          <CardLeader key={index} data={leader} />
-        ))}
-      </div> 
-
-      {/* Baris 3: Divisi */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-        {datas.slice(3).map((leader, index) => (
+        {datas.slice(1,2).map((leader, index) => (
           <CardLeader key={index} data={leader} />
         ))}
       </div>
+
+
+
+
+
+
+
+
+
     </section>
   );
 };
