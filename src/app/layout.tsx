@@ -46,7 +46,7 @@ export default function RootLayout({
         <Footer />
 
         {/* Tombol Scroll to Top */}
-        <div className="fixed bottom-10 right-10 z-[300]">
+        <div className="fixed bottom-5 right-5 z-[300]">
           <ScrollTop />
         </div>
       </body>
