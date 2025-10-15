@@ -1191,44 +1191,20 @@ function Header() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "2xl:top-[-700px] 2xl:right-[400px] 2xl:relative kanan",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/assets/image/desktop.png",
-                                    alt: "desktop",
-                                    width: 65,
-                                    height: 65,
-                                    className: "max-md:hidden top-[400px] right-[350px] min-xl:absolute"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Header.tsx",
-                                    lineNumber: 69,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/assets/image/triangle-sm.png",
-                                    alt: "Server Rack",
-                                    width: 32,
-                                    height: 28,
-                                    className: "max-md:hidden top-[183px] right-[295px] min-xl:absolute rotate-[-5deg]"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Header.tsx",
-                                    lineNumber: 76,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/app/_components/Header.tsx",
-                            lineNumber: 68,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                            src: "/assets/image/panah-kiri.png",
-                            alt: "panah kiri",
-                            width: 161,
-                            height: 32,
-                            className: "max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[800px] min-xl:absolute"
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/assets/image/right-triangle.png",
+                                alt: "triangle kanan",
+                                width: 318,
+                                height: 283.5,
+                                className: "max-md:hidden top-[377px] right-[104px] min-xl:absolute"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/_components/Header.tsx",
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Header.tsx",
-                            lineNumber: 99,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1236,10 +1212,10 @@ function Header() {
                             alt: "panah kanan",
                             width: 161,
                             height: 32,
-                            className: "max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[900px] min-xl:absolute"
+                            className: "max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[500px] min-xl:absolute"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Header.tsx",
-                            lineNumber: 106,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     ]
@@ -1644,7 +1620,7 @@ function PortfolioCard({ portfolio }) {
                     src: portfolio.image,
                     alt: portfolio.title,
                     fill: true,
-                    className: "object-cover"
+                    className: "object-cover w-full h-full"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
                     lineNumber: 61,
@@ -1876,33 +1852,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f
 ;
 ;
 ;
-const newsData = [
-    {
-        id: 1,
-        category: 'MAC',
-        title: 'Mac A Rhythm: Saat Aula Berubah Jadi Panggung Se...',
-        author: 'Rayyan Irsa',
-        date: 'Sep 14, 2025',
-        image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop'
-    },
-    {
-        id: 2,
-        category: 'MAC',
-        title: 'Dance Attack! Saat Jalanan Berubah Jadi Tempat T...',
-        author: 'Rayyan Irsa',
-        date: 'Sep 14, 2025',
-        image: 'https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=600&h=400&fit=crop',
-        featured: true
-    },
-    {
-        id: 3,
-        category: 'MAC',
-        title: 'MAC Home Band Class : MAC 33 Kenalan Cara Setup ...',
-        author: 'Rayyan Irsa',
-        date: 'Sep 14, 2025',
-        image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop'
-    }
-];
 const Leader = ({ datas })=>{
     const pembimbing = datas.find((x)=>x.role.toLowerCase() === "pembimbing");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1911,122 +1860,18 @@ const Leader = ({ datas })=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "text-sm text-gray-400 mb-2",
-                children: "Update Berita"
+                children: "Our Core Team"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Leader.tsx",
-                lineNumber: 43,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: "text-4xl font-bold mb-14",
-                children: "Berita Terbaru"
+                children: "Meet Our Leader’s"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Leader.tsx",
-                lineNumber: 44,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
-                children: newsData.map((news)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 cursor-pointer",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative h-56 overflow-hidden",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: news.image,
-                                    alt: news.title,
-                                    className: "w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Leader.tsx",
-                                    lineNumber: 54,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/_components/Leader.tsx",
-                                lineNumber: 53,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "p-6",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mb-3",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: `inline-block px-3 py-1 text-sm font-medium rounded ${news.featured ? 'bg-red-500 text-white' : 'bg-red-50 text-red-500'}`,
-                                            children: news.category
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/_components/Leader.tsx",
-                                            lineNumber: 65,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/_components/Leader.tsx",
-                                        lineNumber: 64,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-xl font-bold text-gray-900 mb-4 line-clamp-2 hover:text-red-500 transition-colors",
-                                        children: news.title
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/_components/Leader.tsx",
-                                        lineNumber: 75,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center justify-between text-sm text-gray-500",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center gap-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/_components/Leader.tsx",
-                                                        lineNumber: 82,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "font-medium",
-                                                        children: news.author
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/_components/Leader.tsx",
-                                                        lineNumber: 84,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/src/app/_components/Leader.tsx",
-                                                lineNumber: 81,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                children: news.date
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/_components/Leader.tsx",
-                                                lineNumber: 86,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/_components/Leader.tsx",
-                                        lineNumber: 80,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/_components/Leader.tsx",
-                                lineNumber: 62,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, news.id, true, {
-                        fileName: "[project]/src/app/_components/Leader.tsx",
-                        lineNumber: 48,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/src/app/_components/Leader.tsx",
-                lineNumber: 46,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2044,12 +1889,12 @@ const Leader = ({ datas })=>{
                                 className: "object-cover w-full h-full"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Leader.tsx",
-                                lineNumber: 97,
+                                lineNumber: 22,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Leader.tsx",
-                            lineNumber: 96,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2057,7 +1902,7 @@ const Leader = ({ datas })=>{
                             children: pembimbing?.name
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Leader.tsx",
-                            lineNumber: 105,
+                            lineNumber: 30,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2065,18 +1910,18 @@ const Leader = ({ datas })=>{
                             children: pembimbing?.role
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Leader.tsx",
-                            lineNumber: 106,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/Leader.tsx",
-                    lineNumber: 95,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Leader.tsx",
-                lineNumber: 94,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2085,12 +1930,12 @@ const Leader = ({ datas })=>{
                         data: leader
                     }, index, false, {
                         fileName: "[project]/src/app/_components/Leader.tsx",
-                        lineNumber: 115,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Leader.tsx",
-                lineNumber: 113,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2099,18 +1944,18 @@ const Leader = ({ datas })=>{
                         data: leader
                     }, index, false, {
                         fileName: "[project]/src/app/_components/Leader.tsx",
-                        lineNumber: 122,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Leader.tsx",
-                lineNumber: 120,
+                lineNumber: 45,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/Leader.tsx",
-        lineNumber: 42,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 };

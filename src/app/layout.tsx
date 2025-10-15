@@ -27,6 +27,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Moklet Portal",
   description: "oluihykgjfth",
+   icons:"/assets/icontelkom.ico"
 };
 
 

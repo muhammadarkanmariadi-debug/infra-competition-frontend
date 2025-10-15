@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+[{"eventName":"NEXT_CLI_SESSION_STOPPED","payload":{"nextVersion":"15.3.4","nodeVersion":"v22.15.1","cliCommand":"dev","durationMilliseconds":1103344,"turboFlag":true,"pagesDir":false,"appDir":true,"isRspack":false}}]
+=======
 [{"eventName":"NEXT_CLI_SESSION_STOPPED","payload":{"nextVersion":"15.3.4","nodeVersion":"v22.13.1","cliCommand":"dev","durationMilliseconds":10645865,"turboFlag":true,"pagesDir":false,"appDir":true,"isRspack":false}}]
+>>>>>>> origin/main
