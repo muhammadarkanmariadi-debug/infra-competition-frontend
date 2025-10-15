@@ -52,7 +52,7 @@ export default function Navbar () {
               scrolled
                 ? (pathname === '/post' ? 'relative' : 'max-w-[900px] 2xl:max-w-[900px]')
                 : '  max-w-[700px] 2xl:max-w-[800px]'
-            } -translate-x-1/2 rounded-full border border-neutral-300 bg-white px-[50px] py-3 drop-shadow-[0_3px_11px_rgba(0,0,0,0.25)]`
+            } -translate-x-1/2 rounded-full border border-neutral-300 bg-white px-[50px] py-3 drop-shadow-[0_3px_6px_rgba(0,0,0,0.25)]`
           )}
         >
           {scrolled && (
@@ -90,7 +90,7 @@ export default function Navbar () {
             </div>
           </Link>
           <Link
-            href={'https://www.tiktok.com/@meticmerangkulsemuaorang'}
+            href={'https://www.tiktok.com/@smktelkommalang?is_from_webapp=1&sender_device=pc'}
             className='min-xl:mt-[36px]'
           >
             <div className='hidden xl:block bg-primary rounded-full text-transparent pointer-events-none select-none'>
@@ -98,7 +98,7 @@ export default function Navbar () {
             </div>
           </Link>
           <Link
-            href={'https://www.instagram.com/meticmoklet/'}
+            href={'https://www.instagram.com/smktelkommalang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}
             className='xl:mt-[36px]'
           >
             <div className='hidden xl:block bg-primary rounded-full text-transparent pointer-events-none select-none'>

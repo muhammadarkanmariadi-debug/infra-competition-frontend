@@ -49,9 +49,9 @@ export default function Visi() {
                 <div className="mt-[20px]">
                     <h1 className="font-[700] text-white text-[30px] leading-[54px]">Misi</h1>
                     <p className="text-[15px] font-[500] leading-[21px] text-white">
-                        1. Mengembangkan solusi teknologi yang inovatif, aman, dan berdaya saing global.
+                       text example
                         <br />
-                        2. Mendorong kolaborasi antara talenta muda, industri, dan akademisi di bidang teknologi.
+                       text example
                         <br />
                         3. Menyediakan wadah bagi pengembangan riset, kreativitas, dan kewirausahaan berbasis teknologi.
                         <br />
