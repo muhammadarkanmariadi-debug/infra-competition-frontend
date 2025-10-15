@@ -30,11 +30,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function News() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "z-[999] bg-white xl:bg-transparent flex gap-20 mx-auto px-5 py-4 xl:py-0 2xl:max-w-[1400px] xl:max-w-[1300px]",
+            className: "z-[999] bg-white xl:bg-transparent flex max-lg:flex-col max-lg:items-center gap-20 mx-auto px-5 py-4 xl:py-0 2xl:max-w-[1400px] xl:max-w-[1300px]",
             id: "post",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-[60%]",
+                    className: "w-[60%] max-lg:w-full",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "pt-20 pb-[24px] gap-4 flex flex-col",
@@ -71,7 +71,14 @@ function News() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-[16px] text-black font-[500]",
-                                                    children: "Rayyan Irsa"
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "",
+                                                        children: "Rayyan Irsa"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/post/page.tsx",
+                                                        lineNumber: 23,
+                                                        columnNumber: 66
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/page.tsx",
                                                     lineNumber: 23,
@@ -467,7 +474,7 @@ function News() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-[40%]",
+                    className: "w-[40%] max-lg:w-full",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "pt-20 pb-[24px] gap-4 flex flex-col",
                         children: [
@@ -716,13 +723,13 @@ function News() {
                                                     className: "w-full h-full object-cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/page.tsx",
-                                                    lineNumber: 340,
-                                                    columnNumber: 7
+                                                    lineNumber: 306,
+                                                    columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
-                                                lineNumber: 339,
-                                                columnNumber: 5
+                                                lineNumber: 305,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: "/",
@@ -730,28 +737,28 @@ function News() {
                                                 children: "Akira 500 CC"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
-                                                lineNumber: 348,
-                                                columnNumber: 5
+                                                lineNumber: 314,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/post/page.tsx",
-                                        lineNumber: 338,
-                                        columnNumber: 3
+                                        lineNumber: 304,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-[14px] text-gray-500 font-[500]",
                                         children: "Sep 26, 2025"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/post/page.tsx",
-                                        lineNumber: 357,
-                                        columnNumber: 3
+                                        lineNumber: 323,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/post/page.tsx",
-                                lineNumber: 336,
-                                columnNumber: 1
+                                lineNumber: 302,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {

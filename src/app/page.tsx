@@ -5,6 +5,8 @@ import Leader from "./_components/Leader";
 import { LeadersData, TrackData } from "./_components/const/datas";
 import TrackRecord from "./_components/TrackRecord";
 import Faq from "./_components/FAQ";
+import News from "./post/page";
+import NewsSection from "./_components/News";
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
       <TrackRecord datas={TrackData} />
       <DivisionSection />
       <Visi />
-      <Leader datas={LeadersData} />
+      <NewsSection />
       <Faq />
     </>
   );

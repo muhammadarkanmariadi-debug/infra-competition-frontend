@@ -17,14 +17,16 @@ export default function Footer() {
               className="mb-5"
             />
             <p className="text-gray-700 text-[16px] leading-relaxed">
-              Platform informasi organisasi & sub-organ METIC
+              Pelopor SMK bidang Teknologi dan
+Informatika di Indonesia
+
+
               <br />
               untuk siswa SMK Telkom Malang
             </p>
             <p className="text-gray-500 text-sm mt-6">
-              © 2025 Copyright MokletDev
+              © 2025 Copyright BebasDeh
             </p>
-      
           </div>
 
           {/* Menu Utama */}
@@ -66,9 +68,19 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        
+
+        {/* Bagian alamat */}
+        <div className="border-t border-gray-200 mt-10 pt-6 text-gray-700">
+          <h3 className="font-semibold text-[16px] mb-1">Alamat:</h3>
+          <p className="text-[15px] leading-relaxed">
+            Jl. Danau Ranau, Sawojajar, Kec. Kedungkandang, Kota Malang,
+            <br />
+            Jawa Timur 65139
+          </p>
+        </div>
       </div>
     </footer>
   );
 }
+
 
