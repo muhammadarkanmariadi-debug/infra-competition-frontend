@@ -81,12 +81,7 @@ export function PortfolioCard({ portfolio }: { portfolio: PortfolioProps }) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1">
             <div className="w-6 h-6 rounded-md overflow-hidden">
-              <Image
-                src="/assets/image/ig-logo.png"
-                alt="Instagram"
-                width={24}
-                height={24}
-              />
+             
             </div>
             <span className="text-gray-800 font-medium">
               {portfolio.sosmed}
@@ -142,7 +137,7 @@ export function FAQCard({ profileImg, question, response }: FAQCardProps) {
       {/* Response card */}
       <div className="flex items-start gap-3">
         <Image
-          src="/assets/image/mecaKeren.png" // ganti dengan path yang sesuai
+          src="/assets/image/mecaKeren.png" // telkom 
           alt="Mascot"
           width={40}
           height={40}

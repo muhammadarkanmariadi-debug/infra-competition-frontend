@@ -695,17 +695,7 @@ function PortfolioCard({ portfolio }) {
                                 className: "flex items-center gap-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-6 h-6 rounded-md overflow-hidden",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/assets/image/ig-logo.png",
-                                            alt: "Instagram",
-                                            width: 24,
-                                            height: 24
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/_components/card.tsx",
-                                            lineNumber: 84,
-                                            columnNumber: 15
-                                        }, this)
+                                        className: "w-6 h-6 rounded-md overflow-hidden"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
                                         lineNumber: 83,
@@ -716,7 +706,7 @@ function PortfolioCard({ portfolio }) {
                                         children: portfolio.sosmed
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -742,18 +732,18 @@ function PortfolioCard({ portfolio }) {
                                             d: "M9 5l7 7-7 7"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/card.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 100,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 95,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/card.tsx",
-                                lineNumber: 96,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -788,7 +778,7 @@ function FAQCard({ profileImg, question, response }) {
                         children: question
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 130,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -799,20 +789,20 @@ function FAQCard({ profileImg, question, response }) {
                         className: "rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 133,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 129,
+                lineNumber: 124,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-start gap-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/assets/image/mecaKeren.png" // ganti dengan path yang sesuai
+                        src: "/assets/image/mecaKeren.png" // telkom 
                         ,
                         alt: "Mascot",
                         width: 40,
@@ -820,7 +810,7 @@ function FAQCard({ profileImg, question, response }) {
                         className: "rounded-md"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 144,
+                        lineNumber: 139,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -834,29 +824,29 @@ function FAQCard({ profileImg, question, response }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/src/app/_components/card.tsx",
-                                lineNumber: 154,
+                                lineNumber: 149,
                                 columnNumber: 11
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 151,
+                        lineNumber: 146,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 143,
+                lineNumber: 138,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/card.tsx",
-        lineNumber: 127,
+        lineNumber: 122,
         columnNumber: 5
     }, this);
 }
