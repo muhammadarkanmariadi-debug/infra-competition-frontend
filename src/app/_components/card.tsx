@@ -62,7 +62,7 @@ export function PortfolioCard({ portfolio }: { portfolio: PortfolioProps }) {
           src={portfolio.image}
           alt={portfolio.title}
           fill
-          className="object-cover"
+          className="object-cover w-full h-full"
         />
       </div>
 
