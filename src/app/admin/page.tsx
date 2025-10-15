@@ -1,11 +1,10 @@
-
 import {
   UsersIcon,
   DocumentTextIcon,
   LinkIcon,
   FlagIcon,
 } from '@heroicons/react/24/outline'
-import Layout from '../_components/layout'
+import Layout from './components/layout'
 
 const stats = [
   { name: 'Total Users', value: '1,234', icon: UsersIcon, color: 'bg-blue-100 text-blue-600' },
@@ -15,7 +14,7 @@ const stats = [
 ]
 
 const recentActivity = [
-  { id: 1, type: 'New post created', user: 'Admin', time: '2 hours ago' },
+  { id: 1, type: 'New post created', user: 'Admin', time: '3 hours ago' },
   { id: 2, type: 'New user registered', user: 'John Doe', time: '4 hours ago' },
   { id: 3, type: 'Form submission received', user: 'Contact Form', time: '5 hours ago' },
 ]
@@ -28,7 +27,7 @@ export default function Dashboard() {
           {/* Welcome Section */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
-              Halo, Bro Iqbal 
+              Halo, Bro 
               <span className="inline-block ml-2">👋</span>
             </h1>
             <p className="text-gray-600">Here's whats going on today</p>
