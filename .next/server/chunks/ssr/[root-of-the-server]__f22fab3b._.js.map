@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///C:/Coding/Moklet%20Portal%201/infra-competition-frontend/src/app/_components/ScrollTop.tsx"],"sourcesContent":["'use client'\r\nimport { BsFillRocketFill } from \"react-icons/bs\";\r\nimport ScrollToTop from \"react-scroll-up\"\r\n\r\ntype onButtonClick = {\r\n    onButtonClick: () => void;\r\n}\r\n\r\nconst ScrollTop = () => {\r\n    return (\r\n       <ScrollToTop showUnder={160}>\r\n            <div className=\"p-3 bg-white rounded-full shadow-md hover:shadow-lg cursor-pointer transition-all duration-300 hover:scale-110\">\r\n              <BsFillRocketFill className=\"text-primary text-3xl\" />\r\n            </div>\r\n        </ScrollToTop>\r\n    )\r\n}\r\n\r\nexport default ScrollTop;"],"names":[],"mappings":";;;;AACA;AACA;AAFA;;;;AAQA,MAAM,YAAY;IACd,qBACG,8OAAC,8IAAA,CAAA,UAAW;QAAC,WAAW;kBACnB,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC,8IAAA,CAAA,mBAAgB;gBAAC,WAAU;;;;;;;;;;;;;;;;AAI1C;uCAEe","debugId":null}}]
+}

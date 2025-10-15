@@ -1,10 +1,13 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
   return (
     <>
-      <footer className="">
+      <footer className={`${pathname.startsWith('/admin') ? "hidden" : ""}`}>
         <div className="pt-31 max-sm:pt-15 py-10 px-32 max-sm:px-7">
           <div className="flex justify-between min-xl:items-center">
             <div className="flex flex-col max-sm:w-[50%] gap-7">

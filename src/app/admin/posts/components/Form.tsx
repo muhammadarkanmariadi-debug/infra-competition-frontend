@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-import Layout from "@/app/admin/components/layout";
+import Layout from "@/app/admin/layout";
 import { PhotoIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
+import Editor from "../../components/MdEditor";
 
 export default function CreatePostPage() {
   const router = useRouter();
@@ -48,14 +49,17 @@ export default function CreatePostPage() {
     "Ekstrakurikuler",
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
 
-    // Auto-generate slug from title
     if (name === "title") {
       const slug = value
         .toLowerCase()
@@ -69,7 +73,6 @@ export default function CreatePostPage() {
   };
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    // ...existing code...
     const files = event.target.files;
     if (files && files.length > 0) {
       const file = files[0];
@@ -78,7 +81,6 @@ export default function CreatePostPage() {
         thumbnail: file,
       }));
 
-      // Create preview
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreviewImage(reader.result as string);
@@ -90,7 +92,6 @@ export default function CreatePostPage() {
   const handleSubmit = (e: React.FormEvent, status = "draft") => {
     e.preventDefault();
 
-    // Here you would send the data to your API
     console.log("Submitting post:", { ...formData, status });
 
     // Redirect back to posts list
@@ -107,8 +108,6 @@ export default function CreatePostPage() {
   };
 
   return (
-    <Layout>
-      d
       <div className="p-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -141,7 +140,7 @@ export default function CreatePostPage() {
             className="space-y-6"
           >
             <div className="bg-white rounded-lg shadow p-6 space-y-6">
-              {/* Title */}
+              {/* Judul Post */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Judul Post<span className="text-red-500">*</span>
@@ -280,14 +279,14 @@ export default function CreatePostPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Text Editor<span className="text-red-500">*</span>
                 </label>
-                <textarea
-                  name="content"
-                  value={formData.content}
-                  onChange={handleInputChange}
-                  placeholder="Tulis konten post di sini..."
-                  rows={10}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent font-mono"
-                  required
+                <Editor
+                  value={""}
+                  onChange={function (
+                    value?: string | undefined,
+                    event?: ChangeEvent<HTMLTextAreaElement> | undefined
+                  ): void {
+                    throw new Error("Function not implemented.");
+                  }}
                 />
               </div>
 
@@ -318,6 +317,5 @@ export default function CreatePostPage() {
           </form>
         </div>
       </div>
-    </Layout>
   );
 }
