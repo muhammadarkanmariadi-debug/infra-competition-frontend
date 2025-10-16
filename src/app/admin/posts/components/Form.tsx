@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-import Layout from "@/app/admin/components/layout";
+import Layout from "@/app/admin/layout";
 import { PhotoIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
+import Editor from "../../components/MdEditor";
 
 export default function CreatePostPage() {
   const router = useRouter();
@@ -48,14 +49,17 @@ export default function CreatePostPage() {
     "Ekstrakurikuler",
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
 
-    // Auto-generate slug from title
     if (name === "title") {
       const slug = value
         .toLowerCase()
@@ -69,7 +73,6 @@ export default function CreatePostPage() {
   };
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    // ...existing code...
     const files = event.target.files;
     if (files && files.length > 0) {
       const file = files[0];
@@ -78,7 +81,6 @@ export default function CreatePostPage() {
         thumbnail: file,
       }));
 
-      // Create preview
       const reader = new FileReader();
       reader.onloadend = () => {
         setPreviewImage(reader.result as string);
@@ -90,7 +92,6 @@ export default function CreatePostPage() {
   const handleSubmit = (e: React.FormEvent, status = "draft") => {
     e.preventDefault();
 
-    // Here you would send the data to your API
     console.log("Submitting post:", { ...formData, status });
 
     // Redirect back to posts list
@@ -107,217 +108,212 @@ export default function CreatePostPage() {
   };
 
   return (
-    <Layout>
-      d
-      <div className="p-6">
-        <div className="max-w-4xl mx-auto">
-          {/* Header */}
-          <div className="mb-8">
-            <button
-              onClick={() => router.back()}
-              className="mb-4 text-gray-600 hover:text-gray-900 flex items-center space-x-2"
-            >
-              <ArrowLeftIcon className="w-5 h-5" />
-              <span>Kembali</span>
-            </button>
+    <div className="p-6">
+      <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <div className="mb-8">
+          <button
+            onClick={() => router.back()}
+            className="mb-4 text-gray-600 hover:text-gray-900 flex items-center space-x-2"
+          >
+            <ArrowLeftIcon className="w-5 h-5" />
+            <span>Kembali</span>
+          </button>
 
-            <h1 className="text-2xl font-bold text-gray-900">
-              Create New Post
-            </h1>
-            <div className="mt-2 flex items-center space-x-2 text-sm text-gray-600">
-              <span>Home</span>
-              <span>/</span>
-              <span>Admin</span>
-              <span>/</span>
-              <span>Posts</span>
-              <span>/</span>
-              <span className="text-gray-900">Create</span>
+          <h1 className="text-2xl font-bold text-gray-900">Create New Post</h1>
+          <div className="mt-2 flex items-center space-x-2 text-sm text-gray-600">
+            <span>Home</span>
+            <span>/</span>
+            <span>Admin</span>
+            <span>/</span>
+            <span>Posts</span>
+            <span>/</span>
+            <span className="text-gray-900">Create</span>
+          </div>
+        </div>
+
+        {/* Form */}
+        <form
+          onSubmit={(e) => handleSubmit(e, "publish")}
+          className="space-y-6"
+        >
+          <div className="bg-white rounded-lg shadow p-6 space-y-6">
+            {/* Judul Post */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Judul Post<span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="title"
+                value={formData.title}
+                onChange={handleInputChange}
+                placeholder="Masukkan judul post..."
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                required
+              />
+            </div>
+
+            {/* Description */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Deskripsi<span className="text-red-500">*</span>
+              </label>
+              <textarea
+                name="description"
+                value={formData.description}
+                onChange={handleInputChange}
+                placeholder="Deskripsi singkat tentang post..."
+                rows={3}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                required
+              />
+            </div>
+
+            {/* Slug */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Custom Slug
+              </label>
+              <input
+                type="text"
+                name="slug"
+                value={formData.slug}
+                onChange={handleInputChange}
+                placeholder="custom-url-slug"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+              />
+            </div>
+
+            {/* Category */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Kategori<span className="text-red-500">*</span>
+              </label>
+              <select
+                name="category"
+                value={formData.category}
+                onChange={handleInputChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                required
+              >
+                <option value="">Select...</option>
+                {categories.map((cat) => (
+                  <option key={cat} value={cat}>
+                    {cat}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* Tags */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Tags
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {availableTags.map((tag) => (
+                  <button
+                    key={tag}
+                    type="button"
+                    onClick={() => handleTagToggle(tag)}
+                    className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                      formData.tags.includes(tag)
+                        ? "bg-red-500 text-white"
+                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                    }`}
+                  >
+                    {tag}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Thumbnail */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Thumbnail<span className="text-red-500">*</span>
+              </label>
+              <div className="flex items-start space-x-4">
+                <div className="w-48 h-48 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+                  {previewImage ? (
+                    <img
+                      src={previewImage}
+                      alt="Preview"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <PhotoIcon className="w-16 h-16 text-gray-400" />
+                  )}
+                </div>
+                <div className="flex-1">
+                  <input
+                    type="file"
+                    onChange={handleFileChange}
+                    accept="image/*"
+                    className="hidden"
+                    id="thumbnail-upload"
+                  />
+                  <label
+                    htmlFor="thumbnail-upload"
+                    className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 cursor-pointer"
+                  >
+                    Choose File
+                  </label>
+                  {formData.thumbnail && (
+                    <p className="mt-2 text-sm text-gray-500">
+                      {formData.thumbnail.name}
+                    </p>
+                  )}
+                  <p className="mt-2 text-xs text-gray-500">
+                    Recommended size: 1200x630px. Max file size: 2MB
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Content Editor */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Text Editor<span className="text-red-500">*</span>
+              </label>
+              <Editor
+                value={""}
+                onChange={function (
+                  value?: string | undefined,
+                  event?: ChangeEvent<HTMLTextAreaElement> | undefined
+                ): void {
+                  throw new Error("Function not implemented.");
+                }}
+              />
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex justify-end space-x-4 pt-6 border-t">
+              <button
+                type="button"
+                onClick={() => router.back()}
+                className="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={(e) => handleSubmit(e, "draft")}
+                className="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
+              >
+                Save as Draft
+              </button>
+              <button
+                type="submit"
+                className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
+              >
+                Simpan
+              </button>
             </div>
           </div>
-
-          {/* Form */}
-          <form
-            onSubmit={(e) => handleSubmit(e, "publish")}
-            className="space-y-6"
-          >
-            <div className="bg-white rounded-lg shadow p-6 space-y-6">
-              {/* Title */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Judul Post<span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  name="title"
-                  value={formData.title}
-                  onChange={handleInputChange}
-                  placeholder="Masukkan judul post..."
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  required
-                />
-              </div>
-
-              {/* Description */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Deskripsi<span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  name="description"
-                  value={formData.description}
-                  onChange={handleInputChange}
-                  placeholder="Deskripsi singkat tentang post..."
-                  rows={3}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  required
-                />
-              </div>
-
-              {/* Slug */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Custom Slug
-                </label>
-                <input
-                  type="text"
-                  name="slug"
-                  value={formData.slug}
-                  onChange={handleInputChange}
-                  placeholder="custom-url-slug"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                />
-              </div>
-
-              {/* Category */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Kategori<span className="text-red-500">*</span>
-                </label>
-                <select
-                  name="category"
-                  value={formData.category}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  required
-                >
-                  <option value="">Select...</option>
-                  {categories.map((cat) => (
-                    <option key={cat} value={cat}>
-                      {cat}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Tags */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Tags
-                </label>
-                <div className="flex flex-wrap gap-2">
-                  {availableTags.map((tag) => (
-                    <button
-                      key={tag}
-                      type="button"
-                      onClick={() => handleTagToggle(tag)}
-                      className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-                        formData.tags.includes(tag)
-                          ? "bg-red-500 text-white"
-                          : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                      }`}
-                    >
-                      {tag}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Thumbnail */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Thumbnail<span className="text-red-500">*</span>
-                </label>
-                <div className="flex items-start space-x-4">
-                  <div className="w-48 h-48 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
-                    {previewImage ? (
-                      <img
-                        src={previewImage}
-                        alt="Preview"
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <PhotoIcon className="w-16 h-16 text-gray-400" />
-                    )}
-                  </div>
-                  <div className="flex-1">
-                    <input
-                      type="file"
-                      onChange={handleFileChange}
-                      accept="image/*"
-                      className="hidden"
-                      id="thumbnail-upload"
-                    />
-                    <label
-                      htmlFor="thumbnail-upload"
-                      className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 cursor-pointer"
-                    >
-                      Choose File
-                    </label>
-                    {formData.thumbnail && (
-                      <p className="mt-2 text-sm text-gray-500">
-                        {formData.thumbnail.name}
-                      </p>
-                    )}
-                    <p className="mt-2 text-xs text-gray-500">
-                      Recommended size: 1200x630px. Max file size: 2MB
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Content Editor */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Text Editor<span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  name="content"
-                  value={formData.content}
-                  onChange={handleInputChange}
-                  placeholder="Tulis konten post di sini..."
-                  rows={10}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent font-mono"
-                  required
-                />
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex justify-end space-x-4 pt-6 border-t">
-                <button
-                  type="button"
-                  onClick={() => router.back()}
-                  className="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="button"
-                  onClick={(e) => handleSubmit(e, "draft")}
-                  className="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
-                >
-                  Save as Draft
-                </button>
-                <button
-                  type="submit"
-                  className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
-                >
-                  Simpan
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
+        </form>
       </div>
-    </Layout>
+    </div>
   );
 }

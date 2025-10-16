@@ -7,40 +7,40 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 const RecordCard: React.FC<{data: TrackRecordProps}> = ({ data }) => {
     return (
         <div
-            className="min-w-[377px] min-h-[407px] bg-white rounded-[18px] px-[16.5px] py-[22.5px]"
+            className="bg-white px-[16.5px] py-[22.5px] rounded-[18px] min-w-full min-h-[407px]"
         >
             <Image
                 src={data.img}
                 alt={data.title}
                 width={339}
                 height={182}
-                className="w-[339px] h-[182px] rounded-[20px]"
+                className="rounded-[20px] w-full h-[182px]"
             />
             <div className="">
-                <div className="w-[113px] h-[32px] bg-secondary-bg text-primary rounded-[13px] text-center text-[12px] font-[500] mt-[15px] py-2">
+                <div className="bg-secondary-bg mt-[15px] py-2 rounded-[13px] w-[113px] h-[32px] font-[500] text-[12px] text-primary text-center">
                 {data.name}
                 </div>
-                <h2 className="text-[22px] font-[600] text-primary mt-[10px]">
+                <h2 className="mt-[10px] font-[600] text-[22px] text-primary">
                 {data.title}
                 </h2>
-                <p className="text-[15px] text-black font-[400] ">
+                <p className="font-[400] text-[15px] text-black">
                 {data.desc}{" "}
                 </p>
                 {data.type == "International" && (
                 <div className="flex justify-between mt-6">
                     
-                    <p className="relative text-left text-[12px] text-primary font-[600]">
+                    <p className="relative font-[600] text-[12px] text-primary text-left">
                     <FontAwesomeIcon icon={faGlobe} />  {data.country}
                     </p>
                     
-                    <p className="relative text-right text-[12px] text-[#BFBFBF] font-[400]">
+                    <p className="relative font-[400] text-[#BFBFBF] text-[12px] text-right">
                     {data.eventDate}
                     </p>
                 </div>
                 )
                 }
                 {data.type == "Event" && (
-                    <p className="relative text-right text-[12px] mt-[10px] text-[#BFBFBF] font-[400]">
+                    <p className="relative mt-[10px] font-[400] text-[#BFBFBF] text-[12px] text-right">
                 {data.eventDate}
                 </p>)}
             </div>

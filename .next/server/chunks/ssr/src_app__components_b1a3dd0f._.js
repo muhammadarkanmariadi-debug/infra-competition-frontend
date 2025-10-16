@@ -18,14 +18,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesom
 ;
 const RecordCard = ({ data })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-w-[377px] min-h-[407px] bg-white rounded-[18px] px-[16.5px] py-[22.5px]",
+        className: "bg-white px-[16.5px] py-[22.5px] rounded-[18px] min-w-full min-h-[407px]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 src: data.img,
                 alt: data.title,
                 width: 339,
                 height: 182,
-                className: "w-[339px] h-[182px] rounded-[20px]"
+                className: "rounded-[20px] w-full h-[182px]"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/RecordCard.tsx",
                 lineNumber: 12,
@@ -35,7 +35,7 @@ const RecordCard = ({ data })=>{
                 className: "",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-[113px] h-[32px] bg-secondary-bg text-primary rounded-[13px] text-center text-[12px] font-[500] mt-[15px] py-2",
+                        className: "bg-secondary-bg mt-[15px] py-2 rounded-[13px] w-[113px] h-[32px] font-[500] text-[12px] text-primary text-center",
                         children: data.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/RecordCard.tsx",
@@ -43,7 +43,7 @@ const RecordCard = ({ data })=>{
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-[22px] font-[600] text-primary mt-[10px]",
+                        className: "mt-[10px] font-[600] text-[22px] text-primary",
                         children: data.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/RecordCard.tsx",
@@ -51,7 +51,7 @@ const RecordCard = ({ data })=>{
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-[15px] text-black font-[400] ",
+                        className: "font-[400] text-[15px] text-black",
                         children: [
                             data.desc,
                             " "
@@ -65,7 +65,7 @@ const RecordCard = ({ data })=>{
                         className: "flex justify-between mt-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "relative text-left text-[12px] text-primary font-[600]",
+                                className: "relative font-[600] text-[12px] text-primary text-left",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$react$2d$fontawesome$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FontAwesomeIcon"], {
                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$free$2d$solid$2d$svg$2d$icons$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["faGlobe"]
@@ -83,7 +83,7 @@ const RecordCard = ({ data })=>{
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "relative text-right text-[12px] text-[#BFBFBF] font-[400]",
+                                className: "relative font-[400] text-[#BFBFBF] text-[12px] text-right",
                                 children: data.eventDate
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/RecordCard.tsx",
@@ -97,7 +97,7 @@ const RecordCard = ({ data })=>{
                         columnNumber: 17
                     }, this),
                     data.type == "Event" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "relative text-right text-[12px] mt-[10px] text-[#BFBFBF] font-[400]",
+                        className: "relative mt-[10px] font-[400] text-[#BFBFBF] text-[12px] text-right",
                         children: data.eventDate
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/RecordCard.tsx",
@@ -284,7 +284,7 @@ const TrackRecord = ({ datas })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "xl:relative xl:px-0 rounded-[18px] min-xl:w-[60%] overflow-x-hidden shrink-0",
+                        className: "relative rounded-[18px] max-sm:w-full min-xl:w-[60%] overflow-x-hidden max-sm:p shrink-0",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-row-reverse gap-[43px] transition-transform duration-300",
                             style: {
