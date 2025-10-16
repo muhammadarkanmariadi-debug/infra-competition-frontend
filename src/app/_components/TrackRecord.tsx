@@ -81,7 +81,7 @@ const TrackRecord: React.FC<{ datas: TrackRecordProps[] }> = ({ datas }) => {
           </h4>
           <h1 className="font-[700] text-[45px] text-white">Our Event</h1>
         </div>
-        <div className="xl:relative xl:px-0 rounded-[18px] min-xl:w-[60%] overflow-x-hidden shrink-0">
+        <div className="relative rounded-[18px] max-sm:w-full min-xl:w-[60%] overflow-x-hidden max-sm:p shrink-0">
           <div
             className="flex flex-row-reverse gap-[43px] transition-transform duration-300"
             style={{
