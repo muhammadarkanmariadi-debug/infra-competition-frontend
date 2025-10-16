@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "app": {
     "[project]/src/app/_not-found/page": [
       "static/media/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk-s.p.d66bbad7.woff2",
@@ -41,6 +42,10 @@
     ]
   },
   "appUsingSizeAdjust": true,
+=======
+  "app": {},
+  "appUsingSizeAdjust": false,
+>>>>>>> d6527dc383fbfe8e1bf9763e7654f46bfd7b1b7c
   "pages": {},
   "pagesUsingSizeAdjust": false
 }

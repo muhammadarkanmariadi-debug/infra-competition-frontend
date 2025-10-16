@@ -39,7 +39,7 @@ export default function Navbar () {
   }, [])
 
   return (
-    <nav className='top-0 z-[999] xl:relative flex flex-col mx-auto w-full 2xl:text-xl'>
+    <nav className={`top-0 z-[999] xl:relative flex flex-col mx-auto w-full 2xl:text-xl ${pathname.startsWith("/admin") ? "hidden" : ""}`}>
       <div className='z-[999] flex justify-between items-center bg-white xl:bg-transparent mx-auto px-5 py-4 xl:py-0 w-full 2xl:max-w-[1400px] xl:max-w-[1300px]'>
         <Link href={'/'} className='xl:mt-[36px]'>
           <span className='block bg-[url(/assets/image/logo.png)] bg-contain bg-no-repeat w-[130px] h-[39px] text-transparent pointer-events-none select-none'>

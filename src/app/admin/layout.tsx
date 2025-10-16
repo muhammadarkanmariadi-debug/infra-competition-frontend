@@ -4,10 +4,29 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Bars3Icon, BuildingOfficeIcon, CalendarIcon, DocumentIcon, DocumentTextIcon, FlagIcon, HomeIcon, LinkIcon, PhotoIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Geist, Geist_Mono, Poppins } from "next/font/google"
+import "../globals.css"
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+})
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+})
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+})
 
 const navigation = [
   { name: 'Dashboard', href: '/admin', icon: HomeIcon},
-  { name: 'Post', href: '/posts   ', icon: DocumentTextIcon },
+  { name: 'Post', href: '/admin/posts', icon: DocumentTextIcon },
   { name: 'Formulir', href: '/formulir', icon: DocumentIcon },
   { name: 'Twibbon', href: '/twibbon', icon: PhotoIcon },
   { name: 'Info Organ Setup', href: '/info-organ', icon: BuildingOfficeIcon },
@@ -16,12 +35,14 @@ const navigation = [
   { name: 'Users', href: '/users', icon: UsersIcon },
 ]
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const pathname = usePathname()
 
   return (
-    <div className="flex h-screen bg-gray-50">
+    <html lang="en" className="scroll-smooth">
+      <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}>
+        <div className="flex h-screen bg-gray-50">
       {/* Mobile sidebar backdrop */}
       {sidebarOpen && (
         <div
@@ -116,5 +137,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </main>
       </div>
     </div>
+      </body>
+    </html>
   )
 }
