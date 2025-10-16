@@ -50,32 +50,6 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const posts = [
-    {
-        id: 1,
-        title: "MAC A Rhythm: Saat Aula Berubah Jadi Panggung Seni",
-        author: "Rayyan Irsa",
-        date: "Sep 14, 2025",
-        image: "https://www.moklet.org/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmokletorg%2Fimage%2Fupload%2Fv1753081392%2Fapp_media%2Ffile_rk0plj.png&w=1920&q=75",
-        excerpt: "MAC A Rhythm menghadirkan suasana berbeda di aula SMK Telkom Malang...",
-        content: `
-      <p>Acara MAC A Rhythm sukses menarik perhatian siswa dengan suasana musik yang hangat dan kreatif.</p>
-      <p>Berbagai band dari kelas 10–12 tampil memukau, menunjukkan bakat luar biasa siswa Moklet.</p>
-    `
-    },
-    {
-        id: 2,
-        title: "MPLS 2025 SMK Telkom Malang: Stinging Like a Bee",
-        author: "Fadi Alyuliansyah",
-        date: "Jul 21, 2025",
-        image: "https://www.moklet.org/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmokletorg%2Fimage%2Fupload%2Fv1753081392%2Fapp_media%2Ffile_rk0plj.png&w=1920&q=75",
-        excerpt: "Kegiatan MPLS tahun ini membawa tema baru dan semangat tinggi...",
-        content: `
-      <p>MPLS 2025 berlangsung meriah dengan berbagai kegiatan interaktif dan edukatif.</p>
-      <p>Siswa baru mengenal lebih dekat budaya dan lingkungan SMK Telkom Malang.</p>
-    `
-    }
-];
 function BeritaPage() {
     _s();
     const [selectedPost, setSelectedPost] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -109,7 +83,7 @@ function BeritaPage() {
                 children: "Berita Sekolah & Organisasi SMK Telkom Malang"
             }, void 0, false, {
                 fileName: "[project]/src/app/postes/page.tsx",
-                lineNumber: 77,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -122,12 +96,12 @@ function BeritaPage() {
                     onChange: (e)=>setSearchTerm(e.target.value)
                 }, void 0, false, {
                     fileName: "[project]/src/app/postes/page.tsx",
-                    lineNumber: 83,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/postes/page.tsx",
-                lineNumber: 82,
+                lineNumber: 55,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -139,14 +113,14 @@ function BeritaPage() {
                                 className: "flex gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: post.image,
+                                        src: `http://localhost:8000/storage/${post.thumbnail}`,
                                         alt: post.title,
                                         width: 120,
                                         height: 80,
                                         className: "rounded-lg w-[120px] h-[80px] object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/postes/page.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 74,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -157,7 +131,7 @@ function BeritaPage() {
                                                 children: post.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/postes/page.tsx",
-                                                lineNumber: 109,
+                                                lineNumber: 82,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -165,42 +139,42 @@ function BeritaPage() {
                                                 children: post.short_body
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/postes/page.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 88,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex justify-between mt-2 text-gray-400 text-xs",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        children: post.author
+                                                        children: post.author.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/postes/page.tsx",
-                                                        lineNumber: 117,
+                                                        lineNumber: 90,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: post.date
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/postes/page.tsx",
-                                                        lineNumber: 118,
+                                                        lineNumber: 91,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/postes/page.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 89,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/postes/page.tsx",
-                                        lineNumber: 108,
+                                        lineNumber: 81,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/postes/page.tsx",
-                                lineNumber: 100,
+                                lineNumber: 73,
                                 columnNumber: 15
                             }, this),
                             selectedPost === post.id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -210,31 +184,31 @@ function BeritaPage() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/app/postes/page.tsx",
-                                lineNumber: 124,
+                                lineNumber: 97,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, post.id, true, {
                         fileName: "[project]/src/app/postes/page.tsx",
-                        lineNumber: 96,
+                        lineNumber: 69,
                         columnNumber: 13
                     }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-gray-500",
                     children: "Berita tidak ditemukan 😢"
                 }, void 0, false, {
                     fileName: "[project]/src/app/postes/page.tsx",
-                    lineNumber: 132,
+                    lineNumber: 105,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/postes/page.tsx",
-                lineNumber: 93,
+                lineNumber: 66,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/postes/page.tsx",
-        lineNumber: 76,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }

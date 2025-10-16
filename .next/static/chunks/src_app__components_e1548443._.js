@@ -18,17 +18,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesom
 ;
 const RecordCard = ({ data })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-white px-[16.5px] py-[22.5px] rounded-[18px] min-w-full min-h-[407px]",
+        className: "bg-white px-[16.5px] py-[22.5px] rounded-[18px] min-w-[377px] min-h-[407px]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: data.img,
                 alt: data.title,
                 width: 339,
                 height: 182,
-                className: "rounded-[20px] w-full h-[182px]"
+                className: "rounded-[20px] w-[339px] h-[182px] object-cover"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/RecordCard.tsx",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -39,7 +39,7 @@ const RecordCard = ({ data })=>{
                         children: data.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/RecordCard.tsx",
-                        lineNumber: 20,
+                        lineNumber: 21,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -47,7 +47,7 @@ const RecordCard = ({ data })=>{
                         children: data.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/RecordCard.tsx",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -58,7 +58,7 @@ const RecordCard = ({ data })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/RecordCard.tsx",
-                        lineNumber: 26,
+                        lineNumber: 27,
                         columnNumber: 17
                     }, this),
                     data.type == "International" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -71,7 +71,7 @@ const RecordCard = ({ data })=>{
                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$free$2d$solid$2d$svg$2d$icons$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["faGlobe"]
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/RecordCard.tsx",
-                                        lineNumber: 33,
+                                        lineNumber: 34,
                                         columnNumber: 21
                                     }, this),
                                     "  ",
@@ -79,7 +79,7 @@ const RecordCard = ({ data })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/RecordCard.tsx",
-                                lineNumber: 32,
+                                lineNumber: 33,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -87,13 +87,13 @@ const RecordCard = ({ data })=>{
                                 children: data.eventDate
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/RecordCard.tsx",
-                                lineNumber: 36,
+                                lineNumber: 37,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/RecordCard.tsx",
-                        lineNumber: 30,
+                        lineNumber: 31,
                         columnNumber: 17
                     }, this),
                     data.type == "Event" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -101,19 +101,19 @@ const RecordCard = ({ data })=>{
                         children: data.eventDate
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/RecordCard.tsx",
-                        lineNumber: 43,
+                        lineNumber: 44,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/RecordCard.tsx",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/RecordCard.tsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 9
     }, this);
 };
@@ -139,12 +139,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$RecordCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/_components/RecordCard.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
-"use client";
+'use client';
 ;
 ;
 ;
-const TrackRecord = ({ datas })=>{
+const Prestasi = ()=>{
     _s();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Prestasi.useEffect": ()=>{}
+    }["Prestasi.useEffect"]);
     const [current, setCurrent] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [currentInternational, setCurrentInternational] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const internationalLength = datas.filter((d)=>d.type === 'International').length;
@@ -155,35 +158,35 @@ const TrackRecord = ({ datas })=>{
     const cardWidth = 377;
     const gap = 43;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "TrackRecord.useEffect": ()=>{
+        "Prestasi.useEffect": ()=>{
             const timerInter = setInterval({
-                "TrackRecord.useEffect.timerInter": ()=>{
+                "Prestasi.useEffect.timerInter": ()=>{
                     setCurrentInternational({
-                        "TrackRecord.useEffect.timerInter": (prev)=>prev === maxInternationalIndex ? 0 : prev + 1
-                    }["TrackRecord.useEffect.timerInter"]);
+                        "Prestasi.useEffect.timerInter": (prev)=>prev === maxInternationalIndex ? 0 : prev + 1
+                    }["Prestasi.useEffect.timerInter"]);
                 }
-            }["TrackRecord.useEffect.timerInter"], 5000);
+            }["Prestasi.useEffect.timerInter"], 5000);
             return ({
-                "TrackRecord.useEffect": ()=>clearInterval(timerInter)
-            })["TrackRecord.useEffect"];
+                "Prestasi.useEffect": ()=>clearInterval(timerInter)
+            })["Prestasi.useEffect"];
         }
-    }["TrackRecord.useEffect"], [
+    }["Prestasi.useEffect"], [
         internationalLength
     ]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "TrackRecord.useEffect": ()=>{
+        "Prestasi.useEffect": ()=>{
             const timer = setInterval({
-                "TrackRecord.useEffect.timer": ()=>{
+                "Prestasi.useEffect.timer": ()=>{
                     setCurrent({
-                        "TrackRecord.useEffect.timer": (prev)=>prev === maxIndex ? 0 : prev + 1
-                    }["TrackRecord.useEffect.timer"]);
+                        "Prestasi.useEffect.timer": (prev)=>prev === maxIndex ? 0 : prev + 1
+                    }["Prestasi.useEffect.timer"]);
                 }
-            }["TrackRecord.useEffect.timer"], 5000);
+            }["Prestasi.useEffect.timer"], 5000);
             return ({
-                "TrackRecord.useEffect": ()=>clearInterval(timer)
-            })["TrackRecord.useEffect"];
+                "Prestasi.useEffect": ()=>clearInterval(timer)
+            })["Prestasi.useEffect"];
         }
-    }["TrackRecord.useEffect"], [
+    }["Prestasi.useEffect"], [
         length
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -205,7 +208,7 @@ const TrackRecord = ({ datas })=>{
                             fill: "url(#gradienName)"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                            lineNumber: 52,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -221,7 +224,7 @@ const TrackRecord = ({ datas })=>{
                                         stopColor: "#E9E2EA"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 74,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -229,29 +232,29 @@ const TrackRecord = ({ datas })=>{
                                         stopColor: "#F5F5F5"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 75,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                lineNumber: 57,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                            lineNumber: 56,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                    lineNumber: 44,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                lineNumber: 43,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -259,10 +262,10 @@ const TrackRecord = ({ datas })=>{
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                         className: "font-[500] text-[15px] text-white/61",
-                        children: "Prestasi Siswa"
+                        children: "Event & Achievements"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 72,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -270,13 +273,13 @@ const TrackRecord = ({ datas })=>{
                         children: "Track Record"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 75,
+                        lineNumber: 84,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                lineNumber: 71,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -290,7 +293,7 @@ const TrackRecord = ({ datas })=>{
                                 children: "Event & Achievements"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                lineNumber: 79,
+                                lineNumber: 88,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -298,17 +301,17 @@ const TrackRecord = ({ datas })=>{
                                 children: "Our Event"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                lineNumber: 82,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 78,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative rounded-[18px] max-sm:w-full min-xl:w-[60%] overflow-x-hidden max-sm:p shrink-0",
+                        className: "relative max-sm:px-3.5 max-sm:py-7 rounded-[18px] max-sm:w-full min-xl:w-[60%] overflow-x-hidden shrink-0",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-row-reverse gap-[43px] transition-transform duration-300",
                             style: {
@@ -319,32 +322,32 @@ const TrackRecord = ({ datas })=>{
                                         data: data
                                     }, index, false, {
                                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                        lineNumber: 92,
-                                        columnNumber: 15
+                                        lineNumber: 104,
+                                        columnNumber: 17
                                     }, this)),
                                 datas.filter((d)=>d.type === 'Event').slice(0).map((data, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$RecordCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         data: data
                                     }, index, false, {
                                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 15
+                                        lineNumber: 110,
+                                        columnNumber: 17
                                     }, this))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                            lineNumber: 85,
+                            lineNumber: 95,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 84,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "right-0 absolute bg-[radial-gradient(ellipse_39.33%_39.33%_at_49.95%_56.31%,_rgba(255,_255,_255,_0.20)_12%,_rgba(255,_255,_255,_0)_100%)] mt-[-90px] w-150 h-127 rotate-[2.17deg]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 99,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -355,7 +358,7 @@ const TrackRecord = ({ datas })=>{
                                 children: "Event & Achievements"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                lineNumber: 101,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -363,33 +366,33 @@ const TrackRecord = ({ datas })=>{
                                 children: "Our Event"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                lineNumber: 104,
+                                lineNumber: 119,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 100,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                lineNumber: 77,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex max-sm:flex-col items-center mt-[70px] pb-[30px] w-full",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/assets/image/meca-international.png",
-                        alt: "Arrow Down",
+                        src: "/assets/image/bombi.png",
+                        alt: "bombi",
                         width: 490,
                         height: 390,
                         className: "max-sm:hidden left-0 z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[-58px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 108,
+                        lineNumber: 123,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -400,7 +403,7 @@ const TrackRecord = ({ datas })=>{
                         className: "max-sm:hidden left-[360px] z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[-420px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 115,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -411,7 +414,7 @@ const TrackRecord = ({ datas })=>{
                         className: "max-sm:hidden left-[401px] z-[1] min-xl:absolute drop-shadow-[0_3px_90px_rgba(255,255,255,0.73)] mt-[88.5px]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 122,
+                        lineNumber: 137,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -421,19 +424,19 @@ const TrackRecord = ({ datas })=>{
                             children: "Metic Go Internasional?"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                            lineNumber: 130,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 129,
+                        lineNumber: 144,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "min-w-[50%]"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 134,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -444,7 +447,7 @@ const TrackRecord = ({ datas })=>{
                                 children: "Event & Achievements"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                lineNumber: 136,
+                                lineNumber: 151,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -452,13 +455,13 @@ const TrackRecord = ({ datas })=>{
                                 children: "Metic Go International!"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                lineNumber: 139,
+                                lineNumber: 154,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 135,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -472,44 +475,44 @@ const TrackRecord = ({ datas })=>{
                                     data: data
                                 }, index, false, {
                                     fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                                    lineNumber: 149,
+                                    lineNumber: 171,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                            lineNumber: 142,
+                            lineNumber: 160,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                        lineNumber: 141,
+                        lineNumber: 159,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                lineNumber: 107,
+                lineNumber: 122,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "block bg-[#E9E2EA] h-5"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/TrackRecord.tsx",
-                lineNumber: 154,
+                lineNumber: 176,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/TrackRecord.tsx",
-        lineNumber: 42,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 };
-_s(TrackRecord, "cxPzX3x5yDiqLwwCIicaZsqcGqs=");
-_c = TrackRecord;
-const __TURBOPACK__default__export__ = TrackRecord;
+_s(Prestasi, "/603H8T+trNCy9Re3VXa1SBpQq4=");
+_c = Prestasi;
+const __TURBOPACK__default__export__ = Prestasi;
 var _c;
-__turbopack_context__.k.register(_c, "TrackRecord");
+__turbopack_context__.k.register(_c, "Prestasi");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
