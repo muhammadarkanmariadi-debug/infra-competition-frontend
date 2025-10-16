@@ -146,6 +146,31 @@ export const LeadersData: LeaderComponent[] = [
     role: "Merch General Manager",
     image: "/assets/image/LeadMerch.png",
   },
+  {
+    name: "Arsyad Ali M.",
+    role: "Merch General Manager",
+    image: "/assets/image/LeadMerch.png",
+  },
+  {
+    name: "Arsyad Ali M.",
+    role: "Merch General Manager",
+    image: "/assets/image/LeadMerch.png",
+  },
+  {
+    name: "Arsyad Ali M.",
+    role: "Merch General Manager",
+    image: "/assets/image/LeadMerch.png",
+  },
+  {
+    name: "Arsyad Ali M.",
+    role: "Merch General Manager",
+    image: "/assets/image/LeadMerch.png",
+  },
+  {
+    name: "Arsyad Ali M.",
+    role: "Merch General Manager",
+    image: "/assets/image/LeadMerch.png",
+  },
 ];
 export const dataFAQ: FAQCardProps[] = [
   {
@@ -792,6 +817,7 @@ export const divisi: DivisiProps[] = [
         link: "https://meticmerch.org/",
         title: "PhotoBooth DiesNatalis 2024",
       },
+      
     ],
     team: [
       {
@@ -899,6 +925,7 @@ export const divisi: DivisiProps[] = [
         name: "Adhiana Alika Apriantina",
         role: "Metizen 33 | Graphic Designer",
       },
+      
     ],
   },
 ];
