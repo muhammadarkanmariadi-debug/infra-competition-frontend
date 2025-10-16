@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { api } from "../_components/lib/api";
 
 interface Posts{
@@ -54,7 +54,7 @@ export default function BeritaPage() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      api.get('/blog').then((res) => {
+      api.get('/blog').then((res: { data: { data: { data: SetStateAction<Posts[]>; }; }; }) => {
         console.log(res.data);
         setPostesTes(res.data.data.data);
       })

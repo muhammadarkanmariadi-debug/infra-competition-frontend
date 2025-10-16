@@ -7,13 +7,12 @@ import {
 import Layout from "./layout";
 
 const recentActivity = [
-  { id: 1, type: "New post created", user: "Admin", time: "3 hours ago" },
-  { id: 2, type: "New user registered", user: "John Doe", time: "4 hours ago" },
+  { id: 1, type: "New post created", user: "Admin", time: "3 hours ago" },  
   {
-    id: 3,
+    id: 2,
     type: "Form submission received",
     user: "Contact Form",
-    time: "5 hours ago",
+    time: "7 hours ago",
   },
 ];
 
@@ -21,7 +20,7 @@ export default function Dashboard() {
   return (
     <div className="p-6">
       <div className="max-w-7xl mx-auto">
-        {/* Welcome Section */}
+        {/* Welcome */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Halo, Bro
@@ -30,7 +29,7 @@ export default function Dashboard() {
           <p className="text-gray-600">Here's whats going on today</p>
         </div>
 
-        {/* Recent Activity */}
+        {/* Recent Activity*/}
         <div className="bg-white rounded-lg shadow">
           <div className="p-6 border-b">
             <h2 className="text-xl font-semibold text-gray-900">

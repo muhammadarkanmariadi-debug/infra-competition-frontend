@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/postes/page": "app/postes/page.js"
+  "/admin/ekskul/new/page": "app/admin/ekskul/new/page.js",
+  "/admin/ekskul/page": "app/admin/ekskul/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
-=======
-{}
->>>>>>> d6527dc383fbfe8e1bf9763e7654f46bfd7b1b7c
