@@ -1124,10 +1124,6 @@
     margin: calc(var(--spacing) * 2);
   }
 
-  .mx-10 {
-    margin-inline: calc(var(--spacing) * 10);
-  }
-
   .mx-auto {
     margin-inline: auto;
   }
@@ -1160,8 +1156,6 @@
     margin-top: calc(var(--spacing) * 2);
   }
 
-<<<<<<< HEAD
-=======
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -1170,7 +1164,6 @@
     margin-top: calc(var(--spacing) * 5);
   }
 
->>>>>>> origin/main
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -1434,13 +1427,10 @@
     height: .625rem;
   }
 
-<<<<<<< HEAD
-=======
   .h-\[16px\] {
     height: 16px;
   }
 
->>>>>>> origin/main
   .h-\[28px\] {
     height: 28px;
   }
@@ -1715,8 +1705,6 @@
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
 
-<<<<<<< HEAD
-=======
   .translate-x-0 {
     --tw-translate-x: calc(var(--spacing) * 0);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1736,7 +1724,6 @@
     scale: .9;
   }
 
->>>>>>> origin/main
   .rotate-\[-5deg\] {
     rotate: -5deg;
   }
@@ -1849,13 +1836,10 @@
     gap: calc(var(--spacing) * 10);
   }
 
-<<<<<<< HEAD
-=======
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
 
->>>>>>> origin/main
   .gap-\[9px\] {
     gap: 9px;
   }
@@ -2302,13 +2286,6 @@
     padding-inline: calc(var(--spacing) * 10);
   }
 
-<<<<<<< HEAD
-  .px-32 {
-    padding-inline: calc(var(--spacing) * 32);
-  }
-
-=======
->>>>>>> origin/main
   .px-\[10px\] {
     padding-inline: 10px;
   }
@@ -2485,13 +2462,6 @@
     padding-bottom: 48px;
   }
 
-<<<<<<< HEAD
-=======
-  .pl-10 {
-    padding-left: calc(var(--spacing) * 10);
-  }
-
->>>>>>> origin/main
   .text-center {
     text-align: center;
   }
@@ -2627,8 +2597,6 @@
     line-height: 54px;
   }
 
-<<<<<<< HEAD
-=======
   .leading-\[130\%\] {
     --tw-leading: 130%;
     line-height: 130%;
@@ -2639,7 +2607,6 @@
     line-height: 140%;
   }
 
->>>>>>> origin/main
   .leading-\[150\%\] {
     --tw-leading: 150%;
     line-height: 150%;
@@ -3023,8 +2990,6 @@
   }
 
   @media (hover: hover) {
-<<<<<<< HEAD
-=======
     .hover\:scale-105:hover {
       --tw-scale-x: 105%;
       --tw-scale-y: 105%;
@@ -3034,7 +2999,6 @@
   }
 
   @media (hover: hover) {
->>>>>>> origin/main
     .hover\:scale-109:hover {
       --tw-scale-x: 109%;
       --tw-scale-y: 109%;
@@ -3044,8 +3008,6 @@
   }
 
   @media (hover: hover) {
-<<<<<<< HEAD
-=======
     .hover\:scale-110:hover {
       --tw-scale-x: 110%;
       --tw-scale-y: 110%;
@@ -3055,7 +3017,6 @@
   }
 
   @media (hover: hover) {
->>>>>>> origin/main
     .hover\:border-\[\#A10000\]:hover {
       border-color: #a10000;
     }
@@ -3195,18 +3156,6 @@
   }
 
   @media (width < 40rem) {
-    .max-sm\:mx-10 {
-      margin-inline: calc(var(--spacing) * 10);
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:mx-12 {
-      margin-inline: calc(var(--spacing) * 12);
-    }
-  }
-
-  @media (width < 40rem) {
     .max-sm\:mt-3 {
       margin-top: calc(var(--spacing) * 3);
     }
@@ -3231,68 +3180,8 @@
   }
 
   @media (width < 40rem) {
-    .max-sm\:w-\[0\%\] {
-      width: 0%;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[20\%\] {
-      width: 20%;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[20\] {
-      width: 20px;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[80\%\] {
-      width: 80%;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[100px\] {
-      width: 100px;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[200px\] {
-      width: 200px;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[300px\] {
-      width: 300px;
-    }
-  }
-
-  @media (width < 40rem) {
     .max-sm\:w-\[350px\] {
       width: 350px;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[400px\] {
-      width: 400px;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[500px\] {
-      width: 500px;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:w-\[3500px\] {
-      width: 3500px;
     }
   }
 
@@ -3305,24 +3194,6 @@
   @media (width < 40rem) {
     .max-sm\:flex-col {
       flex-direction: column;
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:px-1 {
-      padding-inline: calc(var(--spacing) * 1);
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:px-1\.5 {
-      padding-inline: calc(var(--spacing) * 1.5);
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:px-2\.5 {
-      padding-inline: calc(var(--spacing) * 2.5);
     }
   }
 
@@ -3345,24 +3216,6 @@
   }
 
   @media (width < 40rem) {
-    .max-sm\:px-7 {
-      padding-inline: calc(var(--spacing) * 7);
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:px-10 {
-      padding-inline: calc(var(--spacing) * 10);
-    }
-  }
-
-  @media (width < 40rem) {
-    .max-sm\:px-12 {
-      padding-inline: calc(var(--spacing) * 12);
-    }
-  }
-
-  @media (width < 40rem) {
     .max-sm\:px-15 {
       padding-inline: calc(var(--spacing) * 15);
     }
@@ -3375,15 +3228,6 @@
   }
 
   @media (width < 40rem) {
-<<<<<<< HEAD
-    .max-sm\:pt-15 {
-      padding-top: calc(var(--spacing) * 15);
-    }
-  }
-
-  @media (width < 40rem) {
-=======
->>>>>>> origin/main
     .max-sm\:text-\[21px\] {
       font-size: 21px;
     }
@@ -3683,12 +3527,6 @@
   @media (width >= 80rem) {
     .xl\:hidden {
       display: none;
-    }
-  }
-
-  @media (width >= 80rem) {
-    .min-xl\:w-\[20\%\] {
-      width: 20%;
     }
   }
 
