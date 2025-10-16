@@ -1,99 +1,93 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import { divisi } from "./const/datas";
 
 export default function DivisionSection() {
   return (
-    <>
-      <div className="bg-white w-full mt-16 pb-10" id="divisi">
-        <div className="text-center max-sm:px-3">
-          <h4 className="text-[15px] font-[500] text-[#B8B8B8]">
-            Our Division
-          </h4>
-          <h4 className="text-[#333333] mt-[-10px] font-[700] text-[45px] max-sm:text-[35px]">
-            Meet Our Division
-          </h4>
-          <p className="text-[15px] mt-[25px] font-[400] text-black leading-[21px]">
-            METIC punya tiga divisi utama: Moklet Dev, Metic Merch, dan
-            MediaCom—semuanya bergerak aktif bikin karya nyata dan <br /> impact
-            di sekolah maupun luar. Di METIC, kamu bisa belajar, bikin proyek,
-            kolaborasi tim, sampai dapet pengalaman <br /> profesional yang real
-            banget.
+    <div className="bg-white w-full mt-16 pb-10" id="divisi">
+      {/* Judul */}
+      <div className="text-center max-sm:px-3">
+        <h4 className="text-[15px] font-[500] text-gray-400">why us?</h4>
+        <h2 className="text-[#333333] mt-2 font-[700] text-[32px] sm:text-[40px]">
+          Mengapa Harus Moklet ?
+        </h2>
+        <p className="text-[15px] mt-3 font-[400] text-black leading-[21px]">
+          Ini alasan mengapa anda harus memilih sekolah kami?
+        </p>
+      </div>
+
+      {/* Grid Card */}
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-6 lg:px-24 text-center">
+        {/* Item 1 */}
+        <div className="flex flex-col items-center">
+          <div className="w-24 h-24 rounded-full bg-primary flex items-center justify-center mb-5">
+            <Image
+              src="/assets/image/whyus/1.png" 
+              alt="Fasilitas Lengkap"
+              width={40}
+              height={40}
+            />
+          </div>
+          <h3 className="text-lg font-bold text-[#333333]">
+            Fasilitas Lengkap
+          </h3>
+          <p className="text-sm text-gray-600 mt-2">
+            Penunjang belajar dengan kualitas premium.
           </p>
         </div>
-        <div className="mt-[38px] max-sm:flex-col flex justify-center gap-[87px] px-[124.5px] mx-auto items-center">
-          {divisi.map((d, i) => (
-            <div
-              key={i}
-              className="flex drop-shadow-[1px_2px_8px_rgba(0,0,0,0.25)] bg-white flex-col items-center justify-center w-[339px] h-[496px] rounded-[26.42px] py-[39px] px-[46px] gap-[18px]">
-              <div className="block w-[247px] h-[247px] bg-primary rounded-full">
-                <div className="flex w-full h-full justify-center items-center">
-                  <Image
-                    src={`${d.image}`}
-                    alt={`${d.name}`}
-                    width={93}
-                    height={119}
-                    className="object-contain object-center"
-                  />
-                </div>
-              </div>
-              <div className="text-center w-[292px]">
-                <h1 className="text-[22.5px] font-[700] text-[#333333]">
-                  {d.name}
-                </h1>
-                <p className="font-[400] mt-[1px] text-[15px] text-[#515050]">
-                  {d.preview}
-                </p>
-                <a
-                  href={`/divisi/${d.id}`}
-                  className="block mt-[10px] mx-auto py-[9px] w-[172px] text-center h-[39px] rounded-[20px] bg-primary text-white font-[500] text-[12px] ">
-                  Read More
-                  <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-                </a>
-              </div>
-            </div>
-          ))}
-          {/* <div className="flex drop-shadow-[1px_2px_8px_rgba(0,0,0,0.25)] bg-white flex-col items-center justify-center w-[339px] h-[496px] rounded-[26.42px] py-[39px] px-[46px] gap-[18px]">
-            <div className="block w-[247px] h-[247px] bg-primary rounded-full">
-              <Image
-                src="/assets/image/logo-medcom.png"
-                alt="Moklet Dev"
-                width={123}
-                height={88}
-                className="mx-auto py-20"
-              />
-            </div>
-            <div className="text-center w-[292px]">
-              <h1 className="text-[22.5px] font-[700] text-[#333333]">Medcom</h1>
-              <p className="font-[400] mt-[1px] text-[15px] text-[#515050]">Berfokus pada pengelolaan konten kreatif, manajemen media sosial, publikasi, serta komunikasi digital</p>
-              <a href="" className="block mt-[10px] mx-auto py-[9px] w-[172px] text-center h-[39px] rounded-[20px] bg-primary text-white font-[500] text-[12px] ">
-                Read More
-                <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-              </a>
-            </div>
+
+        {/* Item 2 */}
+        <div className="flex flex-col items-center">
+          <div className="w-24 h-24 rounded-full bg-primary flex items-center justify-center mb-5">
+            <Image
+              src="/assets/image/whyus/2.png" 
+              alt="Lingkungan Nyaman"
+              width={40}
+              height={40}
+            />
           </div>
-          <div className="flex drop-shadow-[1px_2px_8px_rgba(0,0,0,0.25)] bg-white flex-col items-center justify-center w-[339px] h-[496px] rounded-[26.42px] py-[39px] px-[46px] gap-[18px]">
-            <div className="block w-[247px] h-[247px] bg-primary rounded-full">
-              <Image
-                src="/assets/image/logo-meticmerch.png"
-                alt="Moklet Dev"
-                width={127}
-                height={71}
-                className="mx-auto py-22"
-              />
-            </div>
-            <div className="text-center w-[292px]">
-              <h1 className="text-[22.5px] font-[700] text-[#333333]">Metic Merch</h1>
-              <p className="font-[400] mt-[1px] text-[15px] text-[#515050]">Unit bisnis yang menjalankan produksi dan penjualan merchandise</p>
-              <a href="" className="block mt-[10px] mx-auto py-[9px] w-[172px] text-center h-[39px] rounded-[20px] bg-primary text-white font-[500] text-[12px] ">
-                Read More
-                <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-              </a>
-            </div>
-          </div> */}
+          <h3 className="text-lg font-bold text-[#333333]">
+            Lingkungan Nyaman
+          </h3>
+          <p className="text-sm text-gray-600 mt-2">
+            Berada di lingkungan yang asri, aman, dan kondusif.
+          </p>
+        </div>
+
+        {/* Item 3 */}
+        <div className="flex flex-col items-center">
+          <div className="w-24 h-24 rounded-full bg-primary flex items-center justify-center mb-5">
+            <Image
+              src="/assets/image/whyus/3.png" 
+              alt="Pengajar Kompeten"
+              width={40}
+              height={40}
+            />
+          </div>
+          <h3 className="text-lg font-bold text-[#333333]">
+            Pengajar Kompeten
+          </h3>
+          <p className="text-sm text-gray-600 mt-2">
+            Guru yang up-to-date dengan perkembangan industri.
+          </p>
+        </div>
+
+        {/* Item 4 */}
+        <div className="flex flex-col items-center">
+          <div className="w-24 h-24 rounded-full bg-primary flex items-center justify-center mb-5">
+            <Image
+              src="/assets/image/whyus/4.png" 
+              alt="Kerjasama Luas"
+              width={40}
+              height={40}
+            />
+          </div>
+          <h3 className="text-lg font-bold text-[#333333]">
+            Kerjasama Luas
+          </h3>
+          <p className="text-sm text-gray-600 mt-2">
+            Memperbesar kesempatan bekerja sebelum lulus.
+          </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -18,21 +18,22 @@ export default function Header() {
             diakses oleh siswa, guru, orang tua, maupun masyarakat.
           </p>
         </div>
-        <div className='drop-shadow-[0_6px_97.5px_rgba(225,95,96,0.73)] text-center'>
-          <Image
-            src='/assets/image/bombi.png'
-            alt='Arrow Down'
-            width={400}
-            height={0}
-            className='z-[-1] relative mx-auto mt-[38px] w-[300px] xl:w-[400px] hover:scale-105 transition-transform duration-300'
-          />
-          <a
-            href='/registration'
-            className='flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-5 xl:py-8 rounded-full w-[400px] max-sm:w-[350px] xl:w-[550px] font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300'
-          >
-            Ikuti Kami!
-          </a>
-        </div>
+        <div className='drop-shadow-[0_4px_25px_rgba(225,95,96,0.35)] text-center'>
+  <Image
+    src='/assets/image/bombi.png'
+    alt='Arrow Down'
+    width={400}
+    height={0}
+    className='z-[-1] relative mx-auto mt-[38px] w-[300px] xl:w-[400px] hover:scale-105 transition-transform duration-300'
+  />
+<a
+  href="/registration"
+  className="flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-3 xl:py-5 rounded-full w-[400px] max-sm:w-[350px] xl:w-[450px] font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300"
+>
+  Ikuti Kami!
+</a>
+
+</div>
         <div className='hiasan'>
           <div className='2xl:top-[-700px] 2xl:left-[300px] 2xl:relative kiri'>
             <Image
@@ -50,24 +51,17 @@ export default function Header() {
               className='max-md:hidden top-[236px] left-[263px] min-xl:absolute rotate-[-127deg]'
             />
             <Image
-              src='/assets/image/mc-triangle.png'
+              src='/assets/image/Polygon21.png'
               alt='segitiga kiri'
               width={343.5}
               height={307.5}
               className='max-md:hidden top-[359px] left-[100px] min-xl:absolute'
             />
-            <Image
-              src='/assets/image/foto-bareng-triangle.png'
-              alt='foto bareng segitiga'
-              width={104}
-              height={92.5}
-              className='max-md:hidden top-[411px] left-[370px] min-xl:absolute rotate-[-5deg]'
-            />
           </div>
 
           <div className='2xl:top-[-700px] 2xl:right-[400px] 2xl:relative kanan'>
             <Image
-              src='/assets/image/right-triangle.png'
+              src='/assets/image/Polygon20.png'
               alt='triangle kanan'
               width={318}
               height={283.5}
@@ -81,14 +75,14 @@ export default function Header() {
               className='max-md:hidden top-[400px] right-[350px] min-xl:absolute'
             />
             <Image
-              src='/assets/image/triangle-sm.png'
+              src='/assets/image/Group1395.png' //
               alt='Server Rack'
               width={32}
               height={28}
               className='max-md:hidden top-[183px] right-[295px] min-xl:absolute rotate-[-5deg]'
             />
             <Image
-              src='/assets/image/triangle-lg.png'
+              src='/assets/image/Group1395.png'
               alt='triangle besar'
               width={90}
               height={81}
@@ -104,7 +98,7 @@ export default function Header() {
             className='max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[800px] min-xl:absolute'
           />
           <Image
-            src='/assets/image/panah-kanan.png'
+            src='/assets/image/Vector39.png'
             alt='panah kanan'
             width={161}
             height={32}
