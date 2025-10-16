@@ -1,10 +1,10 @@
-"use client"
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+'use client'
+import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-export default function Footer() {
-  const pathname = usePathname();
+export default function Footer () {
+  const pathname = usePathname()
   return (
     <footer className={`${pathname.startsWith('/admin') ? "hidden" : ""}`}>
       <div className="mx-auto px-6 md:px-16 py-12 max-w-7xl">
@@ -85,5 +85,3 @@ Informatika di Indonesia
     </footer>
   );
 }
-
-

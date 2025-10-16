@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Bars3Icon, BuildingOfficeIcon, CalendarIcon, DocumentIcon, DocumentTextIcon, FlagIcon, HomeIcon, LinkIcon, PhotoIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, BuildingOfficeIcon, CalendarIcon, DocumentIcon, DocumentTextIcon, FlagIcon, HomeIcon, LinkIcon, PhotoIcon, UsersIcon, XMarkIcon, TrophyIcon } from '@heroicons/react/24/outline'
 import { Geist, Geist_Mono, Poppins } from "next/font/google"
 import "../globals.css"
 
@@ -27,11 +27,9 @@ const poppins = Poppins({
 const navigation = [
   { name: 'Dashboard', href: '/admin', icon: HomeIcon},
   { name: 'Post', href: '/admin/posts', icon: DocumentTextIcon },
-  { name: 'Formulir', href: '/formulir', icon: DocumentIcon },
-  { name: 'Twibbon', href: '/twibbon', icon: PhotoIcon },
-  { name: 'Info Organ Setup', href: '/info-organ', icon: BuildingOfficeIcon },
+  { name: 'Info Organ Setup', href: '/admin/organisasi', icon: BuildingOfficeIcon },
   { name: 'Aspirasi', href: '/aspirasi', icon: FlagIcon },
-  { name: 'Period Config', href: '/period-config', icon: CalendarIcon },
+  { name: 'Ekskul', href: '/admin/eksul', icon: TrophyIcon },
   { name: 'Users', href: '/users', icon: UsersIcon },
 ]
 
