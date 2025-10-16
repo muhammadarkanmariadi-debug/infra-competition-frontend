@@ -36,7 +36,7 @@ const navigation = [
     },
     {
         name: 'Post',
-        href: '/posts   ',
+        href: '/admin/posts   ',
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$DocumentTextIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__DocumentTextIcon$3e$__["DocumentTextIcon"]
     },
     {

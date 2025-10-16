@@ -1,12 +1,15 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
   return (
-    <footer className="bg-white mt-5">
-      <div className="max-w-7xl mx-auto px-6 md:px-16 py-12">
+    <footer className={`${pathname.startsWith('/admin') ? "hidden" : ""}`}>
+      <div className="mx-auto px-6 md:px-16 py-12 max-w-7xl">
         {/* Bagian atas */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16">
+        <div className="gap-10 md:gap-16 grid grid-cols-1 md:grid-cols-4">
           {/* Kiri */}
           <div>
             <Image
@@ -16,7 +19,7 @@ export default function Footer() {
               height={75}
               className="mb-5"
             />
-            <p className="text-gray-700 text-[16px] leading-relaxed">
+            <p className="text-[16px] text-gray-700 leading-relaxed">
               Pelopor SMK bidang Teknologi dan
 Informatika di Indonesia
 
@@ -24,14 +27,14 @@ Informatika di Indonesia
               <br />
               untuk siswa SMK Telkom Malang
             </p>
-            <p className="text-gray-500 text-sm mt-6">
+            <p className="mt-6 text-gray-500 text-sm">
               © 2025 Copyright BebasDeh
             </p>
           </div>
 
           {/* Menu Utama */}
           <div>
-            <h3 className="text-gray-500 text-sm font-semibold mb-4 uppercase">
+            <h3 className="mb-4 font-semibold text-gray-500 text-sm uppercase">
               Menu Utama
             </h3>
             <ul className="space-y-3">
@@ -44,7 +47,7 @@ Informatika di Indonesia
 
           {/* Tautan */}
           <div>
-            <h3 className="text-gray-500 text-sm font-semibold mb-4 uppercase">
+            <h3 className="mb-4 font-semibold text-gray-500 text-sm uppercase">
               Tautan
             </h3>
             <ul className="space-y-3">
@@ -57,7 +60,7 @@ Informatika di Indonesia
 
           {/* Media Sosial */}
           <div>
-            <h3 className="text-gray-500 text-sm font-semibold mb-4 uppercase">
+            <h3 className="mb-4 font-semibold text-gray-500 text-sm uppercase">
               Media Sosial
             </h3>
             <ul className="space-y-3">
@@ -70,8 +73,8 @@ Informatika di Indonesia
         </div>
 
         {/* Bagian alamat */}
-        <div className="border-t border-gray-200 mt-10 pt-6 text-gray-700">
-          <h3 className="font-semibold text-[16px] mb-1">Alamat:</h3>
+        <div className="mt-10 pt-6 border-gray-200 border-t text-gray-700">
+          <h3 className="mb-1 font-semibold text-[16px]">Alamat:</h3>
           <p className="text-[15px] leading-relaxed">
             Jl. Danau Ranau, Sawojajar, Kec. Kedungkandang, Kota Malang,
             <br />
