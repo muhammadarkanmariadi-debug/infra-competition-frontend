@@ -1,13 +1,5 @@
 {
-<<<<<<< HEAD
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/postes/page": "app/postes/page.js"
-=======
-  "/admin/ekskul/new/page": "app/admin/ekskul/new/page.js",
-  "/admin/ekskul/page": "app/admin/ekskul/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
->>>>>>> origin/main
+  "/page": "app/page.js"
 }
