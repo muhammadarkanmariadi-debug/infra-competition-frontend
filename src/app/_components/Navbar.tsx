@@ -24,17 +24,14 @@ interface NavOption {
 }
 
 const navOptions: NavOption[] = [
-  { title: 'Beranda', href: '/' },
-  { title: 'Tentang Kami', href: '/tentang-kami' },
-  { 
-    title: 'Program',
-    dropdown: [
-      { title: 'Program A', href: '/program/a' },
-      { title: 'Program B', href: '/program/b' },
-      { title: 'Program C', href: '/program/c' }
-    ]
-  },
-  { title: 'Alumni', href: '/alumni' },
+  { title: 'Beranda', href: '/'},
+  { title: 'Tentang Kami', href: '#tentangkami' },
+  { title: 'Program', href: '#programkeahlian' },
+  { title: 'Tentang Sekolah', dropdown: [
+    { title: 'Berita Sekolah', href: '/postes' },
+    { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
+    { title: 'Organisasi', href: '/organisasi' },
+  ]},
   { title: 'Hubungi Kami', href: '/hubungi-kami' }
 ]
 
