@@ -319,13 +319,13 @@ function OrganisasiDetailPage() {
                                 className: "bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-48 h-48 mb-6",
+                                        className: "w-48 h-48 mb-6 flex items-center justify-center rounded-full bg-red-800",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/assets/image/suborgan/moklet-dev.png",
+                                            src: "/assets/image/logo-mokletdev.png",
                                             alt: "MokletDev Logo",
-                                            width: 192,
-                                            height: 192,
-                                            className: "w-full h-full object-contain"
+                                            width: 120,
+                                            height: 120,
+                                            className: "object-contain scale-80"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
                                             lineNumber: 152,
@@ -370,13 +370,13 @@ function OrganisasiDetailPage() {
                                 className: "bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-48 h-48 mb-6",
+                                        className: "w-48 h-48 mb-6 flex items-center justify-center rounded-full bg-red-800",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/assets/image/suborgan/metic-merch.png",
+                                            src: "/assets/image/logo-meticmerch.png",
                                             alt: "Metic Merch Logo",
-                                            width: 192,
-                                            height: 192,
-                                            className: "w-full h-full object-contain"
+                                            width: 120,
+                                            height: 120,
+                                            className: "object-contain"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
                                             lineNumber: 174,
@@ -421,13 +421,13 @@ function OrganisasiDetailPage() {
                                 className: "bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-48 h-48 mb-6",
+                                        className: "w-48 h-48 mb-6 flex items-center justify-center rounded-full bg-red-800",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/assets/image/suborgan/medcom.png",
+                                            src: "/assets/image/logo-medcom.png",
                                             alt: "MedCom Logo",
-                                            width: 192,
-                                            height: 192,
-                                            className: "w-full h-full object-contain"
+                                            width: 120,
+                                            height: 120,
+                                            className: "object-contain"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
                                             lineNumber: 196,
