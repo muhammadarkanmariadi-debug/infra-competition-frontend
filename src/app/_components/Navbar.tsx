@@ -29,7 +29,7 @@ const navOptions: NavOption[] = [
   { title: 'Program', href: '#programkeahlian' },
   { title: 'Tentang Sekolah', dropdown: [
     { title: 'Berita Sekolah', href: '/posts' },
-    { title: 'Ekstrakurikuler', href: '/ekstrakulikuler' },
+    { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
     { title: 'Organisasi', href: '/organisasi' },
   ]},
   { title: 'Hubungi Kami', href: '/hubungi-kami' }

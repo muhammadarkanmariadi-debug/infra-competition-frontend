@@ -155,7 +155,7 @@ const navOptions = [
             },
             {
                 title: 'Ekstrakurikuler',
-                href: '/ekstrakulikuler'
+                href: '/ekstrakurikuler'
             },
             {
                 title: 'Organisasi',
