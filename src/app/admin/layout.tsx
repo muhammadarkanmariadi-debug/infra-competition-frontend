@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { Bars3Icon, BuildingOfficeIcon, CalendarIcon, DocumentIcon, DocumentTextIcon, FlagIcon, HomeIcon, LinkIcon, PhotoIcon, UsersIcon, XMarkIcon, TrophyIcon } from '@heroicons/react/24/outline'
 import { Geist, Geist_Mono, Poppins } from "next/font/google"
 import "../globals.css"
+import ProtectedAdminClient from '../_components/lib/ProtectAdminRoute'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +39,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const pathname = usePathname()
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <>
+      <ProtectedAdminClient>
+        <html lang="en" className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}>
         <div className="flex h-screen bg-gray-50">
       {/* Mobile sidebar backdrop */}
@@ -132,5 +135,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     </div>
       </body>
     </html>
+      </ProtectedAdminClient>
+    </>
   )
 }

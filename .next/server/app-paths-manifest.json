@@ -1,5 +1,9 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+<<<<<<< HEAD
+=======
+  "/admin/page": "app/admin/page.js",
+>>>>>>> origin/main
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js"
 }
