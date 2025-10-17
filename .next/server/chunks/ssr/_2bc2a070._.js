@@ -30,7 +30,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 function News() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "z-[999] bg-white xl:bg-transparent flex max-lg:flex-col max-lg:items-center gap-20 mx-auto px-5 py-4 xl:py-0 2xl:max-w-[1400px] xl:max-w-[1300px]",
+            className: "z-[999] bg-white xl:bg-transparent flex max-lg:flex-col max-lg:items-center gap-20 mx-auto px-5 py-4 xl:py-0 2xl:max-w-[1250px] xl:max-w-[1300px]",
             id: "post",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -45,7 +45,7 @@ function News() {
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 10,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex justify-between",
@@ -62,12 +62,12 @@ function News() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/post/page.tsx",
                                                         lineNumber: 16,
-                                                        columnNumber: 19
+                                                        columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/page.tsx",
                                                     lineNumber: 15,
-                                                    columnNumber: 17
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-[16px] text-black font-[500]",
@@ -77,12 +77,12 @@ function News() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/post/page.tsx",
                                                         lineNumber: 23,
-                                                        columnNumber: 66
+                                                        columnNumber: 68
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/page.tsx",
                                                     lineNumber: 23,
-                                                    columnNumber: 17
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-[16px] text-black font-[500]",
@@ -90,13 +90,13 @@ function News() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/page.tsx",
                                                     lineNumber: 24,
-                                                    columnNumber: 17
+                                                    columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 14,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-[16px] text-black/61 font-[500]",
@@ -104,19 +104,19 @@ function News() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 28,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 13,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/post/page.tsx",
                             lineNumber: 9,
-                            columnNumber: 11
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "",
@@ -127,12 +127,12 @@ function News() {
                             }, void 0, false, {
                                 fileName: "[project]/src/app/post/page.tsx",
                                 lineNumber: 32,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/post/page.tsx",
                             lineNumber: 31,
-                            columnNumber: 11
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-wrap gap-3 pt-3",
@@ -143,12 +143,12 @@ function News() {
                             }, void 0, false, {
                                 fileName: "[project]/src/app/post/page.tsx",
                                 lineNumber: 40,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/post/page.tsx",
                             lineNumber: 39,
-                            columnNumber: 11
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "prose leading-6 pt-8",
@@ -160,33 +160,33 @@ function News() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 50,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         "SMK Telkom Malang kembali menyambut keluarga barunya melalui rangkaian kegiatan Masa Pengenalan Lingkungan Sekolah (MPLS) 2025. Dengan semangat dan slogan “Stinging Like a Bee, BISA!”, seluruh siswa baru dari Angkatan 34 resmi mengawali perjalanannya sebagai Mokleters sejati"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 49,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "Slogan ini bukan sekadar kata. Ia membawa nilai besar yang akan ditanamkan sejak hari pertama: Bravery (Keberanian), Integrity (Integritas), Service Excellence (Pelayanan Unggul), dan Agility (Kelincahan dalam beradaptasi). Empat nilai inilah yang menjadi dasar dalam seluruh kegiatan MPLS tahun ini."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 57,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 64,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "📍 Apa yang Terjadi Selama MPLS? Tidak hanya apel dan perkenalan. MPLS 2025 menyajikan pengalaman lengkap selama 4 hari, dimulai dari Pra-MPLS hingga hari penutupan. Yuk, simak perjalanan lengkapnya:"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 65,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     className: "rounded-xl mt-5",
@@ -195,7 +195,7 @@ function News() {
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 72,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "mt-5",
@@ -206,19 +206,19 @@ function News() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 79,
-                                            columnNumber: 19
+                                            columnNumber: 21
                                         }, this),
                                         " – Warming Up the Hive Kegiatan dimulai dengan check-in, apel pembukaan, pengenalan kakak gugus (Kagus), serta pembentukan yel-yel khas tiap gugus. Para peserta juga mulai mengerjakan tugas pengenalan dan membuat konten kreatif untuk menunjukkan semangat awal mereka. Di sinilah benih kekompakan mulai tumbuh."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 78,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 86,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -227,19 +227,19 @@ function News() {
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/post/page.tsx",
                                         lineNumber: 88,
-                                        columnNumber: 15
+                                        columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 87,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "Setelah pembukaan resmi dan perkenalan guru-karyawan, peserta mengikuti Moklet Tour melalui game Map It Out dan Comb Puzzle, mengenal area sekolah secara menyenangkan. Hari ditutup dengan sesi reflektif: Roadmap & Pohon Harapan, di mana peserta menuliskan mimpi dan target mereka selama 3 tahun ke depan. 🌱 “Apa impianmu saat lulus dari sini?”"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 92,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
@@ -250,54 +250,54 @@ function News() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 101,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             children: "🗓️ Day 2 – Building Awareness & Character"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 106,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 100,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "Hari kedua dipenuhi wawasan penting: mulai dari bahaya game online & judi digital, UU ITE, hingga anti korupsi dan narkoba. Diselingi oleh ice breaking dan sesi Bee Alert — game cepat tanggap yang melatih kekompakan dan fokus antar peserta. 💡 “Kalau kamu berada di posisi itu, apa keputusan terbaikmu?”"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 108,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 116,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             children: "🗓️ Day 3 – Energy, Spirit, and Celebration!"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 117,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 115,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "Diawali dengan jalan pagi dan Spirit Competition antar gugus yang membakar semangat. Kegiatan dilanjutkan dengan edukasi seputar bullying dan kenakalan remaja, serta ditutup dengan penampilan luar biasa dari ekstrakurikuler dan suborganisasi OSIS. Akhir kegiatan dimeriahkan dengan sesi awarding dan upacara penutupan yang penuh haru dan bangga."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 119,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
@@ -308,20 +308,20 @@ function News() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 128,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             children: "🎖️ Kegiatan Unggulan MPLS 34:"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 133,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 127,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                     style: {
@@ -336,12 +336,12 @@ function News() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 143,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 142,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -349,12 +349,12 @@ function News() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 149,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 148,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -362,12 +362,12 @@ function News() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 155,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 154,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -375,12 +375,12 @@ function News() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 161,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 160,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -388,39 +388,39 @@ function News() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 167,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 166,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 135,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 174,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         "🙌 Di Balik Keseruan Ini… MPLS 2025 dapat berjalan sukses berkat kolaborasi luar biasa antara: 👨‍🏫 Guru-Guru Kesiswaan SMK Telkom Malang 🧢 Pengurus OSIS SMK Telkom Malang"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 173,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "Dengan kerja keras panitia dan semangat peserta, semua momen menjadi kenangan yang akan dibawa hingga lulus nanti."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 179,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: [
@@ -431,47 +431,47 @@ function News() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 184,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                             children: "🎉 Penutup MPLS 34"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 189,
-                                            columnNumber: 15
+                                            columnNumber: 17
                                         }, this),
                                         " bukan hanya tentang mengenal tempat baru, tetapi tentang menemukan jati diri, membentuk karakter, dan membangun relasi. Selamat datang, 34 Generation."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 183,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "Hari ini kalian dikenalkan. Besok, kalian yang akan dikenang."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 193,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "🐝 Stinging Like a Bee, BISA! Selamat datang di rumahmu yang baru — SMK Telkom Malang."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 194,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/post/page.tsx",
                             lineNumber: 48,
-                            columnNumber: 11
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/post/page.tsx",
                     lineNumber: 8,
-                    columnNumber: 9
+                    columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-[40%] max-lg:w-full",
@@ -484,7 +484,7 @@ function News() {
                             }, void 0, false, {
                                 fileName: "[project]/src/app/post/page.tsx",
                                 lineNumber: 202,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "tes.html",
@@ -506,7 +506,7 @@ function News() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 208,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex flex-wrap items-center justify-between mt-[15px]",
@@ -525,17 +525,17 @@ function News() {
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/post/page.tsx",
                                                                 lineNumber: 223,
-                                                                columnNumber: 23
+                                                                columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/post/page.tsx",
                                                             lineNumber: 222,
-                                                            columnNumber: 21
+                                                            columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/post/page.tsx",
                                                         lineNumber: 221,
-                                                        columnNumber: 19
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -545,24 +545,24 @@ function News() {
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/post/page.tsx",
                                                             lineNumber: 233,
-                                                            columnNumber: 21
+                                                            columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/post/page.tsx",
                                                         lineNumber: 232,
-                                                        columnNumber: 19
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 220,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/post/page.tsx",
                                         lineNumber: 207,
-                                        columnNumber: 15
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center justify-between mt-4",
@@ -579,12 +579,12 @@ function News() {
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/post/page.tsx",
                                                             lineNumber: 246,
-                                                            columnNumber: 21
+                                                            columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/post/page.tsx",
                                                         lineNumber: 245,
-                                                        columnNumber: 19
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-[14px] text-black font-[500] text-black hover:text-primary transition-colors duration-300",
@@ -594,18 +594,18 @@ function News() {
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/post/page.tsx",
                                                             lineNumber: 253,
-                                                            columnNumber: 21
+                                                            columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/post/page.tsx",
                                                         lineNumber: 252,
-                                                        columnNumber: 19
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 244,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-[14px] text-gray-500 font-[500]",
@@ -613,19 +613,19 @@ function News() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 258,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/post/page.tsx",
                                         lineNumber: 242,
-                                        columnNumber: 15
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/post/page.tsx",
                                 lineNumber: 206,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "tes.html",
@@ -646,7 +646,7 @@ function News() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 266,
-                                            columnNumber: 17
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex flex-wrap items-center justify-between mt-[15px]",
@@ -665,17 +665,17 @@ function News() {
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/post/page.tsx",
                                                             lineNumber: 281,
-                                                            columnNumber: 23
+                                                            columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/post/page.tsx",
                                                         lineNumber: 280,
-                                                        columnNumber: 21
+                                                        columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/page.tsx",
                                                     lineNumber: 279,
-                                                    columnNumber: 19
+                                                    columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -685,29 +685,29 @@ function News() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/post/page.tsx",
                                                         lineNumber: 291,
-                                                        columnNumber: 21
+                                                        columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/page.tsx",
                                                     lineNumber: 290,
-                                                    columnNumber: 19
+                                                    columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/post/page.tsx",
                                             lineNumber: 278,
-                                            columnNumber: 17
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/post/page.tsx",
                                     lineNumber: 265,
-                                    columnNumber: 15
+                                    columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/post/page.tsx",
                                 lineNumber: 264,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center justify-between gap-3",
@@ -724,12 +724,12 @@ function News() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/page.tsx",
                                                     lineNumber: 306,
-                                                    columnNumber: 19
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 305,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: "/",
@@ -738,13 +738,13 @@ function News() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/post/page.tsx",
                                                 lineNumber: 314,
-                                                columnNumber: 17
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/post/page.tsx",
                                         lineNumber: 304,
-                                        columnNumber: 15
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-[14px] text-gray-500 font-[500]",
@@ -752,30 +752,30 @@ function News() {
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/post/page.tsx",
                                         lineNumber: 323,
-                                        columnNumber: 15
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/post/page.tsx",
                                 lineNumber: 302,
-                                columnNumber: 13
+                                columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/post/page.tsx",
                         lineNumber: 201,
-                        columnNumber: 11
+                        columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/post/page.tsx",
                     lineNumber: 200,
-                    columnNumber: 9
+                    columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/post/page.tsx",
             lineNumber: 4,
-            columnNumber: 7
+            columnNumber: 9
         }, this)
     }, void 0, false);
 }
