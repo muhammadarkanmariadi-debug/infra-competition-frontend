@@ -19,3 +19,4 @@ export const setAuthToken = (token: string) => {
     localStorage.removeItem('token');
   }
 };
+

@@ -6,8 +6,9 @@ const nextConfig: NextConfig = {
     },
   
     images: {
+      domains: ['localhost'],
      remotePatterns: [{
-      protocol: "https",
+      protocol: "http",
       hostname: "**"
      }],
     }
