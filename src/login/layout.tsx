@@ -1,32 +1,84 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { GoogleOAuthProvider, useGoogleLogin } from '@react-oauth/google';
+import { api, setAuthToken } from '@/app/_components/lib/api';
 
-export default function AdminLogin() {
+function LoginForm() {
   const [formData, setFormData] = useState({
-    email: '',
-    password: ''
+    email: "",
+    password: ""
   });
   const [showPassword, setShowPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const router = useRouter();
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({
-      ...prev,
-      [field]: value
-    }));
+    setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleCredentialLogin = (e: { preventDefault: () => void; }) => {
+  const handleCredentialLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Login with credentials:', formData);
-    // Redirect to admin dashboard
-    alert('Login berhasil! Redirecting to dashboard...');
+    setIsLoading(true);
+
+    try {
+      // Send credentials to Laravel backend
+      const response = await api.post('/login', {
+        email: formData.email,
+        password: formData.password,
+      });
+
+      const data = response.data;
+
+      if (response.status === 200 && data.token) {
+        // Store token in localStorage
+        setAuthToken(data.token);
+        router.push('/admin');
+      } else {
+        alert(data.message || 'Login gagal');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      alert('Terjadi kesalahan saat login');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  const handleGoogleLogin = () => {
-    console.log('Login with Google');
-    alert('Google Sign-In akan diintegrasikan');
-  };
+  const handleGoogleLogin = useGoogleLogin({
+    onSuccess: async (tokenResponse) => {
+      setIsLoading(true);
+      
+      try {
+        // Send Google access token to Laravel backend
+        const res = await api.post('/login/google/callback', {
+          token: tokenResponse.access_token,
+        });
+
+        const data = res.data;
+
+        if (res.status === 200 && data.token) {
+          // Store token in localStorage
+          setAuthToken(data.token);
+
+          router.push('/admin');
+        } else {
+          alert(data.message || 'Login gagal');
+        }
+      } catch (error) {
+        console.error('Google login error:', error);
+        alert('Terjadi kesalahan saat login dengan Google');
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    onError: () => {
+      alert('Google login failed');
+      setIsLoading(false);
+    },
+  });
 
   return (
     <div className="min-h-screen bg-gray-200 flex items-center justify-center p-4">
@@ -56,6 +108,7 @@ export default function AdminLogin() {
               placeholder="user@student.smktelkom-mlg.sch.id"
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none text-sm"
               required
+              disabled={isLoading}
             />
           </div>
 
@@ -72,6 +125,7 @@ export default function AdminLogin() {
                 placeholder="••••••••"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none text-sm"
                 required
+                disabled={isLoading}
               />
             </div>
           </div>
@@ -79,9 +133,10 @@ export default function AdminLogin() {
           {/* Sign In Button */}
           <button
             type="submit"
-            className="w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 rounded-lg border border-gray-300 transition-colors mb-4"
+            disabled={isLoading}
+            className="w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 rounded-lg border border-gray-300 transition-colors mb-4 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Sign in with Credentials
+            {isLoading ? 'Loading...' : 'Sign in with Credentials'}
           </button>
         </form>
 
@@ -94,8 +149,9 @@ export default function AdminLogin() {
 
         {/* Google Sign In Button */}
         <button
-          onClick={handleGoogleLogin}
-          className="w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 rounded-lg border border-gray-300 transition-colors flex items-center justify-center gap-3"
+          onClick={() => handleGoogleLogin()}
+          disabled={isLoading}
+          className="w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 rounded-lg border border-gray-300 transition-colors flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <svg className="w-5 h-5" viewBox="0 0 24 24">
             <path
@@ -115,7 +171,7 @@ export default function AdminLogin() {
               d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
             />
           </svg>
-          Sign in with Google
+          {isLoading ? 'Loading...' : 'Sign in with Google'}
         </button>
 
         {/* Footer Links */}
@@ -130,5 +186,13 @@ export default function AdminLogin() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function AdminLogin() {
+  return (
+    <GoogleOAuthProvider clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!}>
+      <LoginForm />
+    </GoogleOAuthProvider>
   );
 }

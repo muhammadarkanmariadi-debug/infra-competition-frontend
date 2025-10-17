@@ -15,16 +15,15 @@
     "@fortawesome/free-solid-svg-icons": "^7.0.1",
     "@fortawesome/react-fontawesome": "^3.0.2",
     "@heroicons/react": "^2.2.0",
+    "@react-oauth/google": "^0.12.2",
     "@uiw/react-md-editor": "^4.0.8",
-<<<<<<< HEAD
     "axios": "^1.12.2",
-=======
     "class-variance-authority": "^0.7.1",
->>>>>>> d6527dc383fbfe8e1bf9763e7654f46bfd7b1b7c
     "clsx": "^2.1.1",
     "fortawesome": "^0.0.1-security",
     "md-editor-rt": "^6.1.0",
     "next": "^15.3.4",
+    "next-auth": "^4.24.11",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
