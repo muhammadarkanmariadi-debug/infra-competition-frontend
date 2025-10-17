@@ -96,11 +96,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navi
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$react$2d$fontawesome$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@fortawesome/react-fontawesome/dist/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$free$2d$brands$2d$svg$2d$icons$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@fortawesome/free-brands-svg-icons/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$free$2d$solid$2d$svg$2d$icons$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@fortawesome/free-solid-svg-icons/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/clsx.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$icons$2f$HamburgerIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/_components/icons/HamburgerIcon.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -120,7 +122,20 @@ const navOptions = [
     },
     {
         title: 'Program',
-        href: '/program'
+        dropdown: [
+            {
+                title: 'Program A',
+                href: '/program/a'
+            },
+            {
+                title: 'Program B',
+                href: '/program/b'
+            },
+            {
+                title: 'Program C',
+                href: '/program/c'
+            }
+        ]
     },
     {
         title: 'Alumni',
@@ -136,6 +151,9 @@ function Navbar() {
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const [isExpanded, setIsExpanded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [openDropdown, setOpenDropdown] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [mobileDropdown, setMobileDropdown] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [closeTimeout, setCloseTimeout] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Navbar.useEffect": ()=>{
             function handleScroll() {
@@ -147,6 +165,19 @@ function Navbar() {
             })["Navbar.useEffect"];
         }
     }["Navbar.useEffect"], []);
+    const handleMouseEnter = (title)=>{
+        if (closeTimeout) {
+            clearTimeout(closeTimeout);
+            setCloseTimeout(null);
+        }
+        setOpenDropdown(title);
+    };
+    const handleMouseLeave = ()=>{
+        const timeout = setTimeout(()=>{
+            setOpenDropdown(null);
+        }, 200);
+        setCloseTimeout(timeout);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         className: `top-0 z-[999] xl:relative flex flex-col mx-auto w-full 2xl:text-xl ${pathname.startsWith("/admin") ? "hidden" : ""}`,
         children: [
@@ -161,12 +192,12 @@ function Navbar() {
                             children: "SMK Telkom Malang"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Navbar.tsx",
-                            lineNumber: 45,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Navbar.tsx",
-                        lineNumber: 44,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -182,28 +213,76 @@ function Navbar() {
                                     className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`pointer-events-none h-[40px] object-contain transition-all duration-300 ${scrolled ? 'w-[120px]' : 'w-0'}`)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Navbar.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 92,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Navbar.tsx",
-                                lineNumber: 59,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this),
-                            navOptions.map((navOption)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: navOption.href,
-                                    // Splitted "/a/b" will form an array: ["", "a", "b"], that's why we use the second index as comparation
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`),
-                                    children: navOption.title
-                                }, navOption.title, false, {
+                            navOptions.map((navOption)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative",
+                                    onMouseEnter: ()=>navOption.dropdown && handleMouseEnter(navOption.title),
+                                    onMouseLeave: handleMouseLeave,
+                                    children: [
+                                        navOption.href ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: navOption.href,
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`),
+                                            children: navOption.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/_components/Navbar.tsx",
+                                            lineNumber: 113,
+                                            columnNumber: 17
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0 flex items-center gap-1`),
+                                            children: [
+                                                navOption.title,
+                                                navOption.dropdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$react$2d$fontawesome$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FontAwesomeIcon"], {
+                                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$free$2d$solid$2d$svg$2d$icons$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["faChevronDown"],
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("w-3 h-3 transition-transform duration-300", openDropdown === navOption.title && "rotate-180")
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/_components/Navbar.tsx",
+                                                    lineNumber: 129,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/_components/Navbar.tsx",
+                                            lineNumber: 122,
+                                            columnNumber: 17
+                                        }, this),
+                                        navOption.dropdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-neutral-200 min-w-[180px] overflow-hidden transition-all duration-300 origin-top", openDropdown === navOption.title ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" : "opacity-0 scale-95 -translate-y-2 pointer-events-none"),
+                                            onMouseEnter: ()=>handleMouseEnter(navOption.title),
+                                            onMouseLeave: handleMouseLeave,
+                                            children: navOption.dropdown.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: item.href,
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("block px-4 py-3 text-primary hover:bg-primary/10 transition-all duration-200", openDropdown === navOption.title && "animate-fadeInUp"),
+                                                    style: {
+                                                        animationDelay: `${index * 50}ms`
+                                                    },
+                                                    children: item.title
+                                                }, item.title, false, {
+                                                    fileName: "[project]/src/app/_components/Navbar.tsx",
+                                                    lineNumber: 152,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/_components/Navbar.tsx",
+                                            lineNumber: 141,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, navOption.title, true, {
                                     fileName: "[project]/src/app/_components/Navbar.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 106,
                                     columnNumber: 13
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/Navbar.tsx",
-                        lineNumber: 49,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -219,17 +298,17 @@ function Navbar() {
                                         children: "PPDB"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Navbar.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 174,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Navbar.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 173,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Navbar.tsx",
-                                lineNumber: 87,
+                                lineNumber: 172,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -242,17 +321,17 @@ function Navbar() {
                                         className: "m-2 text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Navbar.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 182,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Navbar.tsx",
-                                    lineNumber: 96,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Navbar.tsx",
-                                lineNumber: 92,
+                                lineNumber: 177,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -265,23 +344,23 @@ function Navbar() {
                                         className: "m-2 text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Navbar.tsx",
-                                        lineNumber: 105,
+                                        lineNumber: 190,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Navbar.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 189,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Navbar.tsx",
-                                lineNumber: 100,
+                                lineNumber: 185,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/Navbar.tsx",
-                        lineNumber: 86,
+                        lineNumber: 171,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -289,53 +368,105 @@ function Navbar() {
                         onClick: ()=>setIsExpanded(!isExpanded),
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$icons$2f$HamburgerIcon$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/app/_components/Navbar.tsx",
-                            lineNumber: 113,
+                            lineNumber: 198,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Navbar.tsx",
-                        lineNumber: 109,
+                        lineNumber: 194,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/Navbar.tsx",
-                lineNumber: 43,
+                lineNumber: 75,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`block xl:hidden h-[300px] w-full z-[800] bg-white transition-all duration-500 ${isExpanded ? 'mt-0' : ' -mt-120'}`),
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`block xl:hidden w-full z-[800] bg-white transition-all duration-500 overflow-hidden ${isExpanded ? 'max-h-[500px]' : 'max-h-0'}`),
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col justify-start items-start gap-8 my-[21px] ms-[20px] lg:ms-[52px] text-start",
-                    children: navOptions.map((navOption)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: navOption.href,
-                            // Splitted "/a/b" will form an array: ["", "a", "b"], that's why we use the second index as comparation
-                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`rounded-full text-center text-[16px] transition-all duration-300 hover:text-primary-400 ${pathname.split('/')[1] === navOption.href.split('/')[1] ? 'text-red-400' : ''}`),
-                            onClick: ()=>setIsExpanded(false),
-                            children: navOption.title
+                    className: "flex flex-col justify-start items-start gap-6 my-[21px] ms-[20px] lg:ms-[52px] text-start",
+                    children: navOptions.map((navOption)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-full",
+                            children: navOption.href ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: navOption.href,
+                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`rounded-full text-center text-[16px] transition-all duration-300 hover:text-primary-400 ${pathname.split('/')[1] === navOption.href.split('/')[1] ? 'text-red-400' : ''}`),
+                                onClick: ()=>setIsExpanded(false),
+                                children: navOption.title
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/_components/Navbar.tsx",
+                                lineNumber: 214,
+                                columnNumber: 17
+                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>setMobileDropdown(mobileDropdown === navOption.title ? null : navOption.title),
+                                        className: "flex items-center gap-2 text-[16px] text-primary",
+                                        children: [
+                                            navOption.title,
+                                            navOption.dropdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$react$2d$fontawesome$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FontAwesomeIcon"], {
+                                                icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$free$2d$solid$2d$svg$2d$icons$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["faChevronDown"],
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("w-3 h-3 transition-transform duration-300", mobileDropdown === navOption.title && "rotate-180")
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/_components/Navbar.tsx",
+                                                lineNumber: 235,
+                                                columnNumber: 23
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/_components/Navbar.tsx",
+                                        lineNumber: 229,
+                                        columnNumber: 19
+                                    }, this),
+                                    navOption.dropdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("ml-4 mt-3 flex flex-col gap-3 transition-all duration-300 overflow-hidden", mobileDropdown === navOption.title ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"),
+                                        children: navOption.dropdown.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                href: item.href,
+                                                className: "text-[14px] text-primary/80 hover:text-primary transition-colors",
+                                                onClick: ()=>{
+                                                    setIsExpanded(false);
+                                                    setMobileDropdown(null);
+                                                },
+                                                children: item.title
+                                            }, item.title, false, {
+                                                fileName: "[project]/src/app/_components/Navbar.tsx",
+                                                lineNumber: 250,
+                                                columnNumber: 25
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/_components/Navbar.tsx",
+                                        lineNumber: 245,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/_components/Navbar.tsx",
+                                lineNumber: 228,
+                                columnNumber: 17
+                            }, this)
                         }, navOption.title, false, {
                             fileName: "[project]/src/app/_components/Navbar.tsx",
-                            lineNumber: 125,
+                            lineNumber: 212,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/Navbar.tsx",
-                    lineNumber: 123,
+                    lineNumber: 210,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Navbar.tsx",
-                lineNumber: 116,
+                lineNumber: 203,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/Navbar.tsx",
-        lineNumber: 42,
+        lineNumber: 74,
         columnNumber: 5
     }, this);
 }
-_s(Navbar, "wuNER6OU+zOiZn8NOqbDdNPKGAY=", false, function() {
+_s(Navbar, "36qBovmFEnHcIHtEhro37Y9AxDo=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
     ];
@@ -371,251 +502,286 @@ function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
             className: `${pathname.startsWith('/admin') ? "hidden" : ""}`,
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "pt-31 max-sm:pt-15 py-10 px-32 max-sm:px-7",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex justify-between min-xl:items-center",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "pt-31 max-sm:pt-15 py-10 px-32 max-sm:px-7",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-between min-xl:items-center",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col max-sm:w-[50%] gap-7",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/assets/image/logo.png",
+                                        alt: "Logo Metic",
+                                        width: 125,
+                                        height: 62.5,
+                                        className: ""
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                        lineNumber: 14,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        className: "text-black font-[500] text-[18px]",
+                                        children: [
+                                            "Platform informasi sub-organ METIC ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                                lineNumber: 22,
+                                                columnNumber: 52
+                                            }, this),
+                                            " untuk siswa SMK Telkom Malang"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                        lineNumber: 21,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "text-black font-[400] text-[18px]",
+                                        children: "© 2025 MokletDev."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                        lineNumber: 25,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                lineNumber: 13,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex max-sm:flex-col items-center gap-13 max-sm:gap-7",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-left",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                className: "font-[400] text-black text-[18px] max-sm:mb-1 mb-7",
+                                                children: "Menu Utama"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                                lineNumber: 31,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex flex-col gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "Our Division"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 35,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "Track Record"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 38,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "Lead Of METIC"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 41,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        href: "#FAQ",
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "FAQ"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 44,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                                lineNumber: 34,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                        lineNumber: 30,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-left",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                className: "font-[400] text-black text-[18px] max-sm:mb-1 mb-7",
+                                                children: "Tautan"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                                lineNumber: 52,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex flex-col gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "Profil Sekolah"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 56,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "YPT"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 59,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "Organisasi"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 60,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "MokletDev"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 63,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                                lineNumber: 55,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                        lineNumber: 51,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-left",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                className: "font-[400] text-black text-[18px] max-sm:mb-1 mb-7",
+                                                children: "Sosial Media"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                                lineNumber: 67,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex flex-col gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "Moklet"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 71,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "@Osis Moklet"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 72,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "@Media Moklet"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 75,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-black font-[500] text-[18px]",
+                                                        children: "@Informetics"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                                        lineNumber: 78,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                                lineNumber: 70,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/_components/Footer.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/_components/Footer.tsx",
+                                lineNumber: 29,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/_components/Footer.tsx",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/_components/Footer.tsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "border-t border-gray-200 mt-10 pt-6 text-gray-700",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col max-sm:w-[50%] gap-7",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/assets/image/logo.png",
-                                    alt: "Logo Metic",
-                                    width: 125,
-                                    height: 62.5,
-                                    className: ""
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 14,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    className: "text-black font-[500] text-[18px]",
-                                    children: [
-                                        "Platform informasi sub-organ METIC ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                            fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 22,
-                                            columnNumber: 52
-                                        }, this),
-                                        " untuk siswa SMK Telkom Malang"
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 21,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                    className: "text-black font-[400] text-[18px]",
-                                    children: "© 2025 MokletDev."
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 25,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                            className: "font-semibold text-[16px] mb-1",
+                            children: "Alamat:"
+                        }, void 0, false, {
                             fileName: "[project]/src/app/_components/Footer.tsx",
-                            lineNumber: 13,
-                            columnNumber: 13
+                            lineNumber: 89,
+                            columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex max-sm:flex-col items-center gap-13 max-sm:gap-7",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-[15px] leading-relaxed",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-left",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                            className: "font-[400] text-black text-[18px] max-sm:mb-1 mb-7",
-                                            children: "Menu Utama"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 31,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-col gap-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "Our Division"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 35,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "Track Record"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 38,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "Lead Of METIC"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 41,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: "#FAQ",
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "FAQ"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 44,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 34,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                "Jl. Danau Ranau, Sawojajar, Kec. Kedungkandang, Kota Malang,",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 30,
-                                    columnNumber: 15
+                                    lineNumber: 92,
+                                    columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-left",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                            className: "font-[400] text-black text-[18px] max-sm:mb-1 mb-7",
-                                            children: "Tautan"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 52,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-col gap-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "Profil Sekolah"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 56,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "YPT"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 59,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "Organisasi"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 60,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "MokletDev"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 63,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 55,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 51,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-left",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                            className: "font-[400] text-black text-[18px] max-sm:mb-1 mb-7",
-                                            children: "Sosial Media"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 67,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex flex-col gap-3",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "Moklet"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 71,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "@Osis Moklet"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 72,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "@Media Moklet"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 75,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-black font-[500] text-[18px]",
-                                                    children: "@Informetics"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                                    lineNumber: 78,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 70,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 66,
-                                    columnNumber: 15
-                                }, this)
+                                "Jawa Timur 65139"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/_components/Footer.tsx",
-                            lineNumber: 29,
-                            columnNumber: 13
+                            lineNumber: 90,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/Footer.tsx",
-                    lineNumber: 12,
-                    columnNumber: 11
+                    lineNumber: 88,
+                    columnNumber: 9
                 }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/_components/Footer.tsx",
-                lineNumber: 11,
-                columnNumber: 9
-            }, this)
-        }, void 0, false, {
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/app/_components/Footer.tsx",
             lineNumber: 10,
             columnNumber: 7
@@ -643,35 +809,50 @@ __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$bs$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/bs/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$scroll$2d$up$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-scroll-up/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 ;
 const ScrollTop = ()=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$scroll$2d$up$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-        showUnder: 160,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "p-3 bg-white rounded-full shadow-md hover:shadow-lg cursor-pointer transition-all duration-300 hover:scale-110",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$bs$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BsFillRocketFill"], {
-                className: "text-primary text-3xl"
+    _s();
+    const [fly, setFly] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const handleClick = ()=>{
+        setFly(true);
+        setTimeout(()=>{
+            setFly(false);
+        }, 1000);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$scroll$2d$up$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            showUnder: 160,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                onClick: handleClick,
+                className: `p-3 bg-white rounded-full shadow-md hover:shadow-lg cursor-pointer transition-transform hover:scale-110 ${(console.log(fly), fly ? 'translate-y-[-10vh]' : 'translate-y-0')} translate-y-0`,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$bs$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BsFillRocketFill"], {
+                    className: "text-primary text-3xl"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/_components/ScrollTop.tsx",
+                    lineNumber: 21,
+                    columnNumber: 17
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/ScrollTop.tsx",
-                lineNumber: 13,
-                columnNumber: 15
+                lineNumber: 20,
+                columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/_components/ScrollTop.tsx",
-            lineNumber: 12,
+            lineNumber: 19,
             columnNumber: 13
         }, this)
-    }, void 0, false, {
-        fileName: "[project]/src/app/_components/ScrollTop.tsx",
-        lineNumber: 11,
-        columnNumber: 8
-    }, this);
+    }, void 0, false);
 };
+_s(ScrollTop, "/KTqo7IW6vUtP9wUp6BxtO5/9Nw=");
 _c = ScrollTop;
 const __TURBOPACK__default__export__ = ScrollTop;
 var _c;
