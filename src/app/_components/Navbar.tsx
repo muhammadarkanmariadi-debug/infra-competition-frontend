@@ -6,20 +6,34 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 import cn from '@/lib/clsx'
 
 import HamburgerIcon from './icons/HamburgerIcon'
 
-interface NavOption {
+interface DropdownItem {
   title: string
   href: string
+}
+
+interface NavOption {
+  title: string
+  href?: string
+  dropdown?: DropdownItem[]
 }
 
 const navOptions: NavOption[] = [
   { title: 'Beranda', href: '/' },
   { title: 'Tentang Kami', href: '/tentang-kami' },
-  { title: 'Program', href: '/program' },
+  { 
+    title: 'Program',
+    dropdown: [
+      { title: 'Program A', href: '/program/a' },
+      { title: 'Program B', href: '/program/b' },
+      { title: 'Program C', href: '/program/c' }
+    ]
+  },
   { title: 'Alumni', href: '/alumni' },
   { title: 'Hubungi Kami', href: '/hubungi-kami' }
 ]
@@ -28,6 +42,9 @@ export default function Navbar () {
   const pathname = usePathname()
   const [isExpanded, setIsExpanded] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [mobileDropdown, setMobileDropdown] = useState<string | null>(null)
+  const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     function handleScroll () {
@@ -37,6 +54,21 @@ export default function Navbar () {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const handleMouseEnter = (title: string) => {
+    if (closeTimeout) {
+      clearTimeout(closeTimeout)
+      setCloseTimeout(null)
+    }
+    setOpenDropdown(title)
+  }
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setOpenDropdown(null)
+    }, 200)
+    setCloseTimeout(timeout)
+  }
 
   return (
     <nav className={`top-0 z-[999] xl:relative flex flex-col mx-auto w-full 2xl:text-xl ${pathname.startsWith("/admin") ? "hidden" : ""}`}>
@@ -71,16 +103,69 @@ export default function Navbar () {
             </Link>
           )}
           {navOptions.map(navOption => (
-            <Link
+            <div 
               key={navOption.title}
-              href={navOption.href}
-              // Splitted "/a/b" will form an array: ["", "a", "b"], that's why we use the second index as comparation
-              className={cn(
-                `py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`
-              )}
+              className="relative"
+              onMouseEnter={() => navOption.dropdown && handleMouseEnter(navOption.title)}
+              onMouseLeave={handleMouseLeave}
             >
-              {navOption.title}
-            </Link>
+              {navOption.href ? (
+                <Link
+                  href={navOption.href}
+                  className={cn(
+                    `py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`
+                  )}
+                >
+                  {navOption.title}
+                </Link>
+              ) : (
+                <button
+                  className={cn(
+                    `py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0 flex items-center gap-1`
+                  )}
+                >
+                  {navOption.title}
+                  {navOption.dropdown && (
+                    <FontAwesomeIcon 
+                      icon={faChevronDown} 
+                      className={cn(
+                        "w-3 h-3 transition-transform duration-300",
+                        openDropdown === navOption.title && "rotate-180"
+                      )}
+                    />
+                  )}
+                </button>
+              )}
+              
+              {navOption.dropdown && (
+                <div 
+                  className={cn(
+                    "absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-neutral-200 min-w-[180px] overflow-hidden transition-all duration-300 origin-top",
+                    openDropdown === navOption.title 
+                      ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" 
+                      : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+                  )}
+                  onMouseEnter={() => handleMouseEnter(navOption.title)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {navOption.dropdown.map((item, index) => (
+                    <Link
+                      key={item.title}
+                      href={item.href}
+                      className={cn(
+                        "block px-4 py-3 text-primary hover:bg-primary/10 transition-all duration-200",
+                        openDropdown === navOption.title && "animate-fadeInUp"
+                      )}
+                      style={{
+                        animationDelay: `${index * 50}ms`
+                      }}
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
         <div className='hidden min-xl:flex gap-[9px] mt-[6px] min-xl:ml-[129px]'>
@@ -113,30 +198,72 @@ export default function Navbar () {
           <HamburgerIcon />
         </button>
       </div>
+      
+      {/* Mobile Menu */}
       <div
         className={cn(
-          `block xl:hidden h-[300px] w-full z-[800] bg-white transition-all duration-500 ${
-            isExpanded ? 'mt-0' : ' -mt-120'
+          `block xl:hidden w-full z-[800] bg-white transition-all duration-500 overflow-hidden ${
+            isExpanded ? 'max-h-[500px]' : 'max-h-0'
           }`
         )}
       >
-        <div className='flex flex-col justify-start items-start gap-8 my-[21px] ms-[20px] lg:ms-[52px] text-start'>
+        <div className='flex flex-col justify-start items-start gap-6 my-[21px] ms-[20px] lg:ms-[52px] text-start'>
           {navOptions.map(navOption => (
-            <Link
-              key={navOption.title}
-              href={navOption.href}
-              // Splitted "/a/b" will form an array: ["", "a", "b"], that's why we use the second index as comparation
-              className={cn(
-                `rounded-full text-center text-[16px] transition-all duration-300 hover:text-primary-400 ${
-                  pathname.split('/')[1] === navOption.href.split('/')[1]
-                    ? 'text-red-400'
-                    : ''
-                }`
+            <div key={navOption.title} className="w-full">
+              {navOption.href ? (
+                <Link
+                  href={navOption.href}
+                  className={cn(
+                    `rounded-full text-center text-[16px] transition-all duration-300 hover:text-primary-400 ${
+                      pathname.split('/')[1] === navOption.href.split('/')[1]
+                        ? 'text-red-400'
+                        : ''
+                    }`
+                  )}
+                  onClick={() => setIsExpanded(false)}
+                >
+                  {navOption.title}
+                </Link>
+              ) : (
+                <div>
+                  <button
+                    onClick={() => setMobileDropdown(mobileDropdown === navOption.title ? null : navOption.title)}
+                    className="flex items-center gap-2 text-[16px] text-primary"
+                  >
+                    {navOption.title}
+                    {navOption.dropdown && (
+                      <FontAwesomeIcon 
+                        icon={faChevronDown} 
+                        className={cn(
+                          "w-3 h-3 transition-transform duration-300",
+                          mobileDropdown === navOption.title && "rotate-180"
+                        )}
+                      />
+                    )}
+                  </button>
+                  {navOption.dropdown && (
+                    <div className={cn(
+                      "ml-4 mt-3 flex flex-col gap-3 transition-all duration-300 overflow-hidden",
+                      mobileDropdown === navOption.title ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                    )}>
+                      {navOption.dropdown.map((item) => (
+                        <Link
+                          key={item.title}
+                          href={item.href}
+                          className="text-[14px] text-primary/80 hover:text-primary transition-colors"
+                          onClick={() => {
+                            setIsExpanded(false)
+                            setMobileDropdown(null)
+                          }}
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               )}
-              onClick={() => setIsExpanded(false)}
-            >
-              {navOption.title}
-            </Link>
+            </div>
           ))}
         </div>
       </div>
