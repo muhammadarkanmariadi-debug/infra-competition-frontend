@@ -137,7 +137,7 @@ export function FAQCard({ profileImg, question, response }: FAQCardProps) {
       {/* Response card */}
       <div className="flex items-start gap-3">
         <Image
-          src="/assets/image/mecaKeren.png" // telkom 
+          src="/assets/image/tsp.png" // telkom 
           alt="Mascot"
           width={40}
           height={40}

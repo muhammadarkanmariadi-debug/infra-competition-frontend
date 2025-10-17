@@ -124,7 +124,7 @@ export default function CreatePostForm() {
         approval_status: "pending",
       };
 
-      const res = await api.post("/blogs", JSON.stringify(payload));
+      const res = await api.post("/blog", JSON.stringify(payload));
       if (!res.status.toString().startsWith("2")) {
         const text = await res.data();
         throw new Error(`Create failed: ${text.message}`);

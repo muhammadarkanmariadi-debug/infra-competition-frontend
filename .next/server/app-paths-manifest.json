@@ -1,9 +1,10 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-<<<<<<< HEAD
-=======
-  "/admin/page": "app/admin/page.js",
->>>>>>> origin/main
+  "/admin/posts/page": "app/admin/posts/page.js",
+  "/admin/posts/post/page": "app/admin/posts/post/page.js",
+  "/ekstrakulikuler/page": "app/ekstrakulikuler/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/post/[slug]/page": "app/post/[slug]/page.js",
+  "/posts/page": "app/posts/page.js"
 }

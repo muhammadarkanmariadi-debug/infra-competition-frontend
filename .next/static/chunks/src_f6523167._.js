@@ -129,11 +129,11 @@ const navOptions = [
         dropdown: [
             {
                 title: 'Berita Sekolah',
-                href: '/postes'
+                href: '/posts'
             },
             {
                 title: 'Ekstrakurikuler',
-                href: '/ekstrakurikuler'
+                href: '/ekstrakulikuler'
             },
             {
                 title: 'Organisasi',
@@ -235,7 +235,7 @@ function Navbar() {
                                             lineNumber: 110,
                                             columnNumber: 17
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0 flex items-center gap-1`),
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(`flex items-center gap-1 py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`),
                                             children: [
                                                 navOption.title,
                                                 navOption.dropdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$fortawesome$2f$react$2d$fontawesome$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FontAwesomeIcon"], {
@@ -253,12 +253,12 @@ function Navbar() {
                                             columnNumber: 17
                                         }, this),
                                         navOption.dropdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-neutral-200 min-w-[180px] overflow-hidden transition-all duration-300 origin-top", openDropdown === navOption.title ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" : "opacity-0 scale-95 -translate-y-2 pointer-events-none"),
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("top-full left-0 absolute bg-white shadow-lg mt-2 border border-neutral-200 rounded-lg min-w-[180px] overflow-hidden origin-top transition-all duration-300", openDropdown === navOption.title ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" : "opacity-0 scale-95 -translate-y-2 pointer-events-none"),
                                             onMouseEnter: ()=>handleMouseEnter(navOption.title),
                                             onMouseLeave: handleMouseLeave,
                                             children: navOption.dropdown.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                     href: item.href,
-                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("block px-4 py-3 text-primary hover:bg-primary/10 transition-all duration-200", openDropdown === navOption.title && "animate-fadeInUp"),
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("block hover:bg-primary/10 px-4 py-3 text-primary transition-all duration-200", openDropdown === navOption.title && "animate-fadeInUp"),
                                                     style: {
                                                         animationDelay: `${index * 50}ms`
                                                     },
@@ -419,7 +419,7 @@ function Navbar() {
                                         columnNumber: 19
                                     }, this),
                                     navOption.dropdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("ml-4 mt-3 flex flex-col gap-3 transition-all duration-300 overflow-hidden", mobileDropdown === navOption.title ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"),
+                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$clsx$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])("flex flex-col gap-3 mt-3 ml-4 overflow-hidden transition-all duration-300", mobileDropdown === navOption.title ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"),
                                         children: navOption.dropdown.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: item.href,
                                                 className: "text-[14px] text-primary/80 hover:text-primary transition-colors",

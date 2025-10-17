@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { SetStateAction, useEffect, useState } from "react";
 import { api } from "../_components/lib/api";
+import { useRouter, useParams } from "next/navigation";
 
 interface Posts{
   id: number;
@@ -14,30 +15,32 @@ interface Posts{
   thumbnail: string;
   short_body: string;
   body: string;
+  slug : string;
 }
 
 
 
 
 export default function BeritaPage() {
-  const [selectedPost, setSelectedPost] = useState<number | null>(null);
+  const [selectedPost, setSelectedPost] = useState<string| null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [postesTes, setPostesTes] = useState<Posts[]>([]);
-
+  const router = useRouter();
 
   useEffect(() => {
     const fetchPosts = async () => {
-      api.get('/blog').then((res: { data: { data: { data: SetStateAction<Posts[]>; }; }; }) => {
-        console.log(res.data);
-        setPostesTes(res.data.data.data);
+      api.get('/Ekstrakurikuler').then((res) => {
+     
+        setPostesTes(res.data.data);
       })
     }
 
     fetchPosts()
   }, []);
 
-  const handleSelect = (id: number) => {
-    setSelectedPost(selectedPost === id ? null : id);
+  const handleSelect = (slug: string) => {
+    setSelectedPost(selectedPost === slug ? null : slug);
+    router.push(`/post/${slug}`);
   };
 
   // 🔍 Filter post berdasarkan search
@@ -48,14 +51,14 @@ export default function BeritaPage() {
   return (
     <section className="mx-auto px-6 md:px-1 py-15 max-w-6xl">
       <h1 className="mb-8 font-bold text-black text-3xl">
-        Berita Sekolah & Organisasi SMK Telkom Malang
+        Ekskul Sekolah SMK Telkom Malang
       </h1>
 
       {/* 🔍 Search Box */}
       <div className="mb-6">
         <input
           type="text"
-          placeholder="Cari berita..."
+          placeholder="Cari Ekstrakurikuler..."
           className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 w-full md:w-1/2"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
@@ -81,19 +84,19 @@ export default function BeritaPage() {
                 <div>
                   <h2
                     className="font-semibold text-black hover:text-red-600 text-lg cursor-pointer"
-                    onClick={() => handleSelect(post.id)}
+                    onClick={() => handleSelect(post.slug)}
                   >
                     {post.title}
                   </h2>
                   <p className="mt-1 text-gray-500 text-sm">{post.short_body}</p>
                   <div className="flex justify-between mt-2 text-gray-400 text-xs">
-                    <span>{post.author.name}</span>
+                    <span></span>
                     <span>{post.date}</span>
                   </div>
                 </div>
               </div>
 
-              {selectedPost === post.id && (
+              {selectedPost === post.slug && (
                 <div
                   className="mt-4 pt-4 border-t text-gray-700 text-sm leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: post.body }}
@@ -102,7 +105,7 @@ export default function BeritaPage() {
             </div>
           ))
         ) : (
-          <p className="text-gray-500">Berita tidak ditemukan 😢</p>
+          <p className="text-gray-500">Data Ekskul Masih Kosong 😢</p>
         )}
       </div>
     </section>

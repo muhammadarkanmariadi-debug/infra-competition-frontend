@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
-import "./globals.css";
+import "../app/globals.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import ScrollTop from "./_components/ScrollTop";
 config.autoAddCss = false;
-import "./globals.css"
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

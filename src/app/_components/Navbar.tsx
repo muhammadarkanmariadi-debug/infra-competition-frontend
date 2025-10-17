@@ -28,8 +28,8 @@ const navOptions: NavOption[] = [
   { title: 'Tentang Kami', href: '#tentangkami' },
   { title: 'Program', href: '#programkeahlian' },
   { title: 'Tentang Sekolah', dropdown: [
-    { title: 'Berita Sekolah', href: '/postes' },
-    { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
+    { title: 'Berita Sekolah', href: '/posts' },
+    { title: 'Ekstrakurikuler', href: '/ekstrakulikuler' },
     { title: 'Organisasi', href: '/organisasi' },
   ]},
   { title: 'Hubungi Kami', href: '/hubungi-kami' }
@@ -118,7 +118,7 @@ export default function Navbar () {
               ) : (
                 <button
                   className={cn(
-                    `py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0 flex items-center gap-1`
+                    `flex items-center gap-1 py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`
                   )}
                 >
                   {navOption.title}
@@ -137,7 +137,7 @@ export default function Navbar () {
               {navOption.dropdown && (
                 <div 
                   className={cn(
-                    "absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg border border-neutral-200 min-w-[180px] overflow-hidden transition-all duration-300 origin-top",
+                    "top-full left-0 absolute bg-white shadow-lg mt-2 border border-neutral-200 rounded-lg min-w-[180px] overflow-hidden origin-top transition-all duration-300",
                     openDropdown === navOption.title 
                       ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" 
                       : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
@@ -150,7 +150,7 @@ export default function Navbar () {
                       key={item.title}
                       href={item.href}
                       className={cn(
-                        "block px-4 py-3 text-primary hover:bg-primary/10 transition-all duration-200",
+                        "block hover:bg-primary/10 px-4 py-3 text-primary transition-all duration-200",
                         openDropdown === navOption.title && "animate-fadeInUp"
                       )}
                       style={{
@@ -240,7 +240,7 @@ export default function Navbar () {
                   </button>
                   {navOption.dropdown && (
                     <div className={cn(
-                      "ml-4 mt-3 flex flex-col gap-3 transition-all duration-300 overflow-hidden",
+                      "flex flex-col gap-3 mt-3 ml-4 overflow-hidden transition-all duration-300",
                       mobileDropdown === navOption.title ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                     )}>
                       {navOption.dropdown.map((item) => (
