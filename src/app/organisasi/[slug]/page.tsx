@@ -133,29 +133,90 @@ export default function OrganisasiDetailPage() {
         </div>
       </section>
 
-      {/* Divisi/Program Section (Optional - add if needed) */}
-      <section className="max-w-7xl mx-auto px-6 py-16 bg-gray-50">
-        <h2 className="text-3xl lg:text-4xl font-bold text-black mb-12 text-center">
-          Divisi & Program
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Contoh card divisi */}
-          {[1, 2, 3].map((item) => (
-            <div
-              key={item}
-              className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition"
-            >
-            
-              <h3 className="text-xl font-semibold text-black mb-2">
-                Divisi {item}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Deskripsi singkat tentang divisi atau program ini...
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      
+
+
+
+{/* Divisi/Program Section */}
+<section className="max-w-7xl mx-auto px-6 py-16 bg-gray-50 rounded-2xl">
+  <h2 className="text-3xl lg:text-4xl font-bold text-black mb-12 text-center">
+    Meet Our Division
+  </h2>
+  <p className="text-center text-gray-600 mb-12 max-w-4xl mx-auto">
+    METIC punya tiga divisi utama: Moklet Dev, Metic Merch, dan MediaCom—semuanya bergerak aktif bikin karya nyata dan impact di sekolah maupun luar. Di METIC, kamu bisa belajar, bikin proyek, kolaborasi tim, sampai dapet pengalaman profesional yang real banget.
+  </p>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {/* MokletDev */}
+    <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center">
+      <div className="w-48 h-48 mb-6">
+        <Image
+          src="/assets/image/suborgan/moklet-dev.png"
+          alt="MokletDev Logo"
+          width={192}
+          height={192}
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <h3 className="text-xl font-semibold text-black mb-4">
+        MokletDev
+      </h3>
+      <p className="text-gray-600 text-sm mb-6">
+        Divisi yang fokus pada pengembangan teknologi dan sebagai pusat inovasi.
+      </p>
+      <button className="px-6 py-2 bg-red-800 text-white rounded-full hover:bg-red-700 transition text-sm">
+        Read More →
+      </button>
+    </div>
+
+    {/* Metic Merch */}
+    <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center">
+      <div className="w-48 h-48 mb-6">
+        <Image
+          src="/assets/image/suborgan/metic-merch.png"
+          alt="Metic Merch Logo"
+          width={192}
+          height={192}
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <h3 className="text-xl font-semibold text-black mb-4">
+        Metic Merch
+      </h3>
+      <p className="text-gray-600 text-sm mb-6">
+        Divisi yang fokus pada pengembangan teknologi dan sebagai pusat inovasi.
+      </p>
+      <button className="px-6 py-2 bg-red-800 text-white rounded-full hover:bg-red-700 transition text-sm">
+        Read More →
+      </button>
+    </div>
+
+    {/* MedCom */}
+    <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center">
+      <div className="w-48 h-48 mb-6">
+        <Image
+          src="/assets/image/suborgan/medcom.png"
+          alt="MedCom Logo"
+          width={192}
+          height={192}
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <h3 className="text-xl font-semibold text-black mb-4">
+        MedCom
+      </h3>
+      <p className="text-gray-600 text-sm mb-6">
+        Berfokus pada edukasi, personal branding dan media partner.
+      </p>
+      <button className="px-6 py-2 bg-red-800 text-white rounded-full hover:bg-red-700 transition text-sm">
+        Read More →
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
     </div>
   );
 }

@@ -294,60 +294,191 @@ function OrganisasiDetailPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "max-w-7xl mx-auto px-6 py-16 bg-gray-50",
+                className: "max-w-7xl mx-auto px-6 py-16 bg-gray-50 rounded-2xl",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                         className: "text-3xl lg:text-4xl font-bold text-black mb-12 text-center",
-                        children: "Divisi & Program"
+                        children: "Meet Our Division"
                     }, void 0, false, {
                         fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
-                        lineNumber: 138,
-                        columnNumber: 9
+                        lineNumber: 142,
+                        columnNumber: 3
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-center text-gray-600 mb-12 max-w-4xl mx-auto",
+                        children: "METIC punya tiga divisi utama: Moklet Dev, Metic Merch, dan MediaCom—semuanya bergerak aktif bikin karya nyata dan impact di sekolah maupun luar. Di METIC, kamu bisa belajar, bikin proyek, kolaborasi tim, sampai dapet pengalaman profesional yang real banget."
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                        lineNumber: 145,
+                        columnNumber: 3
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
                         children: [
-                            1,
-                            2,
-                            3
-                        ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-xl font-semibold text-black mb-2",
-                                        children: [
-                                            "Divisi ",
-                                            item
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
-                                        lineNumber: 149,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-gray-600 text-sm",
-                                        children: "Deskripsi singkat tentang divisi atau program ini..."
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-48 h-48 mb-6",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "/assets/image/suborgan/moklet-dev.png",
+                                            alt: "MokletDev Logo",
+                                            width: 192,
+                                            height: 192,
+                                            className: "w-full h-full object-contain"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                            lineNumber: 152,
+                                            columnNumber: 9
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
-                                        lineNumber: 152,
-                                        columnNumber: 15
+                                        lineNumber: 151,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-xl font-semibold text-black mb-4",
+                                        children: "MokletDev"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 160,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-gray-600 text-sm mb-6",
+                                        children: "Divisi yang fokus pada pengembangan teknologi dan sebagai pusat inovasi."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 163,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "px-6 py-2 bg-red-800 text-white rounded-full hover:bg-red-700 transition text-sm",
+                                        children: "Read More →"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 166,
+                                        columnNumber: 7
                                     }, this)
                                 ]
-                            }, item, true, {
+                            }, void 0, true, {
                                 fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
-                                lineNumber: 144,
-                                columnNumber: 13
-                            }, this))
-                    }, void 0, false, {
+                                lineNumber: 150,
+                                columnNumber: 5
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-48 h-48 mb-6",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "/assets/image/suborgan/metic-merch.png",
+                                            alt: "Metic Merch Logo",
+                                            width: 192,
+                                            height: 192,
+                                            className: "w-full h-full object-contain"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                            lineNumber: 174,
+                                            columnNumber: 9
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 173,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-xl font-semibold text-black mb-4",
+                                        children: "Metic Merch"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 182,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-gray-600 text-sm mb-6",
+                                        children: "Divisi yang fokus pada pengembangan teknologi dan sebagai pusat inovasi."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 185,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "px-6 py-2 bg-red-800 text-white rounded-full hover:bg-red-700 transition text-sm",
+                                        children: "Read More →"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 188,
+                                        columnNumber: 7
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                lineNumber: 172,
+                                columnNumber: 5
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "w-48 h-48 mb-6",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "/assets/image/suborgan/medcom.png",
+                                            alt: "MedCom Logo",
+                                            width: 192,
+                                            height: 192,
+                                            className: "w-full h-full object-contain"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                            lineNumber: 196,
+                                            columnNumber: 9
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 195,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-xl font-semibold text-black mb-4",
+                                        children: "MedCom"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 204,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-gray-600 text-sm mb-6",
+                                        children: "Berfokus pada edukasi, personal branding dan media partner."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 207,
+                                        columnNumber: 7
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "px-6 py-2 bg-red-800 text-white rounded-full hover:bg-red-700 transition text-sm",
+                                        children: "Read More →"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                        lineNumber: 210,
+                                        columnNumber: 7
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
+                                lineNumber: 194,
+                                columnNumber: 5
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
-                        lineNumber: 141,
-                        columnNumber: 9
+                        lineNumber: 148,
+                        columnNumber: 3
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/organisasi/[slug]/page.tsx",
-                lineNumber: 137,
-                columnNumber: 7
+                lineNumber: 141,
+                columnNumber: 1
             }, this)
         ]
     }, void 0, true, {
