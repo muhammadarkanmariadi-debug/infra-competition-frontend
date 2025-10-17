@@ -1,7 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+<<<<<<< HEAD
   "/ekstrakulikuler/page": "app/ekstrakulikuler/page.js",
+=======
+  "/ekstrakurikuler/[slug]/page": "app/ekstrakurikuler/[slug]/page.js",
+  "/ekstrakurikuler/page": "app/ekstrakurikuler/page.js",
+>>>>>>> origin/haikal
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/organisasi/[slug]/page": "app/organisasi/[slug]/page.js",
+  "/organisasi/page": "app/organisasi/page.js",
   "/page": "app/page.js",
   "/post/[slug]/page": "app/post/[slug]/page.js",
   "/posts/page": "app/posts/page.js"

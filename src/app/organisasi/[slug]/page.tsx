@@ -148,13 +148,13 @@ export default function OrganisasiDetailPage() {
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {/* MokletDev */}
     <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center">
-      <div className="w-48 h-48 mb-6">
+      <div className="w-48 h-48 mb-6 flex items-center justify-center rounded-full bg-red-800">
         <Image
-          src="/assets/image/suborgan/moklet-dev.png"
+          src="/assets/image/logo-mokletdev.png"
           alt="MokletDev Logo"
-          width={192}
-          height={192}
-          className="w-full h-full object-contain"
+          width={120}
+          height={120}
+          className="object-contain scale-80"
         />
       </div>
       <h3 className="text-xl font-semibold text-black mb-4">
@@ -170,13 +170,13 @@ export default function OrganisasiDetailPage() {
 
     {/* Metic Merch */}
     <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center">
-      <div className="w-48 h-48 mb-6">
+      <div className="w-48 h-48 mb-6 flex items-center justify-center rounded-full bg-red-800">
         <Image
-          src="/assets/image/suborgan/metic-merch.png"
+          src="/assets/image/logo-meticmerch.png"
           alt="Metic Merch Logo"
-          width={192}
-          height={192}
-          className="w-full h-full object-contain"
+          width={120}
+          height={120}
+          className="object-contain"
         />
       </div>
       <h3 className="text-xl font-semibold text-black mb-4">
@@ -192,13 +192,13 @@ export default function OrganisasiDetailPage() {
 
     {/* MedCom */}
     <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition flex flex-col items-center text-center">
-      <div className="w-48 h-48 mb-6">
+      <div className="w-48 h-48 mb-6 flex items-center justify-center rounded-full bg-red-800">
         <Image
-          src="/assets/image/suborgan/medcom.png"
+          src="/assets/image/logo-medcom.png"
           alt="MedCom Logo"
-          width={192}
-          height={192}
-          className="w-full h-full object-contain"
+          width={120}
+          height={120}
+          className="object-contain"
         />
       </div>
       <h3 className="text-xl font-semibold text-black mb-4">
