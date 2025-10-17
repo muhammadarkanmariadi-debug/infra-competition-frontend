@@ -7313,11 +7313,19 @@ class Router {
                     });
                     return new Promise(()=>{});
                 }
+<<<<<<< HEAD
                 const routerFilterSValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":16,"errorRate":0.0001,"numBits":307,"numHashes":14,"bitArray":[0,0,1,1,0,0,0,1,0,0,0,1,1,0,1,0,1,1,1,0,0,1,1,1,1,0,0,0,1,0,1,1,0,1,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,0,1,0,0,0,1,1,1,0,0,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,0,0,0,1,1,0,0,1,0,1,1,1,1,1,1,0,1,0,0,0,1,1,1,1,0,1,1,0,1,1,0,0,0,0,0,0,1,1,1,0,1,0,1,1,1,0,1,0,1,1,1,1,0,1,0,1,0,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,1,0,1,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,1,0,1,1,1,0,1,1,1,0,0,1,0,1,0,1,0,1,1,1,0,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,0,0,0,1,0,0,1,1,1,0,1,0,1,0,0,0,0]}'));
                 if (!staticFilterData && routerFilterSValue) {
                     staticFilterData = routerFilterSValue ? routerFilterSValue : undefined;
                 }
                 const routerFilterDValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":4,"errorRate":0.0001,"numBits":77,"numHashes":14,"bitArray":[0,0,1,1,1,1,1,1,0,1,0,0,1,1,0,1,0,0,1,1,1,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,0,0,1,1,1,1,0,0,1,1,0,1,1,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,1,0,1,0,0]}'));
+=======
+                const routerFilterSValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":10,"errorRate":0.0001,"numBits":192,"numHashes":14,"bitArray":[1,1,1,0,1,0,0,0,0,1,0,1,1,1,1,0,0,0,0,1,0,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,1,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0,0,0,0,1,1,1,0,1,0,1,0,0,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,1,0,0,1,0,0,0,0,0,1,0,1,0,1,1,1,0,1,0,1,1,0,0,1,0,1,0,1,1,1,0,0,0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0,1,1,1,1,0,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,0,1,1,1]}'));
+                if (!staticFilterData && routerFilterSValue) {
+                    staticFilterData = routerFilterSValue ? routerFilterSValue : undefined;
+                }
+                const routerFilterDValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":4,"errorRate":0.0001,"numBits":77,"numHashes":14,"bitArray":[0,1,0,0,1,1,1,0,0,1,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,0,1,1,1,0,0,1,1,1,0,0,0,1,0,1,0,1,1,0,1,1,1,0,1,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,1,0]}'));
+>>>>>>> origin/haikal
                 if (!dynamicFilterData && routerFilterDValue) {
                     dynamicFilterData = routerFilterDValue ? routerFilterDValue : undefined;
                 }
@@ -10257,7 +10265,11 @@ function parseStack(stack) {
             const res = regexNextStatic.exec(url.pathname);
             if (res) {
                 var _process_env___NEXT_DIST_DIR_replace, _process_env___NEXT_DIST_DIR;
+<<<<<<< HEAD
                 const distDir = (_process_env___NEXT_DIST_DIR = ("TURBOPACK compile-time value", "D:\\Project\\infra-competition\\fe\\.next")) == null ? void 0 : (_process_env___NEXT_DIST_DIR_replace = _process_env___NEXT_DIST_DIR.replace(/\\/g, '/')) == null ? void 0 : _process_env___NEXT_DIST_DIR_replace.replace(/\/$/, '');
+=======
+                const distDir = (_process_env___NEXT_DIST_DIR = ("TURBOPACK compile-time value", "C:\\Project Coding\\infra-competition-frontend\\.next")) == null ? void 0 : (_process_env___NEXT_DIST_DIR_replace = _process_env___NEXT_DIST_DIR.replace(/\\/g, '/')) == null ? void 0 : _process_env___NEXT_DIST_DIR_replace.replace(/\/$/, '');
+>>>>>>> origin/haikal
                 if (distDir) {
                     frame.file = 'file://' + distDir.concat(res.pop()) + url.search;
                 }
@@ -20951,7 +20963,11 @@ function AppContainer(param) {
                             children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_headmanagercontextsharedruntime.HeadManagerContext.Provider, {
                                 value: headManager,
                                 children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_imageconfigcontextsharedruntime.ImageConfigContext.Provider, {
+<<<<<<< HEAD
                                     value: ("TURBOPACK compile-time value", JSON.parse('{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false,"domains":["localhost"],"remotePatterns":[{"protocol":"http","hostname":"**"}]}')),
+=======
+                                    value: ("TURBOPACK compile-time value", JSON.parse('{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false,"domains":[],"remotePatterns":[{"protocol":"https","hostname":"**"}]}')),
+>>>>>>> origin/haikal
                                     children: children
                                 })
                             })

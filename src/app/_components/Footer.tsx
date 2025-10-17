@@ -6,165 +6,170 @@ import { usePathname } from 'next/navigation'
 export default function Footer () {
   const pathname = usePathname()
   return (
-    <>
-      <footer className={`${pathname.startsWith('/admin') ? 'hidden' : ''}`}>
-        <div className='mx-auto px-6 md:px-16 py-12 max-w-7xl'>
-          {/* Bagian atas */}
-          <div className='gap-10 md:gap-16 grid grid-cols-1 md:grid-cols-4'>
-            {/* Kiri */}
-            <div>
-              <Image
-                src='/assets/image/logo.png'
-                alt='Logo Metic'
-                width={150}
-                height={75}
-                className='mb-5'
-              />
-              <p className='text-[16px] text-gray-700 leading-relaxed'>
-                Pelopor SMK bidang Teknologi dan Informatika di Indonesia
-                <br />
-                untuk siswa SMK Telkom Malang
-              </p>
-              <p className='mt-6 text-gray-500 text-sm'>
-                © 2025 Copyright BebasDeh
-              </p>
-            </div>
-
-            {/* Menu Utama */}
-            <div>
-              <h3 className='mb-4 font-semibold text-gray-500 text-sm uppercase'>
-                Menu Utama
-              </h3>
-              <ul className='space-y-3'>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    Our Division
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    Track Record
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    Lead Of METIC
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#FAQ'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    FAQ
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Tautan */}
-            <div>
-              <h3 className='mb-4 font-semibold text-gray-500 text-sm uppercase'>
-                Tautan
-              </h3>
-              <ul className='space-y-3'>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    Profil Sekolah
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    YPT
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    Organisasi
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    MokletDev
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Media Sosial */}
-            <div>
-              <h3 className='mb-4 font-semibold text-gray-500 text-sm uppercase'>
-                Media Sosial
-              </h3>
-              <ul className='space-y-3'>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    Moklet
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    OSIS Moklet
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    Media Moklet
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href='#'
-                    className='text-gray-800 hover:text-primary transition'
-                  >
-                    Informetics
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bagian alamat */}
-          <div className='mt-10 pt-6 border-gray-200 border-t text-gray-700'>
-            <h3 className='mb-1 font-semibold text-[16px]'>Alamat:</h3>
-            <p className='text-[15px] leading-relaxed'>
-              Jl. Danau Ranau, Sawojajar, Kec. Kedungkandang, Kota Malang,
-              <br />
-              Jawa Timur 65139
+    <footer className='bg-white mt-5'>
+      <div className='mx-auto px-6 md:px-16 py-12 max-w-7xl'>
+        {/* Bagian atas */}
+        <div className='gap-10 md:gap-16 grid grid-cols-1 md:grid-cols-4'>
+          {/* Kiri */}
+          <div>
+            <Image
+              src='/assets/image/logo.png'
+              alt='Logo Metic'
+              width={150}
+              height={75}
+              className='mb-5'
+            />
+            <p className='text-[16px] text-gray-700 leading-relaxed'>
+              Jadilah Digital Talent yang Siap Menakhlukkan Dunia!
+            </p>
+            <p className='mt-6 text-gray-500 text-sm'>
+              © 2025 SMK Telkom Malang & BebasDeh. All rights reserved.
             </p>
           </div>
+
+          {/* SMK Telkom Malang */}
+          <div>
+            <h3 className='mb-4 font-semibold text-gray-500 text-sm uppercase'>
+              SMK Telkom Malang
+            </h3>
+            <ul className='space-y-3'>
+              <li>
+                <Link
+                  href='/struktur'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Struktur Organisasi
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='#'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Sertifikat Akreditasi
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='#'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Virtual Tour
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Menu Utama */}
+          <div>
+            <h3 className='mb-4 font-semibold text-gray-500 text-sm uppercase'>
+              Menu Utama
+            </h3>
+            <ul className='space-y-3'>
+              <li>
+                <Link
+                  href='/'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Beranda
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='/berita'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Berita
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='/tentang-kami'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Tentang Kami
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='/hubungi-kami'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Hubungi Kami
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Kenali Kami */}
+          <div>
+            <h3 className='mb-4 font-semibold text-gray-500 text-sm uppercase'>
+              Kenali Kami Lebih Dekat
+            </h3>
+            <ul className='space-y-3'>
+              <li>
+                <Link
+                  href='https://www.instagram.com/smktelkommalang'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='flex items-center text-gray-800 hover:text-primary text-sm transition'
+                >
+                  <Image
+                    src='/assets/image/instagram.svg'
+                    alt='Instagram'
+                    width={20}
+                    height={20}
+                    className='mr-2'
+                  />
+                  @smktelkommalang
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='https://www.youtube.com/officialsmktelkommalang'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='flex items-center text-gray-800 hover:text-primary text-sm transition'
+                >
+                  <Image
+                    src='/assets/image/youtube.svg'
+                    alt='YouTube'
+                    width={20}
+                    height={20}
+                    className='mr-2'
+                  />
+                  <span className='leading-tight'>
+                    Official SMK Telkom Malang
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-      </footer>
-    </>
+
+        {/* Bagian alamat */}
+        <div className='mt-4 pt-6 text-gray-700'>
+          <h3 className='mb-1 font-semibold text-[16px]'>Alamat:</h3>
+          <p className='text-[15px] leading-relaxed'>
+            Jl. Danau Ranau, Sawojajar, Kec. Kedungkandang, Kota Malang,
+            <br />
+            Jawa Timur 65139
+          </p>
+        </div>
+
+        {/* Partners Section */}
+        <div className='mt-10 pt-8 border-gray-200 border-t'>
+          <div className='flex justify-center items-center'>
+            <Image
+              src='/assets/image/partner.png'
+              alt='Our Partners'
+              width={600}
+              height={80}
+              className='object-contain'
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
   )
 }
