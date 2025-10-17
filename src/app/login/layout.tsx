@@ -81,24 +81,24 @@ function LoginForm() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-200 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
+    <div className="flex justify-center items-center bg-gray-200 p-4 min-h-screen">
+      <div className="bg-white shadow-lg p-8 rounded-2xl w-full max-w-md">
         {/* Logo and Title */}
-        <div className="flex items-center justify-center gap-3 mb-8">
-          <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
+        <div className="flex justify-center items-center gap-3 mb-8">
+          <div className="flex justify-center items-center bg-red-500 rounded-full w-10 h-10">
             <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 2.18l8 4v8.82c0 4.52-3.05 8.78-7 9.86V4.18z"/>
               <circle cx="12" cy="12" r="3"/>
             </svg>
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">Moklet Portal</h1>
+          <h1 className="font-bold text-gray-900 text-2xl">Moklet Portal</h1>
         </div>
 
         {/* Login Form */}
         <form onSubmit={handleCredentialLogin}>
           {/* Email Field */}
           <div className="mb-4">
-            <label className="block text-sm font-semibold text-gray-900 mb-2">
+            <label className="block mb-2 font-semibold text-gray-900 text-sm">
               Email
             </label>
             <input
@@ -106,7 +106,7 @@ function LoginForm() {
               value={formData.email}
               onChange={(e) => handleInputChange('email', e.target.value)}
               placeholder="user@student.smktelkom-mlg.sch.id"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none text-sm"
+              className="px-4 py-3 border border-gray-300 focus:border-transparent rounded-lg outline-none focus:ring-2 focus:ring-red-500 w-full text-sm"
               required
               disabled={isLoading}
             />
@@ -114,7 +114,7 @@ function LoginForm() {
 
           {/* Password Field */}
           <div className="mb-6">
-            <label className="block text-sm font-semibold text-gray-900 mb-2">
+            <label className="block mb-2 font-semibold text-gray-900 text-sm">
               Password
             </label>
             <div className="relative">
@@ -123,7 +123,7 @@ function LoginForm() {
                 value={formData.password}
                 onChange={(e) => handleInputChange('password', e.target.value)}
                 placeholder="••••••••"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none text-sm"
+                className="px-4 py-3 border border-gray-300 focus:border-transparent rounded-lg outline-none focus:ring-2 focus:ring-red-500 w-full text-sm"
                 required
                 disabled={isLoading}
               />
@@ -134,7 +134,7 @@ function LoginForm() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 rounded-lg border border-gray-300 transition-colors mb-4 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-white hover:bg-gray-50 disabled:opacity-50 mb-4 py-3 border border-gray-300 rounded-lg w-full font-medium text-gray-700 transition-colors disabled:cursor-not-allowed"
           >
             {isLoading ? 'Loading...' : 'Sign in with Credentials'}
           </button>
@@ -142,16 +142,16 @@ function LoginForm() {
 
         {/* Divider */}
         <div className="flex items-center gap-4 my-6">
-          <div className="flex-1 h-px bg-gray-300"></div>
-          <span className="text-sm text-gray-500">or</span>
-          <div className="flex-1 h-px bg-gray-300"></div>
+          <div className="flex-1 bg-gray-300 h-px"></div>
+          <span className="text-gray-500 text-sm">or</span>
+          <div className="flex-1 bg-gray-300 h-px"></div>
         </div>
 
         {/* Google Sign In Button */}
         <button
           onClick={() => handleGoogleLogin()}
           disabled={isLoading}
-          className="w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 rounded-lg border border-gray-300 transition-colors flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex justify-center items-center gap-3 bg-white hover:bg-gray-50 disabled:opacity-50 py-3 border border-gray-300 rounded-lg w-full font-medium text-gray-700 transition-colors disabled:cursor-not-allowed"
         >
           <svg className="w-5 h-5" viewBox="0 0 24 24">
             <path
@@ -175,7 +175,7 @@ function LoginForm() {
         </button>
 
         {/* Footer Links */}
-        <div className="mt-6 text-center text-sm text-gray-500">
+        <div className="mt-6 text-gray-500 text-sm text-center">
           <a href="#" className="hover:text-gray-700 transition-colors">
             Forgot password?
           </a>

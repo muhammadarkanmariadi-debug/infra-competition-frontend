@@ -1,42 +1,35 @@
 "use client";
 
-import { ChangeEvent, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Layout from "@/app/admin/layout";
 import { PhotoIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Editor from "../../components/MdEditor";
+import { api } from "@/app/_components/lib/api";
 
-export default function CreatePostPage() {
+type FormState = {
+  title: string;
+  short_body: string; // short_body
+  slug: string;
+  tags: string[]; // will be sent as comma separated string to Laravel
+  body: string; // body
+  thumbnail: File | null; // local file
+  status: "draft" | "publish";
+};
+
+export default function CreatePostForm() {
   const router = useRouter();
-  const [formData, setFormData] = useState<{
-    title: string;
-    description: string;
-    slug: string;
-    category: string;
-    tags: string[];
-    content: string;
-    thumbnail: File | null;
-    status: string;
-  }>({
+
+  const [formData, setFormData] = useState<FormState>({
     title: "",
-    description: "",
+    short_body: "",
     slug: "",
-    category: "",
     tags: [],
-    content: "",
+    body: "",
     thumbnail: null,
     status: "draft",
   });
   const [previewImage, setPreviewImage] = useState<string | null>(null);
-
-  const categories = [
-    "Pengumuman",
-    "Berita",
-    "Event",
-    "Kegiatan",
-    "Prestasi",
-    "Tutorial",
-  ];
+  const [loading, setLoading] = useState(false);
 
   const availableTags = [
     "OSIS",
@@ -50,167 +43,164 @@ export default function CreatePostPage() {
   ];
 
   const handleInputChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
 
     if (name === "title") {
       const slug = value
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/(^-|-$)/g, "");
-      setFormData((prev) => ({
-        ...prev,
-        slug: slug,
-      }));
+      setFormData((prev) => ({ ...prev, slug }));
     }
   };
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
-    if (files && files.length > 0) {
-      const file = files[0];
-      setFormData((prev) => ({
-        ...prev,
-        thumbnail: file,
-      }));
+    if (!files || files.length === 0) return;
+    const file = files[0];
 
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setPreviewImage(reader.result as string);
-      };
-      reader.readAsDataURL(file);
+    // optional: basic client-side size check (2MB)
+    if (file.size > 2 * 1024 * 1024) {
+      alert("File terlalu besar. Maks 2MB.");
+      return;
     }
+
+    setFormData((prev) => ({ ...prev, thumbnail: file }));
+
+    const reader = new FileReader();
+    reader.onloadend = () => setPreviewImage(reader.result as string);
+    reader.readAsDataURL(file);
   };
 
-  const handleSubmit = (e: React.FormEvent, status = "draft") => {
-    e.preventDefault();
+  async function uploadToCloudinary(file: File) {
+    const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
+    const uploadPreset = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET;
+    if (!cloudName || !uploadPreset) {
+      throw new Error("Cloudinary not configured. Set NEXT_PUBLIC_CLOUDINARY_* env vars.");
+    }
 
-    console.log("Submitting post:", { ...formData, status });
+    const url = `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`;
+    const fd = new FormData();
+    fd.append("file", file);
+    fd.append("upload_preset", uploadPreset);
 
-    // Redirect back to posts list
-    router.push("/posts");
-  };
+    const res = await fetch(url, { method: "POST", body: fd });
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(`Cloudinary upload failed: ${text}`);
+    }
+    const data = await res.json();
+    return data.secure_url as string;
+  }
 
-  const handleTagToggle = (tag: string): void => {
+  const handleTagToggle = (tag: string) => {
     setFormData((prev) => ({
       ...prev,
-      tags: prev.tags.includes(tag)
-        ? prev.tags.filter((t) => t !== tag)
-        : [...prev.tags, tag],
+      tags: prev.tags.includes(tag) ? prev.tags.filter((t) => t !== tag) : [...prev.tags, tag],
     }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent | null, publishStatus: "draft" | "publish" = "draft") => {
+    if (e) e.preventDefault();
+    setLoading(true);
+    try {
+      let thumbnailUrl: string | null = null;
+      if (formData.thumbnail) {
+        thumbnailUrl = await uploadToCloudinary(formData.thumbnail);
+      }
+
+      const payload = {
+        title: formData.title,
+        // author_id: backend should infer author from auth; omit if so
+        body: formData.body,
+        short_body: formData.short_body,
+        thumbnail: thumbnailUrl,
+        tags: formData.tags.join(","),
+        slug: formData.slug,
+        is_published: publishStatus === "publish",
+        approval_status: "pending",
+      };
+
+      const res = await api.post("/blogs", JSON.stringify(payload));
+      if (!res.status.toString().startsWith("2")) {
+        const text = await res.data();
+        throw new Error(`Create failed: ${text.message}`);
+      }
+
+      router.push("/admin/posts");
+    } catch (err) {
+      console.error(err);
+      alert("Gagal membuat post. Cek console untuk detail.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="p-6">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
+      <div className="mx-auto max-w-4xl">
         <div className="mb-8">
-          <button
-            onClick={() => router.back()}
-            className="mb-4 text-gray-600 hover:text-gray-900 flex items-center space-x-2"
-          >
+          <button onClick={() => router.back()} className="flex items-center space-x-2 mb-4 text-gray-600 hover:text-gray-900">
             <ArrowLeftIcon className="w-5 h-5" />
             <span>Kembali</span>
           </button>
-
         </div>
 
-        {/* Form */}
-        <form
-          onSubmit={(e) => handleSubmit(e, "publish")}
-          className="space-y-6"
-        >
-          <div className="bg-white rounded-lg shadow p-6 space-y-6">
-            {/* Judul Post */}
+        <form onSubmit={(e) => handleSubmit(e, "publish")} className="space-y-6">
+          <div className="space-y-6 bg-white shadow p-6 rounded-lg">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block mb-2 font-medium text-gray-700 text-sm">
                 Judul Post<span className="text-red-500">*</span>
               </label>
               <input
-                type="text"
                 name="title"
                 value={formData.title}
                 onChange={handleInputChange}
                 placeholder="Masukkan judul post..."
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="px-4 py-2 border border-gray-300 rounded-lg w-full"
                 required
               />
             </div>
 
-            {/* Description */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block mb-2 font-medium text-gray-700 text-sm">
                 Deskripsi<span className="text-red-500">*</span>
               </label>
               <textarea
-                name="description"
-                value={formData.description}
+                name="short_body"
+                value={formData.short_body}
                 onChange={handleInputChange}
                 placeholder="Deskripsi singkat tentang post..."
                 rows={3}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="px-4 py-2 border border-gray-300 rounded-lg w-full"
                 required
               />
             </div>
 
-            {/* Slug */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Custom Slug
-              </label>
+              <label className="block mb-2 font-medium text-gray-700 text-sm">Custom Slug</label>
               <input
-                type="text"
                 name="slug"
                 value={formData.slug}
                 onChange={handleInputChange}
                 placeholder="custom-url-slug"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                className="px-4 py-2 border border-gray-300 rounded-lg w-full"
               />
             </div>
 
-            {/* Category */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Kategori<span className="text-red-500">*</span>
-              </label>
-              <select
-                name="category"
-                value={formData.category}
-                onChange={handleInputChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                required
-              >
-                <option value="">Select...</option>
-                {categories.map((cat) => (
-                  <option key={cat} value={cat}>
-                    {cat}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Tags */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Tags
-              </label>
+              <label className="block mb-2 font-medium text-gray-700 text-sm">Tags</label>
               <div className="flex flex-wrap gap-2">
                 {availableTags.map((tag) => (
                   <button
                     key={tag}
                     type="button"
                     onClick={() => handleTagToggle(tag)}
-                    className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-                      formData.tags.includes(tag)
-                        ? "bg-red-500 text-white"
-                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                    className={`px-3 py-1 rounded-full text-sm font-medium ${
+                      formData.tags.includes(tag) ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
                   >
                     {tag}
@@ -219,86 +209,45 @@ export default function CreatePostPage() {
               </div>
             </div>
 
-            {/* Thumbnail */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Thumbnail<span className="text-red-500">*</span>
-              </label>
+              <label className="block mb-2 font-medium text-gray-700 text-sm">Thumbnail</label>
               <div className="flex items-start space-x-4">
-                <div className="w-48 h-48 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+                <div className="flex justify-center items-center bg-gray-100 rounded-lg w-48 h-48 overflow-hidden">
                   {previewImage ? (
-                    <img
-                      src={previewImage}
-                      alt="Preview"
-                      className="w-full h-full object-cover"
-                    />
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={previewImage} alt="Preview" className="w-full h-full object-cover" />
                   ) : (
                     <PhotoIcon className="w-16 h-16 text-gray-400" />
                   )}
                 </div>
+
                 <div className="flex-1">
-                  <input
-                    type="file"
-                    onChange={handleFileChange}
-                    accept="image/*"
-                    className="hidden"
-                    id="thumbnail-upload"
-                  />
-                  <label
-                    htmlFor="thumbnail-upload"
-                    className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 cursor-pointer"
-                  >
+                  <input id="thumbnail-upload" type="file" accept="image/*" onChange={handleFileChange} className="hidden" />
+                  <label htmlFor="thumbnail-upload" className="inline-flex items-center bg-white hover:bg-gray-50 px-4 py-2 border border-gray-300 rounded-lg font-medium text-gray-700 text-sm cursor-pointer">
                     Choose File
                   </label>
-                  {formData.thumbnail && (
-                    <p className="mt-2 text-sm text-gray-500">
-                      {formData.thumbnail.name}
-                    </p>
-                  )}
-                  <p className="mt-2 text-xs text-gray-500">
-                    Recommended size: 1200x630px. Max file size: 2MB
-                  </p>
+                  {formData.thumbnail && <p className="mt-2 text-gray-500 text-sm">{formData.thumbnail.name}</p>}
+                  <p className="mt-2 text-gray-500 text-xs">Recommended size: 1200x630px. Max file size: 2MB</p>
                 </div>
               </div>
             </div>
 
-            {/* Content Editor */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block mb-2 font-medium text-gray-700 text-sm">
                 Text Editor<span className="text-red-500">*</span>
               </label>
-              <Editor
-                value={""}
-                onChange={function (
-                  value?: string | undefined,
-                  event?: ChangeEvent<HTMLTextAreaElement> | undefined
-                ): void {
-                  throw new Error("Function not implemented.");
-                }}
-              />
+              <Editor value={formData.body} onChange={(value?: string) => setFormData((prev) => ({ ...prev, body: value ?? "" }))} />
             </div>
 
-            {/* Action Buttons */}
             <div className="flex justify-end space-x-4 pt-6 border-t">
-              <button
-                type="button"
-                onClick={() => router.back()}
-                className="px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
-              >
+              <button type="button" onClick={() => router.back()} className="hover:bg-gray-50 px-6 py-2 border border-gray-300 rounded-lg text-gray-700">
                 Cancel
               </button>
-              <button
-                type="button"
-                onClick={(e) => handleSubmit(e, "draft")}
-                className="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
-              >
+              <button type="button" onClick={() => handleSubmit(null, "draft")} className="bg-gray-500 hover:bg-gray-600 px-6 py-2 rounded-lg text-white">
                 Save as Draft
               </button>
-              <button
-                type="submit"
-                className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
-              >
-                Simpan
+              <button type="submit" disabled={loading} className="bg-red-500 hover:bg-red-600 px-6 py-2 rounded-lg text-white">
+                {loading ? "Menyimpan..." : "Simpan"}
               </button>
             </div>
           </div>
