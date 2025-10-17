@@ -26,11 +26,11 @@ const poppins = Poppins({
 
 const navigation = [
   { name: 'Dashboard', href: '/admin', icon: HomeIcon},
-  { name: 'Post', href: '/admin/posts', icon: DocumentTextIcon },
+  { name: 'Post', href: '/admin/posts/post', icon: DocumentTextIcon },
   { name: 'Info Organ Setup', href: '/admin/organisasi', icon: BuildingOfficeIcon },
   { name: 'Aspirasi', href: '/aspirasi', icon: FlagIcon },
-  { name: 'Ekskul', href: '/admin/eksul', icon: TrophyIcon },
-  { name: 'Users', href: '/users', icon: UsersIcon },
+  { name: 'Ekskul', href: '/admin/ekskul', icon: TrophyIcon },
+  { name: 'Users', href: '/admin/user', icon: UsersIcon },
 ]
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -59,11 +59,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           {/* Logo */}
           <div className="p-6 border-b">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-red-400 to-orange-500 rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 2l2.39 4.88L18 7.62l-4 3.87.94 5.51L10 14.12 5.06 17l.94-5.51-4-3.87 5.61-.74L10 2z" />
-                </svg>
-              </div>
               <span className="text-xl font-semibold text-gray-800">Moklet Portal</span>
             </div>
           </div>

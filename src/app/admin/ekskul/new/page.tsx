@@ -158,19 +158,6 @@ export default function EkskulFormPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumb */}
-      <div className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span onClick={() => router.push('/')} className="hover:text-gray-900 cursor-pointer">Home</span>
-            <ChevronRight className="w-4 h-4" />
-            <span onClick={() => router.push('/admin')} className="hover:text-gray-900 cursor-pointer">Admin</span>
-            <ChevronRight className="w-4 h-4" />
-            <span onClick={() => router.push('/admin/ekskul')} className="hover:text-gray-900 cursor-pointer">Ekstrakurikuler</span>
-          </div>
-        </div>
-      </div>
-
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">

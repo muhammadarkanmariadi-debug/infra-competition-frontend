@@ -1,6 +1,9 @@
 {
-  "/admin/ekskul/new/page": "app/admin/ekskul/new/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/admin/ekskul/page": "app/admin/ekskul/page.js",
-  "/admin/page": "app/admin/page.js",
+  "/admin/organisasi/new/page": "app/admin/organisasi/new/page.js",
+  "/admin/organisasi/page": "app/admin/organisasi/page.js",
+  "/admin/posts/post/page": "app/admin/posts/post/page.js",
+  "/admin/user/page": "app/admin/user/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

@@ -67,18 +67,6 @@ export default function EkskulListPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumb */}
-      <div className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span className="hover:text-gray-900 cursor-pointer">Home</span>
-            <ChevronRight className="w-4 h-4" />
-            <span className="hover:text-gray-900 cursor-pointer">Admin</span>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-gray-900 font-medium">Ekstrakurikuler</span>
-          </div>
-        </div>
-      </div>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-6 py-8">
