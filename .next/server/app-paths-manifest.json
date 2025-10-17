@@ -1,10 +1,10 @@
 {
-<<<<<<< HEAD
   "/_not-found/page": "app/_not-found/page.js",
 =======
 <<<<<<< HEAD
   "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+<<<<<<< HEAD
   "/page": "app/page.js",
   "/postes/page": "app/postes/page.js"
 =======
@@ -17,4 +17,7 @@
   "/admin/user/page": "app/admin/user/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 >>>>>>> origin/main
+=======
+  "/page": "app/page.js"
+>>>>>>> 7658e65206ae2d35ff7d3ab830cf9d253e38ac40
 }
