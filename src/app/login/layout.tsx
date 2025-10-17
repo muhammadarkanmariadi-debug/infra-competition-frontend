@@ -81,15 +81,11 @@ function LoginForm() {
   });
 
   return (
-    <div className="flex justify-center items-center bg-gray-200 p-4 min-h-screen">
-      <div className="bg-white shadow-lg p-8 rounded-2xl w-full max-w-md">
+    <div className="min-h-screen flex items-center justify-center p-4">
+      <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
         {/* Logo and Title */}
-        <div className="flex justify-center items-center gap-3 mb-8">
-          <div className="flex justify-center items-center bg-red-500 rounded-full w-10 h-10">
-            <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 2.18l8 4v8.82c0 4.52-3.05 8.78-7 9.86V4.18z"/>
-              <circle cx="12" cy="12" r="3"/>
-            </svg>
+        <div className="flex items-center justify-center gap-3 mb-8">
+          <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
           </div>
           <h1 className="font-bold text-gray-900 text-2xl">Moklet Portal</h1>
         </div>
