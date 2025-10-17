@@ -1232,17 +1232,6 @@ function Header() {
                                         fileName: "[project]/src/app/_components/Header.tsx",
                                         lineNumber: 52,
                                         columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/assets/image/foto-bareng-triangle.png",
-                                        alt: "foto bareng segitiga",
-                                        width: 104,
-                                        height: 92.5,
-                                        className: "max-md:hidden top-[411px] left-[370px] min-xl:absolute rotate-[-5deg]"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 59,
-                                        columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
@@ -1254,14 +1243,14 @@ function Header() {
                                 className: "2xl:top-[-700px] 2xl:right-[400px] 2xl:relative kanan",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/assets/image/right-triangle.png",
+                                        src: "/assets/image/Polygon20.png",
                                         alt: "triangle kanan",
                                         width: 318,
                                         height: 283.5,
                                         className: "max-md:hidden top-[377px] right-[104px] min-xl:absolute"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1272,35 +1261,36 @@ function Header() {
                                         className: "max-md:hidden top-[400px] right-[350px] min-xl:absolute"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 69,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/assets/image/triangle-sm.png",
+                                        src: "/assets/image/Group1395.png" //
+                                        ,
                                         alt: "Server Rack",
                                         width: 32,
                                         height: 28,
                                         className: "max-md:hidden top-[183px] right-[295px] min-xl:absolute rotate-[-5deg]"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "/assets/image/triangle-lg.png",
+                                        src: "/assets/image/Group1395.png",
                                         alt: "triangle besar",
                                         width: 90,
                                         height: 81,
                                         className: "max-md:hidden top-[264px] right-[108px] min-xl:absolute"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 83,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 68,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1311,18 +1301,18 @@ function Header() {
                                 className: "max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[800px] min-xl:absolute"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 99,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                src: "/assets/image/panah-kanan.png",
+                                src: "/assets/image/Vector39.png",
                                 alt: "panah kanan",
                                 width: 161,
                                 height: 32,
                                 className: "max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[900px] min-xl:absolute"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 106,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1345,7 +1335,7 @@ function Header() {
                 className: "hidden md:block top-16 md:top-20 left-10 md:left-24 absolute"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Header.tsx",
-                lineNumber: 117,
+                lineNumber: 110,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -1356,7 +1346,7 @@ function Header() {
                 className: "hidden md:block top-16 md:top-20 right-10 md:right-24 absolute"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Header.tsx",
-                lineNumber: 124,
+                lineNumber: 117,
                 columnNumber: 7
             }, this)
         ]

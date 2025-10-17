@@ -249,7 +249,7 @@ export default function News() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <p className="text-[14px] text-black font-[500] text-black hover:text-primary transition-colors duration-300">
+                  <p className="text-[14px] text-black font-[500] hover:text-primary transition-colors duration-300">
                     <a href="/">Iqbal Setengah Matang</a>
                   </p>
                 </div>

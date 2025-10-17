@@ -1,50 +1,23 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { api } from "../_components/lib/api";
 
 interface Posts{
   id: number;
   title: string;
-  author: string;
+  author: {
+    name: string;
+    role: string;
+  };
   date: string;
-  image: string;
+  thumbnail: string;
   short_body: string;
   body: string;
 }
 
 
 
-const posts = [
-  {
-    id: 1,
-    title: "MAC A Rhythm: Saat Aula Berubah Jadi Panggung Seni",
-    author: "Rayyan Irsa",
-    date: "Sep 14, 2025",
-    image:
-      "https://www.moklet.org/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmokletorg%2Fimage%2Fupload%2Fv1753081392%2Fapp_media%2Ffile_rk0plj.png&w=1920&q=75",
-    excerpt:
-      "MAC A Rhythm menghadirkan suasana berbeda di aula SMK Telkom Malang...",
-    content: `
-      <p>Acara MAC A Rhythm sukses menarik perhatian siswa dengan suasana musik yang hangat dan kreatif.</p>
-      <p>Berbagai band dari kelas 10–12 tampil memukau, menunjukkan bakat luar biasa siswa Moklet.</p>
-    `,
-  },
-  {
-    id: 2,
-    title: "MPLS 2025 SMK Telkom Malang: Stinging Like a Bee",
-    author: "Fadi Alyuliansyah",
-    date: "Jul 21, 2025",
-    image:
-      "https://www.moklet.org/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmokletorg%2Fimage%2Fupload%2Fv1753081392%2Fapp_media%2Ffile_rk0plj.png&w=1920&q=75",
-    excerpt:
-      "Kegiatan MPLS tahun ini membawa tema baru dan semangat tinggi...",
-    content: `
-      <p>MPLS 2025 berlangsung meriah dengan berbagai kegiatan interaktif dan edukatif.</p>
-      <p>Siswa baru mengenal lebih dekat budaya dan lingkungan SMK Telkom Malang.</p>
-    `,
-  },
-];
 
 export default function BeritaPage() {
   const [selectedPost, setSelectedPost] = useState<number | null>(null);
@@ -54,7 +27,7 @@ export default function BeritaPage() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      api.get('/blog').then((res) => {
+      api.get('/blog').then((res: { data: { data: { data: SetStateAction<Posts[]>; }; }; }) => {
         console.log(res.data);
         setPostesTes(res.data.data.data);
       })
@@ -99,7 +72,7 @@ export default function BeritaPage() {
             >
               <div className="flex gap-4">
                 <Image
-                  src={post.image}
+                  src={`http://localhost:8000/storage/${post.thumbnail}`}
                   alt={post.title}
                   width={120}
                   height={80}
@@ -114,7 +87,7 @@ export default function BeritaPage() {
                   </h2>
                   <p className="mt-1 text-gray-500 text-sm">{post.short_body}</p>
                   <div className="flex justify-between mt-2 text-gray-400 text-xs">
-                    <span>{post.author}</span>
+                    <span>{post.author.name}</span>
                     <span>{post.date}</span>
                   </div>
                 </div>

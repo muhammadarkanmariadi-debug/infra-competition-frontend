@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
-import "./globals.css";
-import "@fortawesome/fontawesome-svg-core/styles.css";
+
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
@@ -45,7 +44,7 @@ export default function RootLayout({
         <Footer />
 
         {/* Tombol Scroll to Top */}
-        <div className="fixed bottom-5 right-5 z-[300]">
+        <div className="right-5 bottom-5 z-[300] fixed">
           <ScrollTop />
         </div>
       </body>
