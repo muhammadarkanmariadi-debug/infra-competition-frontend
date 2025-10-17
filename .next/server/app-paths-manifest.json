@@ -1,4 +1,17 @@
 {
+<<<<<<< HEAD
   "/_not-found/page": "app/_not-found/page.js",
+<<<<<<< HEAD
   "/page": "app/page.js"
+=======
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/postes/page": "app/postes/page.js"
+=======
+  "/admin/ekskul/new/page": "app/admin/ekskul/new/page.js",
+  "/admin/ekskul/page": "app/admin/ekskul/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+>>>>>>> origin/main
+>>>>>>> 5aa99f6680542131cc045e7a4e89ce3878aa7855
 }
