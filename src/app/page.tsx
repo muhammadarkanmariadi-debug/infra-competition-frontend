@@ -9,6 +9,7 @@ import NewsSection from './_components/News'
 import VideoProfil from './_components/VideoProfil'
 import WhyUs from './_components/WhyUs'
 import VisiMisi from './_components/VisiMisi'
+import AspirasiPage from './_components/AspirasiForm'
 
 export default function Home () {
   return (
@@ -19,6 +20,7 @@ export default function Home () {
       <TrackRecord />
       <VideoProfil />
       <Faq />
+      <AspirasiPage />
 
     </>
   )

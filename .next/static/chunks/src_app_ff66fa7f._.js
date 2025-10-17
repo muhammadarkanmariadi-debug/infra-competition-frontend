@@ -140,7 +140,7 @@ function LoginForm() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-2xl font-bold text-gray-900",
+                            className: "font-bold text-gray-900 text-2xl",
                             children: "Moklet Portal"
                         }, void 0, false, {
                             fileName: "[project]/src/app/login/layout.tsx",
@@ -160,7 +160,7 @@ function LoginForm() {
                             className: "mb-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "block text-sm font-semibold text-gray-900 mb-2",
+                                    className: "block mb-2 font-semibold text-gray-900 text-sm",
                                     children: "Email"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/login/layout.tsx",
@@ -172,7 +172,7 @@ function LoginForm() {
                                     value: formData.email,
                                     onChange: (e)=>handleInputChange('email', e.target.value),
                                     placeholder: "user@student.smktelkom-mlg.sch.id",
-                                    className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none text-sm",
+                                    className: "px-4 py-3 border border-gray-300 focus:border-transparent rounded-lg outline-none focus:ring-2 focus:ring-red-500 w-full text-sm",
                                     required: true,
                                     disabled: isLoading
                                 }, void 0, false, {
@@ -190,7 +190,7 @@ function LoginForm() {
                             className: "mb-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "block text-sm font-semibold text-gray-900 mb-2",
+                                    className: "block mb-2 font-semibold text-gray-900 text-sm",
                                     children: "Password"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/login/layout.tsx",
@@ -204,7 +204,7 @@ function LoginForm() {
                                         value: formData.password,
                                         onChange: (e)=>handleInputChange('password', e.target.value),
                                         placeholder: "••••••••",
-                                        className: "w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none text-sm",
+                                        className: "px-4 py-3 border border-gray-300 focus:border-transparent rounded-lg outline-none focus:ring-2 focus:ring-red-500 w-full text-sm",
                                         required: true,
                                         disabled: isLoading
                                     }, void 0, false, {
@@ -226,7 +226,7 @@ function LoginForm() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             type: "submit",
                             disabled: isLoading,
-                            className: "w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 rounded-lg border border-gray-300 transition-colors mb-4 disabled:opacity-50 disabled:cursor-not-allowed",
+                            className: "bg-white hover:bg-gray-50 disabled:opacity-50 mb-4 py-3 border border-gray-300 rounded-lg w-full font-medium text-gray-700 transition-colors disabled:cursor-not-allowed",
                             children: isLoading ? 'Loading...' : 'Sign in with Credentials'
                         }, void 0, false, {
                             fileName: "[project]/src/app/login/layout.tsx",
@@ -243,14 +243,14 @@ function LoginForm() {
                     className: "flex items-center gap-4 my-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex-1 h-px bg-gray-300"
+                            className: "flex-1 bg-gray-300 h-px"
                         }, void 0, false, {
                             fileName: "[project]/src/app/login/layout.tsx",
                             lineNumber: 141,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-sm text-gray-500",
+                            className: "text-gray-500 text-sm",
                             children: "or"
                         }, void 0, false, {
                             fileName: "[project]/src/app/login/layout.tsx",
@@ -258,7 +258,7 @@ function LoginForm() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex-1 h-px bg-gray-300"
+                            className: "flex-1 bg-gray-300 h-px"
                         }, void 0, false, {
                             fileName: "[project]/src/app/login/layout.tsx",
                             lineNumber: 143,
@@ -273,7 +273,7 @@ function LoginForm() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>handleGoogleLogin(),
                     disabled: isLoading,
-                    className: "w-full bg-white hover:bg-gray-50 text-gray-700 font-medium py-3 rounded-lg border border-gray-300 transition-colors flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed",
+                    className: "flex justify-center items-center gap-3 bg-white hover:bg-gray-50 disabled:opacity-50 py-3 border border-gray-300 rounded-lg w-full font-medium text-gray-700 transition-colors disabled:cursor-not-allowed",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                             className: "w-5 h-5",
@@ -325,7 +325,7 @@ function LoginForm() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-6 text-center text-sm text-gray-500",
+                    className: "mt-6 text-gray-500 text-sm text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "#",

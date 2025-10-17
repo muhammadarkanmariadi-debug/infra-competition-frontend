@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import "./globals.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Navbar from "./_components/Navbar";
