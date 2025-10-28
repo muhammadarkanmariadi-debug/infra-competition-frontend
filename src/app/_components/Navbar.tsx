@@ -25,12 +25,18 @@ interface NavOption {
 
 const navOptions: NavOption[] = [
   { title: 'Beranda', href: '/'},
-  { title: 'Tentang Kami', href: '#tentangkami' },
-  { title: 'Program', href: '#programkeahlian' },
+  { title: 'Akademik', dropdown: [
+    { title: 'MokletApps', href: '/posts' },
+    { title: 'Siakad', href: '/ekstrakurikuler' },
+    { title: 'Mylms', href: '/organisasi' },
+  ]},
+  { title: 'Program', href: '/programkeahlian' },
   { title: 'Tentang Sekolah', dropdown: [
     { title: 'Berita Sekolah', href: '/posts' },
     { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
     { title: 'Organisasi', href: '/organisasi' },
+    { title: 'Sejarah', href: '/sejarah' },
+  
   ]},
   { title: 'Hubungi Kami', href: '/hubungi-kami' }
 ]
@@ -79,7 +85,7 @@ export default function Navbar () {
           className={cn(
             `fixed hidden left-1/2 scale-[0.9] top-[24.5px] xl:flex xl:items-center justify-between w-full transition-all duration-300 ${
               scrolled
-                ? (pathname === '/post' ? 'relative' : 'max-w-[900px] 2xl:max-w-[900px]')
+                ? (pathname === '/post' ? 'relative' : 'max-w-[900px] 2xl:max-w-[1000px]')
                 : '  max-w-[700px] 2xl:max-w-[800px]'
             } -translate-x-1/2 rounded-full border border-neutral-300 bg-white px-[50px] py-3 drop-shadow-[0_3px_6px_rgba(0,0,0,0.25)]`
           )}
@@ -166,7 +172,7 @@ export default function Navbar () {
           ))}
         </div>
         <div className='hidden min-xl:flex gap-[9px] mt-[6px] min-xl:ml-[129px]'>
-          <Link href={'/registration'} className='min-xl:mt-[36px]'>
+          <Link href={'https://ppdb.telkomschools.sch.id/signup?lemdik=51'} className='min-xl:mt-[36px]'>
             <div className='hidden xl:block bg-primary hover:bg-primary/90 px-4 py-2 rounded-full text-white transition-colors'>
               <h1 className='font-medium'>PPDB</h1>
             </div>

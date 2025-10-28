@@ -39,7 +39,7 @@ const Berita = () => {
       <h1 className='font-[700] text-[48px] text-primary text-center'>
         Berita Terbaru
       </h1>
-      <div className='flex xl:flex-row justify-center items-center gap-10 mx-auto mt-10'>
+      <div className='flex xl:flex-row flex-col justify-center items-center gap-10 mx-auto mt-10'>
         {datas.map(item => (
           <div onClick={() => handleCardClick(item.slug)}
             key={item.id}

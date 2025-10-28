@@ -9,9 +9,10 @@ import VideoProfil from './_components/VideoProfil'
 import WhyUs from './_components/WhyUs'
 import VisiMisi from './_components/VisiMisi'
 import AspirasiPage from './_components/AspirasiForm'
-import CountSiswa from './_components/CountSIswa'
 import JurusanSection from './_components/Jurusan'
 import Berita from './_components/Berita'
+import Statistic from './_components/Statistic'
+
 
 export default function Home () {
   return (
@@ -21,7 +22,7 @@ export default function Home () {
       <Berita />
       <WhyUs />
 
-      <CountSiswa />
+      <Statistic />
       <JurusanSection />
       <VideoProfil />
       <Faq />

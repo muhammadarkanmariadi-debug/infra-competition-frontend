@@ -1148,12 +1148,10 @@ __turbopack_context__.s({
     "default": (()=>Faq)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/_components/card.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$const$2f$datas$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/_components/const/datas.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 "use client";
-;
 ;
 ;
 ;
@@ -1170,11 +1168,11 @@ function Faq() {
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "relative bg-secondary w-full mt-31",
+            className: "relative bg-secondary mt-31 w-full",
             id: "FAQ",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "absolute -top-[15px] left-0 w-full overflow-hidden leading-none",
+                    className: "-top-[15px] left-0 absolute w-full overflow-hidden leading-none",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                         width: "1440",
                         height: "60",
@@ -1238,10 +1236,10 @@ function Faq() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                    className: "relative bg-[#E55959] py-16 px-6 overflow-hidden",
+                    className: "relative bg-[#E55959] px-6 py-16 overflow-hidden",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-center text-white text-3xl font-bold mb-10",
+                            className: "mb-10 font-bold text-white text-3xl text-center",
                             children: "Benefit & FAQ"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/FAQ.tsx",
@@ -1256,7 +1254,7 @@ function Faq() {
                                     transform: `translateX(-${currentSlide * 100}%)`
                                 },
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$const$2f$datas$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataFAQ"].map((faq, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-full flex-shrink-0 px-2",
+                                        className: "flex-shrink-0 px-2 w-full",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FAQCard"], {
                                             ...faq
                                         }, void 0, false, {
@@ -1280,7 +1278,7 @@ function Faq() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-center items-center gap-x-2 mt-8 relative z-10",
+                            className: "z-10 relative flex justify-center items-center gap-x-2 mt-8",
                             children: Array.from({
                                 length: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$const$2f$datas$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dataFAQ"].length
                             }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1301,30 +1299,6 @@ function Faq() {
                             fileName: "[project]/src/app/_components/FAQ.tsx",
                             lineNumber: 68,
                             columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            src: "/assets/image/cakar-kanan.png" // ganti path sesuai gambar yang kamu upload
-                            ,
-                            alt: "Paw left",
-                            width: 200,
-                            height: 200,
-                            className: "absolute bottom-4 max-sm:hidden left-6 opacity-90 animate-pulse"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/_components/FAQ.tsx",
-                            lineNumber: 82,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            src: "/assets/image/cakar-kiri.png" // sama dengan atas
-                            ,
-                            alt: "Paw right",
-                            width: 200,
-                            height: 200,
-                            className: "absolute bottom-4 max-sm:hidden right-6 opacity-90 animate-pulse"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/_components/FAQ.tsx",
-                            lineNumber: 89,
-                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
@@ -1336,7 +1310,7 @@ function Faq() {
                     className: "block bg-[#E9E2EA] h-5"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/FAQ.tsx",
-                    lineNumber: 97,
+                    lineNumber: 83,
                     columnNumber: 9
                 }, this)
             ]
@@ -1874,28 +1848,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/_components/lib/api.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 'use client';
 ;
 ;
 ;
 ;
-const jurusanList = [
-    {
-        nama: 'Rekayasa Perangkat Lunak (RPL)',
-        gambar: '/assets/image/jurusan-rpl.png',
-        deskripsi: 'Jurusan yang fokus pada pengembangan software, mulai dari website, mobile app, hingga sistem berbasis AI. Cocok buat kamu yang suka ngoding, desain, dan logika kreatif 💻'
-    },
-    {
-        nama: 'Teknik Komputer & Jaringan (TKJ)',
-        gambar: '/assets/image/jurusan-tkj.png',
-        deskripsi: 'Di TKJ, kamu bakal belajar tentang instalasi jaringan, server, dan keamanan data. Jurusan ini cocok buat kamu yang suka dunia hardware, network, dan teknologi komunikasi 🌐'
-    },
-    {
-        nama: 'Pengembangan Gim (Game Dev)',
-        gambar: '/assets/image/jurusan-game.png',
-        deskripsi: 'Gabungan seni, logika, dan teknologi! Kamu bakal belajar bikin game dari nol, mulai dari desain karakter, coding gameplay, sampai testing dan publikasi 🎮'
-    }
-];
+;
 function JurusanSection() {
     const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -1906,83 +1865,97 @@ function JurusanSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "relative bg-gradient-to-b from-[#FFF5F5] to-[#FFFFFF] py-20",
         id: "jurusan",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mx-auto px-6 text-center container",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "mb-4 font-bold text-primary text-4xl",
-                    children: "Jurusan Kami"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/_components/Jurusan.tsx",
-                    lineNumber: 49,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "mx-auto mb-12 max-w-2xl text-secondary-text text-lg",
-                    children: "Pilih jurusan sesuai passion kamu! Semua jurusan di SMK Telkom Malang dirancang untuk mempersiapkan kamu jadi profesional muda di dunia teknologi."
-                }, void 0, false, {
-                    fileName: "[project]/src/app/_components/Jurusan.tsx",
-                    lineNumber: 50,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "justify-center items-stretch gap-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3",
-                    children: data.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "group flex flex-col items-center bg-white shadow-md hover:shadow-2xl p-6 border border-gray-100 rounded-3xl overflow-hidden text-center transition-all hover:-translate-y-2 duration-500",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative mb-5 w-[150px] h-[150px]",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                        src: 'http://localhost:8000/storage/' + item.thumbnail,
-                                        alt: item.name,
-                                        fill: true,
-                                        className: "object-contain group-hover:scale-105 transition-transform duration-500"
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mx-auto px-6 text-center container",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "mb-4 font-bold text-black text-4xl",
+                        children: "Jurusan Kami"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/_components/Jurusan.tsx",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mx-auto mb-12 max-w-2xl text-black text-lg",
+                        children: "Pilih jurusan sesuai passion kamu! Semua jurusan di SMK Telkom Malang dirancang untuk mempersiapkan kamu jadi profesional muda di dunia teknologi."
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/_components/Jurusan.tsx",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/_components/Jurusan.tsx",
+                lineNumber: 29,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "items-start",
+                children: data.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `flex flex-wrap items-center my-10  rounded-2xl ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                src: 'http://localhost:8000/storage/' + item.thumbnail,
+                                alt: item.name,
+                                width: 400,
+                                height: 150,
+                                className: "flex-shrink-0"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/_components/Jurusan.tsx",
+                                lineNumber: 45,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: `flex flex-col gap-8 ${index % 2 === 0 ? 'ml-6 items-start' : 'mr-6 items-end text-right'}`,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "font-bold text-5xl",
+                                        children: item.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                        lineNumber: 63,
-                                        columnNumber: 17
+                                        lineNumber: 59,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "max-w-4xl text-gray-600 text-xl",
+                                        children: item.description
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/_components/Jurusan.tsx",
+                                        lineNumber: 60,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        href: `/jurusan/${item.id}`,
+                                        className: "hover:bg-primary mt-4 px-6 py-2 border border-primary rounded-lg w-fit font-semibold text-primary hover:text-white transition-colors duration-300",
+                                        children: "Lihat Detail"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/_components/Jurusan.tsx",
+                                        lineNumber: 61,
+                                        columnNumber: 15
                                     }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                    lineNumber: 62,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "mb-3 font-semibold text-primary text-2xl",
-                                    children: item.name
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                    lineNumber: 70,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-[15px] text-gray-600 leading-relaxed",
-                                    children: item.description
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                    lineNumber: 73,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, index, true, {
-                            fileName: "[project]/src/app/_components/Jurusan.tsx",
-                            lineNumber: 58,
-                            columnNumber: 13
-                        }, this))
-                }, void 0, false, {
-                    fileName: "[project]/src/app/_components/Jurusan.tsx",
-                    lineNumber: 56,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/app/_components/Jurusan.tsx",
-            lineNumber: 48,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/_components/Jurusan.tsx",
+                                lineNumber: 52,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, index, true, {
+                        fileName: "[project]/src/app/_components/Jurusan.tsx",
+                        lineNumber: 39,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/app/_components/Jurusan.tsx",
+                lineNumber: 37,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/app/_components/Jurusan.tsx",
-        lineNumber: 44,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }

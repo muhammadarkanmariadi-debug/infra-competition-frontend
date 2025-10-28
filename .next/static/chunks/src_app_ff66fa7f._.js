@@ -371,7 +371,7 @@ function LoginForm() {
         columnNumber: 5
     }, this);
 }
-_s(LoginForm, "fd30dS6DLZTOPZThDjPdHK2FYHQ=", false, function() {
+_s(LoginForm, "OwsvGMd38iQu3+Wz/nbBriyGSMY=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$oauth$2f$google$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGoogleLogin"]

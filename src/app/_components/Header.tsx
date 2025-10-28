@@ -27,14 +27,14 @@ export default function Header() {
     className='z-[-1] relative mx-auto mt-[38px] w-[300px] xl:w-[400px] hover:scale-105 transition-transform duration-300'
   />
 <a
-  href="/registration"
-  className="flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-3 xl:py-5 rounded-full w-[400px] max-sm:w-[350px] xl:w-[450px] font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300"
+  href="/login"
+  className="flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-3 xl:py-5 rounded-full w-[400px] max-sm:w-[350px] xl:w- font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300 [450px]"
 >
   Ikuti Kami!
 </a>
 
 </div>
-        <div className='hiasan'>
+        <div className='sm:hidden xl:block hiasan'>
           <div className='2xl:top-[-700px] 2xl:left-[300px] 2xl:relative kiri'>
             <Image
               src='/assets/image/server-rack.png'
