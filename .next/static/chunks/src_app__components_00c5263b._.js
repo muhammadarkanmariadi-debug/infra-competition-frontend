@@ -2073,13 +2073,13 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
 function VideoProfil() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-            className: "relative bg-gradient-to-br from-[#FFF5F5] via-white to-[#F0F8FF] w-full overflow-hidden",
+            className: "relative bg-secondary w-full overflow-hidden",
             id: "video-profil",
             initial: {
                 opacity: 0,
@@ -2091,40 +2091,67 @@ function VideoProfil() {
             },
             transition: {
                 duration: 0.8,
-                ease: "easeOut"
+                ease: 'easeOut'
             },
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    className: "top-0 left-0 absolute opacity-10 w-full h-full",
-                    initial: {
-                        scale: 0
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                    style: {
+                        marginTop: '-20px'
                     },
-                    animate: {
-                        scale: 1
-                    },
-                    transition: {
-                        duration: 1,
-                        delay: 0.5
-                    },
+                    width: "1440",
+                    height: "60",
+                    viewBox: "0 0 1440 60",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    className: "w-full h-auto",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "top-10 left-10 absolute bg-primary blur-xl rounded-full w-32 h-32"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                            lineNumber: 22,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "right-10 bottom-10 absolute bg-secondary blur-xl rounded-full w-48 h-48"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            d: "M0 20 Q720 50 1440 20 L1440 0 Q720 10 0 0 Z",
+                            fill: "url(#gradienName)"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/VideoProfil.tsx",
                             lineNumber: 23,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
+                                id: "gradienName",
+                                x1: "0",
+                                y1: "0",
+                                x2: "0",
+                                y2: "100%",
+                                gradientUnits: "userSpaceOnUse",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                        stopColor: "#E9E2EA"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/_components/VideoProfil.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                        offset: "1",
+                                        stopColor: "#F5F5F5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/_components/VideoProfil.tsx",
+                                        lineNumber: 37,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/_components/VideoProfil.tsx",
+                                lineNumber: 28,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/_components/VideoProfil.tsx",
+                            lineNumber: 27,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                    lineNumber: 16,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2149,7 +2176,7 @@ function VideoProfil() {
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                    className: "mb-6 font-bold text-black text-3xl md:text-4xl",
+                                    className: "mb-6 font-bold text-white text-3xl md:text-4xl",
                                     initial: {
                                         opacity: 0,
                                         scale: 0.9
@@ -2168,11 +2195,11 @@ function VideoProfil() {
                                     children: "Video Profil"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                    className: "text-black text-base md:text-lg leading-relaxed",
+                                    className: "text-white text-base md:text-lg leading-relaxed",
                                     initial: {
                                         opacity: 0,
                                         y: 20
@@ -2192,12 +2219,12 @@ function VideoProfil() {
                                         "Video profil sekolah yang akan memperkenalkan kepada kalian hal-hal yang berkaitan dengan lingkungan sekolah, fasilitas umum sekolah, fasilitas pembelajaran, ruang belajar, kegiatan siswa dan masih banyak lagi.",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 70,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 71,
                                             columnNumber: 15
                                         }, this),
                                         "Biar kalian tidak penasaran apa saja yang ada di dalam",
@@ -2206,20 +2233,20 @@ function VideoProfil() {
                                             children: "SMK Telkom Malang"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 73,
                                             columnNumber: 15
                                         }, this),
                                         ", yuk segera tonton video profilnya!"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 59,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                            lineNumber: 28,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2258,7 +2285,7 @@ function VideoProfil() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 87,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
@@ -2273,49 +2300,39 @@ function VideoProfil() {
                                     allowFullScreen: true
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 92,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                            lineNumber: 63,
+                            lineNumber: 78,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                    lineNumber: 26,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    className: "z-10 relative flex justify-center mt-10",
+                    className: "block bg-[#E9E2EA] h-5",
                     initial: {
                         opacity: 0,
-                        y: 30
+                        scaleX: 0
                     },
-                    whileInView: {
+                    animate: {
                         opacity: 1,
-                        y: 0
+                        scaleX: 1
                     },
                     transition: {
-                        duration: 0.6,
-                        delay: 1.0
-                    },
-                    viewport: {
-                        once: true
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-gradient-to-r from-primary to-secondary rounded-full w-32 h-1"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                        lineNumber: 101,
-                        columnNumber: 11
-                    }, this)
+                        duration: 0.8,
+                        delay: 1.4
+                    }
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/VideoProfil.tsx",
-                    lineNumber: 94,
-                    columnNumber: 9
+                    lineNumber: 108,
+                    columnNumber: 10
                 }, this)
             ]
         }, void 0, true, {
@@ -3864,6 +3881,9 @@ const Statistic = ()=>{
                     delay: 0.2
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                    style: {
+                        marginTop: '-20px'
+                    },
                     width: "1440",
                     height: "60",
                     viewBox: "0 0 1440 60",

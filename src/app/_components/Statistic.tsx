@@ -87,7 +87,7 @@ const Statistic: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <svg
+        <svg style={{ marginTop: '-20px' }}
           width='1440'
           height='60'
           viewBox='0 0 1440 60'
