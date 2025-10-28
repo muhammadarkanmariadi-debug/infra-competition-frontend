@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FAQCard } from "./card";
 import { dataFAQ } from "./const/datas";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Faq() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -16,8 +17,19 @@ export default function Faq() {
 
   return (
     <>
-      <div className="relative bg-secondary mt-31 w-full" id="FAQ">
-        <div className="-top-[15px] left-0 absolute w-full overflow-hidden leading-none">
+      <motion.div 
+        className="relative bg-secondary mt-31 w-full" 
+        id="FAQ"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <motion.div 
+          className="-top-[15px] left-0 absolute w-full overflow-hidden leading-none"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
           <svg
             width="1440"
             height="60"
@@ -42,46 +54,90 @@ export default function Faq() {
               </linearGradient>
             </defs>
           </svg>
-        </div>
-        <section className="relative bg-[#E55959] px-6 py-16 overflow-hidden">
+        </motion.div>
+        <motion.section 
+          className="relative bg-[#E55959] px-6 py-16 overflow-hidden"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
           {/* Section Title */}
-          <h2 className="mb-10 font-bold text-white text-3xl text-center">
+          <motion.h2 
+            className="mb-10 font-bold text-white text-3xl text-center"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
             Benefit & FAQ
-          </h2>
+          </motion.h2>
 
           {/* Cards Slider */}
-          <div className="relative overflow-hidden">
-            <div
+          <motion.div 
+            className="relative overflow-hidden"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <motion.div
               className="flex transition-transform duration-300"
               style={{
                 transform: `translateX(-${currentSlide * 100}%)`,
-              }}>
+              }}
+              initial={{ x: 0 }}
+              animate={{ x: `-${currentSlide * 100}%` }}
+              transition={{ duration: 0.5 }}
+            >
               {dataFAQ.map((faq, index) => (
-                <div key={index} className="flex-shrink-0 px-2 w-full">
+                <motion.div 
+                  key={index} 
+                  className="flex-shrink-0 px-2 w-full"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  whileHover={{ scale: 1.02 }}
+                >
                   <FAQCard {...faq} />
-                </div>
+                </motion.div>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Slider Indicators */}
-          <div className="z-10 relative flex justify-center items-center gap-x-2 mt-8">
+          <motion.div 
+            className="z-10 relative flex justify-center items-center gap-x-2 mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
+            viewport={{ once: true }}
+          >
             {Array.from({ length: dataFAQ.length }).map((_, index) => (
-              <button key={index} onClick={() => setCurrentSlide(index)}>
+              <motion.button 
+                key={index} 
+                onClick={() => setCurrentSlide(index)}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
                 <div
                   className={`rounded-full bg-white transition-all duration-300 ${
                     currentSlide === index
                       ? "w-[0.625rem] h-[0.625rem] bg-opacity-100"
                       : "w-2 h-2 bg-opacity-[28%]"
                   }`}></div>
-              </button>
+              </motion.button>
             ))}
-          </div>
+          </motion.div>
 
- 
-        </section>
-        <div className="block bg-[#E9E2EA] h-5"></div>
-      </div>
+        </motion.section>
+        <motion.div 
+          className="block bg-[#E9E2EA] h-5"
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
+        ></motion.div>
+      </motion.div>
     </>
   );
 }

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { api } from './lib/api'
 import { useRouter } from 'next/dist/client/components/navigation'
+import { motion } from "framer-motion";
 
 interface BeritaData {
   id: number
@@ -22,7 +23,6 @@ const Berita = () => {
   const [data, setData] = useState<BeritaData[]>([])
   const router = useRouter();
 
-
   const handleCardClick = (slug: string) => {
     router.push(`/post/${slug}`);
   };
@@ -35,38 +35,84 @@ const Berita = () => {
   }, [])
   const datas = data.slice(0, 3)
   return (
-    <div className='py-20'>
-      <h1 className='font-[700] text-[48px] text-primary text-center'>
+    <motion.div 
+      className='py-20'
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
+      <motion.h1 
+        className='font-[700] text-[48px] text-primary text-center'
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
         Berita Terbaru
-      </h1>
-      <div className='flex xl:flex-row flex-col justify-center items-center gap-10 mx-auto mt-10'>
-        {datas.map(item => (
-          <div onClick={() => handleCardClick(item.slug)}
+      </motion.h1>
+      <motion.div 
+        className='flex xl:flex-row flex-col justify-center items-center gap-10 mx-auto mt-10'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        {datas.map((item, index) => (
+          <motion.div 
+            onClick={() => handleCardClick(item.slug)}
             key={item.id}
             className='bg-white shadow-md hover:shadow-2xl px-[16.5px] py-[22.5px] rounded-[18px] w-[350px] transition-shadow duration-300'
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
           >
-            <Image
-              src={`http://localhost:8000/storage/${item.thumbnail}`}
-              alt={item.title}
-              width={339}
-              height={182}
-              className='rounded-[20px] w-[339px] h-[182px] object-cover'
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.2 + 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src={`http://localhost:8000/storage/${item.thumbnail}`}
+                alt={item.title}
+                width={339}
+                height={182}
+                className='rounded-[20px] w-[339px] h-[182px] object-cover'
+              />
+            </motion.div>
             <div className=''>
-              <div className='bg-secondary-bg mt-[15px] py-2 rounded-[13px] w-[113px] h-[32px] font-[500] text-[12px] text-primary text-center'>
+              <motion.div 
+                className='bg-secondary-bg mt-[15px] py-2 rounded-[13px] w-[113px] h-[32px] font-[500] text-[12px] text-primary text-center'
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 + 0.2 }}
+                viewport={{ once: true }}
+              >
                 {item.tags}
-              </div>
-              <h2 className='mt-[10px] font-[600] text-[22px] text-primary'>
+              </motion.div>
+              <motion.h2 
+                className='mt-[10px] font-[600] text-[22px] text-primary'
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
+                viewport={{ once: true }}
+              >
                 {item.title}
-              </h2>
-              <p className='font-[400] text-[15px] text-black'>
+              </motion.h2>
+              <motion.p 
+                className='font-[400] text-[15px] text-black'
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
+                viewport={{ once: true }}
+              >
                 {item.short_body}...
-              </p>
+              </motion.p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
 
