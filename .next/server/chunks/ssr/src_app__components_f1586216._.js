@@ -25,6 +25,7 @@ const CardLeader = ({ data })=>{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className: "w-28 h-28 rounded-full overflow-hidden mb-4 shadow-md",
 =======
                 className: "shadow-md mb-4 rounded-full w-28 h-28 overflow-hidden",
@@ -35,11 +36,15 @@ const CardLeader = ({ data })=>{
 =======
                 className: "shadow-md mb-4 rounded-full w-28 h-28 overflow-hidden",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                className: "w-28 h-28 rounded-full overflow-hidden mb-4 shadow-md",
+>>>>>>> origin/haikal
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     src: data.image,
                     alt: data.name,
                     width: 112,
                     height: 112,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,6 +58,9 @@ const CardLeader = ({ data })=>{
 =======
                     className: "w-full h-full object-cover"
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                    className: "object-cover w-full h-full"
+>>>>>>> origin/haikal
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
                     lineNumber: 9,
@@ -67,6 +75,7 @@ const CardLeader = ({ data })=>{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className: "text-md font-semibold",
 =======
                 className: "font-semibold text-md",
@@ -77,6 +86,9 @@ const CardLeader = ({ data })=>{
 =======
                 className: "font-semibold text-md",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                className: "text-md font-semibold",
+>>>>>>> origin/haikal
                 children: data.name
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/card.tsx",
@@ -84,6 +96,7 @@ const CardLeader = ({ data })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -97,6 +110,9 @@ const CardLeader = ({ data })=>{
 =======
                 className: "bg-red-100 mt-1 px-3 py-1 rounded-full text-red-600 text-sm",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                className: "text-sm mt-1 bg-red-100 text-red-600 px-3 py-1 rounded-full",
+>>>>>>> origin/haikal
                 children: data.role
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/card.tsx",
@@ -115,10 +131,14 @@ const CardTeam = ({ data })=>{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/haikal
         className: "flex items-center gap-4 bg-white rounded-xl px-4 py-3 shadow-md border border-[#E2E8F0]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-16 h-16 rounded-full overflow-hidden",
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
@@ -135,11 +155,14 @@ const CardTeam = ({ data })=>{
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+>>>>>>> origin/haikal
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     src: data.image,
                     alt: data.name,
                     width: 64,
                     height: 64,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -153,6 +176,9 @@ const CardTeam = ({ data })=>{
 =======
                     className: "w-full h-full object-cover"
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                    className: "object-cover w-full h-full"
+>>>>>>> origin/haikal
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
                     lineNumber: 31,
@@ -170,6 +196,7 @@ const CardTeam = ({ data })=>{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         className: "text-base font-semibold text-[#A10000]",
 =======
                         className: "font-semibold text-[#A10000] text-base",
@@ -180,6 +207,9 @@ const CardTeam = ({ data })=>{
 =======
                         className: "font-semibold text-[#A10000] text-base",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                        className: "text-base font-semibold text-[#A10000]",
+>>>>>>> origin/haikal
                         children: data.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
@@ -187,6 +217,7 @@ const CardTeam = ({ data })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -200,6 +231,9 @@ const CardTeam = ({ data })=>{
 =======
                         className: "opacity-70 text-[#A10000] text-sm",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                        className: "text-sm text-[#A10000] opacity-70",
+>>>>>>> origin/haikal
                         children: data.role
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
@@ -224,10 +258,14 @@ function PortfolioCard({ portfolio }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/haikal
         className: "relative bg-white rounded-2xl shadow-lg overflow-hidden max-w-md h-[450px] flex flex-col my-5",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative h-[55%] w-full overflow-hidden",
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
@@ -244,10 +282,13 @@ function PortfolioCard({ portfolio }) {
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+>>>>>>> origin/haikal
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     src: portfolio.image,
                     alt: portfolio.title,
                     fill: true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -261,6 +302,9 @@ function PortfolioCard({ portfolio }) {
 =======
                     className: "w-full h-full object-cover"
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                    className: "object-cover w-full h-full"
+>>>>>>> origin/haikal
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
                     lineNumber: 61,
@@ -275,6 +319,7 @@ function PortfolioCard({ portfolio }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 className: "px-6 pt-4 pb-6 flex-1 flex flex-col justify-between",
 =======
                 className: "flex flex-col flex-1 justify-between px-6 pt-4 pb-6",
@@ -285,6 +330,9 @@ function PortfolioCard({ portfolio }) {
 =======
                 className: "flex flex-col flex-1 justify-between px-6 pt-4 pb-6",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                className: "px-6 pt-4 pb-6 flex-1 flex flex-col justify-between",
+>>>>>>> origin/haikal
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-3",
@@ -292,6 +340,7 @@ function PortfolioCard({ portfolio }) {
                             className: "flex justify-between items-center gap-2 py-2 break-words",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -305,6 +354,9 @@ function PortfolioCard({ portfolio }) {
 =======
                                     className: "w-[70%] font-semibold text-[#A2181C] text-[18px] leading-snug",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                    className: "text-[18px] text-[#A2181C] w-[70%] font-semibold leading-snug",
+>>>>>>> origin/haikal
                                     children: portfolio.title
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
@@ -312,6 +364,7 @@ function PortfolioCard({ portfolio }) {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -325,6 +378,9 @@ function PortfolioCard({ portfolio }) {
 =======
                                     className: "z-10 text-gray-400 text-sm",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                    className: "text-sm text-gray-400 z-10",
+>>>>>>> origin/haikal
                                     children: portfolio.date
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
@@ -346,6 +402,7 @@ function PortfolioCard({ portfolio }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         className: "flex items-center justify-between",
 =======
                         className: "flex justify-between items-center",
@@ -356,6 +413,9 @@ function PortfolioCard({ portfolio }) {
 =======
                         className: "flex justify-between items-center",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                        className: "flex items-center justify-between",
+>>>>>>> origin/haikal
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex items-center gap-1",
@@ -364,6 +424,9 @@ function PortfolioCard({ portfolio }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/haikal
                                         className: "w-6 h-6 rounded-md overflow-hidden",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             src: "/assets/image/ig-logo.png",
@@ -375,6 +438,7 @@ function PortfolioCard({ portfolio }) {
                                             lineNumber: 84,
                                             columnNumber: 15
                                         }, this)
+<<<<<<< HEAD
 =======
                                         className: "rounded-md w-6 h-6 overflow-hidden"
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
@@ -384,6 +448,8 @@ function PortfolioCard({ portfolio }) {
 =======
                                         className: "rounded-md w-6 h-6 overflow-hidden"
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+>>>>>>> origin/haikal
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
                                         lineNumber: 83,
@@ -393,11 +459,15 @@ function PortfolioCard({ portfolio }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/haikal
                                         className: "text-gray-800 font-medium",
                                         children: portfolio.sosmed
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
                                         lineNumber: 91,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
@@ -415,6 +485,8 @@ function PortfolioCard({ portfolio }) {
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+>>>>>>> origin/haikal
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -428,6 +500,7 @@ function PortfolioCard({ portfolio }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 className: "bg-[#A2181C] hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ml-3 flex items-center gap-2",
 =======
                                 className: "flex items-center gap-2 bg-[#A2181C] hover:bg-red-700 ml-3 px-4 py-2 rounded-full font-medium text-white text-sm transition-colors duration-200",
@@ -438,6 +511,9 @@ function PortfolioCard({ portfolio }) {
 =======
                                 className: "flex items-center gap-2 bg-[#A2181C] hover:bg-red-700 ml-3 px-4 py-2 rounded-full font-medium text-white text-sm transition-colors duration-200",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                className: "bg-[#A2181C] hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ml-3 flex items-center gap-2",
+>>>>>>> origin/haikal
                                 children: [
                                     "Explore more",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -455,6 +531,7 @@ function PortfolioCard({ portfolio }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             lineNumber: 105,
 =======
                                             lineNumber: 100,
@@ -465,10 +542,14 @@ function PortfolioCard({ portfolio }) {
 =======
                                             lineNumber: 100,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                            lineNumber: 105,
+>>>>>>> origin/haikal
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -482,11 +563,15 @@ function PortfolioCard({ portfolio }) {
 =======
                                         lineNumber: 95,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                        lineNumber: 100,
+>>>>>>> origin/haikal
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -500,6 +585,9 @@ function PortfolioCard({ portfolio }) {
 =======
                                 lineNumber: 91,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                lineNumber: 96,
+>>>>>>> origin/haikal
                                 columnNumber: 11
                             }, this)
                         ]
@@ -526,6 +614,7 @@ function FAQCard({ profileImg, question, response }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         className: "flex flex-col items-end gap-3 max-w-xl mx-auto",
 =======
         className: "flex flex-col items-end gap-3 mx-auto max-w-xl",
@@ -536,6 +625,9 @@ function FAQCard({ profileImg, question, response }) {
 =======
         className: "flex flex-col items-end gap-3 mx-auto max-w-xl",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+        className: "flex flex-col items-end gap-3 max-w-xl mx-auto",
+>>>>>>> origin/haikal
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center gap-2",
@@ -544,11 +636,15 @@ function FAQCard({ profileImg, question, response }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/haikal
                         className: "bg-white/30 text-white px-4 py-2 rounded-2xl text-sm",
                         children: question
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
                         lineNumber: 130,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
@@ -566,6 +662,8 @@ function FAQCard({ profileImg, question, response }) {
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+>>>>>>> origin/haikal
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -579,6 +677,7 @@ function FAQCard({ profileImg, question, response }) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         lineNumber: 133,
 =======
                         lineNumber: 128,
@@ -589,11 +688,15 @@ function FAQCard({ profileImg, question, response }) {
 =======
                         lineNumber: 128,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                        lineNumber: 133,
+>>>>>>> origin/haikal
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -607,12 +710,16 @@ function FAQCard({ profileImg, question, response }) {
 =======
                 lineNumber: 124,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                lineNumber: 129,
+>>>>>>> origin/haikal
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-start gap-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -626,6 +733,9 @@ function FAQCard({ profileImg, question, response }) {
 =======
                         src: "/assets/image/mecaKeren.png" // telkom 
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                        src: "/assets/image/mecaKeren.png" // ganti dengan path yang sesuai
+>>>>>>> origin/haikal
                         ,
                         alt: "Mascot",
                         width: 40,
@@ -633,6 +743,7 @@ function FAQCard({ profileImg, question, response }) {
                         className: "rounded-md"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -646,11 +757,15 @@ function FAQCard({ profileImg, question, response }) {
 =======
                         lineNumber: 139,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                        lineNumber: 144,
+>>>>>>> origin/haikal
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col gap-y-2",
                         children: response.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -672,11 +787,17 @@ function FAQCard({ profileImg, question, response }) {
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-gray-700 text-sm",
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                className: "bg-white rounded-xl p-4 shadow-md",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm text-gray-700",
+>>>>>>> origin/haikal
                                     dangerouslySetInnerHTML: {
                                         __html: item
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -690,10 +811,14 @@ function FAQCard({ profileImg, question, response }) {
 =======
                                     lineNumber: 150,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                    lineNumber: 155,
+>>>>>>> origin/haikal
                                     columnNumber: 13
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -707,10 +832,14 @@ function FAQCard({ profileImg, question, response }) {
 =======
                                 lineNumber: 149,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                                lineNumber: 154,
+>>>>>>> origin/haikal
                                 columnNumber: 11
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -724,11 +853,15 @@ function FAQCard({ profileImg, question, response }) {
 =======
                         lineNumber: 146,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                        lineNumber: 151,
+>>>>>>> origin/haikal
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -742,11 +875,15 @@ function FAQCard({ profileImg, question, response }) {
 =======
                 lineNumber: 138,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+                lineNumber: 143,
+>>>>>>> origin/haikal
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/card.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -760,6 +897,9 @@ function FAQCard({ profileImg, question, response }) {
 =======
         lineNumber: 122,
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
+        lineNumber: 127,
+>>>>>>> origin/haikal
         columnNumber: 5
     }, this);
 }
