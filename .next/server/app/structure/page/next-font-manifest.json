@@ -3,8 +3,11 @@
   "app": {
     "[project]/src/app/structure/page": [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
+>>>>>>> origin/haikal
       "static/media/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk-s.p.ab5dbd7e.woff2",
       "static/media/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk-s.p.dd0b3887.woff2",
       "static/media/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk-s.p.11d83409.woff2",
@@ -35,7 +38,10 @@
 =======
       "static/media/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk-s.p.ab5dbd7e.woff2"
 >>>>>>> origin/haikal
+<<<<<<< HEAD
+=======
 >>>>>>> origin/main
+>>>>>>> origin/haikal
     ]
   },
   "appUsingSizeAdjust": true,

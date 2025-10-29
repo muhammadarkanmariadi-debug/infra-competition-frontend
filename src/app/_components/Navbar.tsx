@@ -6,21 +6,38 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 import cn from '@/lib/clsx'
 
 import HamburgerIcon from './icons/HamburgerIcon'
 
-interface NavOption {
+interface DropdownItem {
   title: string
   href: string
 }
 
+interface NavOption {
+  title: string
+  href?: string
+  dropdown?: DropdownItem[]
+}
+
 const navOptions: NavOption[] = [
-  { title: 'Beranda', href: '/' },
-  { title: 'Tentang Kami', href: '/tentang-kami' },
-  { title: 'Program', href: '/program' },
-  { title: 'Alumni', href: '/alumni' },
+  { title: 'Beranda', href: '/'},
+  { title: 'Akademik', dropdown: [
+    { title: 'MokletApps', href: '/posts' },
+    { title: 'Siakad', href: '/ekstrakurikuler' },
+    { title: 'Mylms', href: '/organisasi' },
+  ]},
+  { title: 'Program', href: '/programkeahlian' },
+  { title: 'Tentang Sekolah', dropdown: [
+    { title: 'Berita Sekolah', href: '/posts' },
+    { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
+    { title: 'Organisasi', href: '/organisasi' },
+    { title: 'Sejarah', href: '/sejarah' },
+  
+  ]},
   { title: 'Hubungi Kami', href: '/hubungi-kami' }
 ]
 
@@ -28,6 +45,9 @@ export default function Navbar () {
   const pathname = usePathname()
   const [isExpanded, setIsExpanded] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [mobileDropdown, setMobileDropdown] = useState<string | null>(null)
+  const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     function handleScroll () {
@@ -38,8 +58,23 @@ export default function Navbar () {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const handleMouseEnter = (title: string) => {
+    if (closeTimeout) {
+      clearTimeout(closeTimeout)
+      setCloseTimeout(null)
+    }
+    setOpenDropdown(title)
+  }
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setOpenDropdown(null)
+    }, 200)
+    setCloseTimeout(timeout)
+  }
+
   return (
-    <nav className='top-0 z-[999] xl:relative flex flex-col mx-auto w-full 2xl:text-xl'>
+    <nav className={`top-0 z-[999] xl:relative flex flex-col mx-auto w-full 2xl:text-xl ${pathname.startsWith("/admin") ? "hidden" : ""}`}>
       <div className='z-[999] flex justify-between items-center bg-white xl:bg-transparent mx-auto px-5 py-4 xl:py-0 w-full 2xl:max-w-[1400px] xl:max-w-[1300px]'>
         <Link href={'/'} className='xl:mt-[36px]'>
           <span className='block bg-[url(/assets/image/logo.png)] bg-contain bg-no-repeat w-[130px] h-[39px] text-transparent pointer-events-none select-none'>
@@ -50,7 +85,7 @@ export default function Navbar () {
           className={cn(
             `fixed hidden left-1/2 scale-[0.9] top-[24.5px] xl:flex xl:items-center justify-between w-full transition-all duration-300 ${
               scrolled
-                ? (pathname === '/post' ? 'relative' : 'max-w-[900px] 2xl:max-w-[900px]')
+                ? (pathname === '/post' ? 'relative' : 'max-w-[900px] 2xl:max-w-[1000px]')
                 : '  max-w-[700px] 2xl:max-w-[800px]'
             } -translate-x-1/2 rounded-full border border-neutral-300 bg-white px-[50px] py-3 drop-shadow-[0_3px_6px_rgba(0,0,0,0.25)]`
           )}
@@ -71,20 +106,73 @@ export default function Navbar () {
             </Link>
           )}
           {navOptions.map(navOption => (
-            <Link
+            <div 
               key={navOption.title}
-              href={navOption.href}
-              // Splitted "/a/b" will form an array: ["", "a", "b"], that's why we use the second index as comparation
-              className={cn(
-                `py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`
-              )}
+              className="relative"
+              onMouseEnter={() => navOption.dropdown && handleMouseEnter(navOption.title)}
+              onMouseLeave={handleMouseLeave}
             >
-              {navOption.title}
-            </Link>
+              {navOption.href ? (
+                <Link
+                  href={navOption.href}
+                  className={cn(
+                    `py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`
+                  )}
+                >
+                  {navOption.title}
+                </Link>
+              ) : (
+                <button
+                  className={cn(
+                    `flex items-center gap-1 py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`
+                  )}
+                >
+                  {navOption.title}
+                  {navOption.dropdown && (
+                    <FontAwesomeIcon 
+                      icon={faChevronDown} 
+                      className={cn(
+                        "w-3 h-3 transition-transform duration-300",
+                        openDropdown === navOption.title && "rotate-180"
+                      )}
+                    />
+                  )}
+                </button>
+              )}
+              
+              {navOption.dropdown && (
+                <div 
+                  className={cn(
+                    "top-full left-0 absolute bg-white shadow-lg mt-2 border border-neutral-200 rounded-lg min-w-[180px] overflow-hidden origin-top transition-all duration-300",
+                    openDropdown === navOption.title 
+                      ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" 
+                      : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+                  )}
+                  onMouseEnter={() => handleMouseEnter(navOption.title)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {navOption.dropdown.map((item, index) => (
+                    <Link
+                      key={item.title}
+                      href={item.href}
+                      className={cn(
+                        "block hover:bg-primary/10 px-4 py-3 text-primary transition-all duration-200",
+                        openDropdown === navOption.title && "animate-fadeInUp"
+                      )}
+                      style={{
+                        animationDelay: `${index * 50}ms`
+                      }}
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
         <div className='hidden min-xl:flex gap-[9px] mt-[6px] min-xl:ml-[129px]'>
-          <Link href={'/registration'} className='min-xl:mt-[36px]'>
+          <Link href={'https://ppdb.telkomschools.sch.id/signup?lemdik=51'} className='min-xl:mt-[36px]'>
             <div className='hidden xl:block bg-primary hover:bg-primary/90 px-4 py-2 rounded-full text-white transition-colors'>
               <h1 className='font-medium'>PPDB</h1>
             </div>
@@ -113,30 +201,72 @@ export default function Navbar () {
           <HamburgerIcon />
         </button>
       </div>
+      
+      {/* Mobile Menu */}
       <div
         className={cn(
-          `block xl:hidden h-[300px] w-full z-[800] bg-white transition-all duration-500 ${
-            isExpanded ? 'mt-0' : ' -mt-120'
+          `block xl:hidden w-full z-[800] bg-white transition-all duration-500 overflow-hidden ${
+            isExpanded ? 'max-h-[500px]' : 'max-h-0'
           }`
         )}
       >
-        <div className='flex flex-col justify-start items-start gap-8 my-[21px] ms-[20px] lg:ms-[52px] text-start'>
+        <div className='flex flex-col justify-start items-start gap-6 my-[21px] ms-[20px] lg:ms-[52px] text-start'>
           {navOptions.map(navOption => (
-            <Link
-              key={navOption.title}
-              href={navOption.href}
-              // Splitted "/a/b" will form an array: ["", "a", "b"], that's why we use the second index as comparation
-              className={cn(
-                `rounded-full text-center text-[16px] transition-all duration-300 hover:text-primary-400 ${
-                  pathname.split('/')[1] === navOption.href.split('/')[1]
-                    ? 'text-red-400'
-                    : ''
-                }`
+            <div key={navOption.title} className="w-full">
+              {navOption.href ? (
+                <Link
+                  href={navOption.href}
+                  className={cn(
+                    `rounded-full text-center text-[16px] transition-all duration-300 hover:text-primary-400 ${
+                      pathname.split('/')[1] === navOption.href.split('/')[1]
+                        ? 'text-red-400'
+                        : ''
+                    }`
+                  )}
+                  onClick={() => setIsExpanded(false)}
+                >
+                  {navOption.title}
+                </Link>
+              ) : (
+                <div>
+                  <button
+                    onClick={() => setMobileDropdown(mobileDropdown === navOption.title ? null : navOption.title)}
+                    className="flex items-center gap-2 text-[16px] text-primary"
+                  >
+                    {navOption.title}
+                    {navOption.dropdown && (
+                      <FontAwesomeIcon 
+                        icon={faChevronDown} 
+                        className={cn(
+                          "w-3 h-3 transition-transform duration-300",
+                          mobileDropdown === navOption.title && "rotate-180"
+                        )}
+                      />
+                    )}
+                  </button>
+                  {navOption.dropdown && (
+                    <div className={cn(
+                      "flex flex-col gap-3 mt-3 ml-4 overflow-hidden transition-all duration-300",
+                      mobileDropdown === navOption.title ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                    )}>
+                      {navOption.dropdown.map((item) => (
+                        <Link
+                          key={item.title}
+                          href={item.href}
+                          className="text-[14px] text-primary/80 hover:text-primary transition-colors"
+                          onClick={() => {
+                            setIsExpanded(false)
+                            setMobileDropdown(null)
+                          }}
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               )}
-              onClick={() => setIsExpanded(false)}
-            >
-              {navOption.title}
-            </Link>
+            </div>
           ))}
         </div>
       </div>
