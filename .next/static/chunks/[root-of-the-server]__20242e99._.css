@@ -1229,7 +1229,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
   .mt-3 {
@@ -1245,6 +1248,9 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
@@ -1569,7 +1575,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
   .h-\[16px\] {
@@ -1675,7 +1684,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
   .w-1\/4 {
@@ -1990,7 +2002,10 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
   .rotate-180 {
@@ -2121,6 +2136,7 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
 
 <<<<<<< HEAD
@@ -2142,6 +2158,30 @@
     gap: calc(var(--spacing) * 16);
 >>>>>>> origin/haikal
 =======
+=======
+  }
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+  .gap-13 {
+    gap: calc(var(--spacing) * 13);
+=======
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+>>>>>>> origin/main
+=======
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+>>>>>>> origin/haikal
+  }
+
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
   }
 
 <<<<<<< HEAD
@@ -2659,8 +2699,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
@@ -2696,10 +2739,13 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   .px-\[124\.5px\] {
     padding-inline: 124.5px;
   }
 
+=======
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
@@ -2754,6 +2800,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   .py-22 {
     padding-block: calc(var(--spacing) * 22);
   }
@@ -2762,6 +2809,8 @@
     padding-block: 9px;
   }
 
+=======
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
@@ -2878,8 +2927,13 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   .pb-\[48px\] {
     padding-bottom: 48px;
+=======
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
@@ -3034,6 +3088,9 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
 =======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
@@ -3494,19 +3551,9 @@
     .hover\:border-\[\#A10000\]:hover {
       border-color: #a10000;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:border-red-500:hover {
-      border-color: var(--color-red-500);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-blue-50:hover {
-      background-color: var(--color-blue-50);
+=======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
     }
   }
@@ -3520,6 +3567,22 @@
   @media (hover: hover) {
     .hover\:bg-blue-50:hover {
       background-color: var(--color-blue-50);
+<<<<<<< HEAD
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:border-red-500:hover {
+      border-color: var(--color-red-500);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-blue-50:hover {
+      background-color: var(--color-blue-50);
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+=======
 >>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
     }
   }

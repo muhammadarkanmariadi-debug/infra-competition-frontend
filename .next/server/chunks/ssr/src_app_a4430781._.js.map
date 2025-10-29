@@ -2,13 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Haikal/Coding/infra-competition-frontend/src/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 48, height: 48 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,8GAAA,CAAA,UAAG;IAAE,OAAO;IAAI,QAAQ;AAAG","debugId":null}}]
-=======
-    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///D:/Project/infra-competition/fe/src/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 16, height: 16 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,8GAAA,CAAA,UAAG;IAAE,OAAO;IAAI,QAAQ;AAAG","debugId":null}}]
->>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
-=======
-    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///D:/Project/infra-competition/fe/src/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 16, height: 16 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,8GAAA,CAAA,UAAG;IAAE,OAAO;IAAI,QAAQ;AAAG","debugId":null}}]
->>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Haikal/Coding/infra-competition-frontend/src/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 16, height: 16 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,8GAAA,CAAA,UAAG;IAAE,OAAO;IAAI,QAAQ;AAAG","debugId":null}}]
 }
