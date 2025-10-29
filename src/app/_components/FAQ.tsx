@@ -19,7 +19,7 @@ export default function Faq() {
     <>
       <motion.div 
         className="relative bg-secondary mt-31 w-full" 
-        id="FAQ"
+        id="faq"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

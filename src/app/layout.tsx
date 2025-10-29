@@ -43,7 +43,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased overflow-x-hidden`}>
         <Navbar />
         <main className="overflow-x-hidden">{children}</main>
-        <Footer />
+        <Footer  />
 
         {/* Tombol Scroll to Top */}
         <div className="right-5 bottom-5 z-[300] fixed">

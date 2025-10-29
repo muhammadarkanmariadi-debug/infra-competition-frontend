@@ -19,7 +19,7 @@ export default function Footer () {
               height={75}
               className='mb-5'
             />
-            <p className="text-gray-700 text-[16px] leading-relaxed">
+            <p className="text-[16px] text-gray-700 leading-relaxed">
               Pelopor SMK Bidang Teknologi dan Informatika di Indonesia.
             </p>
             <p className='mt-6 text-gray-500 text-sm'>
@@ -160,9 +160,9 @@ export default function Footer () {
         </div>
 
         {/* Bagian alamat */}
-        <div className=" mt-4 pt-6 text-gray-700">
-          <h3 className="font-semibold text-[16px] mb-1">Alamat:</h3>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5098.506090439917!2d112.65644107500694!3d-7.976861992048307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6285c5c1b44e3%3A0xf6c889ac7452dc3a!2sSMK%20Telkom%20Malang!5e1!3m2!1sid!2sid!4v1761701406710!5m2!1sid!2sid" width="1150" height="350" loading="lazy" rounded-xl> </iframe>
+        <div className="mt-4 pt-6 text-gray-700">
+          <h3 className="mb-1 font-semibold text-[16px]">Alamat:</h3>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5098.506090439917!2d112.65644107500694!3d-7.976861992048307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6285c5c1b44e3%3A0xf6c889ac7452dc3a!2sSMK%20Telkom%20Malang!5e1!3m2!1sid!2sid!4v1761701406710!5m2!1sid!2sid" width="1150" height="350" loading="lazy" > </iframe>
         </div>
        
 

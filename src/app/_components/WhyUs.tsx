@@ -37,7 +37,7 @@ export default function WhyUs() {
   return (
     <motion.div
       className="bg-white mx-auto mt-16 pb-10 w-full max-w-[1280px]"
-      id="divisi"
+      id="why-us"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

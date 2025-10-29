@@ -26,7 +26,7 @@ export default function AspirasiPage () {
   }
 
   return (
-    <div className='flex flex-col justify-center items-center px-4 py-20'>
+    <div id="aspirasi" className='flex flex-col justify-center items-center px-4 py-20'>
       <div className='bg-white shadow-lg p-8 rounded-3xl w-full max-w-lg hover:scale-[1.01] transition-transform duration-300'>
         <h1 className='mb-6 font-extrabold text- text-3xl text-center'>
           Form Aspirasi

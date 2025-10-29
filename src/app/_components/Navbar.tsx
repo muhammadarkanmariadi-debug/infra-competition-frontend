@@ -38,13 +38,27 @@ export default function Navbar () {
  
   
   const navOptions: NavOption[] = useMemo(() => [
-    { title: 'Beranda', href: '/' },
+    { 
+      title: 'Beranda', 
+      dropdown: [
+        { title: 'Visi & Misi', href: '/#visi-misi' },
+        { title: 'Berita', href: '/#berita' },
+        { title: 'Sambutan Kepala Sekolah', href: '/#sambutan' },
+        { title: 'Keunggulan Kami', href: '/#why-us' },
+        { title: 'Statistik', href: '/#statistik' },
+        { title: 'Program Jurusan', href: '/#jurusan' },
+        { title: 'Video Profil', href: '/#video-profil' },
+        { title: 'Alur Pendaftaran', href: '/#alur-pendaftaran' },
+        { title: 'FAQ', href: '/#faq' },
+        { title: 'Aspirasi', href: '/#aspirasi' }
+      ]
+    },
     {
       title: 'Akademik',
       dropdown: [
-        { title: 'MokletApps', href: '/posts' },
-        { title: 'Siakad', href: '/ekstrakurikuler' },
-        { title: 'Mylms', href: '/organisasi' }
+        { title: 'MokletApps', href: '/https://app.smktelkom-mlg.sch.id/login' },
+        { title: 'Igracias', href: '/https://igracias.telkomschools.sch.id/ts/login/' },
+        { title: 'Mylms', href: '/https://mylms.telkomschools.sch.id/course/index.php?categoryid=1008' }
       ]
     },
     { 
@@ -64,7 +78,8 @@ export default function Navbar () {
         { title: 'Sejarah', href: '/sejarah' }
       ]
     },
-    { title: 'Hubungi Kami', href: '/hubungi-kami' }
+    { title: 'Alumni', href: '/alumni'}
+  
   ], [])
 
   useEffect(() => {

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function VisiMisi() {
   return (
-    <section className="relative bg-[#D65C5C] mt-10 overflow-hidden text-white">
+    <section id="visi-misi" className="relative bg-[#D65C5C] mt-10 overflow-hidden text-white">
       {/* Wave atas */}
       <motion.div 
         className="-top-6 left-0 absolute w-full"

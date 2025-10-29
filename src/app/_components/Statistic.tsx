@@ -197,7 +197,7 @@ const Statistic: React.FC = () => {
   return (
     <motion.div
       className='relative bg-secondary mt-31 w-full overflow-hidden'
-      id='track'
+      id='statistik'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
