@@ -41,6 +41,7 @@ export default function Navbar () {
     { 
       title: 'Beranda', 
       dropdown: [
+        { title: 'Beranda', href: '/' },
         { title: 'Visi & Misi', href: '/#visi-misi' },
         { title: 'Berita', href: '/#berita' },
         { title: 'Sambutan Kepala Sekolah', href: '/#sambutan' },
