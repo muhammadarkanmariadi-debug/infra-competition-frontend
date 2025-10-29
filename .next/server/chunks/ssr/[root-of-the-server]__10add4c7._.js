@@ -169,7 +169,7 @@ function Footer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-gray-700 text-[16px] leading-relaxed",
-                                    children: "Jadilah Digital Talent yang Siap Menakhlukkan Dunia!"
+                                    children: "Pelopor SMK Bidang Teknologi dan Informatika di Indonesia."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
                                     lineNumber: 19,
@@ -196,7 +196,7 @@ function Footer() {
                                     children: "SMK Telkom Malang"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 32,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -209,12 +209,12 @@ function Footer() {
                                                 children: "Struktur Organisasi"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 33,
+                                                lineNumber: 36,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 33,
+                                            lineNumber: 36,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -224,12 +224,12 @@ function Footer() {
                                                 children: "Sertifikat Akreditasi"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 34,
+                                                lineNumber: 37,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 34,
+                                            lineNumber: 37,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -239,24 +239,24 @@ function Footer() {
                                                 children: "Virtual Tour"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 35,
+                                                lineNumber: 38,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 35,
+                                            lineNumber: 38,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 32,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/_components/Footer.tsx",
-                            lineNumber: 28,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -266,7 +266,7 @@ function Footer() {
                                     children: "Menu Utama"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -279,12 +279,12 @@ function Footer() {
                                                 children: "Beranda"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 45,
+                                                lineNumber: 49,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 49,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -294,12 +294,12 @@ function Footer() {
                                                 children: "Berita"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 46,
+                                                lineNumber: 50,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 46,
+                                            lineNumber: 50,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -309,12 +309,12 @@ function Footer() {
                                                 children: "Tentang Kami"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 47,
+                                                lineNumber: 51,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -324,24 +324,24 @@ function Footer() {
                                                 children: "Hubungi Kami"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 48,
+                                                lineNumber: 52,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 48,
+                                            lineNumber: 52,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/_components/Footer.tsx",
-                            lineNumber: 40,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -351,7 +351,7 @@ function Footer() {
                                     children: "Kenali Kami Lebih Dekat"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 60,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -372,19 +372,19 @@ function Footer() {
                                                         className: "mr-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/_components/Footer.tsx",
-                                                        lineNumber: 65,
+                                                        lineNumber: 71,
                                                         columnNumber: 19
                                                     }, this),
                                                     "@smktelkommalang"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 65,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -402,7 +402,7 @@ function Footer() {
                                                         className: "mr-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/_components/Footer.tsx",
-                                                        lineNumber: 82,
+                                                        lineNumber: 88,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -410,30 +410,30 @@ function Footer() {
                                                         children: "Official SMK Telkom Malang"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/_components/Footer.tsx",
-                                                        lineNumber: 89,
+                                                        lineNumber: 95,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/_components/Footer.tsx",
-                                                lineNumber: 76,
+                                                lineNumber: 82,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Footer.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 81,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/_components/Footer.tsx",
-                            lineNumber: 53,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     ]
@@ -450,29 +450,25 @@ function Footer() {
                             children: "Alamat:"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Footer.tsx",
-                            lineNumber: 106,
+                            lineNumber: 118,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-[15px] leading-relaxed",
-                            children: [
-                                "Jl. Danau Ranau, Sawojajar, Kec. Kedungkandang, Kota Malang,",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                    fileName: "[project]/src/app/_components/Footer.tsx",
-                                    lineNumber: 109,
-                                    columnNumber: 13
-                                }, this),
-                                "Jawa Timur 65139"
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                            src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5098.506090439917!2d112.65644107500694!3d-7.976861992048307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6285c5c1b44e3%3A0xf6c889ac7452dc3a!2sSMK%20Telkom%20Malang!5e1!3m2!1sid!2sid!4v1761701406710!5m2!1sid!2sid",
+                            width: "1150",
+                            height: "350",
+                            loading: "lazy",
+                            "rounded-xl": true,
+                            children: " "
+                        }, void 0, false, {
                             fileName: "[project]/src/app/_components/Footer.tsx",
-                            lineNumber: 107,
-                            columnNumber: 11
+                            lineNumber: 119,
+                            columnNumber: 10
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/Footer.tsx",
-                    lineNumber: 105,
+                    lineNumber: 117,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -487,17 +483,17 @@ function Footer() {
                             className: "object-contain"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Footer.tsx",
-                            lineNumber: 120,
+                            lineNumber: 129,
                             columnNumber: 5
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Footer.tsx",
-                        lineNumber: 119,
+                        lineNumber: 128,
                         columnNumber: 3
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/Footer.tsx",
-                    lineNumber: 118,
+                    lineNumber: 127,
                     columnNumber: 1
                 }, this)
             ]
