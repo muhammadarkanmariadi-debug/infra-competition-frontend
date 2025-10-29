@@ -1,6 +1,5 @@
 {
-  "/ekstrakurikuler/page": "app/ekstrakurikuler/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/organisasi/page": "app/organisasi/page.js",
-  "/sejarah/page": "app/sejarah/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/jurusan/[id]/page": "app/jurusan/[id]/page.js",
+  "/page": "app/page.js"
 }

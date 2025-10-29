@@ -263,7 +263,7 @@ const Statistic: React.FC = () => {
         </motion.h1>
       </motion.div>
 
-      <div className='py-20'>
+      <div className='py-10'>
         <motion.div
           className='flex xl:flex-row flex-col items-center my-10 pb-[30px] w-full'
           initial={{ opacity: 0 }}
@@ -293,14 +293,14 @@ const Statistic: React.FC = () => {
         </motion.div>
 
         <motion.div
-          className='flex xl:flex flex-col justify-center items-center gap-20 py-10 pb-[30px]'
+          className='flex xl:flex flex-col justify-center items-center gap-20 pb-[30px]'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.0 }}
         >
           <div className='justify-between'>
             <motion.div
-              className='flex justify-center gap-80'
+              className='flex xl:flex-row flex-col justify-center gap-10 2xl:gap-80'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.2 }}
