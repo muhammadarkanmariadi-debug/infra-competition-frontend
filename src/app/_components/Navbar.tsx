@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -11,43 +11,61 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import cn from '@/lib/clsx'
 
 import HamburgerIcon from './icons/HamburgerIcon'
+import { api } from './lib/api'
+  interface NavOption {
+  title: string
+  href?: string
+  dropdown?: DropdownItem[]
+}
 
 interface DropdownItem {
   title: string
   href: string
 }
 
-interface NavOption {
-  title: string
-  href?: string
-  dropdown?: DropdownItem[]
-}
 
-const navOptions: NavOption[] = [
-  { title: 'Beranda', href: '/'},
-  { title: 'Akademik', dropdown: [
-    { title: 'MokletApps', href: '/posts' },
-    { title: 'Siakad', href: '/ekstrakurikuler' },
-    { title: 'Mylms', href: '/organisasi' },
-  ]},
-  { title: 'Program', href: '/programkeahlian' },
-  { title: 'Tentang Sekolah', dropdown: [
-    { title: 'Berita Sekolah', href: '/posts' },
-    { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
-    { title: 'Organisasi', href: '/organisasi' },
-    { title: 'Sejarah', href: '/sejarah' },
-  
-  ]},
-  { title: 'Hubungi Kami', href: '/hubungi-kami' }
-]
 
 export default function Navbar () {
+
+
   const pathname = usePathname()
   const [isExpanded, setIsExpanded] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
   const [mobileDropdown, setMobileDropdown] = useState<string | null>(null)
   const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null)
+
+ 
+  
+  const navOptions: NavOption[] = useMemo(() => [
+    { title: 'Beranda', href: '/' },
+    {
+      title: 'Akademik',
+      dropdown: [
+        { title: 'MokletApps', href: '/posts' },
+        { title: 'Siakad', href: '/ekstrakurikuler' },
+        { title: 'Mylms', href: '/organisasi' }
+      ]
+    },
+    { 
+      title: 'Program', 
+      dropdown: [
+        { title: 'RPL (Rekayasa Perangkat Lunak)', href: '/jurusan/1' },
+        { title: 'TKJ (Teknik Komputer dan Jaringan)', href: '/jurusan/2' },
+        { title: 'PG (Pengembangan Game)', href: '/jurusan/3' }
+      ]
+    },
+    {
+      title: 'Tentang Sekolah',
+      dropdown: [
+        { title: 'Berita Sekolah', href: '/posts' },
+        { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
+        { title: 'Organisasi', href: '/organisasi' },
+        { title: 'Sejarah', href: '/sejarah' }
+      ]
+    },
+    { title: 'Hubungi Kami', href: '/hubungi-kami' }
+  ], [])
 
   useEffect(() => {
     function handleScroll () {
@@ -74,7 +92,11 @@ export default function Navbar () {
   }
 
   return (
-    <nav className={`top-0 z-[999] xl:relative flex flex-col mx-auto w-full 2xl:text-xl ${pathname.startsWith("/admin") ? "hidden" : ""}`}>
+    <nav
+      className={`top-0 z-[999] xl:relative flex flex-col mx-auto w-full 2xl:text-xl ${
+        pathname.startsWith('/admin') ? 'hidden' : ''
+      }`}
+    >
       <div className='z-[999] flex justify-between items-center bg-white xl:bg-transparent mx-auto px-5 py-4 xl:py-0 w-full 2xl:max-w-[1400px] xl:max-w-[1300px]'>
         <Link href={'/'} className='xl:mt-[36px]'>
           <span className='block bg-[url(/assets/image/logo.png)] bg-contain bg-no-repeat w-[130px] h-[39px] text-transparent pointer-events-none select-none'>
@@ -85,7 +107,9 @@ export default function Navbar () {
           className={cn(
             `fixed hidden left-1/2 scale-[0.9] top-[24.5px] xl:flex xl:items-center justify-between w-full transition-all duration-300 ${
               scrolled
-                ? (pathname === '/post' ? 'relative' : 'max-w-[900px] 2xl:max-w-[1000px]')
+                ? pathname === '/post'
+                  ? 'relative'
+                  : 'max-w-[900px] 2xl:max-w-[1000px]'
                 : '  max-w-[700px] 2xl:max-w-[800px]'
             } -translate-x-1/2 rounded-full border border-neutral-300 bg-white px-[50px] py-3 drop-shadow-[0_3px_6px_rgba(0,0,0,0.25)]`
           )}
@@ -106,10 +130,12 @@ export default function Navbar () {
             </Link>
           )}
           {navOptions.map(navOption => (
-            <div 
+            <div
               key={navOption.title}
-              className="relative"
-              onMouseEnter={() => navOption.dropdown && handleMouseEnter(navOption.title)}
+              className='relative'
+              onMouseEnter={() =>
+                navOption.dropdown && handleMouseEnter(navOption.title)
+              }
               onMouseLeave={handleMouseLeave}
             >
               {navOption.href ? (
@@ -129,24 +155,24 @@ export default function Navbar () {
                 >
                   {navOption.title}
                   {navOption.dropdown && (
-                    <FontAwesomeIcon 
-                      icon={faChevronDown} 
+                    <FontAwesomeIcon
+                      icon={faChevronDown}
                       className={cn(
-                        "w-3 h-3 transition-transform duration-300",
-                        openDropdown === navOption.title && "rotate-180"
+                        'w-3 h-3 transition-transform duration-300',
+                        openDropdown === navOption.title && 'rotate-180'
                       )}
                     />
                   )}
                 </button>
               )}
-              
+
               {navOption.dropdown && (
-                <div 
+                <div
                   className={cn(
-                    "top-full left-0 absolute bg-white shadow-lg mt-2 border border-neutral-200 rounded-lg min-w-[180px] overflow-hidden origin-top transition-all duration-300",
-                    openDropdown === navOption.title 
-                      ? "opacity-100 scale-100 translate-y-0 pointer-events-auto" 
-                      : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+                    'top-full left-0 absolute bg-white shadow-lg mt-2 border border-neutral-200 rounded-lg min-w-[180px] overflow-hidden origin-top transition-all duration-300',
+                    openDropdown === navOption.title
+                      ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
+                      : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
                   )}
                   onMouseEnter={() => handleMouseEnter(navOption.title)}
                   onMouseLeave={handleMouseLeave}
@@ -156,8 +182,8 @@ export default function Navbar () {
                       key={item.title}
                       href={item.href}
                       className={cn(
-                        "block hover:bg-primary/10 px-4 py-3 text-primary transition-all duration-200",
-                        openDropdown === navOption.title && "animate-fadeInUp"
+                        'block hover:bg-primary/10 px-4 py-3 text-primary transition-all duration-200',
+                        openDropdown === navOption.title && 'animate-fadeInUp'
                       )}
                       style={{
                         animationDelay: `${index * 50}ms`
@@ -172,13 +198,18 @@ export default function Navbar () {
           ))}
         </div>
         <div className='hidden min-xl:flex gap-[9px] mt-[6px] min-xl:ml-[129px]'>
-          <Link href={'https://ppdb.telkomschools.sch.id/signup?lemdik=51'} className='min-xl:mt-[36px]'>
+          <Link
+            href={'https://ppdb.telkomschools.sch.id/signup?lemdik=51'}
+            className='min-xl:mt-[36px]'
+          >
             <div className='hidden xl:block bg-primary hover:bg-primary/90 px-4 py-2 rounded-full text-white transition-colors'>
               <h1 className='font-medium'>PPDB</h1>
             </div>
           </Link>
           <Link
-            href={'https://www.tiktok.com/@smktelkommalang?is_from_webapp=1&sender_device=pc'}
+            href={
+              'https://www.tiktok.com/@smktelkommalang?is_from_webapp=1&sender_device=pc'
+            }
             className='min-xl:mt-[36px]'
           >
             <div className='hidden xl:block bg-primary rounded-full text-transparent pointer-events-none select-none'>
@@ -186,7 +217,9 @@ export default function Navbar () {
             </div>
           </Link>
           <Link
-            href={'https://www.instagram.com/smktelkommalang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}
+            href={
+              'https://www.instagram.com/smktelkommalang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+            }
             className='xl:mt-[36px]'
           >
             <div className='hidden xl:block bg-primary rounded-full text-transparent pointer-events-none select-none'>
@@ -201,7 +234,7 @@ export default function Navbar () {
           <HamburgerIcon />
         </button>
       </div>
-      
+
       {/* Mobile Menu */}
       <div
         className={cn(
@@ -212,7 +245,7 @@ export default function Navbar () {
       >
         <div className='flex flex-col justify-start items-start gap-6 my-[21px] ms-[20px] lg:ms-[52px] text-start'>
           {navOptions.map(navOption => (
-            <div key={navOption.title} className="w-full">
+            <div key={navOption.title} className='w-full'>
               {navOption.href ? (
                 <Link
                   href={navOption.href}
@@ -230,30 +263,40 @@ export default function Navbar () {
               ) : (
                 <div>
                   <button
-                    onClick={() => setMobileDropdown(mobileDropdown === navOption.title ? null : navOption.title)}
-                    className="flex items-center gap-2 text-[16px] text-primary"
+                    onClick={() =>
+                      setMobileDropdown(
+                        mobileDropdown === navOption.title
+                          ? null
+                          : navOption.title
+                      )
+                    }
+                    className='flex items-center gap-2 text-[16px] text-primary'
                   >
                     {navOption.title}
                     {navOption.dropdown && (
-                      <FontAwesomeIcon 
-                        icon={faChevronDown} 
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
                         className={cn(
-                          "w-3 h-3 transition-transform duration-300",
-                          mobileDropdown === navOption.title && "rotate-180"
+                          'w-3 h-3 transition-transform duration-300',
+                          mobileDropdown === navOption.title && 'rotate-180'
                         )}
                       />
                     )}
                   </button>
                   {navOption.dropdown && (
-                    <div className={cn(
-                      "flex flex-col gap-3 mt-3 ml-4 overflow-hidden transition-all duration-300",
-                      mobileDropdown === navOption.title ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-                    )}>
-                      {navOption.dropdown.map((item) => (
+                    <div
+                      className={cn(
+                        'flex flex-col gap-3 mt-3 ml-4 overflow-hidden transition-all duration-300',
+                        mobileDropdown === navOption.title
+                          ? 'max-h-[500px] opacity-100'
+                          : 'max-h-0 opacity-0'
+                      )}
+                    >
+                      {navOption.dropdown.map(item => (
                         <Link
                           key={item.title}
                           href={item.href}
-                          className="text-[14px] text-primary/80 hover:text-primary transition-colors"
+                          className='text-[14px] text-primary/80 hover:text-primary transition-colors'
                           onClick={() => {
                             setIsExpanded(false)
                             setMobileDropdown(null)
