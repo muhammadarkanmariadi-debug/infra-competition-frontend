@@ -29,9 +29,7 @@ export default function News () {
       setData(res.data.data)
     })
 
-    api.get('/blog').then(res => {
-      console.log(res.data.data)
-    })
+
   }, [])
   return (
     <>

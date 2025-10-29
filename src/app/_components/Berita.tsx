@@ -42,13 +42,16 @@ const Berita = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <motion.h1 
-        className='font-[700] text-[48px] text-primary text-center'
+        className='font-[700] text-[48px] text-black text-center'
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         Berita Terbaru
       </motion.h1>
+      <motion.p className='mx-auto mt-4 max-w-2xl font-[400] text-gray-600 text-xl text-center'>
+        Prestasi Moklet dan Berita terkini Seputar Moklet
+      </motion.p>
       <motion.div 
         className='flex xl:flex-row flex-col justify-center items-center gap-10 mx-auto mt-10'
         initial={{ opacity: 0 }}

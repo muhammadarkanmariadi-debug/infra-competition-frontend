@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     },
   
     images: {
-      domains: ['localhost', 'images.unsplash.com'],
+      domains: ['localhost', 'images.unsplash.com', 'res.cloudinary.com'],
      remotePatterns: [{
       protocol: "http",
       hostname: "**"

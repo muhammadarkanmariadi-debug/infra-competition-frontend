@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 interface Jurusan {
   name: string
   thumbnail: string
-  description: string
+  short_description: string
 }
 
 export default function JurusanSection () {
@@ -23,7 +23,7 @@ export default function JurusanSection () {
   }, [])
   return (
     <motion.section
-      className='relative bg-gradient-to-b from-[#FFF5F5] to-[#FFFFFF] py-20'
+      className='relative bg-gradient-to-b py-20'
       id='jurusan'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export default function JurusanSection () {
               viewport={{ once: true }}
             >
               <Image
-                src={'http://localhost:8000/storage/' + item.thumbnail}
+                src={`${item.thumbnail}`}
                 alt={item.name}
                 width={400}
                 height={150}
@@ -87,7 +87,7 @@ export default function JurusanSection () {
               />
             </motion.div>
             <motion.div
-              className={`flex flex-col gap-8 ${
+              className={`flex  flex-col gap-8 ${
                 index % 2 === 0
                   ? 'ml-6 items-start'
                   : 'mr-6 items-end text-right'
@@ -113,7 +113,7 @@ export default function JurusanSection () {
                 transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
                 viewport={{ once: true }}
               >
-                {item.description}
+                {item.short_description}
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}

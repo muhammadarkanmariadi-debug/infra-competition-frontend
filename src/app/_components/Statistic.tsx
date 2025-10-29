@@ -2,40 +2,61 @@
 
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 interface Prestasi {
-  icon: string
   title: string
   target: number
   suffix?: string
 }
+
+interface murid {
+  title: string
+  target: number
+  suffix?: string
+}
+
 const prestasiData: Prestasi[] = [
   {
-    icon: '🧑‍💻',
     title: 'Alumni bekerja di perusahaan IT ternama',
     target: 150, // Ganti dengan angka sebenarnya
     suffix: '+'
   },
   {
-    icon: '🎓',
     title: 'Alumni melanjutkan kuliah di universitas unggulan',
     target: 200, // Ganti dengan angka sebenarnya
     suffix: '+'
   },
   {
-    icon: '🏆',
     title: 'Prestasi lomba tingkat nasional',
     target: 50, // Ganti dengan angka sebenarnya
     suffix: '+'
   },
   {
-    icon: '💼',
     title: 'Mitra industri aktif',
     target: 30, // Ganti dengan angka sebenarnya
     suffix: '+'
   }
 ]
+
+const murid = [
+  {
+    title: 'RPL (Rekayasa Perangkat Lunak) ',
+    target: 500,
+    suffix: '+'
+  },
+  {
+    title: 'TKJ (Teknik Komputer dan Jaringan) ',
+    target: 500,
+    suffix: '+'
+  },
+  {
+    title: 'TKJ (Teknik Komputer dan Jaringan) ',
+    target: 500,
+    suffix: '+'
+  }
+]
+
 const CounterCard: React.FC<{ prestasi: Prestasi }> = ({ prestasi }) => {
   const [count, setCount] = useState(0)
   useEffect(() => {
@@ -53,20 +74,121 @@ const CounterCard: React.FC<{ prestasi: Prestasi }> = ({ prestasi }) => {
     return () => clearInterval(timer)
   }, [prestasi.target])
   return (
-    <motion.div 
-      className='bg-white shadow-lg p-6 rounded-2xl text-center hover:scale-105 transition-transform duration-300 transform'
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
+    <motion.div
+      className='relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-18 border-4 border-gray-300/50 rounded-full w-[300px] h-[300px] text-center hover:scale-110 transition-all duration-500 transform'
+      initial={{ opacity: 0, y: 50, scale: 0.8 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: {
+          duration: 0.6,
+          type: 'spring',
+          bounce: 0.5,
+          stiffness: 100
+        }
+      }}
       viewport={{ once: true }}
-      whileHover={{ scale: 1.05 }}
+      whileHover={{ scale: 1.1, rotate: 5 }}
+      animate={{ y: [0, -10, 0] }} // Constant bouncing animation
+      transition={{ y: { duration: 2, repeat: Infinity, ease: 'easeInOut' } }}
     >
-      <div className='mb-4 text-6xl'>{prestasi.icon}</div>
-      <h3 className='mb-2 font-bold text-gray-800 text-xl'>{prestasi.title}</h3>
-      <div className='font-bold text-primary text-4xl'>
-        {count}
-        {prestasi.suffix}
+      {/* Decorative inner ring */}
+      <div className='absolute inset-4 border-2 border-gray-400/30 rounded-full'></div>
+      {/* Icon placeholder - replace with actual icon */}
+      <div className='top-4 left-1/2 absolute text-primary text-3xl -translate-x-1/2 transform'>
+        🎓 {/* Example icon, replace with relevant ones */}
       </div>
+      <div className='flex flex-col justify-center items-center h-full'>
+        <div className='drop-shadow-lg font-bold text-primary text-5xl'>
+          {count}
+          {prestasi.suffix}
+        </div>
+        <h3 className='drop-shadow-md mt-2 font-bold text-gray-800 text-xl'>{prestasi.title}</h3>
+      </div>
+      {/* Sparkle effects */}
+      <motion.div
+        className='top-2 right-2 absolute text-yellow-400 text-xl'
+        animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+      >
+        ✨
+      </motion.div>
+      <motion.div
+        className='bottom-2 left-2 absolute text-yellow-400 text-xl'
+        animate={{ scale: [1, 1.2, 1], rotate: [0, -180, -360] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+      >
+        ✨
+      </motion.div>
+    </motion.div>
+  )
+}
+
+const CounterCard2: React.FC<{ murid: murid }> = ({ murid }) => {
+  const [count, setCount] = useState(0)
+  useEffect(() => {
+    const duration = 2000 // Durasi animasi dalam ms
+    const increment = murid.target / (duration / 50)
+    const timer = setInterval(() => {
+      setCount(prev => {
+        if (prev >= murid.target) {
+          clearInterval(timer)
+          return murid.target
+        }
+        return Math.ceil(prev + increment)
+      })
+    }, 50)
+    return () => clearInterval(timer)
+  }, [murid.target])
+  return (
+    <motion.div
+      className='relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-18 border-4 border-gray-300/50 rounded-full w-[300px] h-[300px] text-center hover:scale-110 transition-all duration-500 transform'
+      initial={{ opacity: 0, y: 50, scale: 0.8 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: {
+          duration: 0.6,
+          type: 'spring',
+          bounce: 0.5,
+          stiffness: 100
+        }
+      }}
+      viewport={{ once: true }}
+      whileHover={{ scale: 1.1, rotate: -5 }}
+      animate={{ y: [0, -10, 0] }} // Constant bouncing animation
+      transition={{ y: { duration: 2, repeat: Infinity, ease: 'easeInOut' } }}
+    >
+      {/* Decorative inner ring */}
+      <div className='absolute inset-4 border-2 border-gray-400/30 rounded-full'></div>
+      {/* Icon placeholder - replace with actual icon */}
+      <div className='top-4 left-1/2 absolute text-primary text-3xl -translate-x-1/2 transform'>
+        👨‍🎓 {/* Example icon, replace with relevant ones */}
+      </div>
+      <div className='flex flex-col justify-center items-center h-full'>
+        <div className='drop-shadow-lg font-bold text-primary text-5xl'>
+          {count}
+          {murid.suffix}
+        </div>
+        <h3 className='drop-shadow-md mt-2 font-bold text-gray-800 text-xl'>{murid.title}</h3>
+      </div>
+      {/* Sparkle effects */}
+      <motion.div
+        className='top-2 right-2 absolute text-yellow-400 text-xl'
+        animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 360] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+      >
+        ✨
+      </motion.div>
+      <motion.div
+        className='bottom-2 left-2 absolute text-yellow-400 text-xl'
+        animate={{ scale: [1, 1.2, 1], rotate: [0, -180, -360] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+      >
+        ✨
+      </motion.div>
     </motion.div>
   )
 }
@@ -78,16 +200,17 @@ const Statistic: React.FC = () => {
       id='track'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       {/* Ornamen wave di atas */}
-      <motion.div 
+      <motion.div
         className='-top-[15px] left-0 absolute w-full overflow-hidden leading-none'
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <svg style={{ marginTop: '-20px' }}
+        <svg
+          style={{ marginTop: '-20px' }}
           width='1440'
           height='60'
           viewBox='0 0 1440 60'
@@ -116,13 +239,13 @@ const Statistic: React.FC = () => {
       </motion.div>
 
       {/* Judul */}
-      <motion.div 
+      <motion.div
         className='pt-[60px] pb-[30px] text-center'
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <motion.h4 
+        <motion.h4
           className='font-medium text-[15px] text-white/60'
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -130,7 +253,7 @@ const Statistic: React.FC = () => {
         >
           Statistik Murid Kami
         </motion.h4>
-        <motion.h1 
+        <motion.h1
           className='font-bold text-[45px] text-white'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -140,37 +263,67 @@ const Statistic: React.FC = () => {
         </motion.h1>
       </motion.div>
 
-      {/* Ornamen Gambar (tetap ada) */}
-      <motion.div 
-        className='flex xl:flex-row flex-col items-center my-10 pb-[30px] w-full'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.0 }}
-      >
-        <div className='justify-center mx-auto px-6 w-full'>
-          <motion.div 
-            className='justify-center gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-          >
-            {prestasiData.map((prestasi, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <CounterCard prestasi={prestasi} />
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </motion.div>
+      <div className='py-20'>
+        <motion.div
+          className='flex xl:flex-row flex-col items-center my-10 pb-[30px] w-full'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
+        >
+          <div className='justify-center mx-auto px-6 w-full'>
+            <motion.div
+              className='justify-center gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+            >
+              {prestasiData.map((prestasi, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <CounterCard prestasi={prestasi} />
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className='flex xl:flex flex-col justify-center items-center gap-20 py-10 pb-[30px]'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
+        >
+          <div className='justify-between'>
+            <motion.div
+              className='flex justify-center gap-80'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+            >
+              {murid.map((murid, index) => (
+                <motion.div
+                  className='flex justify-center items-center'
+                  key={index}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <CounterCard2 murid={murid} />
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </motion.div>
+      </div>
 
       {/* Garis bawah */}
-      <motion.div 
+      <motion.div
         className='block bg-[#E9E2EA] h-5'
         initial={{ opacity: 0, scaleX: 0 }}
         animate={{ opacity: 1, scaleX: 1 }}

@@ -12,6 +12,7 @@ import AspirasiPage from './_components/AspirasiForm'
 import JurusanSection from './_components/Jurusan'
 import Berita from './_components/Berita'
 import Statistic from './_components/Statistic'
+import AlurPendaftaran from './_components/AlurPendaftaran'
 
 
 export default function Home () {
@@ -25,6 +26,7 @@ export default function Home () {
       <Statistic />
       <JurusanSection />
       <VideoProfil />
+      <AlurPendaftaran />
       <Faq />
       <AspirasiPage />
     </>
