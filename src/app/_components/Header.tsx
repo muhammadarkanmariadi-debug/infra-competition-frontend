@@ -72,7 +72,7 @@ export default function Header() {
           </motion.a>
         </motion.div>
         <div className='sm:hidden xl:block hiasan'>
-          <div className='2xl:top-[-700px] 2xl:left-[300px] 2xl:relative kiri'>
+          <div className='2xl:top-[-700px] 2xl:left-[100px] 2xl:relative kiri'>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -117,7 +117,7 @@ export default function Header() {
             </motion.div>
           </div>
 
-          <div className='2xl:top-[-700px] 2xl:right-[400px] 2xl:relative kanan'>
+          <div className='2xl:top-[-700px] 2xl:right-[100px] 2xl:relative kanan'>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -187,7 +187,7 @@ export default function Header() {
               alt='panah kiri'
               width={161}
               height={32}
-              className='max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[800px] min-xl:absolute'
+              className='max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[500px] min-xl:absolute'
             />
           </motion.div>
           <motion.div
@@ -201,7 +201,7 @@ export default function Header() {
               alt='panah kanan'
               width={161}
               height={32}
-              className='max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[900px] min-xl:absolute'
+              className='max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[600px] min-xl:absolute'
             />
           </motion.div>
         </div>

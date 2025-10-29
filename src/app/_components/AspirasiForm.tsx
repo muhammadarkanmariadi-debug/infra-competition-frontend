@@ -36,13 +36,13 @@ export default function AspirasiPage () {
           value={body}
           onChange={e => setAspirasi(e.target.value)}
           placeholder='Tulis aspirasi Anda di sini...'
-          className='p-4 border border-primary rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary w-full h-40 transition-all duration-300 resize-none'
+          className='p-4 border border-secondary rounded-2xl focus:outline-none focus:ring- focus:ring-2secondary w-full h-40 transition-all duration-300 resize-none'
         />
 
         <button
           onClick={handleSubmit}
           disabled={isLoading}
-          className='bg-primary hover:bg-primary-dark disabled:opacity-60 shadow-md mt-6 py-3 rounded-2xl w-full font-semibold text-white transition-colors duration-300'
+          className='bg-secondary hover:bg-secondary-dark disabled:opacity-60 shadow-md mt-6 py-3 rounded-2xl w-full font-semibold text-white transition-colors duration-300'
         >
           {isLoading ? 'Mengirim...' : 'Kirim Aspirasi'}
         </button>

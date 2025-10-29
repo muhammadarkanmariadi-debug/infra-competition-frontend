@@ -1,33 +1,6 @@
 @import "https://fonts.cdnfonts.com/css/planer";
 /* [next]/internal/font/google/geist_e531dabc.module.css [app-client] (css) */
 @font-face {
-  font-family: Geist;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("../media/gyByhwUxId8gMEwYGFWNOITddY4-s.b7d310ad.woff2") format("woff2");
-  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
-}
-
-@font-face {
-  font-family: Geist;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("../media/gyByhwUxId8gMEwSGFWNOITddY4-s.81df3a5b.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Geist;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("../media/gyByhwUxId8gMEwcGFWNOITd-s.p.1a6fa3e1.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
   font-family: Geist Fallback;
   src: local(Arial);
   ascent-override: 95.94%;
@@ -48,33 +21,6 @@
 
 /* [next]/internal/font/google/geist_mono_68a01160.module.css [app-client] (css) */
 @font-face {
-  font-family: Geist Mono;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("../media/or3nQ6H_1_WfwkMZI_qYFrMdmhHkjkotbA-s.cb6bbcb1.woff2") format("woff2");
-  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
-}
-
-@font-face {
-  font-family: Geist Mono;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("../media/or3nQ6H_1_WfwkMZI_qYFrkdmhHkjkotbA-s.e32db976.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Geist Mono;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("../media/or3nQ6H_1_WfwkMZI_qYFrcdmhHkjko-s.p.be19f591.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
   font-family: Geist Mono Fallback;
   src: local(Arial);
   ascent-override: 74.67%;
@@ -94,249 +40,6 @@
 
 
 /* [next]/internal/font/google/poppins_8ec1a3b7.module.css [app-client] (css) */
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url("../media/pxiGyp8kv8JHgFVrLPTucXtAOvWDSHFF-s.477e9f30.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url("../media/pxiGyp8kv8JHgFVrLPTufntAOvWDSHFF-s.f058f0cf.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url("../media/pxiGyp8kv8JHgFVrLPTucHtAOvWDSA-s.p.65d31cf5.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLFj_Z11lFd2JQEl8qw-s.796e930e.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLFj_Z1JlFd2JQEl8qw-s.a000242e.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLFj_Z1xlFd2JQEk-s.p.79a0f3e8.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw-s.07792bab.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw-s.8da2481e.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk-s.p.11d83409.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../media/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ-s.f7608c0b.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../media/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ-s.bfdffbb8.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../media/pxiEyp8kv8JHgFVrJJfecnFHGPc-s.p.c336a9d1.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw-s.a02d710f.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw-s.87c6fae1.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk-s.p.ab5dbd7e.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw-s.55ef469a.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw-s.cc58d8dc.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk-s.p.dd0b3887.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw-s.45055564.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw-s.0c442f40.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk-s.p.d95035ce.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw-s.8e4a632a.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw-s.65d48da8.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk-s.p.d66bbad7.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw-s.9d1b71df.woff2") format("woff2");
-  unicode-range: U+900-97F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw-s.d42316f9.woff2") format("woff2");
-  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("../media/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk-s.p.c194becc.woff2") format("woff2");
-  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 @font-face {
   font-family: Poppins Fallback;
   src: local(Arial);
@@ -501,7 +204,6 @@
     --ease-in-out: cubic-bezier(.4, 0, .2, 1);
     --blur-sm: 8px;
     --blur-lg: 16px;
-    --blur-xl: 24px;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-geist-sans);
@@ -727,10 +429,6 @@
     top: calc(var(--spacing) * -6);
   }
 
-  .-top-10 {
-    top: calc(var(--spacing) * -10);
-  }
-
   .-top-\[15px\] {
     top: -15px;
   }
@@ -745,10 +443,6 @@
 
   .top-2 {
     top: calc(var(--spacing) * 2);
-  }
-
-  .top-10 {
-    top: calc(var(--spacing) * 10);
   }
 
   .top-16 {
@@ -979,10 +673,6 @@
     bottom: calc(var(--spacing) * 5);
   }
 
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
-  }
-
   .bottom-20 {
     bottom: calc(var(--spacing) * 20);
   }
@@ -1043,6 +733,10 @@
     left: 205px;
   }
 
+  .left-\[220px\] {
+    left: 220px;
+  }
+
   .left-\[250px\] {
     left: 250px;
   }
@@ -1069,6 +763,10 @@
 
   .left-\[505px\] {
     left: 505px;
+  }
+
+  .left-\[520px\] {
+    left: 520px;
   }
 
   .left-\[643px\] {
@@ -1397,10 +1095,6 @@
 
   .inline-flex {
     display: inline-flex;
-  }
-
-  .h-1 {
-    height: calc(var(--spacing) * 1);
   }
 
   .h-2 {
@@ -2158,6 +1852,10 @@
     border-color: var(--color-red-200);
   }
 
+  .border-secondary {
+    border-color: #e15f60;
+  }
+
   .border-white {
     border-color: var(--color-white);
   }
@@ -2259,11 +1957,6 @@
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 
-  .bg-gradient-to-br {
-    --tw-gradient-position: to bottom right in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -2280,17 +1973,6 @@
 
   .from-primary {
     --tw-gradient-from: #a2181c;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-
-  .via-white {
-    --tw-gradient-via: var(--color-white);
-    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-via-stops);
-  }
-
-  .to-\[\#F0F8FF\] {
-    --tw-gradient-to: #f0f8ff;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
@@ -2895,10 +2577,6 @@
     opacity: 0;
   }
 
-  .opacity-10 {
-    opacity: .1;
-  }
-
   .opacity-50 {
     opacity: .5;
   }
@@ -2947,11 +2625,6 @@
 
   .blur-lg {
     --tw-blur: blur(var(--blur-lg));
-    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
-  }
-
-  .blur-xl {
-    --tw-blur: blur(var(--blur-xl));
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
   }
 
@@ -3270,10 +2943,6 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
-  .focus\:ring-primary:focus {
-    --tw-ring-color: #a2181c;
-  }
-
   .focus\:ring-red-500:focus {
     --tw-ring-color: var(--color-red-500);
   }
@@ -3571,6 +3240,13 @@
   }
 
   @media (width >= 48rem) {
+    .md\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+
+  @media (width >= 48rem) {
     .md\:text-3xl {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -3585,9 +3261,30 @@
   }
 
   @media (width >= 48rem) {
+    .md\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:text-6xl {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+
+  @media (width >= 48rem) {
     .md\:text-lg {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
 
@@ -3825,8 +3522,32 @@
   }
 
   @media (width >= 96rem) {
+    .\32 xl\:right-\[100px\] {
+      right: 100px;
+    }
+  }
+
+  @media (width >= 96rem) {
     .\32 xl\:right-\[400px\] {
       right: 400px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:right-\[500px\] {
+      right: 500px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:right-\[600px\] {
+      right: 600px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:right-\[800px\] {
+      right: 800px;
     }
   }
 
@@ -3837,8 +3558,50 @@
   }
 
   @media (width >= 96rem) {
+    .\32 xl\:left-\[00px\] {
+      left: 0;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:left-\[100px\] {
+      left: 100px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:left-\[200px\] {
+      left: 200px;
+    }
+  }
+
+  @media (width >= 96rem) {
     .\32 xl\:left-\[300px\] {
       left: 300px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:left-\[400px\] {
+      left: 400px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:left-\[500px\] {
+      left: 500px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:left-\[600px\] {
+      left: 600px;
+    }
+  }
+
+  @media (width >= 96rem) {
+    .\32 xl\:left-\[700px\] {
+      left: 700px;
     }
   }
 

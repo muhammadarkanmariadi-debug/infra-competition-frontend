@@ -201,7 +201,7 @@ function Header() {
                         className: "sm:hidden xl:block hiasan",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "2xl:top-[-700px] 2xl:left-[300px] 2xl:relative kiri",
+                                className: "2xl:top-[-700px] 2xl:left-[100px] 2xl:relative kiri",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
@@ -305,7 +305,7 @@ function Header() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "2xl:top-[-700px] 2xl:right-[400px] 2xl:relative kanan",
+                                className: "2xl:top-[-700px] 2xl:right-[100px] 2xl:relative kanan",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
@@ -460,7 +460,7 @@ function Header() {
                                     alt: "panah kiri",
                                     width: 161,
                                     height: 32,
-                                    className: "max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[800px] min-xl:absolute"
+                                    className: "max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[500px] min-xl:absolute"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
                                     lineNumber: 185,
@@ -492,7 +492,7 @@ function Header() {
                                     alt: "panah kanan",
                                     width: 161,
                                     height: 32,
-                                    className: "max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[900px] min-xl:absolute"
+                                    className: "max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[600px] min-xl:absolute"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
                                     lineNumber: 199,
@@ -2176,7 +2176,7 @@ function VideoProfil() {
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                    className: "mb-6 font-bold text-white text-3xl md:text-4xl",
+                                    className: "mb-6 font-bold text-white text-3xl md:text-5xl",
                                     initial: {
                                         opacity: 0,
                                         scale: 0.9
@@ -2199,7 +2199,7 @@ function VideoProfil() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                    className: "text-white text-base md:text-lg leading-relaxed",
+                                    className: "text-white text-base md:text-2xl leading-relaxed",
                                     initial: {
                                         opacity: 0,
                                         y: 20
@@ -3123,7 +3123,7 @@ function AspirasiPage() {
                     value: body,
                     onChange: (e)=>setAspirasi(e.target.value),
                     placeholder: "Tulis aspirasi Anda di sini...",
-                    className: "p-4 border border-primary rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary w-full h-40 transition-all duration-300 resize-none"
+                    className: "p-4 border border-secondary rounded-2xl focus:outline-none focus:ring- focus:ring-2secondary w-full h-40 transition-all duration-300 resize-none"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/AspirasiForm.tsx",
                     lineNumber: 35,
@@ -3132,7 +3132,7 @@ function AspirasiPage() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: handleSubmit,
                     disabled: isLoading,
-                    className: "bg-primary hover:bg-primary-dark disabled:opacity-60 shadow-md mt-6 py-3 rounded-2xl w-full font-semibold text-white transition-colors duration-300",
+                    className: "bg-secondary hover:bg-secondary-dark disabled:opacity-60 shadow-md mt-6 py-3 rounded-2xl w-full font-semibold text-white transition-colors duration-300",
                     children: isLoading ? 'Mengirim...' : 'Kirim Aspirasi'
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/AspirasiForm.tsx",

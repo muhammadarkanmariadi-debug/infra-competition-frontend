@@ -48,7 +48,7 @@ export default function VideoProfil () {
             viewport={{ once: true }}
           >
             <motion.h2
-              className='mb-6 font-bold text-white text-3xl md:text-4xl'
+              className='mb-6 font-bold text-white text-3xl md:text-5xl'
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -57,7 +57,7 @@ export default function VideoProfil () {
               Video Profil
             </motion.h2>
             <motion.p
-              className='text-white text-base md:text-lg leading-relaxed'
+              className='text-white text-base md:text-2xl leading-relaxed'
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
