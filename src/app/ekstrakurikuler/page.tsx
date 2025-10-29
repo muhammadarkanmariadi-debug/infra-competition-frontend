@@ -76,7 +76,7 @@ export default function EkstrakurikulerPage () {
   return (
     <main className='bg-white min-h-screen'>
       {/* Header Section */}
-      <section className='relative bg-gradient-to-br from-primary via-primary to-secondary py-20 overflow-hidden'>
+      <section className='relative bg-secondary py-20 overflow-hidden'>
         {/* Decorative elements */}
         <div className='absolute inset-0 opacity-10'>
           <div className='top-0 left-1/4 absolute bg-white blur-3xl rounded-full w-96 h-96'></div>
@@ -199,7 +199,7 @@ export default function EkstrakurikulerPage () {
       </section>
 
       {/* Bottom CTA Section */}
-      <section className='bg-gradient-to-r from-primary to-secondary py-16'>
+      <section className='bg-secondary py-16'>
         <div className='mx-auto px-6 max-w-7xl text-center'>
           <motion.h2
             className='mb-4 font-bold text-white text-3xl'
