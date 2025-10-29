@@ -1,5 +1,6 @@
 {
   "pages": {},
+<<<<<<< HEAD
   "app": {
     "[project]/src/app/_not-found/page": [
       "static/media/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk-s.p.11d83409.woff2",
@@ -16,5 +17,9 @@
     ]
   },
   "appUsingSizeAdjust": true,
+=======
+  "app": {},
+  "appUsingSizeAdjust": false,
+>>>>>>> 8863ad132bfd5d678d34c542b94f65b83cd1680e
   "pagesUsingSizeAdjust": false
 }

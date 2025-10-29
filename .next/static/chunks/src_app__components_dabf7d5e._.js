@@ -128,7 +128,7 @@ function PortfolioCard({ portfolio }) {
                     src: portfolio.image,
                     alt: portfolio.title,
                     fill: true,
-                    className: "object-cover w-full h-full"
+                    className: "object-cover"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
                     lineNumber: 61,
@@ -505,31 +505,6 @@ const LeadersData = [
         name: "Muhammad Radika A. B.",
         role: "Medcom General Manager",
         image: "/assets/image/Leadmedcom.png"
-    },
-    {
-        name: "Arsyad Ali M.",
-        role: "Merch General Manager",
-        image: "/assets/image/LeadMerch.png"
-    },
-    {
-        name: "Arsyad Ali M.",
-        role: "Merch General Manager",
-        image: "/assets/image/LeadMerch.png"
-    },
-    {
-        name: "Arsyad Ali M.",
-        role: "Merch General Manager",
-        image: "/assets/image/LeadMerch.png"
-    },
-    {
-        name: "Arsyad Ali M.",
-        role: "Merch General Manager",
-        image: "/assets/image/LeadMerch.png"
-    },
-    {
-        name: "Arsyad Ali M.",
-        role: "Merch General Manager",
-        image: "/assets/image/LeadMerch.png"
     },
     {
         name: "Arsyad Ali M.",
