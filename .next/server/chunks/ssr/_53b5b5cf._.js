@@ -24,123 +24,9 @@ var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
     "LeadersData": (()=>LeadersData),
-    "TrackData": (()=>TrackData),
     "dataFAQ": (()=>dataFAQ),
     "divisi": (()=>divisi)
 });
-const TrackData = [
-    {
-        title: "Tesla Metic UI/UX 2024",
-        eventDate: "Aug 28, 2024",
-        desc: "UI/UX Design Competition yang diselenggarakan oleh METIC pada event PITULASAN. ",
-        img: "/assets/image/tesla-metic-img.png",
-        name: "Event",
-        type: "Event"
-    },
-    {
-        title: "Buka Bersama METIC 2025",
-        eventDate: "Mar 16, 2025",
-        desc: "Kebersamaan anggota METIC di bulan Ramadhan dengan mengadakan buka bersama seluruh metizen 31, 32 & 33. ",
-        img: "/assets/image/metic-bukber.png",
-        name: "Event",
-        type: "Event"
-    },
-    {
-        title: "Moklet Youth Innovators 2025",
-        eventDate: "Jun 2, 2025",
-        desc: "Moklet Youth Innovators 2025 diadakan oleh METIC untuk para siswa SMA/SMK/SMP sederajat tingkat Nasional. ",
-        img: "/assets/image/metic-moyi.png",
-        name: "Event",
-        type: "Event"
-    },
-    {
-        title: "Kolaborasi OSIS Man 2 Malang",
-        eventDate: "Apr 19, 2025",
-        desc: "Metic terlibat dalam Final Lomba Cerdas Cermat yang diselenggarakan oleh OSIS MAN 2 Malang dalam proyek pembuatan bel untuk olimpiade. ",
-        img: "/assets/image/Portofolio/CollaborasiMan2.jpg",
-        name: "Event",
-        type: "Event"
-    },
-    {
-        title: "Media Partner ArtFest Kosayu",
-        eventDate: "Apr 26, 2025",
-        desc: "Kebersamaan anggota METIC di bulan Ramadhan dengan mengadakan buka bersama seluruh metizen 31, 32 & 33. ",
-        img: "/assets/image/Portofolio/Arfest Kosayu 1.webp",
-        name: "Event",
-        type: "Event"
-    },
-    {
-        title: "Sponsorship MGIP Demo Day",
-        eventDate: "Jun 5, 2025",
-        desc: "Kebersamaan anggota METIC di bulan Ramadhan dengan mengadakan buka bersama seluruh metizen 31, 32 & 33. ",
-        img: "/assets/image/Portofolio/PB MGIP.png",
-        name: "Event",
-        type: "Event"
-    },
-    {
-        title: "Arsyad Ali Mahardika",
-        eventDate: "Feb 28, 2024",
-        desc: "Sakura Science High School Program 2025 in Japan. ",
-        img: "/assets/image/metic-japan.png",
-        name: "Metizen 32",
-        type: "International",
-        country: "Japan"
-    },
-    {
-        title: "Fathimah Aqilah Zarrah",
-        eventDate: "Feb 28, 2024",
-        desc: "Asean Youth Competition: Hackathon AI 2025 in Thailand. ",
-        img: "/assets/image/32-aqila.png",
-        name: "Event",
-        type: "International",
-        country: "Thailand"
-    },
-    {
-        title: "Muhammad Keefa Syawal",
-        eventDate: "Feb 28, 2024",
-        desc: "Asean Youth Competition: Hackathon AI 2025 in Thailand. ",
-        img: "/assets/image/32-keefa.png",
-        name: "Event",
-        type: "International",
-        country: "Thailand"
-    },
-    {
-        title: "Shabri Sebastian Siregar",
-        eventDate: "Feb 28, 2024",
-        desc: "Asean Youth Competition: Hackathon AI 2025 in Thailand. ",
-        img: "/assets/image/33-shabri.png",
-        name: "Event",
-        type: "International",
-        country: "Thailand"
-    },
-    {
-        title: "Jean Richnerd R.",
-        eventDate: "Feb 28, 2024",
-        desc: "International Standards Olympiad 2025 in Korea. ",
-        img: "/assets/image/33-bara.png",
-        name: "Event",
-        type: "International",
-        country: "Korea"
-    },
-    {
-        title: "Muhammad Alfareza Hans P.",
-        eventDate: "Feb 28, 2024",
-        desc: "STEM Nexus ASEAN Regional 2025 in Malaysia. ",
-        img: "/assets/image/33-alfareza.png",
-        name: "Event",
-        type: "International",
-        country: "Malaysia"
-    },
-    {
-        title: "Muhammad Dzaky Azzam",
-        eventDate: "Feb 28, 2024",
-        desc: "STEM Nexus ASEAN Regional 2025 in Malaysia. ",
-        img: "/assets/image/33-azzam.png",
-        name: "Event",
-        type: "International",
-        country: "Malaysia"
-    }
-];
 const LeadersData = [
     {
         name: "Achmad Ilham Ramadhani",
@@ -200,72 +86,83 @@ const LeadersData = [
 ];
 const dataFAQ = [
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "Gimana sih cara join METIC?",
+        profileImg: "/assets/image/tsp.png",
+        question: "SMK Telkom Malang itu sekolah kayak gimana sih?",
         response: [
-            "<b>Easy banget lho!</b>",
-            "Tinggal isi form pas open recruitment, pilih divisi yang kamu mau, terus ikutin seleksinya.<br /><strong>Jangan lupa siapin diri lo jadi versi lo yang paling keren ✌️</strong>"
+            "SMK Telkom Malang itu sekolah vokasi berbasis teknologi informasi yang udah terkenal banget di Indonesia 💻",
+            "Fokusnya di bidang IT, tapi suasananya tetap fun dan supportif banget. Kamu bakal belajar bareng temen-temen yang punya passion di dunia teknologi dan kreatif 🎯"
         ]
     },
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "Tapi aku nggak jago coding atau desain, masih bisa masuk gak?",
+        profileImg: "/assets/image/tsp.png",
+        question: "Jurusan di SMK Telkom Malang ada apa aja?",
         response: [
-            "Santai aja, bestie. Kita bukan nyari yang paling jago, tapi yang mau belajar dan grow bareng. Skill bisa diasah, yang penting niat & vibes-nya dapet ✨."
+            "Kita punya <b>RPL (Rekayasa Perangkat Lunak)</b>, <b>TKJ (Teknik Komputer & Jaringan)</b>, dan <b>Pengembangan Game</b> 🎮",
+            "Masing-masing jurusan punya keunggulan sendiri, tapi semuanya tetep berhubungan sama dunia digital dan teknologi!"
         ]
     },
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "Semua orang bisa milih divisi yang sama?",
+        profileImg: "/assets/image/tsp.png",
+        question: "Belajarnya cuma teori doang atau ada praktik juga?",
         response: [
-            "Bisa banget dong!",
-            "Asal kamu ngerti jobdesc-nya dan siap komit, gas aja. Tapi jangan lupa, masing-masing divisi punya tantangan sendiri yaa 🚀."
+            "Tentu aja ada praktik dong!",
+            "Kamu bakal sering ngoding, ngerakit jaringan, bikin game, sampai ngerjain project real bareng tim. Jadi gak cuma teori, tapi langsung terjun ke dunia kerja 🔧💡"
         ]
     },
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "Kalo masuk METIC, dapet apa aja nih?",
+        profileImg: "/assets/image/tsp.png",
+        question: "Fasilitas di SMK Telkom Malang kayak gimana?",
         response: [
-            "Sini Minca kasih benefitnya! 👀",
-            "Jadi workspace METIC pake Notion Pro yang rapi dan akses Figma Education buat desain dan prototyping yang pastinya, tidak lupa juga dengan akun Capcut Pro yang keren abiez."
+            "Fasilitasnya lengkap banget 🔥",
+            "Ada laboratorium komputer modern, studio multimedia, Wi-Fi full area, perpustakaan digital, sampai lingkungan sekolah yang nyaman banget buat belajar & nongkrong produktif ☕"
         ]
     },
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "Di METIC ada pelatihan atau mentor gitu gak sih?",
+        profileImg: "/assets/image/tsp.png",
+        question: "Guru-gurunya friendly gak sih?",
         response: [
-            "Ada dong! Lo gak bakal dilepas sendirian. Setiap divisi biasanya punya onboarding dan mentoring session. Jadi lo bisa adapt dan upgrade skill lo pelan-pelan 🎯."
+            "Friendly banget! 😄",
+            "Guru-guru di sini bukan cuma ngajar, tapi juga jadi mentor dan temen diskusi. Mereka bener-bener support murid buat berkembang sesuai passion-nya."
         ]
     },
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "Join METIC tuh cuma buat jurusan tertentu aja?",
+        profileImg: "/assets/image/tsp.png",
+        question: "Ada kegiatan seru di luar pelajaran gak?",
         response: [
-            "Ngga dongg",
-            "METIC terbuka buat semua jurusan di SMK Telkom Malang. Yang penting itu kamu punya passion di dunia teknologi, digital, atau media 🌐."
+            "Banyak dong!",
+            "Mulai dari ekstrakurikuler teknologi, desain, musik, olahraga, sampai organisasi siswa kayak OSIS dan METIC. Jadi kamu bisa balance antara akademik dan kreativitas 🎨⚡"
         ]
     },
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "Di METIC ada senioritas gak?",
+        profileImg: "/assets/image/tsp.png",
+        question: "SMK Telkom Malang sering ikut lomba juga gak?",
         response: [
-            "Big no!",
-            "Kita anti senioritas. Semua punya suara, semua bisa berkontribusi. Kita percaya yang keren itu yang kolaboratif, bukan yang sok tua 😌✊."
+            "Pastinya! 🏆",
+            "Siswa-siswa kita sering banget juara di lomba tingkat nasional maupun internasional, mulai dari hackathon, desain, robotik, sampe esports 💪"
         ]
     },
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "Eh, kalo mau join lebih dari satu divisi boleh gak?",
+        profileImg: "/assets/image/tsp.png",
+        question: "Lulusan SMK Telkom Malang biasanya lanjut kuliah atau kerja?",
         response: [
-            "Boleh banget pastinyaaa",
-            "Asal kalo kuat dan time management kamu oke. Tapi saran kita sih fokus dulu di satu divisi biar impact-nya lebih kerasa 🔥."
+            "Keduanya bisa banget! 🔥",
+            "Banyak yang langsung kerja di perusahaan teknologi, startup, bahkan buka usaha sendiri. Tapi gak sedikit juga yang lanjut kuliah ke kampus top kayak Telkom University, UB, ITS, dll 🎓"
         ]
     },
     {
-        profileImg: "/assets/image/ketuaintern.png",
-        question: "METIC tuh serius banget ya? Gak fun dong?",
+        profileImg: "/assets/image/tsp.png",
+        question: "Kalo dari luar kota bisa masuk juga gak?",
         response: [
-            "Wah justru kebalik. Kita emang serius di kerjaan, tapi juga fun di vibes-nya. Banyak project seru, ngobrol santai, dan kadang ngopi-ngopi lucu sambil bahas UI/UX 😎☕"
+            "Bisa banget dong! 🏠",
+            "SMK Telkom Malang terbuka untuk siswa dari seluruh Indonesia. Kita juga punya asrama buat yang dari luar kota biar tetap nyaman belajar 💫"
+        ]
+    },
+    {
+        profileImg: "/assets/image/tsp.png",
+        question: "Gimana sih vibe belajar di SMK Telkom Malang?",
+        response: [
+            "Vibenya keren banget! 🔥",
+            "Serius pas belajar, tapi tetep santai dan solid sama temen-temen. Banyak kolaborasi project seru dan momen yang bakal bikin kamu betah banget di sini ❤️"
         ]
     }
 ];
@@ -1210,7 +1107,7 @@ function FAQCard({ profileImg, question, response }) {
                 className: "flex items-start gap-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/assets/image/mecaKeren.png" // telkom 
+                        src: "/assets/image/tsp.png" // telkom 
                         ,
                         alt: "Mascot",
                         width: 40,

@@ -22,6 +22,7 @@ interface Organisation {
   logo: string
 }
 
+<<<<<<< HEAD
 // Helper function untuk mendapatkan icon berdasarkan nama
 const getIcon = (name: string) => {
   const nameLower = name.toLowerCase()
@@ -61,9 +62,32 @@ const gradientColors = [
   'from-indigo-500 to-indigo-700',
   'from-cyan-500 to-cyan-700'
 ]
+=======
+
+
+
+>>>>>>> origin/haikal
 
 export default function EkstrakurikulerPage () {
   const [orgs, setOrganisations] = useState<Organisation[]>([])
+
+useEffect(() => {
+  console.log('Fetching ekskul data...')
+  api.get('/ekstrakulikuler')
+    .then(response => {
+      console.log('Response:', response)
+      console.log('Response data:', response.data)
+      console.log('Response data.data:', response.data.data)
+      setOrganisations(response.data.data)
+    })
+    .catch(error => {
+      console.error('Error fetching ekskul:', error)
+      console.error('Error response:', error.response)
+    })
+}, [])
+
+console.log('Current orgs:', orgs)
+
 
   useEffect(() => {
     api.get('/ekstrakulikuler').then(response => {
@@ -75,6 +99,7 @@ export default function EkstrakurikulerPage () {
 
   return (
     <main className='bg-white min-h-screen'>
+<<<<<<< HEAD
       {/* Header Section */}
       <section className='relative bg-secondary py-20 overflow-hidden'>
         {/* Decorative elements */}
@@ -174,6 +199,48 @@ export default function EkstrakurikulerPage () {
                 <div className={`bg-gradient-to-br ${gradientColors[index % gradientColors.length]} blur-2xl rounded-full w-32 h-32 -translate-y-1/2 translate-x-1/2`}></div>
               </div>
             </motion.div>
+=======
+      <section className='mx-auto px-6 py-16 max-w-7xl'>
+        <h1 className='mb-8 font-bold text-red-800 text-5xl text-center'>
+          Ekstrakurikuler SMK Telkom Malang
+        </h1>
+        <p className='mx-auto mb-12 max-w-2xl text-gray-600 text-center'>
+          Temukan berbagai ekstrakurikuler yang bisa kamu ikuti untuk
+          mengembangkan bakat, minat, dan karakter di SMK Telkom Malang.
+        </p>
+        <div className='gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+          {orgs.map(org => (
+
+
+
+
+            <div
+  key={org.id}
+  className='relative overflow-hidden bg-gray-100 shadow hover:shadow-xl rounded-2xl transition-all h-80'
+>
+  {/* Image penuh atas */}
+  <div className='relative h-48'>
+    <Image
+      src={org.logo}
+      alt={`Logo ${org.name}`}
+      fill
+      className='object-cover'
+    />
+  </div>
+  
+  {/* Box putih bawah */}
+  <div className='bg-white p-6'>
+    <h2 className='mb-2 font-bold text-gray-900 text-xl'>
+      {org.name}
+    </h2>
+    <p className='text-gray-600 text-sm line-clamp-3'>
+      {org.description}
+    </p>
+  </div>
+</div>
+
+
+>>>>>>> origin/haikal
           ))}
         </div>
 

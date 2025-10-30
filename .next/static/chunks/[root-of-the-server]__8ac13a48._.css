@@ -1258,12 +1258,21 @@
     height: calc(var(--spacing) * 56);
   }
 
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
 
+<<<<<<< HEAD
   .h-96 {
     height: calc(var(--spacing) * 96);
+=======
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+>>>>>>> origin/haikal
   }
 
   .h-\[0\.625rem\] {
@@ -1434,8 +1443,13 @@
     width: calc(var(--spacing) * 64);
   }
 
+<<<<<<< HEAD
   .w-96 {
     width: calc(var(--spacing) * 96);
+=======
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+>>>>>>> origin/haikal
   }
 
   .w-\[0\.625rem\] {
@@ -1526,12 +1540,17 @@
     max-width: 900px;
   }
 
+<<<<<<< HEAD
   .max-w-\[1280px\] {
     max-width: 1280px;
   }
 
   .max-w-\[1900px\] {
     max-width: 1900px;
+=======
+  .max-w-\[1300px\] {
+    max-width: 1300px;
+>>>>>>> origin/haikal
   }
 
   .max-w-lg {
@@ -1928,6 +1947,11 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0;
   }
 
   .border-2 {
@@ -3712,6 +3736,15 @@
   }
 
   @media (width >= 48rem) {
+<<<<<<< HEAD
+=======
+    .md\:h-80 {
+      height: calc(var(--spacing) * 80);
+    }
+  }
+
+  @media (width >= 48rem) {
+>>>>>>> origin/haikal
     .md\:w-\[560px\] {
       width: 560px;
     }
@@ -3766,13 +3799,6 @@
   }
 
   @media (width >= 48rem) {
-    .md\:text-2xl {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-  }
-
-  @media (width >= 48rem) {
     .md\:text-3xl {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -3794,6 +3820,7 @@
   }
 
   @media (width >= 48rem) {
+<<<<<<< HEAD
     .md\:text-6xl {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
@@ -3809,6 +3836,11 @@
   @media (width >= 64rem) {
     .lg\:top-24 {
       top: calc(var(--spacing) * 24);
+=======
+    .md\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+>>>>>>> origin/haikal
     }
   }
 
@@ -3837,6 +3869,7 @@
   }
 
   @media (width >= 64rem) {
+<<<<<<< HEAD
     .lg\:w-\[35\%\] {
       width: 35%;
     }
@@ -3845,6 +3878,10 @@
   @media (width >= 64rem) {
     .lg\:w-\[65\%\] {
       width: 65%;
+=======
+    .lg\:h-96 {
+      height: calc(var(--spacing) * 96);
+>>>>>>> origin/haikal
     }
   }
 
