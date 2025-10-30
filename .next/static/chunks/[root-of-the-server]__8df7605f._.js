@@ -7313,11 +7313,11 @@ class Router {
                     });
                     return new Promise(()=>{});
                 }
-                const routerFilterSValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":20,"errorRate":0.0001,"numBits":384,"numHashes":14,"bitArray":[1,0,0,0,1,0,0,0,1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,1,1,1,1,1,0,1,0,0,0,1,1,1,1,0,1,0,0,0,0,1,0,1,1,0,1,0,1,1,1,1,1,0,1,0,1,0,0,1,1,0,1,1,1,1,1,0,1,0,0,1,1,1,0,1,0,0,0,0,1,1,0,1,1,0,0,0,1,0,1,0,0,1,1,0,0,0,1,0,1,1,1,0,1,0,0,1,1,1,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,1,1,0,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,0,0,1,1,1,1,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,1,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,1,0,1,0,1,0,0,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0,1,0,0,1,1,1,0,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,0,1,0,1,0,1,1,1,0,1,0,0,1,0,1,1,1,1,0,1,0,0,1,1,0,0,1,0,0,1,0,1,1,1,0,0,0,1,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,1,1,1,0,1,0,0,1,0,1,1,0,1,1,1,0,1,0,0,0,0,1,0,0,1,1,0,0,1,0,1,0,1,1,1,0,1,0,1,1,1,1,0,0,0,0,1,0,0,1,1,0,1,0,1,0,1,0,0,1,1,0]}'));
+                const routerFilterSValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":19,"errorRate":0.0001,"numBits":365,"numHashes":14,"bitArray":[1,1,0,1,1,1,1,1,0,0,1,0,1,1,1,1,0,0,1,0,1,1,1,0,0,1,1,1,1,0,0,1,0,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,1,1,0,1,1,0,1,1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,1,1,1,0,0,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,1,1,0,1,1,0,1,0,1,0,1,0,1,1,1,0,1,0,0,1,1,1,1,0,1,0,0,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,1,1,1,0,1,1,0,0,1,0,1,0,1,1,1,0,0,1,0,1,1,0,0,0,0,0,1,1,0,0,1,1,1,1,0,0,1,1,0,1,0,1,0,1,1,1,1,1,0,1,0,0,1,1,1,0,1,1,1,0,1,0,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,0,1,0,1,1,1,0,0,0,0,0,0,1,0,1,0,1,0,0,1,1,1,0,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,1,1,1,0,1,0,0,0,0,1,0,1,1,1,1,0,1,0,0,0,1,0,1,0,1,1,0,1,1,0,1,1,1,1,1,1,0,0,1,0,0,1,1,1,0,0,1,1,1,0,0,0,0,1,0,1,0,0,0,1,0,0,1,0,0,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,0,0]}'));
                 if (!staticFilterData && routerFilterSValue) {
                     staticFilterData = routerFilterSValue ? routerFilterSValue : undefined;
                 }
-                const routerFilterDValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":6,"errorRate":0.0001,"numBits":116,"numHashes":14,"bitArray":[1,0,1,0,1,1,0,1,1,0,1,0,0,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,0,1,1,0,1,1,0,1,0,0,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,1,0,1,1,1,0,0,1,1,1,1,0,1,1,0,0,1,1,0,0,1,0,1,1,1,1,1,0,1,0,0,1,1,1,1,0,1,1,0,1,1,0,0,0,0,0,1,1,0,0,1,1,0]}'));
+                const routerFilterDValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":7,"errorRate":0.0001,"numBits":135,"numHashes":14,"bitArray":[1,0,1,1,1,0,1,0,0,0,1,0,1,0,1,1,1,1,1,0,0,0,1,1,1,1,0,1,1,0,0,0,1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,0,1,1,1,1,0,0,0,1,0,1,1,1,1,0,1,1,0,0,0,1,0,1,1,1,0,0,0,0,1,1,0,0,0,1,1,0,1,0,0,0,1,1,0,0,1,1,1,0,0,0,1,0,1,1,1,1,1,1,0,1,0,0,1,1,1,0,1,0,1,0,1,0,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0]}'));
                 if (!dynamicFilterData && routerFilterDValue) {
                     dynamicFilterData = routerFilterDValue ? routerFilterDValue : undefined;
                 }
@@ -20951,7 +20951,7 @@ function AppContainer(param) {
                             children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_headmanagercontextsharedruntime.HeadManagerContext.Provider, {
                                 value: headManager,
                                 children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_imageconfigcontextsharedruntime.ImageConfigContext.Provider, {
-                                    value: ("TURBOPACK compile-time value", JSON.parse('{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false,"domains":["localhost","images.unsplash.com","res.cloudinary.com"],"remotePatterns":[{"protocol":"http","hostname":"**"}]}')),
+                                    value: ("TURBOPACK compile-time value", JSON.parse('{"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false,"domains":["localhost","images.unsplash.com","res.cloudinary.com","static.promediateknologi.id"],"remotePatterns":[{"protocol":"http","hostname":"**"}]}')),
                                     children: children
                                 })
                             })
