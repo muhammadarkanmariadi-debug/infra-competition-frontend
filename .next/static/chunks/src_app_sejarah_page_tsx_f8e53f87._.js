@@ -36,7 +36,7 @@ function Sejarah() {
                 lineNumber: 22,
                 columnNumber: 13
             }, this),
-            color: "from-blue-500 to-blue-700"
+            color: "from-primary to-secondary"
         },
         {
             year: "1995",
@@ -49,7 +49,7 @@ function Sejarah() {
                 lineNumber: 29,
                 columnNumber: 13
             }, this),
-            color: "from-green-500 to-green-700"
+            color: "from-primary to-secondary"
         },
         {
             year: "2000",
@@ -62,7 +62,7 @@ function Sejarah() {
                 lineNumber: 36,
                 columnNumber: 13
             }, this),
-            color: "from-purple-500 to-purple-700"
+            color: "from-primary to-secondary"
         },
         {
             year: "2010",
@@ -75,7 +75,7 @@ function Sejarah() {
                 lineNumber: 43,
                 columnNumber: 13
             }, this),
-            color: "from-orange-500 to-orange-700"
+            color: "from-primary to-secondary"
         },
         {
             year: "2015",
@@ -88,7 +88,7 @@ function Sejarah() {
                 lineNumber: 50,
                 columnNumber: 13
             }, this),
-            color: "from-yellow-500 to-yellow-700"
+            color: "from-primary to-secondary"
         },
         {
             year: "2020",
@@ -101,7 +101,7 @@ function Sejarah() {
                 lineNumber: 57,
                 columnNumber: 13
             }, this),
-            color: "from-pink-500 to-pink-700"
+            color: "from-primary to-secondary"
         },
         {
             year: "2025",
@@ -114,7 +114,7 @@ function Sejarah() {
                 lineNumber: 64,
                 columnNumber: 13
             }, this),
-            color: "from-red-500 to-red-700"
+            color: "from-primary to-secondary"
         }
     ];
     const achievements = [
@@ -128,7 +128,7 @@ function Sejarah() {
                 lineNumber: 73,
                 columnNumber: 13
             }, this),
-            color: "from-blue-500 to-blue-700"
+            color: "from-primary to-secondary"
         },
         {
             number: "5000+",
@@ -140,7 +140,7 @@ function Sejarah() {
                 lineNumber: 79,
                 columnNumber: 13
             }, this),
-            color: "from-green-500 to-green-700"
+            color: "from-primary to-secondary"
         },
         {
             number: "100+",
@@ -152,7 +152,7 @@ function Sejarah() {
                 lineNumber: 85,
                 columnNumber: 13
             }, this),
-            color: "from-purple-500 to-purple-700"
+            color: "from-primary to-secondary"
         },
         {
             number: "50+",
@@ -164,7 +164,7 @@ function Sejarah() {
                 lineNumber: 91,
                 columnNumber: 13
             }, this),
-            color: "from-orange-500 to-orange-700"
+            color: "from-primary to-secondary"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
