@@ -19,7 +19,7 @@ function Header() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "mt-28",
+                className: "mt-16 sm:mt-20 md:mt-24 lg:mt-28 px-4 sm:px-6 lg:px-8",
                 initial: {
                     opacity: 0,
                     y: 50
@@ -34,10 +34,10 @@ function Header() {
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-center",
+                        className: "text-center max-w-7xl mx-auto",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
-                                className: "font-[700] text-[30px] text-primary 2xl:text-[60px] xl:text-[50px]",
+                                className: "font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[50px] 2xl:text-[60px] text-primary leading-tight",
                                 initial: {
                                     opacity: 0,
                                     scale: 0.8
@@ -57,7 +57,7 @@ function Header() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
-                                className: "mt-[2px] px-1 xl:px-0 font-[600] xl:font-[700] text-[22px] text-primary 2xl:text-[40px]",
+                                className: "mt-2 sm:mt-3 font-semibold sm:font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-[40px] text-primary leading-tight",
                                 initial: {
                                     opacity: 0,
                                     y: 20
@@ -77,7 +77,7 @@ function Header() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                className: "mt-[20px] px-4 xl:px-0 font-[400] text-black text-sm 2xl:text-xl",
+                                className: "mt-4 sm:mt-5 md:mt-6 font-normal text-black text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl leading-relaxed max-w-4xl mx-auto",
                                 initial: {
                                     opacity: 0,
                                     y: 20
@@ -127,7 +127,7 @@ function Header() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "drop-shadow-[0_4px_25px_rgba(225,95,96,0.35)] text-center",
+                        className: "drop-shadow-[0_4px_25px_rgba(225,95,96,0.35)] text-center mt-6 sm:mt-8 md:mt-10",
                         initial: {
                             opacity: 0,
                             scale: 0.9
@@ -152,8 +152,8 @@ function Header() {
                                     src: "/assets/image/bombi.png",
                                     alt: "Arrow Down",
                                     width: 400,
-                                    height: 0,
-                                    className: "z-[-1] relative mx-auto mt-[38px] w-[300px] xl:w-[400px] hover:scale-105 transition-transform duration-300"
+                                    height: 400,
+                                    className: "z-[-1] relative mx-auto w-48 sm:w-56 md:w-72 lg:w-80 xl:w-[400px]  transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
                                     lineNumber: 54,
@@ -165,8 +165,8 @@ function Header() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].a, {
-                                href: "/login",
-                                className: "flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-3 xl:py-5 rounded-full w-[400px] max-sm:w-[350px] xl:w- font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300 [450px]",
+                                href: "#berita",
+                                className: "flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto  py-2.5 sm:py-3 md:py-4 xl:py-5 rounded-full w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px] xl:w-[450px] font-bold text-white text-lg sm:text-xl md:text-2xl xl:text-4xl  transition-all duration-300",
                                 initial: {
                                     opacity: 0,
                                     y: 30
@@ -198,10 +198,10 @@ function Header() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "sm:hidden xl:block hiasan",
+                        className: "hidden lg:block",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "2xl:top-[-700px] 2xl:left-[100px] 2xl:relative kiri",
+                                className: "xl:relative xl:top-[600px] 2xl:top-[-820px] xl:left-[50px] 2xl:left-[-100px]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
@@ -223,15 +223,15 @@ function Header() {
                                             alt: "Server Rack",
                                             width: 72,
                                             height: 72,
-                                            className: "max-md:hidden top-[150px] left-[153px] min-xl:absolute rotate-[-5deg]"
+                                            className: "absolute top-[150px] left-[153px] rotate-[-5deg]]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 78,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -249,21 +249,10 @@ function Header() {
                                         },
                                         viewport: {
                                             once: true
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/assets/image/triangle-sm.png",
-                                            alt: "small triangle",
-                                            width: 32,
-                                            height: 28,
-                                            className: "max-md:hidden top-[236px] left-[263px] min-xl:absolute rotate-[-127deg]"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 96,
-                                            columnNumber: 15
-                                        }, this)
+                                        }
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 92,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -287,25 +276,25 @@ function Header() {
                                             alt: "segitiga kiri",
                                             width: 343.5,
                                             height: 307.5,
-                                            className: "max-md:hidden top-[359px] left-[100px] min-xl:absolute"
+                                            className: "absolute top-[359px] left-[200px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 110,
+                                            lineNumber: 106,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 75,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "2xl:top-[-700px] 2xl:right-[100px] 2xl:relative kanan",
+                                className: "xl:relative xl:top-[-600px] 2xl:top-[-700px] xl:right-[50px] 2xl:right-[100px]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
@@ -327,15 +316,15 @@ function Header() {
                                             alt: "triangle kanan",
                                             width: 318,
                                             height: 283.5,
-                                            className: "max-md:hidden top-[377px] right-[104px] min-xl:absolute"
+                                            className: "absolute top-[377px] right-[100px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 123,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 117,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -359,15 +348,15 @@ function Header() {
                                             alt: "desktop",
                                             width: 65,
                                             height: 65,
-                                            className: "max-md:hidden top-[400px] right-[350px] min-xl:absolute"
+                                            className: "absolute top-[400px] right-[350px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 137,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -391,15 +380,15 @@ function Header() {
                                             alt: "Server Rack",
                                             width: 32,
                                             height: 28,
-                                            className: "max-md:hidden top-[183px] right-[295px] min-xl:absolute rotate-[-5deg]"
+                                            className: "absolute top-[183px] right-[295px] rotate-[-5deg]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 151,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -423,21 +412,21 @@ function Header() {
                                             alt: "triangle besar",
                                             width: 90,
                                             height: 81,
-                                            className: "max-md:hidden top-[264px] right-[108px] min-xl:absolute"
+                                            className: "absolute top-[264px] right-[108px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 169,
+                                            lineNumber: 165,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 159,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 120,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -456,19 +445,19 @@ function Header() {
                                     once: true
                                 },
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/assets/image/panah-kiri.png",
+                                    src: "/assets/image/vector40.png",
                                     alt: "panah kiri",
                                     width: 161,
                                     height: 32,
-                                    className: "max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[500px] min-xl:absolute"
+                                    className: "absolute top-[640px] xl:top-[700px] 2xl:top-[900px] left-[320px] xl:left-[400px] 2xl:left-[400px]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 179,
+                                lineNumber: 175,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -492,21 +481,21 @@ function Header() {
                                     alt: "panah kanan",
                                     width: 161,
                                     height: 32,
-                                    className: "max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[600px] min-xl:absolute"
+                                    className: "absolute top-[485px] lg:top-[500px] xl:top-[550px] 2xl:top-[650px] right-[50px] xl:right-[580px] 2xl:right-[500px]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
-                                    lineNumber: 199,
+                                    lineNumber: 195,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 193,
+                                lineNumber: 189,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/Header.tsx",
-                        lineNumber: 74,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this)
                 ]
@@ -533,15 +522,15 @@ function Header() {
                     alt: "triangle top left",
                     width: 80,
                     height: 80,
-                    className: "hidden md:block top-16 md:top-20 left-10 md:left-24 absolute"
+                    className: "hidden md:block absolute top-12 md:top-20 lg:top-59 left-6 md:left-12 lg:left-24"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/Header.tsx",
-                    lineNumber: 216,
+                    lineNumber: 212,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Header.tsx",
-                lineNumber: 211,
+                lineNumber: 207,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -562,15 +551,15 @@ function Header() {
                     alt: "triangle top right",
                     width: 80,
                     height: 80,
-                    className: "hidden md:block top-16 md:top-20 right-10 md:right-24 absolute"
+                    className: "hidden md:block absolute top-12 md:top-16 lg:top-59 right-6 md:right-12 lg:right-24"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/Header.tsx",
-                    lineNumber: 229,
+                    lineNumber: 225,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Header.tsx",
-                lineNumber: 224,
+                lineNumber: 220,
                 columnNumber: 7
             }, this)
         ]
@@ -2463,7 +2452,7 @@ function WhyUs() {
                             duration: 0.6,
                             delay: 0.2
                         },
-                        children: "why us?"
+                        children: "Why Us?"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/WhyUs.tsx",
                         lineNumber: 47,
@@ -2481,7 +2470,7 @@ function WhyUs() {
                         },
                         transition: {
                             duration: 0.6,
-                            delay: 0.4
+                            delaeksy: 0.4
                         },
                         children: "Mengapa Harus Moklet ?"
                     }, void 0, false, {
@@ -2725,7 +2714,7 @@ function VisiMisi() {
                                 viewport: {
                                     once: true
                                 },
-                                children: "Mencetak lulusan berAKHLAK, ahli, dan berkebhinekaan global."
+                                children: "Mencetak lulusan berakhlak, ahli, dan berkebhinekaan global."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/VisiMisi.tsx",
                                 lineNumber: 46,

@@ -7,14 +7,14 @@ export default function Header() {
   return (
     <>
       <motion.div 
-        className='mt-28'
+        className='mt-16 sm:mt-20 md:mt-24 lg:mt-28 px-4 sm:px-6 lg:px-8'
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className='text-center'>
+        <div className='text-center max-w-7xl mx-auto'>
           <motion.h1 
-            className='font-[700] text-[30px] text-primary 2xl:text-[60px] xl:text-[50px]'
+            className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[50px] 2xl:text-[60px] text-primary leading-tight'
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -22,7 +22,7 @@ export default function Header() {
             The Real Informatics School!
           </motion.h1>
           <motion.h3 
-            className='mt-[2px] px-1 xl:px-0 font-[600] xl:font-[700] text-[22px] text-primary 2xl:text-[40px]'
+            className='mt-2 sm:mt-3 font-semibold sm:font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-[40px] text-primary leading-tight'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -30,7 +30,7 @@ export default function Header() {
             Pelopor SMK Bidang Teknologi dan Informatika di Indonesia
           </motion.h3>
           <motion.p 
-            className='mt-[20px] px-4 xl:px-0 font-[400] text-black text-sm 2xl:text-xl'
+            className='mt-4 sm:mt-5 md:mt-6 font-normal text-black text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl leading-relaxed max-w-4xl mx-auto'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -42,7 +42,7 @@ export default function Header() {
           </motion.p>
         </div>
         <motion.div 
-          className='drop-shadow-[0_4px_25px_rgba(225,95,96,0.35)] text-center'
+          className='drop-shadow-[0_4px_25px_rgba(225,95,96,0.35)] text-center mt-6 sm:mt-8 md:mt-10'
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -55,13 +55,13 @@ export default function Header() {
               src='/assets/image/bombi.png'
               alt='Arrow Down'
               width={400}
-              height={0}
-              className='z-[-1] relative mx-auto mt-[38px] w-[300px] xl:w-[400px] hover:scale-105 transition-transform duration-300'
+              height={400}
+              className='z-[-1] relative mx-auto w-48 sm:w-56 md:w-72 lg:w-80 xl:w-[400px]  transition-transform duration-300'
             />
           </motion.div>
           <motion.a
-            href="/login"
-            className="flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-3 xl:py-5 rounded-full w-[400px] max-sm:w-[350px] xl:w- font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300 [450px]"
+            href="#berita"
+            className="flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto  py-2.5 sm:py-3 md:py-4 xl:py-5 rounded-full w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px] xl:w-[450px] font-bold text-white text-lg sm:text-xl md:text-2xl xl:text-4xl  transition-all duration-300"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
@@ -71,8 +71,10 @@ export default function Header() {
             Ikuti Kami!
           </motion.a>
         </motion.div>
-        <div className='sm:hidden xl:block hiasan'>
-          <div className='2xl:top-[-700px] 2xl:left-[100px] 2xl:relative kiri'>
+
+
+        <div className='hidden lg:block'>
+          <div className='xl:relative xl:top-[600px] 2xl:top-[-820px] xl:left-[50px] 2xl:left-[-100px]'>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -84,7 +86,7 @@ export default function Header() {
                 alt='Server Rack'
                 width={72}
                 height={72}
-                className='max-md:hidden top-[150px] left-[153px] min-xl:absolute rotate-[-5deg]'
+                className='absolute top-[150px] left-[153px] rotate-[-5deg]]'
               />
             </motion.div>
             <motion.div
@@ -93,13 +95,7 @@ export default function Header() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Image
-                src='/assets/image/triangle-sm.png'
-                alt='small triangle'
-                width={32}
-                height={28}
-                className='max-md:hidden top-[236px] left-[263px] min-xl:absolute rotate-[-127deg]'
-              />
+  
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -112,12 +108,12 @@ export default function Header() {
                 alt='segitiga kiri'
                 width={343.5}
                 height={307.5}
-                className='max-md:hidden top-[359px] left-[100px] min-xl:absolute'
+                className='absolute top-[359px] left-[200px]'
               />
             </motion.div>
           </div>
 
-          <div className='2xl:top-[-700px] 2xl:right-[100px] 2xl:relative kanan'>
+          <div className='xl:relative xl:top-[-600px] 2xl:top-[-700px] xl:right-[50px] 2xl:right-[100px]'>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -129,7 +125,7 @@ export default function Header() {
                 alt='triangle kanan'
                 width={318}
                 height={283.5}
-                className='max-md:hidden top-[377px] right-[104px] min-xl:absolute'
+                className='absolute top-[377px] right-[100px]'
               />
             </motion.div>
             <motion.div
@@ -143,7 +139,7 @@ export default function Header() {
                 alt='desktop'
                 width={65}
                 height={65}
-                className='max-md:hidden top-[400px] right-[350px] min-xl:absolute'
+                className='absolute top-[400px] right-[350px]'
               />
             </motion.div>
             <motion.div
@@ -157,7 +153,7 @@ export default function Header() {
                 alt='Server Rack'
                 width={32}
                 height={28}
-                className='max-md:hidden top-[183px] right-[295px] min-xl:absolute rotate-[-5deg]'
+                className='absolute top-[183px] right-[295px] rotate-[-5deg]'
               />
             </motion.div>
             <motion.div
@@ -171,7 +167,7 @@ export default function Header() {
                 alt='triangle besar'
                 width={90}
                 height={81}
-                className='max-md:hidden top-[264px] right-[108px] min-xl:absolute'
+                className='absolute top-[264px] right-[108px]'
               />
             </motion.div>
           </div>
@@ -183,11 +179,11 @@ export default function Header() {
             viewport={{ once: true }}
           >
             <Image
-              src='/assets/image/panah-kiri.png'
+              src='/assets/image/vector40.png'
               alt='panah kiri'
               width={161}
               height={32}
-              className='max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[500px] min-xl:absolute'
+              className='absolute top-[640px] xl:top-[700px] 2xl:top-[900px] left-[320px] xl:left-[400px] 2xl:left-[400px]'
             />
           </motion.div>
           <motion.div
@@ -201,7 +197,7 @@ export default function Header() {
               alt='panah kanan'
               width={161}
               height={32}
-              className='max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[600px] min-xl:absolute'
+              className='absolute top-[485px] lg:top-[500px] xl:top-[550px] 2xl:top-[650px] right-[50px] xl:right-[580px] 2xl:right-[500px]'
             />
           </motion.div>
         </div>
@@ -218,7 +214,7 @@ export default function Header() {
           alt="triangle top left"
           width={80}
           height={80}
-          className="hidden md:block top-16 md:top-20 left-10 md:left-24 absolute"
+          className="hidden md:block absolute top-12 md:top-20 lg:top-59 left-6 md:left-12 lg:left-24"
         />
       </motion.div>
       <motion.div
@@ -231,7 +227,7 @@ export default function Header() {
           alt="triangle top right"
           width={80}
           height={80}
-          className="hidden md:block top-16 md:top-20 right-10 md:right-24 absolute"
+          className="hidden md:block absolute top-12 md:top-16 lg:top-59 right-6 md:right-12 lg:right-24"
         />
       </motion.div>
     </>

@@ -145,7 +145,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/_components/lib/api.ts [app-ssr] (ecmascript)");
+<<<<<<< HEAD
+=======
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+>>>>>>> origin/main
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-ssr] (ecmascript) <export default as Users>");
 'use client';
 ;
@@ -153,6 +156,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
+<<<<<<< HEAD
+=======
 ;
 // Array warna gradient untuk variasi
 const gradientColors = [
@@ -166,6 +171,7 @@ const gradientColors = [
     'from-indigo-500 to-indigo-700',
     'from-cyan-500 to-cyan-700'
 ];
+>>>>>>> origin/main
 function EkstrakurikulerPage() {
     const [orgs, setOrganisations] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
@@ -213,8 +219,30 @@ function EkstrakurikulerPage() {
         className: "bg-white min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative bg-secondary py-20 overflow-hidden",
+                className: "mx-auto px-6 py-16 max-w-7xl",
                 children: [
+<<<<<<< HEAD
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "mb-8 font-bold text-red-800 text-5xl text-center",
+                        children: "Ekstrakurikuler SMK Telkom Malang"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+                        lineNumber: 61,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mx-auto mb-12 max-w-2xl text-gray-600 text-center",
+                        children: "Temukan berbagai ekstrakurikuler yang bisa kamu ikuti untuk mengembangkan bakat, minat, dan karakter di SMK Telkom Malang."
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+                        children: orgs.map((org)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative overflow-hidden bg-gray-100 shadow hover:shadow-xl rounded-2xl transition-all h-80",
+=======
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 opacity-10",
                         children: [
@@ -357,11 +385,26 @@ function EkstrakurikulerPage() {
                                 whileHover: {
                                     y: -8
                                 },
+>>>>>>> origin/main
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: `absolute inset-0 bg-gradient-to-br ${gradientColors[index % gradientColors.length]} opacity-0 group-hover:opacity-10 transition-opacity duration-300`
+                                        className: "relative h-48",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Image, {
+                                            src: org.logo,
+                                            alt: `Logo ${org.name}`,
+                                            fill: true,
+                                            className: "object-cover"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+                                            lineNumber: 80,
+                                            columnNumber: 5
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                        lineNumber: 79,
+                                        columnNumber: 3
+=======
                                         lineNumber: 140,
                                         columnNumber: 15
                                     }, this),
@@ -409,23 +452,33 @@ function EkstrakurikulerPage() {
                                         fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
                                         lineNumber: 143,
                                         columnNumber: 15
+>>>>>>> origin/main
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "z-10 relative",
+                                        className: "bg-white p-6",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "mb-3 font-bold text-gray-900 group-hover:text-primary text-2xl transition-colors duration-300",
+                                                className: "mb-2 font-bold text-gray-900 text-xl",
                                                 children: org.name
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                                lineNumber: 90,
+                                                columnNumber: 5
+=======
                                                 lineNumber: 168,
                                                 columnNumber: 17
+>>>>>>> origin/main
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "mb-6 text-gray-600 leading-relaxed",
+                                                className: "text-gray-600 text-sm line-clamp-3",
                                                 children: org.description
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                                lineNumber: 93,
+                                                columnNumber: 5
+=======
                                                 lineNumber: 171,
                                                 columnNumber: 17
                                             }, this),
@@ -435,10 +488,15 @@ function EkstrakurikulerPage() {
                                                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
                                                 lineNumber: 176,
                                                 columnNumber: 17
+>>>>>>> origin/main
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                        lineNumber: 89,
+                                        columnNumber: 3
+=======
                                         lineNumber: 167,
                                         columnNumber: 15
                                     }, this),
@@ -455,16 +513,25 @@ function EkstrakurikulerPage() {
                                         fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
                                         lineNumber: 182,
                                         columnNumber: 15
+>>>>>>> origin/main
                                     }, this)
                                 ]
                             }, org.id, true, {
                                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                lineNumber: 74,
+=======
                                 lineNumber: 121,
+>>>>>>> origin/main
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                        lineNumber: 68,
+=======
                         lineNumber: 119,
+>>>>>>> origin/main
                         columnNumber: 9
                     }, this),
                     orgs.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -485,12 +552,20 @@ function EkstrakurikulerPage() {
                                     className: "w-10 h-10 text-gray-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                    lineNumber: 112,
+=======
                                     lineNumber: 198,
+>>>>>>> origin/main
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                lineNumber: 111,
+=======
                                 lineNumber: 197,
+>>>>>>> origin/main
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -498,7 +573,11 @@ function EkstrakurikulerPage() {
                                 children: "Belum ada ekstrakurikuler"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                lineNumber: 114,
+=======
                                 lineNumber: 200,
+>>>>>>> origin/main
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -506,19 +585,31 @@ function EkstrakurikulerPage() {
                                 children: "Data ekstrakurikuler akan segera ditampilkan"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                                lineNumber: 117,
+=======
                                 lineNumber: 203,
+>>>>>>> origin/main
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                        lineNumber: 105,
+=======
                         lineNumber: 191,
+>>>>>>> origin/main
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                lineNumber: 60,
+=======
                 lineNumber: 118,
+>>>>>>> origin/main
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -545,7 +636,11 @@ function EkstrakurikulerPage() {
                             children: "Siap Bergabung?"
                         }, void 0, false, {
                             fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                            lineNumber: 127,
+=======
                             lineNumber: 213,
+>>>>>>> origin/main
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -568,7 +663,11 @@ function EkstrakurikulerPage() {
                             children: "Pilih ekstrakurikuler yang sesuai dengan minat dan bakatmu!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                            lineNumber: 136,
+=======
                             lineNumber: 222,
+>>>>>>> origin/main
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].a, {
@@ -600,24 +699,40 @@ function EkstrakurikulerPage() {
                             children: "Daftar Sekarang"
                         }, void 0, false, {
                             fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                            lineNumber: 145,
+=======
                             lineNumber: 231,
+>>>>>>> origin/main
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                    lineNumber: 126,
+=======
                     lineNumber: 212,
+>>>>>>> origin/main
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+                lineNumber: 125,
+=======
                 lineNumber: 211,
+>>>>>>> origin/main
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/ekstrakurikuler/page.tsx",
+<<<<<<< HEAD
+        lineNumber: 59,
+=======
         lineNumber: 74,
+>>>>>>> origin/main
         columnNumber: 5
     }, this);
 }

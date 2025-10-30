@@ -8,6 +8,7 @@ import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import ScrollTop from "./_components/ScrollTop";
 config.autoAddCss = false;
+import "./globals.css";
 
 
 const geistSans = Geist({
