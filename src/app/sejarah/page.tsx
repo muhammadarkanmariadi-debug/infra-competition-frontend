@@ -20,49 +20,49 @@ export default function Sejarah() {
       title: "Pendirian",
       description: "SMK Telkom Malang didirikan sebagai sekolah vokasi pertama di bidang TIK di bawah naungan Yayasan Pendidikan Telkom (YPT)",
       icon: <Building2 className="w-8 h-8" />,
-      color: "from-blue-500 to-blue-700"
+      color: "from-primary to-secondary"
     },
     {
       year: "1995",
       title: "Akreditasi Pertama",
       description: "Mendapatkan akreditasi A dari Badan Akreditasi Nasional Sekolah/Madrasah (BAN-S/M)",
       icon: <Award className="w-8 h-8" />,
-      color: "from-green-500 to-green-700"
+      color: "from-primary to-secondary"
     },
     {
       year: "2000",
       title: "Kemitraan Industri",
       description: "Menjalin kerjasama dengan berbagai perusahaan teknologi nasional dan internasional",
       icon: <Users className="w-8 h-8" />,
-      color: "from-purple-500 to-purple-700"
+      color: "from-primary to-secondary"
     },
     {
       year: "2010",
       title: "Pengembangan Kurikulum",
       description: "Implementasi kurikulum berbasis industri 4.0 dengan fokus pada teknologi terkini",
       icon: <BookOpen className="w-8 h-8" />,
-      color: "from-orange-500 to-orange-700"
+      color: "from-primary to-secondary"
     },
     {
       year: "2015",
       title: "Prestasi Nasional",
       description: "Meraih berbagai penghargaan dalam kompetisi teknologi tingkat nasional dan internasional",
       icon: <Trophy className="w-8 h-8" />,
-      color: "from-yellow-500 to-yellow-700"
+      color: "from-primary to-secondary"
     },
     {
       year: "2020",
       title: "Era Digital",
       description: "Transformasi digital dengan learning management system modern dan fasilitas laboratorium canggih",
       icon: <Lightbulb className="w-8 h-8" />,
-      color: "from-pink-500 to-pink-700"
+      color: "from-primary to-secondary"
     },
     {
       year: "2025",
       title: "Masa Kini",
       description: "Menjadi pusat pendidikan vokasi unggulan dengan ribuan alumni sukses di industri teknologi",
       icon: <Rocket className="w-8 h-8" />,
-      color: "from-red-500 to-red-700"
+      color: "from-primary to-secondary"
     }
   ];
 
@@ -71,25 +71,25 @@ export default function Sejarah() {
       number: "30+",
       label: "Tahun Pengalaman",
       icon: <Calendar className="w-10 h-10" />,
-      color: "from-blue-500 to-blue-700"
+      color: "from-primary to-secondary"
     },
     {
       number: "5000+",
       label: "Alumni Sukses",
       icon: <GraduationCap className="w-10 h-10" />,
-      color: "from-green-500 to-green-700"
+      color: "from-primary to-secondary"
     },
     {
       number: "100+",
       label: "Mitra Industri",
       icon: <Users className="w-10 h-10" />,
-      color: "from-purple-500 to-purple-700"
+      color: "from-primary to-secondary"
     },
     {
       number: "50+",
       label: "Prestasi Nasional",
       icon: <Trophy className="w-10 h-10" />,
-      color: "from-orange-500 to-orange-700"
+      color: "from-primary to-secondary"
     }
   ];
 

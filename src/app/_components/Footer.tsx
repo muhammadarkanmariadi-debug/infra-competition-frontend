@@ -160,15 +160,9 @@ export default function Footer () {
         </div>
 
         {/* Bagian alamat */}
-        <div className=" mt-4 pt-6 text-gray-700">
-          <h3 className="font-semibold text-[16px] mb-1">Alamat:</h3>
-         <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5098.506090439917!2d112.65644107500694!3d-7.976861992048307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6285c5c1b44e3%3A0xf6c889ac7452dc3a!2sSMK%20Telkom%20Malang!5e1!3m2!1sid!2sid!4v1761701406710!5m2!1sid!2sid" 
-    className="absolute top-0 left-0 w-full h-full border-0"
-    loading="lazy"
-  />
-</div>
+        <div className="mt-4 pt-6 text-gray-700">
+          <h3 className="mb-1 font-semibold text-[16px]">Alamat:</h3>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5098.506090439917!2d112.65644107500694!3d-7.976861992048307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6285c5c1b44e3%3A0xf6c889ac7452dc3a!2sSMK%20Telkom%20Malang!5e1!3m2!1sid!2sid!4v1761701406710!5m2!1sid!2sid" width="1150" height="350" loading="lazy" > </iframe>
         </div>
        
 
