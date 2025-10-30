@@ -19,12 +19,16 @@
       "static/chunks/src_e46d2e80._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "static/chunks/[root-of-the-server]__12309597._.js",
       "static/chunks/src_app_globals_b805903d.css",
       "static/chunks/src_app_admin_layout_tsx_9ef2d91d._.js",
 =======
       "static/chunks/node_modules_418e70fd._.js",
       "static/chunks/[root-of-the-server]__7404bece._.js",
+=======
+      "static/chunks/[root-of-the-server]__3199cb3a._.js",
+>>>>>>> origin/iqbal
       "static/chunks/src_app_admin_layout_tsx_992d0be4._.js",
 >>>>>>> origin/main
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",

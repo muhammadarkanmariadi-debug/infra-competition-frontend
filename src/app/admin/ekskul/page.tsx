@@ -3,17 +3,13 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { ChevronRight, Plus, Edit, Trash2, Image as ImageIcon } from 'lucide-react';
+import { api } from '@/app/_components/lib/api';
 
 interface Ekskul {
   id: string;
   name: string;
-  year: string;
-  Ekskul: string;
   description: string;
-  photo: string | null;
-  photoDescription: string;
-  pembimbing: string;
-  updated: string;
+  logo: string | null;
 }
 
 export default function EkskulListPage() {
@@ -26,10 +22,9 @@ export default function EkskulListPage() {
 
 
   useEffect(() => {
-    const savedEkskuls = localStorage.getItem('ekskuls');
-    if (savedEkskuls) {
-      setEkskuls(JSON.parse(savedEkskuls));
-    }
+    const ekskul = api.get('/ekstrakulikuler').then((res: { data: { data: Ekskul[]; }; }) => {
+      setEkskuls(res.data.data);
+    });
   }, []);
 
   const handleCreateEkskul = () => {
@@ -42,16 +37,15 @@ export default function EkskulListPage() {
 
   const handleDeleteEkskul = (ekskulId: string) => {
     if (confirm('Apakah Anda yakin ingin menghapus ekstrakurikuler ini?')) {
-      const updatedEkskuls = ekskuls.filter(ekskul => ekskul.id !== ekskulId);
-      setEkskuls(updatedEkskuls);
-      localStorage.setItem('ekskuls', JSON.stringify(updatedEkskuls));
+      api.delete(`/ekstrakurikuler/${ekskulId}`).then(() => {
+        setEkskuls(ekskuls.filter(ekskul => ekskul.id !== ekskulId));
+      });
     }
   };
 
   // Filter ekskuls
   const filteredEkskuls = ekskuls.filter(ekskul => {
     if (filterEkskul !== 'all' && ekskul.name !== filterEkskul) return false;
-    if (filterYear !== 'all' && ekskul.year !== filterYear) return false;
     return true;
   });
 
@@ -63,7 +57,6 @@ export default function EkskulListPage() {
 
   // Get unique names
   const ekskulNames = ['all', ...Array.from(new Set(ekskuls.map(e => e.name)))];
-  const years = ['all', ...Array.from(new Set(ekskuls.map(e => e.year)))];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -106,24 +99,6 @@ export default function EkskulListPage() {
                 ))}
               </select>
             </div>
-            <div className="flex-1">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Year
-              </label>
-              <select
-                value={filterYear}
-                onChange={(e) => {
-                  setFilterYear(e.target.value);
-                  setCurrentPage(1);
-                }}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none"
-              >
-                <option value="all">Semua Tahun</option>
-                {years.filter(y => y !== 'all').map(year => (
-                  <option key={year} value={year}>{year}</option>
-                ))}
-              </select>
-            </div>
           </div>
         </div>
 
@@ -138,18 +113,6 @@ export default function EkskulListPage() {
                   </th>
                   <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                     Ekstrakurikuler
-                  </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                    Year
-                  </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                    Sub Ekskul
-                  </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                    Pembimbing
-                  </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                    Updated
                   </th>
                   <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                     Action
@@ -170,8 +133,8 @@ export default function EkskulListPage() {
                     <tr key={ekskul.id} className="hover:bg-gray-50 transition-colors">
                       <td className="px-6 py-4">
                         <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
-                          {ekskul.photo ? (
-                            <img src={ekskul.photo} alt={ekskul.name} className="w-full h-full object-cover" />
+                          {ekskul.logo ? (
+                            <img src={ekskul.logo} alt={ekskul.name} className="w-full h-full object-cover" />
                           ) : (
                             <ImageIcon className="w-6 h-6 text-gray-400" />
                           )}
@@ -179,18 +142,6 @@ export default function EkskulListPage() {
                       </td>
                       <td className="px-6 py-4">
                         <span className="text-sm text-gray-900 font-medium">{ekskul.name}</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{ekskul.year}</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{ekskul.Ekskul}</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{ekskul.pembimbing}</span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{ekskul.updated}</span>
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-2">

@@ -15,6 +15,7 @@
       "static/chunks/src_f6523167._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "static/chunks/[root-of-the-server]__12309597._.js",
       "static/chunks/src_app_admin_layout_tsx_d2c2be3e._.js",
       "static/chunks/node_modules_701384a7._.js",
@@ -27,6 +28,13 @@
       "static/chunks/_dbd50f4e._.js",
       "static/chunks/src_app_admin_posts_page_tsx_3d8e69b4._.js",
 >>>>>>> origin/main
+=======
+      "static/chunks/[root-of-the-server]__3199cb3a._.js",
+      "static/chunks/src_app_admin_layout_tsx_992d0be4._.js",
+      "static/chunks/node_modules_701384a7._.js",
+      "static/chunks/src_app_ea2e818d._.js",
+      "static/chunks/src_app_admin_posts_page_tsx_96823e0c._.js",
+>>>>>>> origin/iqbal
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",

@@ -23,20 +23,21 @@ export default function ProtectedAdminClient({ children }: { children: React.Rea
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    try {
-      const token = localStorage.getItem("token");
-      const account = api.post('/me').then((res) => res.data);
-      const payload = parseJwt(token);
-      const now = Math.floor(Date.now() / 1000);
+    // try {
+    //   const token = localStorage.getItem("token");
+    //   const account = api.post('/me').then((res) => res.data);
+    //   const payload = parseJwt(token);
+    //   const now = Math.floor(Date.now() / 1000);
 
-      if (!token || !account) {
-        router.replace("/login");
-        return;
-      }
-      setReady(true);
-    } catch {
-      router.replace("/login");
-    }
+    //   if (!token || !account) {
+    //     router.replace("/login");
+    //     return;
+    //   }
+    //   setReady(true);
+    // } catch {
+    //   router.replace("/login");
+    // }
+    setReady(true);
   }, [router]);
 
   if (!ready) return <div className="p-6">Loading…</div>;

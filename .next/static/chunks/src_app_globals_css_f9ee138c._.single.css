@@ -828,6 +828,7 @@
     z-index: 999;
   }
 
+<<<<<<< HEAD
   .container {
     width: 100%;
   }
@@ -860,6 +861,10 @@
     .container {
       max-width: 96rem;
     }
+=======
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+>>>>>>> origin/iqbal
   }
 
   .m-2 {
@@ -1006,10 +1011,13 @@
     margin-right: calc(var(--spacing) * 2);
   }
 
+<<<<<<< HEAD
   .mr-6 {
     margin-right: calc(var(--spacing) * 6);
   }
 
+=======
+>>>>>>> origin/iqbal
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -1106,6 +1114,10 @@
 
   .hidden {
     display: none;
+  }
+
+  .inline {
+    display: inline;
   }
 
   .inline-block {
@@ -1699,10 +1711,13 @@
     gap: calc(var(--spacing) * 12);
   }
 
+<<<<<<< HEAD
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
 
+=======
+>>>>>>> origin/iqbal
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
@@ -2487,10 +2502,13 @@
     padding-inline: calc(var(--spacing) * 10);
   }
 
+<<<<<<< HEAD
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
 
+=======
+>>>>>>> origin/iqbal
   .px-\[16\.5px\] {
     padding-inline: 16.5px;
   }
@@ -2537,10 +2555,6 @@
 
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
-  }
-
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
   }
 
   .py-12 {
@@ -3076,10 +3090,13 @@
     font-style: italic;
   }
 
+<<<<<<< HEAD
   .underline {
     text-decoration-line: underline;
   }
 
+=======
+>>>>>>> origin/iqbal
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -3631,6 +3648,21 @@
   }
 
   @media (width < 40rem) {
+<<<<<<< HEAD
+=======
+    .max-sm\:w-\[350px\] {
+      width: 350px;
+    }
+  }
+
+  @media (width < 40rem) {
+    .max-sm\:flex-col {
+      flex-direction: column;
+    }
+  }
+
+  @media (width < 40rem) {
+>>>>>>> origin/iqbal
     .max-sm\:px-3 {
       padding-inline: calc(var(--spacing) * 3);
     }
@@ -3643,6 +3675,15 @@
   }
 
   @media (width < 40rem) {
+<<<<<<< HEAD
+=======
+    .max-sm\:py-7 {
+      padding-block: calc(var(--spacing) * 7);
+    }
+  }
+
+  @media (width < 40rem) {
+>>>>>>> origin/iqbal
     .max-sm\:text-\[21px\] {
       font-size: 21px;
     }
@@ -4313,12 +4354,15 @@
   }
 
   @media (width >= 80rem) {
+<<<<<<< HEAD
     .xl\:flex-row {
       flex-direction: row;
     }
   }
 
   @media (width >= 80rem) {
+=======
+>>>>>>> origin/iqbal
     .xl\:items-center {
       align-items: center;
     }

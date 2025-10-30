@@ -13,12 +13,11 @@ interface Post {
     name: string;
     role: string;
   };
+  slug: string;
   tags: string;
   thumbnail: string | null;
-  category?: string;
-  status?: string;
-  createdAt: string;
-  updatedAt: string;
+  created_at: string;
+  updated_at: string;
 }
 
 const categories = ['all', 'Berita', 'Prestasi', 'Kegiatan', 'Pengumuman'];
@@ -114,10 +113,10 @@ export default function PostListPage() {
         )}
 
         {/* Filters */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
+        <div className="bg-white shadow-sm mb-6 p-6 rounded-lg">
           <div className="flex gap-4">
             <div className="flex-1">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block mb-2 font-medium text-gray-700 text-sm">
                 Category
               </label>
               <select
@@ -126,7 +125,7 @@ export default function PostListPage() {
                   setFilterCategory(e.target.value);
                   setCurrentPage(1);
                 }}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none"
+                className="px-4 py-2 border border-gray-300 focus:border-transparent rounded-lg outline-none focus:ring-2 focus:ring-red-500 w-full"
               >
                 <option value="all">Semua Kategori</option>
                 {categories.filter((c: string) => c !== 'all').map((category: string) => (
@@ -135,7 +134,7 @@ export default function PostListPage() {
               </select>
             </div>
             <div className="flex-1">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block mb-2 font-medium text-gray-700 text-sm">
                 Status
               </label>
               <select
@@ -144,7 +143,7 @@ export default function PostListPage() {
                   setFilterStatus(e.target.value);
                   setCurrentPage(1);
                 }}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none"
+                className="px-4 py-2 border border-gray-300 focus:border-transparent rounded-lg outline-none focus:ring-2 focus:ring-red-500 w-full"
               >
                 <option value="all">Semua Status</option>
                 {statuses.filter((s: string) => s !== 'all').map((status: string) => (
@@ -158,30 +157,30 @@ export default function PostListPage() {
         </div>
 
         {/* Table */}
-        <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-gray-50 border-b border-gray-200">
+              <thead className="bg-gray-50 border-gray-200 border-b">
                 <tr>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 font-semibold text-gray-700 text-xs text-left uppercase tracking-wider">
                     Thumbnail
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 font-semibold text-gray-700 text-xs text-left uppercase tracking-wider">
                     Title
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 font-semibold text-gray-700 text-xs text-left uppercase tracking-wider">
                     Category
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 font-semibold text-gray-700 text-xs text-left uppercase tracking-wider">
                     Author
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 font-semibold text-gray-700 text-xs text-left uppercase tracking-wider">
                     Status
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 font-semibold text-gray-700 text-xs text-left uppercase tracking-wider">
                     Updated
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                  <th className="px-6 py-4 font-semibold text-gray-700 text-xs text-left uppercase tracking-wider">
                     Action
                   </th>
                 </tr>
@@ -189,9 +188,9 @@ export default function PostListPage() {
               <tbody className="divide-y divide-gray-200">
                 {currentPosts.length === 0 ? (
                   <tr>
-                    <td colSpan={7} className="px-6 py-12 text-center text-gray-500">
-                      <ImageIcon className="w-12 h-12 mx-auto mb-3 text-gray-400" />
-                      <p className="text-lg mb-2">Belum ada posts</p>
+                    <td colSpan={7} className="px-6 py-12 text-gray-500 text-center">
+                      <ImageIcon className="mx-auto mb-3 w-12 h-12 text-gray-400" />
+                      <p className="mb-2 text-lg">Belum ada posts</p>
                       <p className="text-sm">Klik tombol "Add Post" untuk membuat post baru</p>
                     </td>
                   </tr>
@@ -199,7 +198,7 @@ export default function PostListPage() {
                   currentPosts.map((post) => (
                     <tr key={post.id} className="hover:bg-gray-50 transition-colors">
                       <td className="px-6 py-4">
-                        <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
+                        <div className="flex justify-center items-center bg-gray-200 rounded-lg w-16 h-16 overflow-hidden">
                           {post.thumbnail ? (
                             <img src={post.thumbnail} alt={post.title} className="w-full h-full object-cover" />
                           ) : (
@@ -208,32 +207,27 @@ export default function PostListPage() {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <span className="text-sm text-gray-900 font-medium line-clamp-2">{post.title}</span>
+                        <span className="font-medium text-gray-900 text-sm line-clamp-2">{post.title}</span>
                       </td>
                       <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{post.category || '-'}</span>
+                        <span className="text-gray-600 text-sm">{post.tags || '-'}</span>
                       </td>
                       <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{post.author.name}</span>
+                        <span className="text-gray-600 text-sm">{post.author.name}</span>
                       </td>
                       <td className="px-6 py-4">
-                        <span className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                          post.status === 'published' 
-                            ? 'bg-green-100 text-green-800' 
-                            : 'bg-yellow-100 text-yellow-800'
-                        }`}>
-                          {post.status ? post.status.charAt(0).toUpperCase() + post.status.slice(1) : 'Draft'}
-                        </span>
-                      </td>
-                      <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">
-                          {new Date(post.updatedAt).toLocaleDateString('id-ID')}
+                        <span className="text-gray-600 text-sm">
+                          {new Date(post.updated_at).toLocaleDateString('id-ID', {
+                            day: '2-digit',
+                            month: 'short',
+                            year: 'numeric',
+                          })}
                         </span>
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-2">
                           <button
-                            onClick={() => handleEditPost(post.id)}
+                            onClick={() => handleEditPost(post.slug)}
                             className="hover:bg-blue-50 p-2 rounded text-blue-600 transition-colors"
                             title="Edit"
                           >

@@ -14,9 +14,16 @@
       "static/chunks/node_modules_d703cc3e._.js",
       "static/chunks/src_f6523167._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
+<<<<<<< HEAD:.next/server/app/organisasi/[id]/page/app-build-manifest.json
       "static/chunks/node_modules_918cd437._.js",
       "static/chunks/src_app_91347d13._.js",
       "static/chunks/src_app_organisasi_[id]_page_tsx_992d0be4._.js",
+=======
+      "static/chunks/[root-of-the-server]__3199cb3a._.js",
+      "static/chunks/src_app_admin_layout_tsx_992d0be4._.js",
+      "static/chunks/_7cbb0bba._.js",
+      "static/chunks/src_app_admin_organisasi_new_page_tsx_96823e0c._.js",
+>>>>>>> origin/iqbal:.next/server/app/admin/organisasi/new/page/app-build-manifest.json
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",

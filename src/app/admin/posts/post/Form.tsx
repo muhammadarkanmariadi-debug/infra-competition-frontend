@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { PhotoIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Editor from "../../components/MdEditor";
 import { api } from "@/app/_components/lib/api";
+import EditorNew from "../../components/EditorNew";
 
 type FormState = {
   title: string;
@@ -124,7 +125,7 @@ export default function CreatePostForm() {
         approval_status: "pending",
       };
 
-      const res = await api.post("/blog", JSON.stringify(payload));
+      const res = await api.post("/blog", payload);
       if (!res.status.toString().startsWith("2")) {
         const text = await res.data();
         throw new Error(`Create failed: ${text.message}`);
@@ -236,7 +237,7 @@ export default function CreatePostForm() {
               <label className="block mb-2 font-medium text-gray-700 text-sm">
                 Text Editor<span className="text-red-500">*</span>
               </label>
-              <Editor value={formData.body} onChange={(value?: string) => setFormData((prev) => ({ ...prev, body: value ?? "" }))} />
+              <EditorNew value={formData.body} onChange={(content) => setFormData(prev => ({ ...prev, body: content }))} />
             </div>
 
             <div className="flex justify-end space-x-4 pt-6 border-t">

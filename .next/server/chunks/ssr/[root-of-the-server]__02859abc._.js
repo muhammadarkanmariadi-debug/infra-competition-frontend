@@ -116,7 +116,7 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [app-ssr] (ecmascript)");
 ;
 const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: 'http://localhost:8001/api',
     withCredentials: true
 });
 // JWT Token? Tambahkan interceptor
@@ -255,19 +255,27 @@ function PostListPage() {
             }, void 0, false, {
                 fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 lineNumber: 89,
 =======
                 lineNumber: 79,
 >>>>>>> origin/main
+=======
+                lineNumber: 80,
+>>>>>>> origin/iqbal
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
             lineNumber: 88,
 =======
             lineNumber: 78,
 >>>>>>> origin/main
+=======
+            lineNumber: 79,
+>>>>>>> origin/iqbal
             columnNumber: 7
         }, this);
     }
@@ -302,8 +310,12 @@ function PostListPage() {
                                     children: "Posts"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                     lineNumber: 91,
 >>>>>>> origin/main
+=======
+                                    lineNumber: 92,
+>>>>>>> origin/iqbal
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -312,20 +324,28 @@ function PostListPage() {
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     lineNumber: 102,
 =======
                                     lineNumber: 92,
 >>>>>>> origin/main
+=======
+                                    lineNumber: 93,
+>>>>>>> origin/iqbal
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                             lineNumber: 100,
 =======
                             lineNumber: 90,
 >>>>>>> origin/main
+=======
+                            lineNumber: 91,
+>>>>>>> origin/iqbal
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -341,10 +361,14 @@ function PostListPage() {
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     lineNumber: 108,
 =======
                                     lineNumber: 98,
 >>>>>>> origin/main
+=======
+                                    lineNumber: 99,
+>>>>>>> origin/iqbal
                                     columnNumber: 13
                                 }, this),
                                 "Add Post"
@@ -352,15 +376,20 @@ function PostListPage() {
                         }, void 0, true, {
                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                             lineNumber: 104,
 =======
                             lineNumber: 94,
 >>>>>>> origin/main
+=======
+                            lineNumber: 95,
+>>>>>>> origin/iqbal
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
                     lineNumber: 99,
                     columnNumber: 9
@@ -487,6 +516,9 @@ function PostListPage() {
                     className: "bg-white rounded-lg shadow-sm overflow-hidden",
 =======
                     lineNumber: 89,
+=======
+                    lineNumber: 90,
+>>>>>>> origin/iqbal
                     columnNumber: 9
                 }, this),
                 error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -494,7 +526,7 @@ function PostListPage() {
                     children: error
                 }, void 0, false, {
                     fileName: "[project]/src/app/admin/posts/page.tsx",
-                    lineNumber: 105,
+                    lineNumber: 106,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -574,7 +606,7 @@ function PostListPage() {
                                                     children: "Thumbnail"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 117,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -582,7 +614,7 @@ function PostListPage() {
                                                     children: "Title"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
-                                                    lineNumber: 119,
+                                                    lineNumber: 120,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -590,7 +622,7 @@ function PostListPage() {
                                                     children: "Category"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
-                                                    lineNumber: 122,
+                                                    lineNumber: 123,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -598,7 +630,7 @@ function PostListPage() {
                                                     children: "Author"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
-                                                    lineNumber: 125,
+                                                    lineNumber: 126,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -606,7 +638,7 @@ function PostListPage() {
                                                     children: "Updated"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
-                                                    lineNumber: 128,
+                                                    lineNumber: 129,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -614,27 +646,39 @@ function PostListPage() {
                                                     children: "Action"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                                     lineNumber: 131,
 >>>>>>> origin/main
+=======
+                                                    lineNumber: 132,
+>>>>>>> origin/iqbal
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             lineNumber: 169,
 =======
                                             lineNumber: 115,
 >>>>>>> origin/main
+=======
+                                            lineNumber: 116,
+>>>>>>> origin/iqbal
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         lineNumber: 168,
 =======
                                         lineNumber: 114,
 >>>>>>> origin/main
+=======
+                                        lineNumber: 115,
+>>>>>>> origin/iqbal
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -665,7 +709,7 @@ function PostListPage() {
                                                         className: "mx-auto mb-3 w-12 h-12 text-gray-400"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
-                                                        lineNumber: 140,
+                                                        lineNumber: 141,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -673,8 +717,12 @@ function PostListPage() {
                                                         children: "Belum ada posts"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                                         lineNumber: 141,
 >>>>>>> origin/main
+=======
+                                                        lineNumber: 142,
+>>>>>>> origin/iqbal
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -683,29 +731,41 @@ function PostListPage() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                         lineNumber: 199,
 =======
                                                         lineNumber: 142,
 >>>>>>> origin/main
+=======
+                                                        lineNumber: 143,
+>>>>>>> origin/iqbal
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                 lineNumber: 196,
 =======
                                                 lineNumber: 139,
 >>>>>>> origin/main
+=======
+                                                lineNumber: 140,
+>>>>>>> origin/iqbal
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             lineNumber: 195,
 =======
                                             lineNumber: 138,
 >>>>>>> origin/main
+=======
+                                            lineNumber: 139,
+>>>>>>> origin/iqbal
                                             columnNumber: 19
                                         }, this) : currentPosts.map((post)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                                 className: "hover:bg-gray-50 transition-colors",
@@ -725,38 +785,54 @@ function PostListPage() {
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                                 lineNumber: 208,
 =======
                                                                 lineNumber: 151,
 >>>>>>> origin/main
+=======
+                                                                lineNumber: 152,
+>>>>>>> origin/iqbal
                                                                 columnNumber: 29
                                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__["Image"], {
                                                                 className: "w-6 h-6 text-gray-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                                 lineNumber: 210,
 =======
                                                                 lineNumber: 153,
 >>>>>>> origin/main
+=======
+                                                                lineNumber: 154,
+>>>>>>> origin/iqbal
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                             lineNumber: 206,
 =======
                                                             lineNumber: 149,
 >>>>>>> origin/main
+=======
+                                                            lineNumber: 150,
+>>>>>>> origin/iqbal
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                         lineNumber: 205,
 =======
                                                         lineNumber: 148,
 >>>>>>> origin/main
+=======
+                                                        lineNumber: 149,
+>>>>>>> origin/iqbal
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -773,17 +849,25 @@ function PostListPage() {
                                                             children: post.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                                             lineNumber: 158,
 >>>>>>> origin/main
+=======
+                                                            lineNumber: 159,
+>>>>>>> origin/iqbal
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                         lineNumber: 214,
 =======
                                                         lineNumber: 157,
 >>>>>>> origin/main
+=======
+                                                        lineNumber: 158,
+>>>>>>> origin/iqbal
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -800,17 +884,25 @@ function PostListPage() {
                                                             children: post.tags
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                                             lineNumber: 161,
 >>>>>>> origin/main
+=======
+                                                            lineNumber: 162,
+>>>>>>> origin/iqbal
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                         lineNumber: 217,
 =======
                                                         lineNumber: 160,
 >>>>>>> origin/main
+=======
+                                                        lineNumber: 161,
+>>>>>>> origin/iqbal
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -827,17 +919,25 @@ function PostListPage() {
                                                             children: post.author.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                                             lineNumber: 164,
 >>>>>>> origin/main
+=======
+                                                            lineNumber: 165,
+>>>>>>> origin/iqbal
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                         lineNumber: 220,
 =======
                                                         lineNumber: 163,
 >>>>>>> origin/main
+=======
+                                                        lineNumber: 164,
+>>>>>>> origin/iqbal
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -866,20 +966,32 @@ function PostListPage() {
                                                             lineNumber: 233,
 =======
                                                             className: "text-gray-600 text-sm",
-                                                            children: new Date(post.updatedAt).toLocaleDateString('id-ID')
+                                                            children: new Date(post.updated_at).toLocaleDateString('id-ID', {
+                                                                day: '2-digit',
+                                                                month: 'short',
+                                                                year: 'numeric'
+                                                            })
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                                             lineNumber: 167,
 >>>>>>> origin/main
+=======
+                                                            lineNumber: 168,
+>>>>>>> origin/iqbal
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                         lineNumber: 232,
 =======
                                                         lineNumber: 166,
 >>>>>>> origin/main
+=======
+                                                        lineNumber: 167,
+>>>>>>> origin/iqbal
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -888,10 +1000,14 @@ function PostListPage() {
                                                             className: "flex items-center gap-2",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+<<<<<<< HEAD
                                                                     onClick: ()=>handleEditPost(post.id),
 <<<<<<< HEAD
                                                                     className: "p-2 text-blue-600 hover:bg-blue-50 rounded transition-colors",
 =======
+=======
+                                                                    onClick: ()=>handleEditPost(post.slug),
+>>>>>>> origin/iqbal
                                                                     className: "hover:bg-blue-50 p-2 rounded text-blue-600 transition-colors",
 >>>>>>> origin/main
                                                                     title: "Edit",
@@ -900,19 +1016,27 @@ function PostListPage() {
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                                         lineNumber: 244,
 =======
                                                                         lineNumber: 178,
 >>>>>>> origin/main
+=======
+                                                                        lineNumber: 183,
+>>>>>>> origin/iqbal
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                                     lineNumber: 239,
 =======
                                                                     lineNumber: 173,
 >>>>>>> origin/main
+=======
+                                                                    lineNumber: 178,
+>>>>>>> origin/iqbal
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -928,71 +1052,100 @@ function PostListPage() {
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                                         lineNumber: 251,
 =======
                                                                         lineNumber: 185,
 >>>>>>> origin/main
+=======
+                                                                        lineNumber: 190,
+>>>>>>> origin/iqbal
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                                     lineNumber: 246,
 =======
                                                                     lineNumber: 180,
 >>>>>>> origin/main
+=======
+                                                                    lineNumber: 185,
+>>>>>>> origin/iqbal
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                             lineNumber: 238,
 =======
                                                             lineNumber: 172,
 >>>>>>> origin/main
+=======
+                                                            lineNumber: 177,
+>>>>>>> origin/iqbal
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                         lineNumber: 237,
 =======
                                                         lineNumber: 171,
 >>>>>>> origin/main
+=======
+                                                        lineNumber: 176,
+>>>>>>> origin/iqbal
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, post.id, true, {
                                                 fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                 lineNumber: 204,
 =======
                                                 lineNumber: 147,
 >>>>>>> origin/main
+=======
+                                                lineNumber: 148,
+>>>>>>> origin/iqbal
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         lineNumber: 193,
 =======
                                         lineNumber: 136,
 >>>>>>> origin/main
+=======
+                                        lineNumber: 137,
+>>>>>>> origin/iqbal
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 lineNumber: 167,
 =======
                                 lineNumber: 113,
 >>>>>>> origin/main
+=======
+                                lineNumber: 114,
+>>>>>>> origin/iqbal
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
 <<<<<<< HEAD
                             lineNumber: 166,
                             columnNumber: 11
@@ -1004,6 +1157,9 @@ function PostListPage() {
                                     className: "flex items-center gap-2 text-sm text-gray-600",
 =======
                             lineNumber: 112,
+=======
+                            lineNumber: 113,
+>>>>>>> origin/iqbal
                             columnNumber: 11
                         }, this),
                         posts.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1018,10 +1174,14 @@ function PostListPage() {
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             lineNumber: 266,
 =======
                                             lineNumber: 200,
 >>>>>>> origin/main
+=======
+                                            lineNumber: 205,
+>>>>>>> origin/iqbal
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1042,10 +1202,14 @@ function PostListPage() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                     lineNumber: 275,
 =======
                                                     lineNumber: 209,
 >>>>>>> origin/main
+=======
+                                                    lineNumber: 214,
+>>>>>>> origin/iqbal
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1054,10 +1218,14 @@ function PostListPage() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                     lineNumber: 276,
 =======
                                                     lineNumber: 210,
 >>>>>>> origin/main
+=======
+                                                    lineNumber: 215,
+>>>>>>> origin/iqbal
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1066,30 +1234,42 @@ function PostListPage() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                     lineNumber: 277,
 =======
                                                     lineNumber: 211,
 >>>>>>> origin/main
+=======
+                                                    lineNumber: 216,
+>>>>>>> origin/iqbal
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             lineNumber: 267,
 =======
                                             lineNumber: 201,
 >>>>>>> origin/main
+=======
+                                            lineNumber: 206,
+>>>>>>> origin/iqbal
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     lineNumber: 265,
 =======
                                     lineNumber: 199,
 >>>>>>> origin/main
+=======
+                                    lineNumber: 204,
+>>>>>>> origin/iqbal
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1119,8 +1299,12 @@ function PostListPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                             lineNumber: 215,
 >>>>>>> origin/main
+=======
+                                            lineNumber: 220,
+>>>>>>> origin/iqbal
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1140,8 +1324,12 @@ function PostListPage() {
                                                     children: "Previous"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                                     lineNumber: 219,
 >>>>>>> origin/main
+=======
+                                                    lineNumber: 224,
+>>>>>>> origin/iqbal
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1158,67 +1346,95 @@ function PostListPage() {
                                                     children: "Next"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/page.tsx",
+<<<<<<< HEAD
                                                     lineNumber: 226,
 >>>>>>> origin/main
+=======
+                                                    lineNumber: 231,
+>>>>>>> origin/iqbal
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             lineNumber: 284,
 =======
                                             lineNumber: 218,
 >>>>>>> origin/main
+=======
+                                            lineNumber: 223,
+>>>>>>> origin/iqbal
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     lineNumber: 280,
 =======
                                     lineNumber: 214,
 >>>>>>> origin/main
+=======
+                                    lineNumber: 219,
+>>>>>>> origin/iqbal
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                             lineNumber: 264,
 =======
                             lineNumber: 198,
 >>>>>>> origin/main
+=======
+                            lineNumber: 203,
+>>>>>>> origin/iqbal
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
                     lineNumber: 165,
 =======
                     lineNumber: 111,
 >>>>>>> origin/main
+=======
+                    lineNumber: 112,
+>>>>>>> origin/iqbal
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
             lineNumber: 97,
 =======
             lineNumber: 87,
 >>>>>>> origin/main
+=======
+            lineNumber: 88,
+>>>>>>> origin/iqbal
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/admin/posts/page.tsx",
 <<<<<<< HEAD
+<<<<<<< HEAD
         lineNumber: 95,
 =======
         lineNumber: 85,
 >>>>>>> origin/main
+=======
+        lineNumber: 86,
+>>>>>>> origin/iqbal
         columnNumber: 5
     }, this);
 }
