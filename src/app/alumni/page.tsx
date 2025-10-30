@@ -151,7 +151,7 @@ export default function AlumniSection () {
 
                     {/* Quote */}
                     <div className='relative'>
-                      <Quote className='-top-1 -left-2 absolute w-8 h-8 text-primary/20' />
+                      <Quote className='-top-1 -left-4 absolute w-8 h-8 text-primary/20' />
                       <p className='pl-6 text-gray-600 text-sm italic leading-relaxed'>
                         "{alumni.quote}"
                       </p>

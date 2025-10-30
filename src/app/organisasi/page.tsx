@@ -119,8 +119,8 @@ export default function OrganisasiPage () {
                       <Image
                         src={org.logo}
                         alt={`Logo ${org.name}`}
-                        width={64}
-                        height={64}
+                        width={50}
+                        height={50}
                         className="object-contain"
                       />
                     </div>
@@ -195,8 +195,8 @@ export default function OrganisasiPage () {
                       <Image
                         src={suborg.logo}
                         alt={`Logo ${suborg.name}`}
-                        width={64}
-                        height={64}
+                        width={50}
+                        height={50}
                         className="object-contain"
               
                       />

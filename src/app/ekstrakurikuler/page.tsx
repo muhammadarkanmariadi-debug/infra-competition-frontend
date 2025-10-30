@@ -108,7 +108,7 @@ console.log('Current orgs:', orgs)
       </section>
 
       {/* Ekstrakurikuler Cards */}
-      <section className='md:mx-50 xl:mx-100 px-6 py-20'>
+      <section className='md:mx-50 xl:mx-50 px-6 py-20'>
         <div className='gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
              {orgs.map((org, index) => (
                       <motion.div
@@ -119,14 +119,13 @@ console.log('Current orgs:', orgs)
                           opacity: 1, 
                           y: 0,
                           transition: {
-                            duration: 0.5,
-                            delay: index * 0.1
+                            duration: 0.1,
                           }
                         }}
                         viewport={{ once: true }}
                         whileHover={{ 
                           scale: 1.05,
-                          transition: { duration: 0.3 }
+                          transition: { duration: 0.1 }
                         }}
                         whileTap={{ scale: 0.98 }}
                       >
@@ -155,7 +154,7 @@ console.log('Current orgs:', orgs)
                         </motion.div>
           
                         {/* Box putih bawah */}
-                        <div className="z-20 relative bg-primary group-hover:bg-primary/90 pl-2 h-[30%] transition-colors duration-300">
+                        <div className="z-20 relative bg-secondary pl-2 h-[30%] transition-colors duration-300">
                           <motion.h2 
                             className="mb-2 px-2 py-2 font-bold text-white text-xl"
                             initial={{ y: 0 }}
