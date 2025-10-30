@@ -56,12 +56,12 @@ export default function Header() {
               alt='Arrow Down'
               width={400}
               height={400}
-              className='z-[-1] relative mx-auto w-48 sm:w-56 md:w-72 lg:w-80 xl:w-[400px] hover:scale-105 transition-transform duration-300'
+              className='z-[-1] relative mx-auto w-48 sm:w-56 md:w-72 lg:w-80 xl:w-[400px]  transition-transform duration-300'
             />
           </motion.div>
           <motion.a
-            href="/login"
-            className="flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto mt-4 sm:mt-6 py-2.5 sm:py-3 md:py-4 xl:py-5 rounded-full w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px] xl:w-[450px] font-bold text-white text-lg sm:text-xl md:text-2xl xl:text-4xl hover:scale-105 transition-all duration-300"
+            href="#berita"
+            className="flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto  py-2.5 sm:py-3 md:py-4 xl:py-5 rounded-full w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px] xl:w-[450px] font-bold text-white text-lg sm:text-xl md:text-2xl xl:text-4xl  transition-all duration-300"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
@@ -74,7 +74,7 @@ export default function Header() {
 
 
         <div className='hidden lg:block'>
-          <div className='xl:relative xl:top-[600px] 2xl:top-[-700px] xl:left-[50px] 2xl:left-[100px]'>
+          <div className='xl:relative xl:top-[600px] 2xl:top-[-820px] xl:left-[50px] 2xl:left-[-100px]'>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -95,13 +95,7 @@ export default function Header() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Image
-                src='/assets/image/triangle-sm.png'
-                alt='small triangle'
-                width={32}
-                height={28}
-                className='absolute top-[236px] left-[263px] rotete-[-127deg]'
-              />
+  
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -185,11 +179,11 @@ export default function Header() {
             viewport={{ once: true }}
           >
             <Image
-              src='/assets/image/panah-kiri.png'
+              src='/assets/image/vector40.png'
               alt='panah kiri'
               width={161}
               height={32}
-              className='absolute top-[640px] xl:top-[700px] 2xl:top-[900px] left-[320px] xl:left-[400px] 2xl:left-[500px]'
+              className='absolute top-[640px] xl:top-[700px] 2xl:top-[900px] left-[320px] xl:left-[400px] 2xl:left-[400px]'
             />
           </motion.div>
           <motion.div
@@ -203,7 +197,7 @@ export default function Header() {
               alt='panah kanan'
               width={161}
               height={32}
-              className='absolute top-[485px] lg:top-[500px] xl:top-[550px] 2xl:top-[650px] right-[50px] xl:right-[580px] 2xl:right-[600px]'
+              className='absolute top-[485px] lg:top-[500px] xl:top-[550px] 2xl:top-[650px] right-[50px] xl:right-[580px] 2xl:right-[500px]'
             />
           </motion.div>
         </div>
