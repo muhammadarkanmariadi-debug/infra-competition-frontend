@@ -1,4 +1,3 @@
-
 "use client";
 
 import { fileSizeToMb } from "@/utils/database/atomics";
@@ -29,7 +28,6 @@ export default function Editor({
   value,
   onChange,
   label,
-  hostType = "CLOUDINARY",
 }: {
   value: string;
   onChange: (
@@ -37,7 +35,6 @@ export default function Editor({
     event?: ChangeEvent<HTMLTextAreaElement> | undefined,
   ) => void;
   label?: string;
-  hostType?: "CLOUDINARY" | "IMGBB";
 }) {
   const insertImageRef = useRef<HTMLInputElement>(null);
 
@@ -47,60 +44,72 @@ export default function Editor({
     buttonProps: { "aria-label": "Insert an image" },
     icon: <FaFileImage />,
     execute: async (_, api: TextAreaTextApi) => {
-      if (insertImageRef.current) {
-        const result = await getImage();
-        if (!result) return toast.error("Failed to load image");
+      const file = await getImage();
+      if (!file) return toast.error("Gagal memilih gambar");
 
-        const imageSizeInMb = fileSizeToMb(result.size);
-        if (imageSizeInMb >= 4.3)
-          return toast.error(
-            "Ukuran file terlalu besar! Ukuran maximum 4,3 MB",
-          );
+      const imageSizeInMb = fileSizeToMb(file.size);
+      if (imageSizeInMb >= 4.3)
+        return toast.error("Ukuran file terlalu besar! Maksimal 4.3 MB");
 
-        const data = new FormData();
+      try {
+        const toastId = toast.loading("Mengunggah gambar ke Cloudinary...");
 
-        data.append("file", result!);
-        data.append("hostType", hostType);
-        const toastId = toast.loading("Uploading image...");
-        const upload = await fetch("/api/upload/image", {
-          method: "POST",
-          body: data,
-        }).then((res) => res.json());
+        // 🔧 Ganti dengan milik kamu
+        const CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME!;
+        const UPLOAD_PRESET = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET!;
 
-        if (upload.status != 201) {
-          toast.error("Ukuran file terlalu besar! Ukuran maximum 4,3 MB", {
-            id: toastId,
-          });
-        } else {
-          const modifyText = `![user image](${upload.data?.url})\n`;
-          api.replaceSelection(modifyText);
-          toast.success("Sukses upload gambar", { id: toastId });
+        const formData = new FormData();
+        formData.append("file", file);
+        formData.append("upload_preset", UPLOAD_PRESET);
+
+        const res = await fetch(
+          `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+
+        const data = await res.json();
+
+        if (!res.ok || !data.secure_url) {
+          throw new Error(data.error?.message || "Upload gagal");
         }
-        insertImageRef!.current!.value = "";
+
+        const imageUrl = data.secure_url;
+        const markdownImage = `![uploaded image](${imageUrl})\n`;
+
+        api.replaceSelection(markdownImage);
+        toast.success("Gambar berhasil diunggah!", { id: toastId });
+      } catch (error: any) {
+        console.error(error);
+        toast.error("Gagal mengunggah gambar");
+      } finally {
+        if (insertImageRef.current) insertImageRef.current.value = "";
       }
     },
   };
 
-  function getImage(): Promise<File | null | undefined> {
+  function getImage(): Promise<File | null> {
     return new Promise((resolve, reject) => {
-      if (insertImageRef.current) {
-        insertImageRef.current.onchange = () => {
-          try {
-            if (!confirm("Upload this image?")) {
-              insertImageRef!.current!.value = "";
-              return;
-            }
-            resolve(insertImageRef.current?.files?.[0]!);
-          } catch (e) {
-            reject(e);
+      if (!insertImageRef.current) return resolve(null);
+
+      insertImageRef.current.onchange = () => {
+        try {
+          if (!confirm("Upload gambar ini?")) {
+            insertImageRef.current!.value = "";
+            return;
           }
-        };
-        insertImageRef.current?.click();
-      }
+          resolve(insertImageRef.current!.files?.[0] || null);
+        } catch (e) {
+          reject(e);
+        }
+      };
+      insertImageRef.current.click();
     });
   }
 
-  const commands = [
+  const toolbarCommands = [
     bold,
     italic,
     strikethrough,
@@ -142,7 +151,7 @@ export default function Editor({
           padding: 0,
         }}
         id="textEditor"
-        commands={commands}
+        commands={toolbarCommands}
       />
     </div>
   );

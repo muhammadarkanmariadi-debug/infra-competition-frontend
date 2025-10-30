@@ -9,13 +9,20 @@ interface Post {
   id: string;
   title: string;
   content: string;
-  category: string;
-  author: string;
+  author: {
+    name: string;
+    role: string;
+  };
+  tags: string;
   thumbnail: string | null;
+  category?: string;
+  status?: string;
   createdAt: string;
   updatedAt: string;
-  status: 'draft' | 'published';
 }
+
+const categories = ['all', 'Berita', 'Prestasi', 'Kegiatan', 'Pengumuman'];
+const statuses = ['all', 'published', 'draft'];
 
 export default function PostListPage() {
   const router = useRouter();
@@ -31,8 +38,8 @@ export default function PostListPage() {
     const fetchPosts = async () => {
       try {
         setLoading(true);
-        const response = await api.get('/blogs');
-        setPosts(response.data?.data?.data || []);
+        const response = await api.get('/blog');
+        setPosts(response.data.data.data);
         setError(null);
       } catch (err) {
         console.error('Error fetching posts:', err);
@@ -46,7 +53,7 @@ export default function PostListPage() {
   }, []);
 
   const handleCreatePost = () => {
-    router.push('/admin/posts/new');
+    router.push('/admin/posts/post');
   };
 
   const handleEditPost = (postId: string) => {
@@ -56,8 +63,8 @@ export default function PostListPage() {
   const handleDeletePost = async (postId: string) => {
     if (confirm('Apakah Anda yakin ingin menghapus post ini?')) {
       try {
-        await api.delete(`/blogs/${postId}`);
-        const updatedPosts = posts.filter(post => post.id !== postId);
+        await api.delete(`/blog/${postId}`);
+        const updatedPosts = posts.filter((post) => post.id !== postId);
         setPosts(updatedPosts);
       } catch (err) {
         console.error('Error deleting post:', err);
@@ -66,44 +73,33 @@ export default function PostListPage() {
     }
   };
 
-  // Filter posts
-  const filteredPosts = posts.filter(post => {
-    if (filterCategory !== 'all' && post.category !== filterCategory) return false;
-    if (filterStatus !== 'all' && post.status !== filterStatus) return false;
-    return true;
-  });
-
   // Pagination
-  const totalPages = Math.ceil(filteredPosts.length / rowsPerPage);
+  const totalPages = Math.ceil(posts.length / rowsPerPage);
   const startIndex = (currentPage - 1) * rowsPerPage;
   const endIndex = startIndex + rowsPerPage;
-  const currentPosts = filteredPosts.slice(startIndex, endIndex);
-
-  // Get unique categories and statuses
-  const categories = ['all', ...Array.from(new Set(posts.map(p => p.category)))];
-  const statuses = ['all', 'draft', 'published'];
+  const currentPosts = posts.slice(startIndex, endIndex);
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="flex justify-center items-center bg-gray-50 min-h-screen">
         <p className="text-gray-600">Loading...</p>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="bg-gray-50 min-h-screen">
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="mx-auto px-6 py-8 max-w-7xl">
         {/* Header */}
-        <div className="flex items-start justify-between mb-6">
+        <div className="flex justify-between items-start mb-6">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Posts</h1>
+            <h1 className="mb-2 font-bold text-gray-900 text-3xl">Posts</h1>
             <p className="text-gray-600">Kelola semua posts sekolah</p>
           </div>
           <button
             onClick={handleCreatePost}
-            className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 py-3 rounded-lg transition-colors flex items-center gap-2"
+            className="flex items-center gap-2 bg-red-500 hover:bg-red-600 px-6 py-3 rounded-lg font-medium text-white transition-colors"
           >
             <Plus className="w-5 h-5" />
             Add Post
@@ -112,7 +108,7 @@ export default function PostListPage() {
 
         {/* Error Message */}
         {error && (
-          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6">
+          <div className="bg-red-50 mb-6 px-4 py-3 border border-red-200 rounded-lg text-red-700">
             {error}
           </div>
         )}
@@ -133,7 +129,7 @@ export default function PostListPage() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none"
               >
                 <option value="all">Semua Kategori</option>
-                {categories.filter(c => c !== 'all').map(category => (
+                {categories.filter((c: string) => c !== 'all').map((category: string) => (
                   <option key={category} value={category}>{category}</option>
                 ))}
               </select>
@@ -151,7 +147,7 @@ export default function PostListPage() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none"
               >
                 <option value="all">Semua Status</option>
-                {statuses.filter(s => s !== 'all').map(status => (
+                {statuses.filter((s: string) => s !== 'all').map((status: string) => (
                   <option key={status} value={status}>
                     {status.charAt(0).toUpperCase() + status.slice(1)}
                   </option>
@@ -215,10 +211,10 @@ export default function PostListPage() {
                         <span className="text-sm text-gray-900 font-medium line-clamp-2">{post.title}</span>
                       </td>
                       <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{post.category}</span>
+                        <span className="text-sm text-gray-600">{post.category || '-'}</span>
                       </td>
                       <td className="px-6 py-4">
-                        <span className="text-sm text-gray-600">{post.author}</span>
+                        <span className="text-sm text-gray-600">{post.author.name}</span>
                       </td>
                       <td className="px-6 py-4">
                         <span className={`text-xs font-semibold px-3 py-1 rounded-full ${
@@ -226,7 +222,7 @@ export default function PostListPage() {
                             ? 'bg-green-100 text-green-800' 
                             : 'bg-yellow-100 text-yellow-800'
                         }`}>
-                          {post.status.charAt(0).toUpperCase() + post.status.slice(1)}
+                          {post.status ? post.status.charAt(0).toUpperCase() + post.status.slice(1) : 'Draft'}
                         </span>
                       </td>
                       <td className="px-6 py-4">
@@ -238,14 +234,14 @@ export default function PostListPage() {
                         <div className="flex items-center gap-2">
                           <button
                             onClick={() => handleEditPost(post.id)}
-                            className="p-2 text-blue-600 hover:bg-blue-50 rounded transition-colors"
+                            className="hover:bg-blue-50 p-2 rounded text-blue-600 transition-colors"
                             title="Edit"
                           >
                             <Edit className="w-5 h-5" />
                           </button>
                           <button
                             onClick={() => handleDeletePost(post.id)}
-                            className="p-2 text-red-600 hover:bg-red-50 rounded transition-colors"
+                            className="hover:bg-red-50 p-2 rounded text-red-600 transition-colors"
                             title="Delete"
                           >
                             <Trash2 className="w-5 h-5" />
@@ -260,9 +256,9 @@ export default function PostListPage() {
           </div>
 
           {/* Pagination */}
-          {filteredPosts.length > 0 && (
-            <div className="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-sm text-gray-600">
+          {posts.length > 0 && (
+            <div className="flex justify-between items-center px-6 py-4 border-gray-200 border-t">
+              <div className="flex items-center gap-2 text-gray-600 text-sm">
                 <span>Rows per page:</span>
                 <select
                   value={rowsPerPage}
@@ -270,29 +266,29 @@ export default function PostListPage() {
                     setRowsPerPage(Number(e.target.value));
                     setCurrentPage(1);
                   }}
-                  className="border border-gray-300 rounded px-2 py-1 text-sm"
-                > 
+                  className="px-2 py-1 border border-gray-300 rounded text-sm"
+                >
                   <option value={10}>10</option>
                   <option value={25}>25</option>
                   <option value={50}>50</option>
                 </select>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-600">
-                  {startIndex + 1}-{Math.min(endIndex, filteredPosts.length)} of {filteredPosts.length}
+                <span className="text-gray-600 text-sm">
+                  {startIndex + 1}-{Math.min(endIndex, posts.length)} of {posts.length}
                 </span>
                 <div className="flex gap-1">
                   <button
                     onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                     disabled={currentPage === 1}
-                    className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                    className="hover:bg-gray-50 disabled:opacity-50 px-3 py-1 border border-gray-300 rounded text-sm disabled:cursor-not-allowed"
                   >
                     Previous
                   </button>
                   <button
                     onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                     disabled={currentPage === totalPages}
-                    className="px-3 py-1 border border-gray-300 rounded hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                    className="hover:bg-gray-50 disabled:opacity-50 px-3 py-1 border border-gray-300 rounded text-sm disabled:cursor-not-allowed"
                   >
                     Next
                   </button>

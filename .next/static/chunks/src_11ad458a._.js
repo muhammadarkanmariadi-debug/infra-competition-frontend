@@ -154,6 +154,7 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 __turbopack_context__.s({
     "default": (()=>Editor)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$database$2f$atomics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/utils/database/atomics.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$uiw$2f$react$2d$md$2d$editor$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/node_modules/@uiw/react-md-editor/esm/index.js [app-client] (ecmascript) <module evaluation>");
@@ -181,7 +182,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-function Editor({ value, onChange, label, hostType = "CLOUDINARY" }) {
+function Editor({ value, onChange, label }) {
     _s();
     const insertImageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const insertImage = {
@@ -192,57 +193,62 @@ function Editor({ value, onChange, label, hostType = "CLOUDINARY" }) {
         },
         icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaFileImage"], {}, void 0, false, {
             fileName: "[project]/src/app/admin/components/MdEditor.tsx",
-            lineNumber: 48,
+            lineNumber: 45,
             columnNumber: 11
         }, this),
         execute: async (_, api)=>{
-            if (insertImageRef.current) {
-                const result = await getImage();
-                if (!result) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Failed to load image");
-                const imageSizeInMb = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$database$2f$atomics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fileSizeToMb"])(result.size);
-                if (imageSizeInMb >= 4.3) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Ukuran file terlalu besar! Ukuran maximum 4,3 MB");
-                const data = new FormData();
-                data.append("file", result);
-                data.append("hostType", hostType);
-                const toastId = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].loading("Uploading image...");
-                const upload = await fetch("/api/upload/image", {
+            const file = await getImage();
+            if (!file) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Gagal memilih gambar");
+            const imageSizeInMb = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$database$2f$atomics$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fileSizeToMb"])(file.size);
+            if (imageSizeInMb >= 4.3) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Ukuran file terlalu besar! Maksimal 4.3 MB");
+            try {
+                const toastId = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].loading("Mengunggah gambar ke Cloudinary...");
+                // 🔧 Ganti dengan milik kamu
+                const CLOUD_NAME = ("TURBOPACK compile-time value", "dvpb6z2oj");
+                const UPLOAD_PRESET = ("TURBOPACK compile-time value", "asda");
+                const formData = new FormData();
+                formData.append("file", file);
+                formData.append("upload_preset", UPLOAD_PRESET);
+                const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, {
                     method: "POST",
-                    body: data
-                }).then((res)=>res.json());
-                if (upload.status != 201) {
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Ukuran file terlalu besar! Ukuran maximum 4,3 MB", {
-                        id: toastId
-                    });
-                } else {
-                    const modifyText = `![user image](${upload.data?.url})\n`;
-                    api.replaceSelection(modifyText);
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].success("Sukses upload gambar", {
-                        id: toastId
-                    });
+                    body: formData
+                });
+                const data = await res.json();
+                if (!res.ok || !data.secure_url) {
+                    throw new Error(data.error?.message || "Upload gagal");
                 }
-                insertImageRef.current.value = "";
+                const imageUrl = data.secure_url;
+                const markdownImage = `![uploaded image](${imageUrl})\n`;
+                api.replaceSelection(markdownImage);
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].success("Gambar berhasil diunggah!", {
+                    id: toastId
+                });
+            } catch (error) {
+                console.error(error);
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Gagal mengunggah gambar");
+            } finally{
+                if (insertImageRef.current) insertImageRef.current.value = "";
             }
         }
     };
     function getImage() {
         return new Promise((resolve, reject)=>{
-            if (insertImageRef.current) {
-                insertImageRef.current.onchange = ()=>{
-                    try {
-                        if (!confirm("Upload this image?")) {
-                            insertImageRef.current.value = "";
-                            return;
-                        }
-                        resolve(insertImageRef.current?.files?.[0]);
-                    } catch (e) {
-                        reject(e);
+            if (!insertImageRef.current) return resolve(null);
+            insertImageRef.current.onchange = ()=>{
+                try {
+                    if (!confirm("Upload gambar ini?")) {
+                        insertImageRef.current.value = "";
+                        return;
                     }
-                };
-                insertImageRef.current?.click();
-            }
+                    resolve(insertImageRef.current.files?.[0] || null);
+                } catch (e) {
+                    reject(e);
+                }
+            };
+            insertImageRef.current.click();
         });
     }
-    const commands = [
+    const toolbarCommands = [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$uiw$2f$react$2d$md$2d$editor$2f$esm$2f$commands$2f$bold$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["bold"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$uiw$2f$react$2d$md$2d$editor$2f$esm$2f$commands$2f$italic$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["italic"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$uiw$2f$react$2d$md$2d$editor$2f$esm$2f$commands$2f$strikeThrough$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["strikethrough"],
@@ -269,7 +275,7 @@ function Editor({ value, onChange, label, hostType = "CLOUDINARY" }) {
                 children: label ?? "Text Editor"
             }, void 0, false, {
                 fileName: "[project]/src/app/admin/components/MdEditor.tsx",
-                lineNumber: 125,
+                lineNumber: 134,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -280,7 +286,7 @@ function Editor({ value, onChange, label, hostType = "CLOUDINARY" }) {
                 accept: "image/gif,image/jpeg,image/jpg,image/png,image/webp,image/svg"
             }, void 0, false, {
                 fileName: "[project]/src/app/admin/components/MdEditor.tsx",
-                lineNumber: 126,
+                lineNumber: 135,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$uiw$2f$react$2d$md$2d$editor$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
@@ -295,16 +301,16 @@ function Editor({ value, onChange, label, hostType = "CLOUDINARY" }) {
                     padding: 0
                 },
                 id: "textEditor",
-                commands: commands
+                commands: toolbarCommands
             }, void 0, false, {
                 fileName: "[project]/src/app/admin/components/MdEditor.tsx",
-                lineNumber: 133,
+                lineNumber: 142,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/admin/components/MdEditor.tsx",
-        lineNumber: 124,
+        lineNumber: 133,
         columnNumber: 5
     }, this);
 }
@@ -322,14 +328,16 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>CreatePostPage)
+    "default": (()=>CreatePostForm)
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$PhotoIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PhotoIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/PhotoIcon.js [app-client] (ecmascript) <export default as PhotoIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowLeftIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeftIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ArrowLeftIcon.js [app-client] (ecmascript) <export default as ArrowLeftIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$admin$2f$components$2f$MdEditor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/admin/components/MdEditor.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/_components/lib/api.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -337,28 +345,21 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-function CreatePostPage() {
+;
+function CreatePostForm() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         title: "",
-        description: "",
+        short_body: "",
         slug: "",
-        category: "",
         tags: [],
-        content: "",
+        body: "",
         thumbnail: null,
         status: "draft"
     });
     const [previewImage, setPreviewImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
-    const categories = [
-        "Pengumuman",
-        "Berita",
-        "Event",
-        "Kegiatan",
-        "Prestasi",
-        "Tutorial"
-    ];
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const availableTags = [
         "OSIS",
         "MPK",
@@ -379,34 +380,48 @@ function CreatePostPage() {
             const slug = value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
             setFormData((prev)=>({
                     ...prev,
-                    slug: slug
+                    slug
                 }));
         }
     };
     const handleFileChange = (event)=>{
         const files = event.target.files;
-        if (files && files.length > 0) {
-            const file = files[0];
-            setFormData((prev)=>({
-                    ...prev,
-                    thumbnail: file
-                }));
-            const reader = new FileReader();
-            reader.onloadend = ()=>{
-                setPreviewImage(reader.result);
-            };
-            reader.readAsDataURL(file);
+        if (!files || files.length === 0) return;
+        const file = files[0];
+        // optional: basic client-side size check (2MB)
+        if (file.size > 2 * 1024 * 1024) {
+            alert("File terlalu besar. Maks 2MB.");
+            return;
         }
+        setFormData((prev)=>({
+                ...prev,
+                thumbnail: file
+            }));
+        const reader = new FileReader();
+        reader.onloadend = ()=>setPreviewImage(reader.result);
+        reader.readAsDataURL(file);
     };
-    const handleSubmit = (e, status = "draft")=>{
-        e.preventDefault();
-        console.log("Submitting post:", {
-            ...formData,
-            status
+    async function uploadToCloudinary(file) {
+        const cloudName = ("TURBOPACK compile-time value", "dvpb6z2oj");
+        const uploadPreset = ("TURBOPACK compile-time value", "asda");
+        if ("TURBOPACK compile-time falsy", 0) {
+            "TURBOPACK unreachable";
+        }
+        const url = `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`;
+        const fd = new FormData();
+        fd.append("file", file);
+        fd.append("upload_preset", uploadPreset);
+        const res = await fetch(url, {
+            method: "POST",
+            body: fd
         });
-        // Redirect back to posts list
-        router.push("/posts");
-    };
+        if (!res.ok) {
+            const text = await res.text();
+            throw new Error(`Cloudinary upload failed: ${text}`);
+        }
+        const data = await res.json();
+        return data.secure_url;
+    }
     const handleTagToggle = (tag)=>{
         setFormData((prev)=>({
                 ...prev,
@@ -416,52 +431,84 @@ function CreatePostPage() {
                 ]
             }));
     };
+    const handleSubmit = async (e, publishStatus = "draft")=>{
+        if (e) e.preventDefault();
+        setLoading(true);
+        try {
+            let thumbnailUrl = null;
+            if (formData.thumbnail) {
+                thumbnailUrl = await uploadToCloudinary(formData.thumbnail);
+            }
+            const payload = {
+                title: formData.title,
+                // author_id: backend should infer author from auth; omit if so
+                body: formData.body,
+                short_body: formData.short_body,
+                thumbnail: thumbnailUrl,
+                tags: formData.tags.join(","),
+                slug: formData.slug,
+                is_published: publishStatus === "publish",
+                approval_status: "pending"
+            };
+            const res = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["api"].post("/blog", JSON.stringify(payload));
+            if (!res.status.toString().startsWith("2")) {
+                const text = await res.data();
+                throw new Error(`Create failed: ${text.message}`);
+            }
+            router.push("/admin/posts");
+        } catch (err) {
+            console.error(err);
+            alert("Gagal membuat post. Cek console untuk detail.");
+        } finally{
+            setLoading(false);
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "p-6",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-4xl mx-auto",
+            className: "mx-auto max-w-4xl",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mb-8",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>router.back(),
-                        className: "mb-4 text-gray-600 hover:text-gray-900 flex items-center space-x-2",
+                        className: "flex items-center space-x-2 mb-4 text-gray-600 hover:text-gray-900",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ArrowLeftIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeftIcon$3e$__["ArrowLeftIcon"], {
                                 className: "w-5 h-5"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 119,
+                                lineNumber: 147,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "Kembali"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 120,
+                                lineNumber: 148,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                        lineNumber: 115,
+                        lineNumber: 146,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                    lineNumber: 114,
+                    lineNumber: 145,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                     onSubmit: (e)=>handleSubmit(e, "publish"),
                     className: "space-y-6",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white rounded-lg shadow p-6 space-y-6",
+                        className: "space-y-6 bg-white shadow p-6 rounded-lg",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-2",
+                                        className: "block mb-2 font-medium text-gray-700 text-sm",
                                         children: [
                                             "Judul Post",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -469,38 +516,37 @@ function CreatePostPage() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 156,
                                                 columnNumber: 27
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 155,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        type: "text",
                                         name: "title",
                                         value: formData.title,
                                         onChange: handleInputChange,
                                         placeholder: "Masukkan judul post...",
-                                        className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent",
+                                        className: "px-4 py-2 border border-gray-300 rounded-lg w-full",
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 158,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 132,
+                                lineNumber: 154,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-2",
+                                        className: "block mb-2 font-medium text-gray-700 text-sm",
                                         children: [
                                             "Deskripsi",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -508,125 +554,69 @@ function CreatePostPage() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 170,
                                                 columnNumber: 26
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 169,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
-                                        name: "description",
-                                        value: formData.description,
+                                        name: "short_body",
+                                        value: formData.short_body,
                                         onChange: handleInputChange,
                                         placeholder: "Deskripsi singkat tentang post...",
                                         rows: 3,
-                                        className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent",
+                                        className: "px-4 py-2 border border-gray-300 rounded-lg w-full",
                                         required: true
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 172,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 148,
+                                lineNumber: 168,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-2",
+                                        className: "block mb-2 font-medium text-gray-700 text-sm",
                                         children: "Custom Slug"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 165,
+                                        lineNumber: 184,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        type: "text",
                                         name: "slug",
                                         value: formData.slug,
                                         onChange: handleInputChange,
                                         placeholder: "custom-url-slug",
-                                        className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                                        className: "px-4 py-2 border border-gray-300 rounded-lg w-full"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 185,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 164,
+                                lineNumber: 183,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-2",
-                                        children: [
-                                            "Kategori",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-red-500",
-                                                children: "*"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 181,
-                                                columnNumber: 25
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 180,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                        name: "category",
-                                        value: formData.category,
-                                        onChange: handleInputChange,
-                                        className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent",
-                                        required: true,
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                value: "",
-                                                children: "Select..."
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 190,
-                                                columnNumber: 17
-                                            }, this),
-                                            categories.map((cat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                                    value: cat,
-                                                    children: cat
-                                                }, cat, false, {
-                                                    fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                    lineNumber: 192,
-                                                    columnNumber: 19
-                                                }, this))
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 183,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 179,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-2",
+                                        className: "block mb-2 font-medium text-gray-700 text-sm",
                                         children: "Tags"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 201,
+                                        lineNumber: 195,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -634,130 +624,121 @@ function CreatePostPage() {
                                         children: availableTags.map((tag)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 type: "button",
                                                 onClick: ()=>handleTagToggle(tag),
-                                                className: `px-3 py-1 rounded-full text-sm font-medium transition-colors ${formData.tags.includes(tag) ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`,
+                                                className: `px-3 py-1 rounded-full text-sm font-medium ${formData.tags.includes(tag) ? "bg-red-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`,
                                                 children: tag
                                             }, tag, false, {
                                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 206,
+                                                lineNumber: 198,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 196,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 200,
+                                lineNumber: 194,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-2",
-                                        children: [
-                                            "Thumbnail",
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-red-500",
-                                                children: "*"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 225,
-                                                columnNumber: 26
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        className: "block mb-2 font-medium text-gray-700 text-sm",
+                                        children: "Thumbnail"
+                                    }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 213,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-start space-x-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "w-48 h-48 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center",
-                                                children: previewImage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                className: "flex justify-center items-center bg-gray-100 rounded-lg w-48 h-48 overflow-hidden",
+                                                children: previewImage ? // eslint-disable-next-line @next/next/no-img-element
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                     src: previewImage,
                                                     alt: "Preview",
                                                     className: "w-full h-full object-cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                    lineNumber: 230,
+                                                    lineNumber: 218,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$PhotoIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PhotoIcon$3e$__["PhotoIcon"], {
                                                     className: "w-16 h-16 text-gray-400"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                    lineNumber: 236,
+                                                    lineNumber: 220,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 228,
+                                                lineNumber: 215,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                        id: "thumbnail-upload",
                                                         type: "file",
-                                                        onChange: handleFileChange,
                                                         accept: "image/*",
-                                                        className: "hidden",
-                                                        id: "thumbnail-upload"
+                                                        onChange: handleFileChange,
+                                                        className: "hidden"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                        lineNumber: 240,
+                                                        lineNumber: 225,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                         htmlFor: "thumbnail-upload",
-                                                        className: "inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 cursor-pointer",
+                                                        className: "inline-flex items-center bg-white hover:bg-gray-50 px-4 py-2 border border-gray-300 rounded-lg font-medium text-gray-700 text-sm cursor-pointer",
                                                         children: "Choose File"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                        lineNumber: 247,
+                                                        lineNumber: 226,
                                                         columnNumber: 19
                                                     }, this),
                                                     formData.thumbnail && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "mt-2 text-sm text-gray-500",
+                                                        className: "mt-2 text-gray-500 text-sm",
                                                         children: formData.thumbnail.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                        lineNumber: 254,
-                                                        columnNumber: 21
+                                                        lineNumber: 229,
+                                                        columnNumber: 42
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "mt-2 text-xs text-gray-500",
+                                                        className: "mt-2 text-gray-500 text-xs",
                                                         children: "Recommended size: 1200x630px. Max file size: 2MB"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                        lineNumber: 258,
+                                                        lineNumber: 230,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 239,
+                                                lineNumber: 224,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 214,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 223,
+                                lineNumber: 212,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                        className: "block text-sm font-medium text-gray-700 mb-2",
+                                        className: "block mb-2 font-medium text-gray-700 text-sm",
                                         children: [
                                             "Text Editor",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -765,29 +746,30 @@ function CreatePostPage() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                                lineNumber: 268,
+                                                lineNumber: 237,
                                                 columnNumber: 28
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 267,
+                                        lineNumber: 236,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$admin$2f$components$2f$MdEditor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        value: "",
-                                        onChange: function(value, event) {
-                                            throw new Error("Function not implemented.");
-                                        }
+                                        value: formData.body,
+                                        onChange: (value)=>setFormData((prev)=>({
+                                                    ...prev,
+                                                    body: value ?? ""
+                                                }))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 270,
+                                        lineNumber: 239,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 266,
+                                lineNumber: 235,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -796,69 +778,70 @@ function CreatePostPage() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "button",
                                         onClick: ()=>router.back(),
-                                        className: "px-6 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50",
+                                        className: "hover:bg-gray-50 px-6 py-2 border border-gray-300 rounded-lg text-gray-700",
                                         children: "Cancel"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 283,
+                                        lineNumber: 243,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "button",
-                                        onClick: (e)=>handleSubmit(e, "draft"),
-                                        className: "px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600",
+                                        onClick: ()=>handleSubmit(null, "draft"),
+                                        className: "bg-gray-500 hover:bg-gray-600 px-6 py-2 rounded-lg text-white",
                                         children: "Save as Draft"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 290,
+                                        lineNumber: 246,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "submit",
-                                        className: "px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600",
-                                        children: "Simpan"
+                                        disabled: loading,
+                                        className: "bg-red-500 hover:bg-red-600 px-6 py-2 rounded-lg text-white",
+                                        children: loading ? "Menyimpan..." : "Simpan"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                        lineNumber: 297,
+                                        lineNumber: 249,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                                lineNumber: 282,
+                                lineNumber: 242,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                        lineNumber: 130,
+                        lineNumber: 153,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-                    lineNumber: 126,
+                    lineNumber: 152,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-            lineNumber: 112,
+            lineNumber: 144,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/admin/posts/post/Form.tsx",
-        lineNumber: 111,
+        lineNumber: 143,
         columnNumber: 5
     }, this);
 }
-_s(CreatePostPage, "cbuQ3/Oe+/Lre4qlLJrNuMlv38Q=", false, function() {
+_s(CreatePostForm, "evxJRTmV6xaGSE9AoFFXssxNCrs=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
-_c = CreatePostPage;
+_c = CreatePostForm;
 var _c;
-__turbopack_context__.k.register(_c, "CreatePostPage");
+__turbopack_context__.k.register(_c, "CreatePostForm");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
