@@ -27,9 +27,9 @@ const poppins = Poppins({
 
 const navigation = [
   { name: 'Dashboard', href: '/admin', icon: HomeIcon},
-  { name: 'Post', href: '/admin/posts/post', icon: DocumentTextIcon },
+  { name: 'Post', href: '/admin/posts', icon: DocumentTextIcon },
   { name: 'Info Organ Setup', href: '/admin/organisasi', icon: BuildingOfficeIcon },
-  { name: 'Aspirasi', href: '/aspirasi', icon: FlagIcon },
+  { name: 'Aspirasi', href: '/admin/aspirasi', icon: FlagIcon },
   { name: 'Ekskul', href: '/admin/ekskul', icon: TrophyIcon },
   { name: 'Users', href: '/admin/user', icon: UsersIcon },
 ]

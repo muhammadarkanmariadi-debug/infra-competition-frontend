@@ -13,10 +13,11 @@ interface Post {
     name: string;
     role: string;
   };
+  slug: string;
   tags: string;
   thumbnail: string | null;
-  createdAt: string;
-  updatedAt: string;
+  created_at: string;
+  updated_at: string;
 }
 
 export default function PostListPage() {
@@ -165,13 +166,17 @@ export default function PostListPage() {
                       </td>
                       <td className="px-6 py-4">
                         <span className="text-gray-600 text-sm">
-                          {new Date(post.updatedAt).toLocaleDateString('id-ID')}
+                          {new Date(post.updated_at).toLocaleDateString('id-ID', {
+                            day: '2-digit',
+                            month: 'short',
+                            year: 'numeric',
+                          })}
                         </span>
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-2">
                           <button
-                            onClick={() => handleEditPost(post.id)}
+                            onClick={() => handleEditPost(post.slug)}
                             className="hover:bg-blue-50 p-2 rounded text-blue-600 transition-colors"
                             title="Edit"
                           >

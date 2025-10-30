@@ -1,39 +1,40 @@
 "use client";
 
-import { ChangeEvent, useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { PhotoIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
-import Editor from "../../components/MdEditor";
 import { api } from "@/app/_components/lib/api";
+import EditorNew from "../../components/EditorNew";
 
 type FormState = {
   title: string;
-  description: string; // short_body
+  short_body: string;
   slug: string;
-  tags: string[]; // will be sent as comma separated string to Laravel
-  content: string; // body
-  thumbnail: File | null; // local file if replaced
+  tags: string[];
+  body: string;
+  thumbnail: File | null;
+  existingThumbnail: string | null;
   status: "draft" | "publish";
-  thumbnailUrl?: string; // existing url from backend / cloudinary
 };
 
 export default function EditPostForm() {
   const router = useRouter();
-  const params: any = useParams();
-  const id = params?.id as string | undefined;
+  const params = useParams();
+  const postId = params.id as string;
 
   const [formData, setFormData] = useState<FormState>({
     title: "",
-    description: "",
+    short_body: "",
     slug: "",
     tags: [],
-    content: "",
+    body: "",
     thumbnail: null,
+    existingThumbnail: null,
     status: "draft",
-    thumbnailUrl: undefined,
   });
   const [previewImage, setPreviewImage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [fetching, setFetching] = useState(true);
 
   const availableTags = [
     "OSIS",
@@ -46,80 +47,76 @@ export default function EditPostForm() {
     "Ekstrakurikuler",
   ];
 
+  // Fetch existing post data
   useEffect(() => {
-    if (!id) return;
-    let mounted = true;
-    setLoading(true);
-    (async () => {
+    const fetchPost = async () => {
       try {
-        // TODO: replace with your API function: const res = await getPost(id)
-        const res = await api.get(`/blogs/${id}`).then((response) => response.data.data);
+        setFetching(true);
+        const response = await api.get(`/blog/${postId}`);
+        const post = response.data.data;
 
-        if (!mounted) return;
+        setFormData({
+          title: post.title || "",
+          short_body: post.short_body || "",
+          slug: post.slug || "",
+          tags: post.tags ? post.tags.split(",").map((tag: string) => tag.trim()) : [],
+          body: post.body || "",
+          thumbnail: null,
+          existingThumbnail: post.thumbnail || null,
+          status: post.is_published ? "publish" : "draft",
+        });
 
-        setFormData((prev) => ({
-          ...prev,
-          title: res.title ?? "",
-          description: res.short_body ?? res.description ?? "",
-          slug: res.slug ?? "",
-          tags: res.tags ? (Array.isArray(res.tags) ? res.tags : String(res.tags).split(",")) : [],
-          content: res.body ?? res.content ?? "",
-          status: res.is_published ? "publish" : "draft",
-          thumbnailUrl: res.thumbnail ?? res.thumbnailUrl ?? undefined,
-        }));
-
-        if (res.thumbnail ?? res.thumbnailUrl) {
-          setPreviewImage(res.thumbnail ?? res.thumbnailUrl);
+        if (post.thumbnail) {
+          setPreviewImage(post.thumbnail);
         }
       } catch (err) {
-        console.error("Failed to load post", err);
+        console.error("Error fetching post:", err);
+        alert("Gagal memuat data post");
+        router.push("/admin/posts");
       } finally {
-        setLoading(false);
+        setFetching(false);
       }
-    })();
-    return () => {
-      mounted = false;
     };
-  }, [id]);
+
+    if (postId) {
+      fetchPost();
+    }
+  }, [postId, router]);
 
   const handleInputChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
 
     if (name === "title") {
       const slug = value
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/(^-|-$)/g, "");
-      setFormData((prev) => ({
-        ...prev,
-        slug,
-      }));
+      setFormData((prev) => ({ ...prev, slug }));
     }
+  };
+
+  const handleEditorChange = (content: string) => {
+    setFormData((prev) => ({ ...prev, body: content }));
   };
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
-    if (files && files.length > 0) {
-      const file = files[0];
-      setFormData((prev) => ({
-        ...prev,
-        thumbnail: file,
-      }));
+    if (!files || files.length === 0) return;
+    const file = files[0];
 
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setPreviewImage(reader.result as string);
-      };
-      reader.readAsDataURL(file);
+    if (file.size > 2 * 1024 * 1024) {
+      alert("File terlalu besar. Maks 2MB.");
+      return;
     }
+
+    setFormData((prev) => ({ ...prev, thumbnail: file }));
+
+    const reader = new FileReader();
+    reader.onloadend = () => setPreviewImage(reader.result as string);
+    reader.readAsDataURL(file);
   };
 
   async function uploadToCloudinary(file: File) {
@@ -134,80 +131,71 @@ export default function EditPostForm() {
     fd.append("file", file);
     fd.append("upload_preset", uploadPreset);
 
-    const res = await fetch(url, {
-      method: "POST",
-      body: fd,
-    });
-
+    const res = await fetch(url, { method: "POST", body: fd });
     if (!res.ok) {
       const text = await res.text();
       throw new Error(`Cloudinary upload failed: ${text}`);
     }
-
     const data = await res.json();
     return data.secure_url as string;
   }
 
-  const handleSubmit = async (e: React.FormEvent, publishStatus: "draft" | "publish" = "draft") => {
-    e.preventDefault();
-    if (!id) {
-      console.error("Missing post id");
+  const handleTagToggle = (tag: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      tags: prev.tags.includes(tag) ? prev.tags.filter((t) => t !== tag) : [...prev.tags, tag],
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent | null, publishStatus: "draft" | "publish" = "draft") => {
+    if (e) e.preventDefault();
+
+    // Validate body content
+    if (!formData.body || formData.body.trim() === "" || formData.body === "<p></p>") {
+      alert("Konten post tidak boleh kosong!");
       return;
     }
 
     setLoading(true);
     try {
-      let thumbnailUrl = formData.thumbnailUrl ?? null;
-
-      // if user provided a new file -> upload to cloudinary
+      let thumbnailUrl: string | null = formData.existingThumbnail;
+      
+      // Only upload new thumbnail if file is selected
       if (formData.thumbnail) {
         thumbnailUrl = await uploadToCloudinary(formData.thumbnail);
       }
 
-      // build payload according to Laravel schema
       const payload = {
         title: formData.title,
-        author_id: undefined, // backend should infer author from auth; omit or set if required
-        body: formData.content,
-        short_body: formData.description,
+        body: formData.body,
+        short_body: formData.short_body,
         thumbnail: thumbnailUrl,
-        tags: formData.tags.join(","), // Laravel schema expects string
+        tags: formData.tags.join(","),
         slug: formData.slug,
         is_published: publishStatus === "publish",
         approval_status: "pending",
       };
 
-      // TODO: replace with your api call (e.g. await updatePost(id, payload))
-      const res = await api.put(`/blogs/${id}`, JSON.stringify(payload));
-
+      const res = await api.put(`/blog/${postId}`, JSON.stringify(payload));
       if (!res.status.toString().startsWith("2")) {
-        const text = await res.data;
+        const text = await res.data();
         throw new Error(`Update failed: ${text.message}`);
       }
 
-      // success -> go back to posts list
-      router.push("/posts");
+      alert("Post berhasil diupdate!");
+      router.push("/admin/posts");
     } catch (err) {
       console.error(err);
-      alert("Gagal menyimpan. Cek console untuk detail.");
+      alert("Gagal mengupdate post. Cek console untuk detail.");
     } finally {
       setLoading(false);
     }
   };
 
-  const handleTagToggle = (tag: string): void => {
-    setFormData((prev) => ({
-      ...prev,
-      tags: prev.tags.includes(tag)
-        ? prev.tags.filter((t) => t !== tag)
-        : [...prev.tags, tag],
-    }));
-  };
-
-  if (loading && !formData.title) {
+  if (fetching) {
     return (
-      <div className="p-6">
-        <div className="mx-auto max-w-4xl">Loading...</div>
+      <div className="flex justify-center items-center min-h-screen">
+        <p className="text-gray-600">Loading post data...</p>
       </div>
     );
   }
@@ -227,17 +215,18 @@ export default function EditPostForm() {
 
         <form onSubmit={(e) => handleSubmit(e, "publish")} className="space-y-6">
           <div className="space-y-6 bg-white shadow p-6 rounded-lg">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Edit Post</h2>
+
             <div>
               <label className="block mb-2 font-medium text-gray-700 text-sm">
                 Judul Post<span className="text-red-500">*</span>
               </label>
               <input
-                type="text"
                 name="title"
                 value={formData.title}
                 onChange={handleInputChange}
                 placeholder="Masukkan judul post..."
-                className="px-4 py-2 border border-gray-300 focus:border-transparent rounded-lg focus:ring-2 focus:ring-red-500 w-full"
+                className="px-4 py-2 border border-gray-300 rounded-lg w-full"
                 required
               />
             </div>
@@ -247,41 +236,36 @@ export default function EditPostForm() {
                 Deskripsi<span className="text-red-500">*</span>
               </label>
               <textarea
-                name="description"
-                value={formData.description}
+                name="short_body"
+                value={formData.short_body}
                 onChange={handleInputChange}
                 placeholder="Deskripsi singkat tentang post..."
                 rows={3}
-                className="px-4 py-2 border border-gray-300 focus:border-transparent rounded-lg focus:ring-2 focus:ring-red-500 w-full"
+                className="px-4 py-2 border border-gray-300 rounded-lg w-full"
                 required
               />
             </div>
 
             <div>
-              <label className="block mb-2 font-medium text-gray-700 text-sm">
-                Custom Slug
-              </label>
+              <label className="block mb-2 font-medium text-gray-700 text-sm">Custom Slug</label>
               <input
-                type="text"
                 name="slug"
                 value={formData.slug}
                 onChange={handleInputChange}
                 placeholder="custom-url-slug"
-                className="px-4 py-2 border border-gray-300 focus:border-transparent rounded-lg focus:ring-2 focus:ring-red-500 w-full"
+                className="px-4 py-2 border border-gray-300 rounded-lg w-full"
               />
             </div>
 
             <div>
-              <label className="block mb-2 font-medium text-gray-700 text-sm">
-                Tags
-              </label>
+              <label className="block mb-2 font-medium text-gray-700 text-sm">Tags</label>
               <div className="flex flex-wrap gap-2">
                 {availableTags.map((tag) => (
                   <button
                     key={tag}
                     type="button"
                     onClick={() => handleTagToggle(tag)}
-                    className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                    className={`px-3 py-1 rounded-full text-sm font-medium ${
                       formData.tags.includes(tag)
                         ? "bg-red-500 text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -294,50 +278,48 @@ export default function EditPostForm() {
             </div>
 
             <div>
-              <label className="block mb-2 font-medium text-gray-700 text-sm">
-                Thumbnail
-              </label>
+              <label className="block mb-2 font-medium text-gray-700 text-sm">Thumbnail</label>
               <div className="flex items-start space-x-4">
                 <div className="flex justify-center items-center bg-gray-100 rounded-lg w-48 h-48 overflow-hidden">
                   {previewImage ? (
-                    // eslint-disable-next-line @next/next/no-img-element
                     <img src={previewImage} alt="Preview" className="w-full h-full object-cover" />
                   ) : (
                     <PhotoIcon className="w-16 h-16 text-gray-400" />
                   )}
                 </div>
+
                 <div className="flex-1">
                   <input
-                    type="file"
-                    onChange={handleFileChange}
-                    accept="image/*"
-                    className="hidden"
                     id="thumbnail-upload"
+                    type="file"
+                    accept="image/*"
+                    onChange={handleFileChange}
+                    className="hidden"
                   />
                   <label
                     htmlFor="thumbnail-upload"
                     className="inline-flex items-center bg-white hover:bg-gray-50 px-4 py-2 border border-gray-300 rounded-lg font-medium text-gray-700 text-sm cursor-pointer"
                   >
-                    Choose File
+                    Choose New File
                   </label>
                   {formData.thumbnail && (
                     <p className="mt-2 text-gray-500 text-sm">{formData.thumbnail.name}</p>
                   )}
-                  <p className="mt-2 text-gray-500 text-xs">Recommended size: 1200x630px. Max file size: 2MB</p>
+                  {!formData.thumbnail && formData.existingThumbnail && (
+                    <p className="mt-2 text-gray-500 text-sm">Using existing thumbnail</p>
+                  )}
+                  <p className="mt-2 text-gray-500 text-xs">
+                    Recommended size: 1200x630px. Max file size: 2MB
+                  </p>
                 </div>
               </div>
             </div>
 
             <div>
               <label className="block mb-2 font-medium text-gray-700 text-sm">
-                Text Editor<span className="text-red-500">*</span>
+                Konten<span className="text-red-500">*</span>
               </label>
-              <Editor
-                value={formData.content}
-                onChange={(value?: string | undefined) => {
-                  setFormData((prev) => ({ ...prev, content: value ?? "" }));
-                }}
-              />
+              <EditorNew value={formData.body} onChange={handleEditorChange} />
             </div>
 
             <div className="flex justify-end space-x-4 pt-6 border-t">
@@ -350,13 +332,18 @@ export default function EditPostForm() {
               </button>
               <button
                 type="button"
-                onClick={(e) => handleSubmit(e as any, "draft")}
-                className="bg-gray-500 hover:bg-gray-600 px-6 py-2 rounded-lg text-white"
+                onClick={() => handleSubmit(null, "draft")}
+                disabled={loading}
+                className="bg-gray-500 hover:bg-gray-600 px-6 py-2 rounded-lg text-white disabled:opacity-50"
               >
-                Save as Draft
+                {loading ? "Menyimpan..." : "Save as Draft"}
               </button>
-              <button type="submit" className="bg-red-500 hover:bg-red-600 px-6 py-2 rounded-lg text-white">
-                Simpan
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-red-500 hover:bg-red-600 px-6 py-2 rounded-lg text-white disabled:opacity-50"
+              >
+                {loading ? "Menyimpan..." : "Update & Publish"}
               </button>
             </div>
           </div>

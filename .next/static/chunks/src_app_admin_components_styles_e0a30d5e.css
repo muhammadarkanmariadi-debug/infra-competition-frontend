@@ -1,0 +1,191 @@
+/* [project]/src/app/admin/components/styles.css [app-client] (css) */
+.tiptap {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: .5rem;
+  min-height: 400px;
+  padding: 1rem;
+}
+
+.tiptap:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+.tiptap h1 {
+  margin-top: .67em;
+  margin-bottom: .67em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.tiptap h2 {
+  margin-top: .83em;
+  margin-bottom: .83em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.tiptap h3 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.tiptap h4 {
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.tiptap h5 {
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  font-size: .83em;
+  font-weight: bold;
+}
+
+.tiptap h6 {
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  font-size: .67em;
+  font-weight: bold;
+}
+
+.tiptap p {
+  margin: 1em 0;
+}
+
+.tiptap ul, .tiptap ol {
+  margin: 1em 0;
+  padding-left: 2rem;
+}
+
+.tiptap ul {
+  list-style-type: disc;
+}
+
+.tiptap ol {
+  list-style-type: decimal;
+}
+
+.tiptap li {
+  margin: .5em 0;
+}
+
+.tiptap code {
+  background-color: #f3f4f6;
+  border-radius: .25rem;
+  padding: .2em .4em;
+  font-family: Courier New, monospace;
+  font-size: .9em;
+}
+
+.tiptap pre {
+  color: #f9fafb;
+  background-color: #1f2937;
+  border-radius: .5rem;
+  margin: 1em 0;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.tiptap pre code {
+  color: inherit;
+  background: none;
+  padding: 0;
+  font-size: .875rem;
+}
+
+.tiptap blockquote {
+  color: #6b7280;
+  border-left: 4px solid #e5e7eb;
+  margin: 1em 0;
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+.tiptap hr {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 2em 0;
+}
+
+.tiptap img {
+  border-radius: .5rem;
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0;
+}
+
+.tiptap strong {
+  font-weight: bold;
+}
+
+.tiptap em {
+  font-style: italic;
+}
+
+.tiptap s {
+  text-decoration: line-through;
+}
+
+.control-group {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-bottom: none;
+  border-radius: .5rem .5rem 0 0;
+  padding: .5rem;
+}
+
+.button-group {
+  flex-wrap: wrap;
+  gap: .25rem;
+  display: flex;
+}
+
+.button-group button {
+  color: #374151;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: .375rem;
+  padding: .5rem .75rem;
+  font-size: .875rem;
+  font-weight: 500;
+  transition: all .15s;
+}
+
+.button-group button:hover:not(:disabled) {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.button-group button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.button-group button.is-active {
+  color: #fff;
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.button-group button.is-active:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.ProseMirror {
+  min-height: 400px;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+
+/*# sourceMappingURL=src_app_admin_components_styles_e0a30d5e.css.map*/
