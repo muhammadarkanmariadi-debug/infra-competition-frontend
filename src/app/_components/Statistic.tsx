@@ -54,7 +54,7 @@ const CounterCard: React.FC<{ prestasi: Prestasi }> = ({ prestasi }) => {
   }, [prestasi.target])
   return (
     <motion.div 
-      className='bg-white shadow-lg p-6 rounded-2xl text-center hover:scale-105 transition-transform duration-300 transform'
+      className='bg-white shadow-lg rounded-2xl text-center hover:scale-105 transition-transform duration-300 transform w-100 h-64 flex flex-col justify-center items-center'
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}

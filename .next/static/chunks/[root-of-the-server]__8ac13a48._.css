@@ -1394,6 +1394,13 @@
     overflow: hidden;
   }
 
+  .line-clamp-3 {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+
   .block {
     display: block;
   }
@@ -1486,8 +1493,16 @@
     height: calc(var(--spacing) * 56);
   }
 
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+
   .h-72 {
     height: calc(var(--spacing) * 72);
+  }
+
+  .h-80 {
+    height: calc(var(--spacing) * 80);
   }
 
   .h-\[0\.625rem\] {
@@ -1646,6 +1661,10 @@
     width: calc(var(--spacing) * 64);
   }
 
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+
   .w-\[0\.625rem\] {
     width: .625rem;
   }
@@ -1746,8 +1765,8 @@
     max-width: 900px;
   }
 
-  .max-w-\[1900px\] {
-    max-width: 1900px;
+  .max-w-\[1300px\] {
+    max-width: 1300px;
   }
 
   .max-w-lg {
@@ -2121,6 +2140,11 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0;
   }
 
   .border-2 {
@@ -3559,8 +3583,8 @@
   }
 
   @media (width >= 48rem) {
-    .md\:w-1\/2 {
-      width: 50%;
+    .md\:h-80 {
+      height: calc(var(--spacing) * 80);
     }
   }
 
@@ -3625,21 +3649,8 @@
   }
 
   @media (width >= 48rem) {
-    .md\:px-1 {
-      padding-inline: calc(var(--spacing) * 1);
-    }
-  }
-
-  @media (width >= 48rem) {
     .md\:px-16 {
       padding-inline: calc(var(--spacing) * 16);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:text-2xl {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
 
@@ -3664,6 +3675,13 @@
     }
   }
 
+  @media (width >= 48rem) {
+    .md\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+
   @media (width >= 64rem) {
     .lg\:ms-\[52px\] {
       margin-inline-start: 52px;
@@ -3679,6 +3697,12 @@
   @media (width >= 64rem) {
     .lg\:hidden {
       display: none;
+    }
+  }
+
+  @media (width >= 64rem) {
+    .lg\:h-96 {
+      height: calc(var(--spacing) * 96);
     }
   }
 

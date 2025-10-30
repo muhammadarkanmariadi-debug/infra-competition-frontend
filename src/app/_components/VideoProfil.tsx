@@ -38,7 +38,7 @@ export default function VideoProfil () {
             </linearGradient>
           </defs>
         </svg>
-        <div className='z-10 relative flex xl:flex-row flex-col items-center gap-10 grid-cols-1 md:grid-cols-2 mx-auto px-8 py-16 max-w-[1900px]'>
+        <div className='z-10 relative flex xl:flex-row flex-col items-center gap-10 grid-cols-1 md:grid-cols-2 mx-auto px-8 py-16 max-w-[1300px]'>
           {/* Kiri: teks */}
           <motion.div
             className=''
@@ -48,7 +48,7 @@ export default function VideoProfil () {
             viewport={{ once: true }}
           >
             <motion.h2
-              className='mb-6 font-bold text-white text-3xl md:text-5xl'
+              className='mb-6 font-bold text-white text-2xl md:text-4xl'
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -57,7 +57,7 @@ export default function VideoProfil () {
               Video Profil
             </motion.h2>
             <motion.p
-              className='text-white text-base md:text-2xl leading-relaxed'
+              className='text-white text-base md:text-xl leading-relaxed'
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -70,7 +70,7 @@ export default function VideoProfil () {
               <br />
               <br />
               Biar kalian tidak penasaran apa saja yang ada di dalam{' '}
-              <b>SMK Telkom Malang</b>, yuk segera tonton video profilnya!
+              <b> <br /> SMK Telkom Malang</b>, yuk segera tonton video profilnya!
             </motion.p>
           </motion.div>
 
