@@ -50,7 +50,7 @@ export default function VisiMisi() {
             transition={{ duration: 0.5, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            Mencetak lulusan berAKHLAK, ahli, dan berkebhinekaan global.
+            Mencetak lulusan berakhlak, ahli, dan berkebhinekaan global.
           </motion.p>
 
           <motion.h2 

@@ -19,7 +19,7 @@ function Header() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "mt-28",
+                className: "mt-16 sm:mt-20 md:mt-24 lg:mt-28 px-4 sm:px-6 lg:px-8",
                 initial: {
                     opacity: 0,
                     y: 50
@@ -34,10 +34,10 @@ function Header() {
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-center",
+                        className: "text-center max-w-7xl mx-auto",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
-                                className: "font-[700] text-[30px] text-primary 2xl:text-[60px] xl:text-[50px]",
+                                className: "font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[50px] 2xl:text-[60px] text-primary leading-tight",
                                 initial: {
                                     opacity: 0,
                                     scale: 0.8
@@ -57,7 +57,7 @@ function Header() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h3, {
-                                className: "mt-[2px] px-1 xl:px-0 font-[600] xl:font-[700] text-[22px] text-primary 2xl:text-[40px]",
+                                className: "mt-2 sm:mt-3 font-semibold sm:font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl 2xl:text-[40px] text-primary leading-tight",
                                 initial: {
                                     opacity: 0,
                                     y: 20
@@ -77,7 +77,7 @@ function Header() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
-                                className: "mt-[20px] px-4 xl:px-0 font-[400] text-black text-sm 2xl:text-xl",
+                                className: "mt-4 sm:mt-5 md:mt-6 font-normal text-black text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl leading-relaxed max-w-4xl mx-auto",
                                 initial: {
                                     opacity: 0,
                                     y: 20
@@ -127,7 +127,7 @@ function Header() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "drop-shadow-[0_4px_25px_rgba(225,95,96,0.35)] text-center",
+                        className: "drop-shadow-[0_4px_25px_rgba(225,95,96,0.35)] text-center mt-6 sm:mt-8 md:mt-10",
                         initial: {
                             opacity: 0,
                             scale: 0.9
@@ -152,8 +152,8 @@ function Header() {
                                     src: "/assets/image/bombi.png",
                                     alt: "Arrow Down",
                                     width: 400,
-                                    height: 0,
-                                    className: "z-[-1] relative mx-auto mt-[38px] w-[300px] xl:w-[400px] hover:scale-105 transition-transform duration-300"
+                                    height: 400,
+                                    className: "z-[-1] relative mx-auto w-48 sm:w-56 md:w-72 lg:w-80 xl:w-[400px] hover:scale-105 transition-transform duration-300"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
                                     lineNumber: 54,
@@ -166,7 +166,7 @@ function Header() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].a, {
                                 href: "/login",
-                                className: "flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto py-3 xl:py-5 rounded-full w-[400px] max-sm:w-[350px] xl:w- font-bold text-white text-2xl xl:text-4xl hover:scale-105 transition-all duration-300 [450px]",
+                                className: "flex justify-center items-center bg-primary hover:bg-opacity-90 hover:shadow-lg mx-auto mt-4 sm:mt-6 py-2.5 sm:py-3 md:py-4 xl:py-5 rounded-full w-[280px] sm:w-[320px] md:w-[380px] lg:w-[420px] xl:w-[450px] font-bold text-white text-lg sm:text-xl md:text-2xl xl:text-4xl hover:scale-105 transition-all duration-300",
                                 initial: {
                                     opacity: 0,
                                     y: 30
@@ -198,10 +198,10 @@ function Header() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "sm:hidden xl:block hiasan",
+                        className: "hidden lg:block",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "2xl:top-[-700px] 2xl:left-[100px] 2xl:relative kiri",
+                                className: "xl:relative xl:top-[600px] 2xl:top-[-700px] xl:left-[50px] 2xl:left-[100px]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
@@ -223,15 +223,15 @@ function Header() {
                                             alt: "Server Rack",
                                             width: 72,
                                             height: 72,
-                                            className: "max-md:hidden top-[150px] left-[153px] min-xl:absolute rotate-[-5deg]"
+                                            className: "absolute top-[150px] left-[153px] rotate-[-5deg]]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 78,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -255,15 +255,15 @@ function Header() {
                                             alt: "small triangle",
                                             width: 32,
                                             height: 28,
-                                            className: "max-md:hidden top-[236px] left-[263px] min-xl:absolute rotate-[-127deg]"
+                                            className: "absolute top-[236px] left-[263px] rotete-[-127deg]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 96,
+                                            lineNumber: 98,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 92,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -287,25 +287,25 @@ function Header() {
                                             alt: "segitiga kiri",
                                             width: 343.5,
                                             height: 307.5,
-                                            className: "max-md:hidden top-[359px] left-[100px] min-xl:absolute"
+                                            className: "absolute top-[359px] left-[200px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 110,
+                                            lineNumber: 112,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 106,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 75,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "2xl:top-[-700px] 2xl:right-[100px] 2xl:relative kanan",
+                                className: "xl:relative xl:top-[-600px] 2xl:top-[-700px] xl:right-[50px] 2xl:right-[100px]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
@@ -327,15 +327,15 @@ function Header() {
                                             alt: "triangle kanan",
                                             width: 318,
                                             height: 283.5,
-                                            className: "max-md:hidden top-[377px] right-[104px] min-xl:absolute"
+                                            className: "absolute top-[377px] right-[100px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 129,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 123,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -359,15 +359,15 @@ function Header() {
                                             alt: "desktop",
                                             width: 65,
                                             height: 65,
-                                            className: "max-md:hidden top-[400px] right-[350px] min-xl:absolute"
+                                            className: "absolute top-[400px] right-[350px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 143,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 137,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -391,15 +391,15 @@ function Header() {
                                             alt: "Server Rack",
                                             width: 32,
                                             height: 28,
-                                            className: "max-md:hidden top-[183px] right-[295px] min-xl:absolute rotate-[-5deg]"
+                                            className: "absolute top-[183px] right-[295px] rotate-[-5deg]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 157,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -423,21 +423,21 @@ function Header() {
                                             alt: "triangle besar",
                                             width: 90,
                                             height: 81,
-                                            className: "max-md:hidden top-[264px] right-[108px] min-xl:absolute"
+                                            className: "absolute top-[264px] right-[108px]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Header.tsx",
-                                            lineNumber: 169,
+                                            lineNumber: 171,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Header.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 165,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 120,
+                                lineNumber: 122,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -460,15 +460,15 @@ function Header() {
                                     alt: "panah kiri",
                                     width: 161,
                                     height: 32,
-                                    className: "max-md:hidden top-[640px] 2xl:top-[900px] left-[320px] 2xl:left-[500px] min-xl:absolute"
+                                    className: "absolute top-[640px] xl:top-[700px] 2xl:top-[900px] left-[320px] xl:left-[400px] 2xl:left-[500px]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
-                                    lineNumber: 185,
+                                    lineNumber: 187,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 179,
+                                lineNumber: 181,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -492,21 +492,21 @@ function Header() {
                                     alt: "panah kanan",
                                     width: 161,
                                     height: 32,
-                                    className: "max-md:hidden top-[485px] 2xl:top-[650px] right-[375px] 2xl:right-[600px] min-xl:absolute"
+                                    className: "absolute top-[485px] lg:top-[500px] xl:top-[550px] 2xl:top-[650px] right-[50px] xl:right-[580px] 2xl:right-[600px]"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
-                                    lineNumber: 199,
+                                    lineNumber: 201,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Header.tsx",
-                                lineNumber: 193,
+                                lineNumber: 195,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/Header.tsx",
-                        lineNumber: 74,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this)
                 ]
@@ -533,15 +533,15 @@ function Header() {
                     alt: "triangle top left",
                     width: 80,
                     height: 80,
-                    className: "hidden md:block top-16 md:top-20 left-10 md:left-24 absolute"
+                    className: "hidden md:block absolute top-12 md:top-20 lg:top-59 left-6 md:left-12 lg:left-24"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/Header.tsx",
-                    lineNumber: 216,
+                    lineNumber: 218,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Header.tsx",
-                lineNumber: 211,
+                lineNumber: 213,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -562,15 +562,15 @@ function Header() {
                     alt: "triangle top right",
                     width: 80,
                     height: 80,
-                    className: "hidden md:block top-16 md:top-20 right-10 md:right-24 absolute"
+                    className: "hidden md:block absolute top-12 md:top-16 lg:top-59 right-6 md:right-12 lg:right-24"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/Header.tsx",
-                    lineNumber: 229,
+                    lineNumber: 231,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Header.tsx",
-                lineNumber: 224,
+                lineNumber: 226,
                 columnNumber: 7
             }, this)
         ]
@@ -2117,7 +2117,7 @@ function VideoProfil() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "z-10 relative flex xl:flex-row flex-col items-center gap-10 grid-cols-1 md:grid-cols-2 mx-auto px-8 py-16 max-w-[1900px]",
+                    className: "z-10 relative flex xl:flex-row flex-col items-center gap-10 grid-cols-1 md:grid-cols-2 mx-auto px-8 py-16 max-w-[1300px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                             className: "",
@@ -2138,7 +2138,7 @@ function VideoProfil() {
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                    className: "mb-6 font-bold text-white text-3xl md:text-5xl",
+                                    className: "mb-6 font-bold text-white text-2xl md:text-4xl",
                                     initial: {
                                         opacity: 0,
                                         scale: 0.9
@@ -2161,7 +2161,7 @@ function VideoProfil() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
-                                    className: "text-white text-base md:text-2xl leading-relaxed",
+                                    className: "text-white text-base md:text-xl leading-relaxed",
                                     initial: {
                                         opacity: 0,
                                         y: 20
@@ -2192,8 +2192,16 @@ function VideoProfil() {
                                         "Biar kalian tidak penasaran apa saja yang ada di dalam",
                                         ' ',
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                            children: "SMK Telkom Malang"
-                                        }, void 0, false, {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                    fileName: "[project]/src/app/_components/VideoProfil.tsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 19
+                                                }, this),
+                                                " SMK Telkom Malang"
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/src/app/_components/VideoProfil.tsx",
                                             lineNumber: 73,
                                             columnNumber: 15
@@ -2411,7 +2419,7 @@ function WhyUs() {
                             duration: 0.6,
                             delay: 0.2
                         },
-                        children: "why us?"
+                        children: "Why Us?"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/WhyUs.tsx",
                         lineNumber: 47,
@@ -2429,7 +2437,7 @@ function WhyUs() {
                         },
                         transition: {
                             duration: 0.6,
-                            delay: 0.4
+                            delaeksy: 0.4
                         },
                         children: "Mengapa Harus Moklet ?"
                     }, void 0, false, {
@@ -2667,7 +2675,7 @@ function VisiMisi() {
                                 viewport: {
                                     once: true
                                 },
-                                children: "Mencetak lulusan berAKHLAK, ahli, dan berkebhinekaan global."
+                                children: "Mencetak lulusan berakhlak, ahli, dan berkebhinekaan global."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/VisiMisi.tsx",
                                 lineNumber: 46,
@@ -3687,22 +3695,17 @@ const CounterCard = ({ prestasi })=>{
         prestasi.target
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-        className: "relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-18 border-4 border-gray-300/50 rounded-full w-[300px] h-[300px] text-center hover:scale-110 transition-all duration-500 transform",
+        className: "bg-white shadow-lg rounded-2xl text-center hover:scale-105 transition-transform duration-300 transform w-100 h-64 flex flex-col justify-center items-center",
         initial: {
             opacity: 0,
-            y: 50,
-            scale: 0.8
+            y: 50
         },
         whileInView: {
             opacity: 1,
-            y: 0,
-            scale: 1,
-            transition: {
-                duration: 0.6,
-                type: 'spring',
-                bounce: 0.5,
-                stiffness: 100
-            }
+            y: 0
+        },
+        transition: {
+            duration: 0.6
         },
         viewport: {
             once: true
@@ -3730,7 +3733,7 @@ const CounterCard = ({ prestasi })=>{
                 className: "absolute inset-4 border-2 border-gray-400/30 rounded-full"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 97,
+                lineNumber: 88,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3738,7 +3741,7 @@ const CounterCard = ({ prestasi })=>{
                 children: "🎓 "
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 99,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3752,7 +3755,7 @@ const CounterCard = ({ prestasi })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                        lineNumber: 103,
+                        lineNumber: 94,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3760,13 +3763,13 @@ const CounterCard = ({ prestasi })=>{
                         children: prestasi.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                        lineNumber: 107,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 102,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3791,7 +3794,7 @@ const CounterCard = ({ prestasi })=>{
                 children: "✨"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 110,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3817,7 +3820,7 @@ const CounterCard = ({ prestasi })=>{
                 children: "✨"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 117,
+                lineNumber: 108,
                 columnNumber: 7
             }, this)
         ]
@@ -3890,7 +3893,7 @@ const CounterCard2 = ({ murid })=>{
                 className: "absolute inset-4 border-2 border-gray-400/30 rounded-full"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 165,
+                lineNumber: 156,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3898,7 +3901,7 @@ const CounterCard2 = ({ murid })=>{
                 children: "👨‍🎓 "
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 167,
+                lineNumber: 158,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3912,7 +3915,7 @@ const CounterCard2 = ({ murid })=>{
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                        lineNumber: 171,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3920,13 +3923,13 @@ const CounterCard2 = ({ murid })=>{
                         children: murid.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                        lineNumber: 175,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 170,
+                lineNumber: 161,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3951,7 +3954,7 @@ const CounterCard2 = ({ murid })=>{
                 children: "✨"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 178,
+                lineNumber: 169,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3977,13 +3980,13 @@ const CounterCard2 = ({ murid })=>{
                 children: "✨"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 185,
+                lineNumber: 176,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/Statistic.tsx",
-        lineNumber: 145,
+        lineNumber: 136,
         columnNumber: 5
     }, this);
 };
@@ -4034,7 +4037,7 @@ const Statistic = ()=>{
                             fill: "url(#gradienName)"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Statistic.tsx",
-                            lineNumber: 221,
+                            lineNumber: 212,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
@@ -4050,7 +4053,7 @@ const Statistic = ()=>{
                                         stopColor: "#E9E2EA"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 225,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
@@ -4058,29 +4061,29 @@ const Statistic = ()=>{
                                         stopColor: "#F5F5F5"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                                        lineNumber: 235,
+                                        lineNumber: 226,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                                lineNumber: 226,
+                                lineNumber: 217,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Statistic.tsx",
-                            lineNumber: 225,
+                            lineNumber: 216,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/Statistic.tsx",
-                    lineNumber: 212,
+                    lineNumber: 203,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 206,
+                lineNumber: 197,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4115,7 +4118,7 @@ const Statistic = ()=>{
                         children: "Statistik Murid Kami"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                        lineNumber: 248,
+                        lineNumber: 239,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -4135,13 +4138,13 @@ const Statistic = ()=>{
                         children: "Statistik Murid & Alumni"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                        lineNumber: 256,
+                        lineNumber: 247,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 242,
+                lineNumber: 233,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4193,27 +4196,27 @@ const Statistic = ()=>{
                                             prestasi: prestasi
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Statistic.tsx",
-                                            lineNumber: 288,
+                                            lineNumber: 279,
                                             columnNumber: 19
                                         }, this)
                                     }, index, false, {
                                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                                        lineNumber: 281,
+                                        lineNumber: 272,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                                lineNumber: 274,
+                                lineNumber: 265,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Statistic.tsx",
-                            lineNumber: 273,
+                            lineNumber: 264,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                        lineNumber: 267,
+                        lineNumber: 258,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4263,33 +4266,33 @@ const Statistic = ()=>{
                                             murid: murid
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Statistic.tsx",
-                                            lineNumber: 317,
+                                            lineNumber: 308,
                                             columnNumber: 19
                                         }, this)
                                     }, index, false, {
                                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                                        lineNumber: 309,
+                                        lineNumber: 300,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                                lineNumber: 302,
+                                lineNumber: 293,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Statistic.tsx",
-                            lineNumber: 301,
+                            lineNumber: 292,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
-                        lineNumber: 295,
+                        lineNumber: 286,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 266,
+                lineNumber: 257,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -4308,13 +4311,13 @@ const Statistic = ()=>{
                 }
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
-                lineNumber: 326,
+                lineNumber: 317,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/Statistic.tsx",
-        lineNumber: 198,
+        lineNumber: 189,
         columnNumber: 5
     }, this);
 };

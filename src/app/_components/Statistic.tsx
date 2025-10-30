@@ -74,20 +74,11 @@ const CounterCard: React.FC<{ prestasi: Prestasi }> = ({ prestasi }) => {
     return () => clearInterval(timer)
   }, [prestasi.target])
   return (
-    <motion.div
-      className='relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-18 border-4 border-gray-300/50 rounded-full w-[300px] h-[300px] text-center hover:scale-110 transition-all duration-500 transform'
-      initial={{ opacity: 0, y: 50, scale: 0.8 }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        transition: {
-          duration: 0.6,
-          type: 'spring',
-          bounce: 0.5,
-          stiffness: 100
-        }
-      }}
+    <motion.div 
+      className='bg-white shadow-lg rounded-2xl text-center hover:scale-105 transition-transform duration-300 transform w-100 h-64 flex flex-col justify-center items-center'
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
       viewport={{ once: true }}
       whileHover={{ scale: 1.1, rotate: 5 }}
       animate={{ y: [0, -10, 0] }} // Constant bouncing animation

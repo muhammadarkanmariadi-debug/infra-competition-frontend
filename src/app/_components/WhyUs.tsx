@@ -50,13 +50,13 @@ export default function WhyUs() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          why us?
+          Why Us?
         </motion.h4>
         <motion.h2
           className="mt-2 font-[700] text-[32px] text-black sm:text-[40px]"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6, delaeksy: 0.4 }}
         >
           Mengapa Harus Moklet ?
         </motion.h2>

@@ -6,7 +6,7 @@ var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
 const e = new Error(`Could not parse module '[project]/src/app/layout.tsx'
 
-Unterminated string constant`);
+Expected ';', '}' or <eof>`);
 e.code = 'MODULE_UNPARSEABLE';
 throw e;}}),
 
