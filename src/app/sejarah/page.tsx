@@ -96,7 +96,7 @@ export default function Sejarah() {
   return (
     <main className="bg-white min-h-screen">
       {/* Header Section */}
-      <section className="relative bg-secondary py-20 overflow-hidden">
+      <section className="relative bg-secondary mt-10 py-20 overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="top-0 left-1/4 absolute bg-white blur-3xl rounded-full w-96 h-96"></div>

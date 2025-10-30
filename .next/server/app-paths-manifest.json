@@ -1,5 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/alumni/[slug]/page": "app/alumni/[slug]/page.js",
+  "/alumni/page": "app/alumni/page.js",
+  "/ekstrakurikuler/page": "app/ekstrakurikuler/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/org/page": "app/org/page.js",
+  "/organisasi/[id]/page": "app/organisasi/[id]/page.js",
+  "/organisasi/page": "app/organisasi/page.js",
+  "/page": "app/page.js",
+  "/post/[slug]/page": "app/post/[slug]/page.js",
+  "/posts/page": "app/posts/page.js",
+  "/sejarah/page": "app/sejarah/page.js"
 }
