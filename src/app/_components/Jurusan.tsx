@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { motion } from "framer-motion";
 
 interface Jurusan {
+  id: number;
   name: string
   thumbnail: string
   short_description: string
