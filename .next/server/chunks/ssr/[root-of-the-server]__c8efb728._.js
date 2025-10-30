@@ -5216,37 +5216,82 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 ;
 const Partner = ()=>{
-    // Data partner/sponsor - sesuaikan dengan logo yang tersedia
+    // Data partner/sponsor - Partner resmi SMK Telkom Malang
     const partners = [
         {
             id: 1,
             name: 'Telkom Indonesia',
-            logo: '/assets/image/partner.png'
+            logo: 'https://logo.clearbit.com/telkom.co.id'
         },
         {
             id: 2,
-            name: 'Logo Moklet',
-            logo: '/assets/image/logo.png'
+            name: 'Telkom University',
+            logo: 'https://logo.clearbit.com/telkomuniversity.ac.id'
         },
         {
             id: 3,
-            name: 'Moklet Dev',
-            logo: '/assets/image/logo-mokletdev.png'
+            name: 'Telkomsel',
+            logo: 'https://logo.clearbit.com/telkomsel.com'
         },
         {
             id: 4,
-            name: 'Metic Merch',
-            logo: '/assets/image/logo-meticmerch.png'
+            name: 'Indico',
+            logo: 'https://logo.clearbit.com/indico.co.id'
         },
         {
             id: 5,
-            name: 'Medcom',
-            logo: '/assets/image/logo-medcom.png'
+            name: 'MitraTel',
+            logo: 'https://logo.clearbit.com/mitratel.co.id'
         },
         {
             id: 6,
-            name: 'Icon Telkom',
-            logo: '/assets/image/icontelkom.ico'
+            name: 'Cisco',
+            logo: 'https://logo.clearbit.com/cisco.com'
+        },
+        {
+            id: 7,
+            name: 'Fortinet',
+            logo: 'https://logo.clearbit.com/fortinet.com'
+        },
+        {
+            id: 8,
+            name: 'Global Xtreme',
+            logo: 'https://logo.clearbit.com/globalxtreme.net'
+        },
+        {
+            id: 9,
+            name: 'Box Hill Institute',
+            logo: 'https://logo.clearbit.com/boxhill.edu.au'
+        },
+        {
+            id: 10,
+            name: 'Jagoan Hosting',
+            logo: 'https://logo.clearbit.com/jagoanhosting.com'
+        },
+        {
+            id: 11,
+            name: 'Alibaba Cloud',
+            logo: 'https://logo.clearbit.com/alibabacloud.com'
+        },
+        {
+            id: 12,
+            name: 'Lenovo',
+            logo: 'https://logo.clearbit.com/lenovo.com'
+        },
+        {
+            id: 13,
+            name: 'DOT Indonesia',
+            logo: 'https://logo.clearbit.com/dot.co.id'
+        },
+        {
+            id: 14,
+            name: 'SEVIMA',
+            logo: 'https://logo.clearbit.com/sevima.com'
+        },
+        {
+            id: 15,
+            name: 'Wahana Komputer',
+            logo: 'https://logo.clearbit.com/wahanakomputer.com'
         }
     ];
     // Duplikasi array untuk infinite scroll
@@ -5297,7 +5342,7 @@ const Partner = ()=>{
                             children: "Partner & Sponsor Kami"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Partner.tsx",
-                            lineNumber: 56,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -5320,7 +5365,7 @@ const Partner = ()=>{
                             children: "Bersama mitra terpercaya, kami membangun masa depan pendidikan teknologi"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Partner.tsx",
-                            lineNumber: 65,
+                            lineNumber: 110,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -5340,13 +5385,13 @@ const Partner = ()=>{
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Partner.tsx",
-                            lineNumber: 74,
+                            lineNumber: 119,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/Partner.tsx",
-                    lineNumber: 49,
+                    lineNumber: 94,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5356,14 +5401,14 @@ const Partner = ()=>{
                             className: "left-0 z-10 absolute inset-y-0 bg-gradient-to-r from-white via-white/50 to-transparent w-32 pointer-events-none"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Partner.tsx",
-                            lineNumber: 86,
+                            lineNumber: 131,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "right-0 z-10 absolute inset-y-0 bg-gradient-to-l from-white via-white/50 to-transparent w-32 pointer-events-none"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Partner.tsx",
-                            lineNumber: 87,
+                            lineNumber: 132,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5398,28 +5443,28 @@ const Partner = ()=>{
                                             className: "opacity-70 group-hover:opacity-100 grayscale group-hover:grayscale-0 max-w-[150px] max-h-[80px] object-contain transition-all duration-300"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Partner.tsx",
-                                            lineNumber: 111,
+                                            lineNumber: 156,
                                             columnNumber: 19
                                         }, this)
                                     }, `${partner.id}-${index}`, false, {
                                         fileName: "[project]/src/app/_components/Partner.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 151,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Partner.tsx",
-                                lineNumber: 91,
+                                lineNumber: 136,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/Partner.tsx",
-                            lineNumber: 90,
+                            lineNumber: 135,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/_components/Partner.tsx",
-                    lineNumber: 84,
+                    lineNumber: 129,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -5440,18 +5485,18 @@ const Partner = ()=>{
                     children: "Dipercaya oleh lebih dari 50+ institusi dan perusahaan terkemuka"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/Partner.tsx",
-                    lineNumber: 125,
+                    lineNumber: 170,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/_components/Partner.tsx",
-            lineNumber: 47,
+            lineNumber: 92,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/_components/Partner.tsx",
-        lineNumber: 46,
+        lineNumber: 91,
         columnNumber: 5
     }, this);
 };

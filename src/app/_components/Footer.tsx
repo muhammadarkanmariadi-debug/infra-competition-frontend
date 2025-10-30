@@ -9,7 +9,7 @@ export default function Footer () {
     <footer className='bg-white mt-5'>
       <div className='mx-auto px-6 md:px-16 py-12 max-w-7xl'>
         {/* Bagian atas */}
-        <div className='gap-10 md:gap-16 grid grid-cols-1 md:grid-cols-4'>
+        <div className='gap-8 md:gap-10 grid grid-cols-1 md:grid-cols-5'>
           {/* Kiri */}
           <div>
             <Image
@@ -27,8 +27,54 @@ export default function Footer () {
             </p>
           </div>
 
-
-           
+          {/* Aplikasi Moklet */}
+          <div>
+            <h3 className='mb-4 font-semibold text-gray-500 text-sm uppercase'>
+              Aplikasi Moklet
+            </h3>
+            <ul className='space-y-3'>
+              <li>
+                <Link
+                  href='https://mylms.telkomschools.sch.id/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  MyLMS
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='https://igracias.telkomuniversity.ac.id/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  iGracias
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='https://play.google.com/store/apps/details?id=com.moklet.app'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Moklet Apps
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='https://api-moklet.vercel.app/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  API Moklet
+                </Link>
+              </li>
+            </ul>
+          </div>
 
           {/* SMK Telkom Malang */}
           <div>
@@ -38,7 +84,7 @@ export default function Footer () {
             <ul className='space-y-3'>
               <li>
                 <Link
-                  href='/struktur'
+                  href='/structure'
                   className='text-gray-800 hover:text-primary transition'
                 >
                   Struktur Organisasi
@@ -46,18 +92,36 @@ export default function Footer () {
               </li>
               <li>
                 <Link
-                  href='#'
+                  href='/organisasi'
                   className='text-gray-800 hover:text-primary transition'
                 >
-                  Sertifikat Akreditasi
+                  Organisasi Sekolah
                 </Link>
               </li>
               <li>
                 <Link
-                  href='#'
+                  href='/ekstrakurikuler'
                   className='text-gray-800 hover:text-primary transition'
                 >
-                  Virtual Tour
+                  Ekstrakurikuler
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='/alumni'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Alumni
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='https://vtour.smktelkom-mlg.sch.id/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-gray-800 hover:text-primary transition'
+                >
+                  Virtual Tour 360°
                 </Link>
               </li>
             </ul>
@@ -80,26 +144,28 @@ export default function Footer () {
               </li>
               <li>
                 <Link
-                  href='/berita'
+                  href='/posts'
                   className='text-gray-800 hover:text-primary transition'
                 >
-                  Berita
+                  Berita & Artikel
                 </Link>
               </li>
               <li>
                 <Link
-                  href='/tentang-kami'
+                  href='/#jurusan'
                   className='text-gray-800 hover:text-primary transition'
                 >
-                  Tentang Kami
+                  Jurusan
                 </Link>
               </li>
               <li>
                 <Link
-                  href='/hubungi-kami'
+                  href='https://ppdb.telkomschools.sch.id/signup?lemdik=51'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-gray-800 hover:text-primary transition'
                 >
-                  Hubungi Kami
+                  PPDB
                 </Link>
               </li>
             </ul>
@@ -132,7 +198,7 @@ export default function Footer () {
               </li>
               <li>
                 <Link
-                  href='https://www.youtube.com/officialsmktelkommalang'
+                  href='https://www.youtube.com/@smktelkommalang'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='flex items-center text-gray-800 hover:text-primary text-sm transition'
@@ -145,17 +211,29 @@ export default function Footer () {
                     className='mr-2'
                   />
                   <span className='leading-tight'>
-                    Official SMK Telkom Malang
+                    SMK Telkom Malang
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link
+                  href='https://smktelkom-mlg.sch.id'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='text-gray-800 hover:text-primary text-sm transition'
+                >
+                  Website Resmi
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href='mailto:info@smktelkom-mlg.sch.id'
+                  className='text-gray-800 hover:text-primary text-sm transition'
+                >
+                  Email Kami
+                </Link>
+              </li>
             </ul>
-
-
-
-
-
-
           </div>
         </div>
 

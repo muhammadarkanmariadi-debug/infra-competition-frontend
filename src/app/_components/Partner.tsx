@@ -5,37 +5,82 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const Partner = () => {
-  // Data partner/sponsor - sesuaikan dengan logo yang tersedia
+  // Data partner/sponsor - Partner resmi SMK Telkom Malang
   const partners = [
     {
       id: 1,
       name: 'Telkom Indonesia',
-      logo: '/assets/image/partner.png'
+      logo: 'https://logo.clearbit.com/telkom.co.id'
     },
     {
       id: 2,
-      name: 'Logo Moklet',
-      logo: '/assets/image/logo.png'
+      name: 'Telkom University',
+      logo: 'https://logo.clearbit.com/telkomuniversity.ac.id'
     },
     {
       id: 3,
-      name: 'Moklet Dev',
-      logo: '/assets/image/logo-mokletdev.png'
+      name: 'Telkomsel',
+      logo: 'https://logo.clearbit.com/telkomsel.com'
     },
     {
       id: 4,
-      name: 'Metic Merch',
-      logo: '/assets/image/logo-meticmerch.png'
+      name: 'Indico',
+      logo: 'https://logo.clearbit.com/indico.co.id'
     },
     {
       id: 5,
-      name: 'Medcom',
-      logo: '/assets/image/logo-medcom.png'
+      name: 'MitraTel',
+      logo: 'https://logo.clearbit.com/mitratel.co.id'
     },
     {
       id: 6,
-      name: 'Icon Telkom',
-      logo: '/assets/image/icontelkom.ico'
+      name: 'Cisco',
+      logo: 'https://logo.clearbit.com/cisco.com'
+    },
+    {
+      id: 7,
+      name: 'Fortinet',
+      logo: 'https://logo.clearbit.com/fortinet.com'
+    },
+    {
+      id: 8,
+      name: 'Global Xtreme',
+      logo: 'https://logo.clearbit.com/globalxtreme.net'
+    },
+    {
+      id: 9,
+      name: 'Box Hill Institute',
+      logo: 'https://logo.clearbit.com/boxhill.edu.au'
+    },
+    {
+      id: 10,
+      name: 'Jagoan Hosting',
+      logo: 'https://logo.clearbit.com/jagoanhosting.com'
+    },
+    {
+      id: 11,
+      name: 'Alibaba Cloud',
+      logo: 'https://logo.clearbit.com/alibabacloud.com'
+    },
+    {
+      id: 12,
+      name: 'Lenovo',
+      logo: 'https://logo.clearbit.com/lenovo.com'
+    },
+    {
+      id: 13,
+      name: 'DOT Indonesia',
+      logo: 'https://logo.clearbit.com/dot.co.id'
+    },
+    {
+      id: 14,
+      name: 'SEVIMA',
+      logo: 'https://logo.clearbit.com/sevima.com'
+    },
+    {
+      id: 15,
+      name: 'Wahana Komputer',
+      logo: 'https://logo.clearbit.com/wahanakomputer.com'
     }
   ]
 
