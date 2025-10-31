@@ -24,20 +24,20 @@ export default function JurusanSection () {
   }, [])
   return (
     <motion.section
-      className='relative bg-gradient-to-b py-20'
+      className='relative bg-gradient-to-b py-12 sm:py-16 md:py-20'
       id='jurusan'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <motion.div 
-        className='mx-auto px-6 text-center container'
+        className='mx-auto px-4 sm:px-6 md:px-8 text-center container'
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <motion.h2 
-          className='mb-4 font-bold text-black text-4xl'
+          className='mb-3 sm:mb-4 font-bold text-black text-2xl sm:text-3xl md:text-4xl'
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -45,7 +45,7 @@ export default function JurusanSection () {
           Jurusan Kami
         </motion.h2>
         <motion.p 
-          className='mx-auto mb-12 max-w-2xl text-black text-lg'
+          className='mx-auto mb-8 sm:mb-10 md:mb-12 px-4 max-w-2xl text-black text-sm sm:text-base md:text-lg'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -63,8 +63,8 @@ export default function JurusanSection () {
       >
         {data.map((item, index) => (
           <motion.div
-            className={`flex flex-wrap items-center my-8 rounded-2xl mx-20 ${
-              index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+            className={`flex flex-col lg:flex-row items-center my-6 sm:my-8 rounded-2xl mx-4 sm:mx-8 md:mx-12 lg:mx-20 gap-4 sm:gap-6 ${
+              index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
             }`}
             key={index}
             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
@@ -74,6 +74,7 @@ export default function JurusanSection () {
             whileHover={{ scale: 1.02 }}
           >
             <motion.div
+              className='flex justify-center w-full lg:w-auto'
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.2 + 0.1 }}
@@ -84,14 +85,14 @@ export default function JurusanSection () {
                 alt={item.name}
                 width={400}
                 height={150}
-                className='flex-shrink-0'
+                className='flex-shrink-0 w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] h-auto'
               />
             </motion.div>
             <motion.div
-              className={`flex  flex-col gap-8 ${
+              className={`flex flex-col gap-4 sm:gap-6 md:gap-8 w-full ${
                 index % 2 === 0
-                  ? 'ml-6 items-start'
-                  : 'mr-6 items-end text-right'
+                  ? 'lg:ml-6 items-center lg:items-start text-center lg:text-left'
+                  : 'lg:mr-6 items-center lg:items-end text-center lg:text-right'
               }`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +100,7 @@ export default function JurusanSection () {
               viewport={{ once: true }}
             >
               <motion.h3 
-                className='font-bold text-5xl'
+                className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl'
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
@@ -108,7 +109,7 @@ export default function JurusanSection () {
                 {item.name}
               </motion.h3>
               <motion.p 
-                className='max-w-4xl text-gray-600 text-xl'
+                className='px-4 lg:px-0 max-w-4xl text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl'
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
@@ -124,7 +125,7 @@ export default function JurusanSection () {
               >
                 <Link
                   href={`/jurusan/${item.id}`}
-                  className='hover:bg-primary mt-4 px-6 py-2 border border-primary rounded-lg w-fit font-semibold text-primary hover:text-white transition-colors duration-300'
+                  className='inline-block hover:bg-primary mt-2 sm:mt-4 px-5 sm:px-6 py-2 border border-primary rounded-lg w-fit font-semibold text-primary hover:text-white text-sm sm:text-base transition-colors duration-300'
                 >
                   Lihat Detail
                 </Link>

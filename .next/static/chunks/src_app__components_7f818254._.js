@@ -198,7 +198,7 @@ function Header() {
                         className: "hidden lg:block",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "2xl:top-[-820px] xl:top-[600px] 2xl:left-[-100px] xl:left-[50px] xl:relative",
+                                className: "2xl:top-[-820px] xl:top-[-700px] 2xl:left-[-100px] xl:left-[-150px] xl:relative xl",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         initial: {
@@ -478,7 +478,7 @@ function Header() {
                                     alt: "panah kanan",
                                     width: 161,
                                     height: 32,
-                                    className: "top-[485px] lg:top-[500px] 2xl:top-[650px] xl:top-[550px] right-[50px] 2xl:right-[500px] xl:right-[580px] absolute"
+                                    className: "top-[485px] lg:top-[500px] 2xl:top-[650px] xl:top-[550px] right-[50px] 2xl:right-[500px] xl:right-[400px] absolute"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Header.tsx",
                                     lineNumber: 195,
@@ -575,7 +575,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "CardLeader": (()=>CardLeader),
     "CardTeam": (()=>CardTeam),
     "FAQCard": (()=>FAQCard),
     "PortfolioCard": (()=>PortfolioCard)
@@ -586,52 +585,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
-const CardLeader = ({ data })=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-col items-center",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "shadow-md mb-4 rounded-full w-28 h-28 overflow-hidden",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    src: data.image,
-                    alt: data.name,
-                    width: 112,
-                    height: 112,
-                    className: "w-full h-full object-cover"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/_components/card.tsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 8,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: "font-semibold text-md",
-                children: data.name
-            }, void 0, false, {
-                fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "bg-red-100 mt-1 px-3 py-1 rounded-full text-red-600 text-sm",
-                children: data.role
-            }, void 0, false, {
-                fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 18,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/app/_components/card.tsx",
-        lineNumber: 7,
-        columnNumber: 5
-    }, this);
-};
-_c = CardLeader;
 const CardTeam = ({ data })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex items-center gap-4 bg-white shadow-md px-4 py-3 border border-[#E2E8F0] rounded-xl",
@@ -646,12 +599,12 @@ const CardTeam = ({ data })=>{
                     className: "w-full h-full object-cover"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
-                    lineNumber: 31,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 30,
+                lineNumber: 11,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -662,7 +615,7 @@ const CardTeam = ({ data })=>{
                         children: data.name
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 40,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -670,23 +623,23 @@ const CardTeam = ({ data })=>{
                         children: data.role
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 41,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 39,
+                lineNumber: 20,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/card.tsx",
-        lineNumber: 29,
+        lineNumber: 10,
         columnNumber: 5
     }, this);
 };
-_c1 = CardTeam;
+_c = CardTeam;
 function PortfolioCard({ portfolio }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "relative flex flex-col bg-white shadow-lg my-5 rounded-2xl max-w-md h-[450px] overflow-hidden",
@@ -700,12 +653,12 @@ function PortfolioCard({ portfolio }) {
                     className: "w-full h-full object-cover"
                 }, void 0, false, {
                     fileName: "[project]/src/app/_components/card.tsx",
-                    lineNumber: 61,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 60,
+                lineNumber: 41,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -721,7 +674,7 @@ function PortfolioCard({ portfolio }) {
                                     children: portfolio.title
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 54,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -729,18 +682,18 @@ function PortfolioCard({ portfolio }) {
                                     children: portfolio.date
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/_components/card.tsx",
-                            lineNumber: 72,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 71,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -753,7 +706,7 @@ function PortfolioCard({ portfolio }) {
                                         className: "rounded-md w-6 h-6 overflow-hidden"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -761,13 +714,13 @@ function PortfolioCard({ portfolio }) {
                                         children: portfolio.sosmed
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 67,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/card.tsx",
-                                lineNumber: 82,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -787,53 +740,53 @@ function PortfolioCard({ portfolio }) {
                                             d: "M9 5l7 7-7 7"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/card.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 81,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/card.tsx",
-                                        lineNumber: 95,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/card.tsx",
-                                lineNumber: 91,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 81,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 70,
+                lineNumber: 51,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/card.tsx",
-        lineNumber: 58,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
-_c2 = PortfolioCard;
+_c1 = PortfolioCard;
 function FAQCard({ profileImg, question, response }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-col items-end gap-3 mx-auto max-w-xl",
+        className: "flex flex-col items-end gap-2 sm:gap-3 mx-auto px-2 sm:px-4 max-w-xl",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center gap-2",
+                className: "flex items-center gap-1.5 sm:gap-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "bg-white/30 px-4 py-2 rounded-2xl text-white text-sm",
+                        className: "bg-white/30 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl text-white text-xs sm:text-sm",
                         children: question
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 125,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -841,20 +794,20 @@ function FAQCard({ profileImg, question, response }) {
                         alt: "Profile",
                         width: 40,
                         height: 40,
-                        className: "rounded-full"
+                        className: "rounded-full w-8 sm:w-10 h-8 sm:h-10"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 128,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 124,
+                lineNumber: 105,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-start gap-3",
+                className: "flex items-start gap-2 sm:gap-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         src: "/assets/image/tsp.png" // telkom 
@@ -862,55 +815,54 @@ function FAQCard({ profileImg, question, response }) {
                         alt: "Mascot",
                         width: 40,
                         height: 40,
-                        className: "rounded-md"
+                        className: "rounded-md w-8 sm:w-10 h-8 sm:h-10"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 139,
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col gap-y-2",
+                        className: "flex flex-col gap-y-1.5 sm:gap-y-2",
                         children: response.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white shadow-md p-4 rounded-xl",
+                                className: "bg-white shadow-md p-3 sm:p-4 rounded-lg sm:rounded-xl",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-gray-700 text-sm",
+                                    className: "text-gray-700 text-xs sm:text-sm leading-relaxed",
                                     dangerouslySetInnerHTML: {
                                         __html: item
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/card.tsx",
-                                    lineNumber: 150,
+                                    lineNumber: 131,
                                     columnNumber: 13
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/src/app/_components/card.tsx",
-                                lineNumber: 149,
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/card.tsx",
-                        lineNumber: 146,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/card.tsx",
-                lineNumber: 138,
+                lineNumber: 119,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/card.tsx",
-        lineNumber: 122,
+        lineNumber: 103,
         columnNumber: 5
     }, this);
 }
-_c3 = FAQCard;
-var _c, _c1, _c2, _c3;
-__turbopack_context__.k.register(_c, "CardLeader");
-__turbopack_context__.k.register(_c1, "CardTeam");
-__turbopack_context__.k.register(_c2, "PortfolioCard");
-__turbopack_context__.k.register(_c3, "FAQCard");
+_c2 = FAQCard;
+var _c, _c1, _c2;
+__turbopack_context__.k.register(_c, "CardTeam");
+__turbopack_context__.k.register(_c1, "PortfolioCard");
+__turbopack_context__.k.register(_c2, "FAQCard");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -1856,7 +1808,7 @@ function Faq() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-                    className: "relative bg-[#E55959] px-6 py-16 overflow-hidden",
+                    className: "relative bg-[#E55959] px-4 sm:px-6 md:px-8 py-10 sm:py-12 md:py-16 overflow-hidden",
                     initial: {
                         opacity: 0,
                         scale: 0.95
@@ -1871,7 +1823,7 @@ function Faq() {
                     },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                            className: "mb-10 font-bold text-white text-3xl text-center",
+                            className: "mb-8 sm:mb-10 font-bold text-white text-2xl sm:text-3xl md:text-4xl text-center",
                             initial: {
                                 opacity: 0,
                                 y: -30
@@ -1923,7 +1875,7 @@ function Faq() {
                                     duration: 0.5
                                 },
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$_components$2f$const$2f$datas$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["dataFAQ"].map((faq, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "flex-shrink-0 px-2 w-full",
+                                        className: "flex-shrink-0 px-1 sm:px-2 w-full",
                                         initial: {
                                             opacity: 0,
                                             scale: 0.9
@@ -1965,7 +1917,7 @@ function Faq() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "z-10 relative flex justify-center items-center gap-x-2 mt-8",
+                            className: "z-10 relative flex justify-center items-center gap-x-2 mt-6 sm:mt-8",
                             initial: {
                                 opacity: 0,
                                 y: 20
@@ -2141,10 +2093,10 @@ function VideoProfil() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "z-10 relative flex xl:flex-row flex-col items-center gap-10 grid-cols-1 md:grid-cols-2 mx-auto px-8 py-16 max-w-[1300px]",
+                    className: "z-10 relative flex xl:flex-row flex-col items-center gap-6 sm:gap-8 md:gap-10 grid-cols-1 md:grid-cols-2 mx-auto px-4 sm:px-6 md:px-8 py-10 sm:py-12 md:py-16 max-w-[1300px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "",
+                            className: "w-full",
                             initial: {
                                 opacity: 0,
                                 x: -50
@@ -2162,7 +2114,7 @@ function VideoProfil() {
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                    className: "mb-6 font-bold text-white text-2xl md:text-4xl",
+                                    className: "mb-4 sm:mb-6 font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl",
                                     initial: {
                                         opacity: 0,
                                         scale: 0.9
@@ -2185,7 +2137,7 @@ function VideoProfil() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                    className: "text-white text-base md:text-xl leading-relaxed",
+                                    className: "text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed",
                                     initial: {
                                         opacity: 0,
                                         y: 20
@@ -2244,7 +2196,7 @@ function VideoProfil() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "relative",
+                            className: "relative w-full",
                             initial: {
                                 opacity: 0,
                                 x: 50
@@ -2282,16 +2234,24 @@ function VideoProfil() {
                                     lineNumber: 87,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                                    className: "relative shadow-2xl border-4 border-white rounded-xl w-full md:w-[560px] h-[315px]",
-                                    width: "560",
-                                    height: "315",
-                                    src: "https://www.youtube.com/embed/9xofia597HI?si=Oq-aoiTM-SVx_udM",
-                                    title: "YouTube video player",
-                                    frameBorder: "0",
-                                    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
-                                    referrerPolicy: "strict-origin-when-cross-origin",
-                                    allowFullScreen: true
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative w-full",
+                                    style: {
+                                        paddingBottom: '56.25%'
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
+                                        className: "top-0 left-0 absolute shadow-2xl border-2 border-white sm:border-3 md:border-4 rounded-lg sm:rounded-xl w-full h-full",
+                                        src: "https://www.youtube.com/embed/9xofia597HI?si=Oq-aoiTM-SVx_udM",
+                                        title: "YouTube video player",
+                                        frameBorder: "0",
+                                        allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+                                        referrerPolicy: "strict-origin-when-cross-origin",
+                                        allowFullScreen: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/_components/VideoProfil.tsx",
+                                        lineNumber: 93,
+                                        columnNumber: 15
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/VideoProfil.tsx",
                                     lineNumber: 92,
@@ -2417,7 +2377,7 @@ function WhyUs() {
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-        className: "bg-white mx-auto mt-16 pb-10 w-full max-w-[1280px]",
+        className: "bg-white mx-auto mt-10 sm:mt-12 md:mt-16 pb-8 sm:pb-10 w-full max-w-[1280px]",
         id: "why-us",
         initial: {
             opacity: 0,
@@ -2433,10 +2393,10 @@ function WhyUs() {
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-sm:px-3 text-center",
+                className: "px-4 sm:px-6 text-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h4, {
-                        className: "font-[500] text-[15px] text-gray-400",
+                        className: "font-[500] text-gray-400 md:text-[15px] text-xs sm:text-sm",
                         initial: {
                             opacity: 0,
                             y: -20
@@ -2456,7 +2416,7 @@ function WhyUs() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                        className: "mt-2 font-[700] text-[32px] text-black sm:text-[40px]",
+                        className: "mt-2 font-[700] text-black md:text-[32px] lg:text-[40px] text-2xl sm:text-3xl",
                         initial: {
                             opacity: 0,
                             scale: 0.9
@@ -2476,7 +2436,7 @@ function WhyUs() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                        className: "mt-3 font-[400] text-[15px] text-black leading-[21px]",
+                        className: "mt-2 sm:mt-3 font-[400] text-black sm:text-[15px] text-sm leading-relaxed",
                         initial: {
                             opacity: 0,
                             y: 20
@@ -2502,7 +2462,7 @@ function WhyUs() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 px-6 lg:px-24 text-center",
+                className: "gap-6 sm:gap-8 md:gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-8 sm:mt-10 px-4 sm:px-6 md:px-12 lg:px-24 text-center",
                 initial: {
                     opacity: 0
                 },
@@ -2535,27 +2495,34 @@ function WhyUs() {
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-center items-center bg-primary mb-5 rounded-full w-24 h-24",
-                                children: item.icon
+                                className: "flex justify-center items-center bg-primary mb-4 sm:mb-5 rounded-full w-20 sm:w-24 h-20 sm:h-24",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "",
+                                    children: item.icon
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/_components/WhyUs.tsx",
+                                    lineNumber: 92,
+                                    columnNumber: 15
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/WhyUs.tsx",
                                 lineNumber: 91,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "font-bold text-[#333333] text-lg",
+                                className: "font-bold text-[#333333] text-base sm:text-lg",
                                 children: item.title
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/WhyUs.tsx",
-                                lineNumber: 95,
+                                lineNumber: 97,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mt-2 text-gray-600 text-sm",
+                                className: "mt-2 px-2 text-gray-600 text-xs sm:text-sm leading-relaxed",
                                 children: item.description
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/WhyUs.tsx",
-                                lineNumber: 96,
+                                lineNumber: 98,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -2604,7 +2571,7 @@ function VisiMisi() {
         className: "relative bg-[#D65C5C] mt-10 overflow-hidden text-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "-top-6 left-0 absolute w-full",
+                className: "-top-4 sm:-top-6 left-0 absolute w-full",
                 initial: {
                     opacity: 0,
                     y: -20
@@ -2619,7 +2586,7 @@ function VisiMisi() {
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                     viewBox: "0 0 1440 60",
-                    className: "w-full h-[60px]",
+                    className: "w-full h-[40px] sm:h-[60px]",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                         d: "M0 20 Q720 50 1440 20 L1440 0 Q720 10 0 0 Z",
                         fill: "#d1d1d1"
@@ -2639,7 +2606,7 @@ function VisiMisi() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "z-10 relative items-center gap-8 grid md:grid-cols-2 mx-auto px-6 py-16 max-w-7xl",
+                className: "z-10 relative items-center gap-6 sm:gap-8 grid md:grid-cols-2 mx-auto px-4 sm:px-6 md:px-8 py-10 sm:py-12 md:py-16 max-w-7xl",
                 initial: {
                     opacity: 0,
                     y: 50
@@ -2672,7 +2639,7 @@ function VisiMisi() {
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                className: "mb-4 font-bold text-2xl md:text-3xl",
+                                className: "mb-3 sm:mb-4 font-bold text-xl sm:text-2xl md:text-3xl",
                                 initial: {
                                     opacity: 0,
                                     scale: 0.9
@@ -2695,7 +2662,7 @@ function VisiMisi() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                className: "mb-8",
+                                className: "mb-6 sm:mb-8 text-sm sm:text-base leading-relaxed",
                                 initial: {
                                     opacity: 0,
                                     y: 20
@@ -2718,7 +2685,7 @@ function VisiMisi() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                className: "mb-4 font-bold text-2xl md:text-3xl",
+                                className: "mb-3 sm:mb-4 font-bold text-xl sm:text-2xl md:text-3xl",
                                 initial: {
                                     opacity: 0,
                                     scale: 0.9
@@ -2741,7 +2708,7 @@ function VisiMisi() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].ol, {
-                                className: "space-y-2 pl-5 list-decimal",
+                                className: "space-y-2 pl-4 sm:pl-5 text-sm sm:text-base leading-relaxed list-decimal",
                                 initial: {
                                     opacity: 0,
                                     y: 20
@@ -2792,7 +2759,7 @@ function VisiMisi() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "relative flex justify-center md:justify-end",
+                        className: "relative flex justify-center md:justify-end mt-8 md:mt-0",
                         initial: {
                             opacity: 0,
                             x: 50
@@ -2833,7 +2800,7 @@ function VisiMisi() {
                                     alt: "Logo TS",
                                     width: 250,
                                     height: 250,
-                                    className: "opacity-80"
+                                    className: "opacity-80 w-40 sm:w-52 md:w-60 lg:w-64 h-40 sm:h-52 md:h-60 lg:h-64"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/VisiMisi.tsx",
                                     lineNumber: 99,
@@ -2845,7 +2812,7 @@ function VisiMisi() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
-                                className: "bottom-20 left-40 absolute bg-white/30 backdrop-blur px-4 py-2 rounded-lg font-medium text-white text-xl",
+                                className: "bottom-12 sm:bottom-16 md:bottom-20 left-28 sm:left-36 md:left-40 absolute bg-white/30 backdrop-blur px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium text-white text-sm sm:text-base md:text-lg lg:text-xl",
                                 initial: {
                                     opacity: 0,
                                     scale: 0.8
@@ -3064,7 +3031,7 @@ function JurusanSection() {
         }
     }["JurusanSection.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
-        className: "relative bg-gradient-to-b py-20",
+        className: "relative bg-gradient-to-b py-12 sm:py-16 md:py-20",
         id: "jurusan",
         initial: {
             opacity: 0,
@@ -3080,7 +3047,7 @@ function JurusanSection() {
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "mx-auto px-6 text-center container",
+                className: "mx-auto px-4 sm:px-6 md:px-8 text-center container",
                 initial: {
                     opacity: 0,
                     scale: 0.9
@@ -3095,7 +3062,7 @@ function JurusanSection() {
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                        className: "mb-4 font-bold text-black text-4xl",
+                        className: "mb-3 sm:mb-4 font-bold text-black text-2xl sm:text-3xl md:text-4xl",
                         initial: {
                             opacity: 0,
                             y: -20
@@ -3111,11 +3078,11 @@ function JurusanSection() {
                         children: "Jurusan Kami"
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Jurusan.tsx",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                        className: "mx-auto mb-12 max-w-2xl text-black text-lg",
+                        className: "mx-auto mb-8 sm:mb-10 md:mb-12 px-4 max-w-2xl text-black text-sm sm:text-base md:text-lg",
                         initial: {
                             opacity: 0,
                             y: 20
@@ -3131,13 +3098,13 @@ function JurusanSection() {
                         children: "Pilih jurusan sesuai passion kamu! Semua jurusan di SMK Telkom Malang dirancang untuk mempersiapkan kamu jadi profesional muda di dunia teknologi."
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Jurusan.tsx",
-                        lineNumber: 46,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/_components/Jurusan.tsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3153,7 +3120,7 @@ function JurusanSection() {
                     delay: 0.8
                 },
                 children: data.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: `flex flex-wrap items-center my-8 rounded-2xl mx-20 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`,
+                        className: `flex flex-col lg:flex-row items-center my-6 sm:my-8 rounded-2xl mx-4 sm:mx-8 md:mx-12 lg:mx-20 gap-4 sm:gap-6 ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`,
                         initial: {
                             opacity: 0,
                             x: index % 2 === 0 ? -50 : 50
@@ -3174,6 +3141,7 @@ function JurusanSection() {
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                className: "flex justify-center w-full lg:w-auto",
                                 initial: {
                                     opacity: 0,
                                     scale: 0.9
@@ -3194,19 +3162,19 @@ function JurusanSection() {
                                     alt: item.name,
                                     width: 400,
                                     height: 150,
-                                    className: "flex-shrink-0"
+                                    className: "flex-shrink-0 w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] h-auto"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                    lineNumber: 81,
+                                    lineNumber: 83,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                lineNumber: 75,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: `flex  flex-col gap-8 ${index % 2 === 0 ? 'ml-6 items-start' : 'mr-6 items-end text-right'}`,
+                                className: `flex flex-col gap-4 sm:gap-6 md:gap-8 w-full ${index % 2 === 0 ? 'lg:ml-6 items-center lg:items-start text-center lg:text-left' : 'lg:mr-6 items-center lg:items-end text-center lg:text-right'}`,
                                 initial: {
                                     opacity: 0,
                                     y: 30
@@ -3224,7 +3192,7 @@ function JurusanSection() {
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h3, {
-                                        className: "font-bold text-5xl",
+                                        className: "font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl",
                                         initial: {
                                             opacity: 0,
                                             scale: 0.9
@@ -3243,11 +3211,11 @@ function JurusanSection() {
                                         children: item.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                        className: "max-w-4xl text-gray-600 text-xl",
+                                        className: "px-4 lg:px-0 max-w-4xl text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl",
                                         initial: {
                                             opacity: 0,
                                             y: 20
@@ -3266,7 +3234,7 @@ function JurusanSection() {
                                         children: item.short_description
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                        lineNumber: 109,
+                                        lineNumber: 111,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3287,39 +3255,39 @@ function JurusanSection() {
                                         },
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: `/jurusan/${item.id}`,
-                                            className: "hover:bg-primary mt-4 px-6 py-2 border border-primary rounded-lg w-fit font-semibold text-primary hover:text-white transition-colors duration-300",
+                                            className: "inline-block hover:bg-primary mt-2 sm:mt-4 px-5 sm:px-6 py-2 border border-primary rounded-lg w-fit font-semibold text-primary hover:text-white text-sm sm:text-base transition-colors duration-300",
                                             children: "Lihat Detail"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                            lineNumber: 124,
+                                            lineNumber: 126,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                        lineNumber: 118,
+                                        lineNumber: 120,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/_components/Jurusan.tsx",
-                                lineNumber: 89,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/app/_components/Jurusan.tsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Jurusan.tsx",
-                lineNumber: 57,
+                lineNumber: 58,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/_components/Jurusan.tsx",
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 }
@@ -3373,7 +3341,7 @@ const Berita = ()=>{
     const datas = data.slice(0, 3);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         id: "berita",
-        className: "py-20",
+        className: "px-4 sm:px-6 py-12 sm:py-16 md:py-20",
         initial: {
             opacity: 0,
             y: 50
@@ -3388,7 +3356,7 @@ const Berita = ()=>{
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
-                className: "font-[700] text-[48px] text-black text-center",
+                className: "font-[700] text-black lg:text-[48px] text-2xl sm:text-3xl md:text-4xl text-center",
                 initial: {
                     opacity: 0,
                     scale: 0.9
@@ -3408,7 +3376,7 @@ const Berita = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                className: "mx-auto mt-4 max-w-2xl font-[400] text-gray-600 text-xl text-center",
+                className: "mx-auto mt-3 sm:mt-4 px-4 max-w-2xl font-[400] text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl text-center",
                 children: "Prestasi Moklet dan Berita terkini Seputar Moklet"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Berita.tsx",
@@ -3416,7 +3384,7 @@ const Berita = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "flex xl:flex-row flex-col justify-center items-center gap-10 mx-auto mt-10",
+                className: "flex xl:flex-row flex-col justify-center items-center gap-6 sm:gap-8 md:gap-10 mx-auto mt-8 sm:mt-10",
                 initial: {
                     opacity: 0
                 },
@@ -3429,7 +3397,7 @@ const Berita = ()=>{
                 },
                 children: datas.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         onClick: ()=>handleCardClick(item.slug),
-                        className: "bg-white shadow-md hover:shadow-2xl px-[16.5px] py-[22.5px] rounded-[18px] w-[350px] transition-shadow duration-300",
+                        className: "bg-white shadow-md hover:shadow-2xl px-4 sm:px-[16.5px] py-5 sm:py-[22.5px] rounded-2xl sm:rounded-[18px] w-full max-w-[350px] transition-shadow duration-300 cursor-pointer",
                         initial: {
                             opacity: 0,
                             y: 50
@@ -3471,7 +3439,7 @@ const Berita = ()=>{
                                     alt: item.title,
                                     width: 339,
                                     height: 182,
-                                    className: "rounded-[20px] w-[339px] h-[182px] object-cover"
+                                    className: "rounded-xl sm:rounded-[20px] w-full h-auto object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/_components/Berita.tsx",
                                     lineNumber: 93,
@@ -3486,7 +3454,7 @@ const Berita = ()=>{
                                 className: "",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "flex flex-wrap gap-2 mt-[15px]",
+                                        className: "flex flex-wrap gap-1.5 sm:gap-2 mt-3 sm:mt-[15px]",
                                         initial: {
                                             opacity: 0,
                                             x: -20
@@ -3503,7 +3471,7 @@ const Berita = ()=>{
                                             once: true
                                         },
                                         children: item.tags.split(',').slice(0, 2).map((tag, tagIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-primary/10 hover:bg-primary/20 px-4 py-1.5 rounded-full font-medium text-primary text-sm transition-colors cursor-pointer",
+                                                className: "bg-primary/10 hover:bg-primary/20 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full font-medium text-primary text-xs sm:text-sm transition-colors cursor-pointer",
                                                 children: tag.trim()
                                             }, tagIndex, false, {
                                                 fileName: "[project]/src/app/_components/Berita.tsx",
@@ -3516,7 +3484,7 @@ const Berita = ()=>{
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                        className: "mt-[10px] font-[600] text-[22px] text-primary",
+                                        className: "mt-2 sm:mt-[10px] font-[600] text-primary md:text-[22px] text-lg sm:text-xl line-clamp-2",
                                         initial: {
                                             opacity: 0,
                                             y: 20
@@ -3539,7 +3507,7 @@ const Berita = ()=>{
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                        className: "font-[400] text-[15px] text-black",
+                                        className: "font-[400] text-black sm:text-[15px] text-sm line-clamp-3 leading-relaxed",
                                         initial: {
                                             opacity: 0,
                                             y: 20
@@ -3555,11 +3523,16 @@ const Berita = ()=>{
                                         viewport: {
                                             once: true
                                         },
-                                        children: [
-                                            item.short_body,
-                                            "..."
-                                        ]
-                                    }, void 0, true, {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            dangerouslySetInnerHTML: {
+                                                __html: item.short_body
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/_components/Berita.tsx",
+                                            lineNumber: 134,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/src/app/_components/Berita.tsx",
                                         lineNumber: 127,
                                         columnNumber: 15
@@ -3685,7 +3658,7 @@ const CounterCard = ({ prestasi })=>{
         prestasi.target
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-        className: "relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-18 border-4 border-gray-300/50 rounded-full w-[300px] h-[300px] text-center hover:scale-110 transition-all duration-500 transform",
+        className: "relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-8 sm:p-12 md:p-16 lg:p-18 border-2 border-gray-300/50 sm:border-3 md:border-4 rounded-full w-[200px] sm:w-[250px] md:w-[280px] lg:w-[300px] h-[200px] sm:h-[250px] md:h-[280px] lg:h-[300px] text-center hover:scale-110 transition-all duration-500 transform",
         initial: {
             opacity: 0,
             y: 50,
@@ -3725,14 +3698,14 @@ const CounterCard = ({ prestasi })=>{
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-4 border-2 border-gray-400/30 rounded-full"
+                className: "absolute inset-3 sm:inset-4 border-2 border-gray-400/30 rounded-full"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
                 lineNumber: 97,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "top-4 left-1/2 absolute text-primary text-3xl -translate-x-1/2 transform",
+                className: "top-2 sm:top-3 md:top-4 left-1/2 absolute text-primary text-xl sm:text-2xl md:text-3xl -translate-x-1/2 transform",
                 children: "🎓 "
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
@@ -3740,10 +3713,10 @@ const CounterCard = ({ prestasi })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col justify-center items-center h-full",
+                className: "flex flex-col justify-center items-center px-2 h-full",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "drop-shadow-lg font-bold text-primary text-5xl",
+                        className: "drop-shadow-lg font-bold text-primary text-3xl sm:text-4xl md:text-5xl",
                         children: [
                             count,
                             prestasi.suffix
@@ -3754,7 +3727,7 @@ const CounterCard = ({ prestasi })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "drop-shadow-md mt-2 font-bold text-gray-800 text-xl",
+                        className: "drop-shadow-md mt-1 sm:mt-2 font-bold text-gray-800 text-xs sm:text-sm md:text-base lg:text-xl leading-tight",
                         children: prestasi.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
@@ -3856,7 +3829,7 @@ const CounterCard2 = ({ murid })=>{
         murid.target
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-        className: "relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-18 border-4 border-gray-300/50 rounded-full w-[300px] h-[300px] text-center hover:scale-110 transition-all duration-500 transform",
+        className: "relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-8 sm:p-12 md:p-16 lg:p-18 border-2 border-gray-300/50 sm:border-3 md:border-4 rounded-full w-[200px] sm:w-[250px] md:w-[280px] lg:w-[300px] h-[200px] sm:h-[250px] md:h-[280px] lg:h-[300px] text-center hover:scale-110 transition-all duration-500 transform",
         initial: {
             opacity: 0,
             y: 50,
@@ -3896,14 +3869,14 @@ const CounterCard2 = ({ murid })=>{
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-4 border-2 border-gray-400/30 rounded-full"
+                className: "absolute inset-3 sm:inset-4 border-2 border-gray-400/30 rounded-full"
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
                 lineNumber: 165,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "top-4 left-1/2 absolute text-primary text-3xl -translate-x-1/2 transform",
+                className: "top-2 sm:top-3 md:top-4 left-1/2 absolute text-primary text-xl sm:text-2xl md:text-3xl -translate-x-1/2 transform",
                 children: "👨‍🎓 "
             }, void 0, false, {
                 fileName: "[project]/src/app/_components/Statistic.tsx",
@@ -3911,10 +3884,10 @@ const CounterCard2 = ({ murid })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col justify-center items-center h-full",
+                className: "flex flex-col justify-center items-center px-2 h-full",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "drop-shadow-lg font-bold text-primary text-5xl",
+                        className: "drop-shadow-lg font-bold text-primary text-3xl sm:text-4xl md:text-5xl",
                         children: [
                             count,
                             murid.suffix
@@ -3925,7 +3898,7 @@ const CounterCard2 = ({ murid })=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "drop-shadow-md mt-2 font-bold text-gray-800 text-xl",
+                        className: "drop-shadow-md mt-1 sm:mt-2 font-bold text-gray-800 text-xs sm:text-sm md:text-base lg:text-xl leading-tight",
                         children: murid.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/_components/Statistic.tsx",
@@ -4095,7 +4068,7 @@ const Statistic = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "pt-[60px] pb-[30px] text-center",
+                className: "px-4 pt-[40px] sm:pt-[50px] md:pt-[60px] pb-[20px] sm:pb-[25px] md:pb-[30px] text-center",
                 initial: {
                     opacity: 0,
                     scale: 0.9
@@ -4110,7 +4083,7 @@ const Statistic = ()=>{
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h4, {
-                        className: "font-medium text-[15px] text-white/60",
+                        className: "font-medium text-white/60 md:text-[15px] text-xs sm:text-sm",
                         initial: {
                             opacity: 0,
                             y: -20
@@ -4130,7 +4103,7 @@ const Statistic = ()=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
-                        className: "font-bold text-[45px] text-white",
+                        className: "font-bold text-white lg:text-[45px] text-2xl sm:text-3xl md:text-4xl",
                         initial: {
                             opacity: 0,
                             y: 20
@@ -4156,10 +4129,10 @@ const Statistic = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "py-10",
+                className: "py-6 sm:py-8 md:py-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "flex xl:flex-row flex-col items-center my-10 pb-[30px] w-full",
+                        className: "flex xl:flex-row flex-col items-center my-6 sm:my-8 md:my-10 pb-[20px] sm:pb-[25px] md:pb-[30px] w-full",
                         initial: {
                             opacity: 0
                         },
@@ -4171,9 +4144,9 @@ const Statistic = ()=>{
                             delay: 1.0
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "justify-center mx-auto px-6 w-full",
+                            className: "justify-center mx-auto px-4 sm:px-6 w-full",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "justify-center gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4",
+                                className: "justify-center gap-4 sm:gap-6 md:gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
                                 initial: {
                                     opacity: 0
                                 },
@@ -4228,7 +4201,7 @@ const Statistic = ()=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "flex xl:flex flex-col justify-center items-center gap-20 pb-[30px]",
+                        className: "flex xl:flex flex-col justify-center items-center gap-10 sm:gap-15 md:gap-20 pb-[20px] sm:pb-[25px] md:pb-[30px]",
                         initial: {
                             opacity: 0
                         },
@@ -4242,7 +4215,7 @@ const Statistic = ()=>{
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "justify-between",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "flex xl:flex-row flex-col justify-center gap-10 2xl:gap-80",
+                                className: "flex xl:flex-row flex-col justify-center gap-6 sm:gap-8 md:gap-10 2xl:gap-80 xl:gap-20",
                                 initial: {
                                     opacity: 0
                                 },
@@ -4401,7 +4374,7 @@ function AlurPendaftaran() {
     const [activeStep, setActiveStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].section, {
         id: "alur-pendaftaran",
-        className: "bg-white py-20",
+        className: "bg-white py-12 sm:py-16 md:py-20",
         initial: {
             opacity: 0
         },
@@ -4412,7 +4385,7 @@ function AlurPendaftaran() {
             duration: 0.8
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "items-center gap-10 grid md:grid-cols-2 mx-auto px-6 container",
+            className: "items-center gap-6 sm:gap-8 md:gap-10 grid md:grid-cols-2 mx-auto px-4 sm:px-6 md:px-8 lg:px-10 container",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                     initial: {
@@ -4429,7 +4402,7 @@ function AlurPendaftaran() {
                     },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                            className: "mb-2 font-bold text-gray-900 text-6xl",
+                            className: "mb-2 font-bold text-gray-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl",
                             initial: {
                                 opacity: 0,
                                 y: -30
@@ -4449,7 +4422,7 @@ function AlurPendaftaran() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                            className: "mb-6 font-light text-gray-600 text-4xl",
+                            className: "mb-4 sm:mb-6 font-light text-gray-600 text-2xl sm:text-3xl md:text-4xl",
                             initial: {
                                 opacity: 0,
                                 y: -20
@@ -4469,7 +4442,7 @@ function AlurPendaftaran() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                            className: "mb-8 max-w-lg text-gray-600 text-xl",
+                            className: "mb-6 sm:mb-8 max-w-lg text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl",
                             initial: {
                                 opacity: 0,
                                 y: -20
@@ -4489,7 +4462,7 @@ function AlurPendaftaran() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                            className: "gap-3 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-4 mb-8",
+                            className: "gap-2 sm:gap-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mb-6 sm:mb-8",
                             initial: "hidden",
                             animate: "visible",
                             variants: {
@@ -4505,7 +4478,7 @@ function AlurPendaftaran() {
                             },
                             children: steps.map((step, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                     onClick: ()=>setActiveStep(idx),
-                                    className: `py-10 rounded-lg border text-sm font-medium transition-all duration-200 ${activeStep === idx ? "bg-secondary text-white shadow-md" : "bg-white text-gray-800 border-gray-200 hover:bg-gray-100"}`,
+                                    className: `py-6 sm:py-8 md:py-10 rounded-lg border text-xs sm:text-sm font-medium transition-all duration-200 ${activeStep === idx ? "bg-secondary text-white shadow-md" : "bg-white text-gray-800 border-gray-200 hover:bg-gray-100"}`,
                                     variants: {
                                         hidden: {
                                             opacity: 0,
@@ -4528,7 +4501,7 @@ function AlurPendaftaran() {
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mb-1 font-semibold text-lg",
+                                            className: "mb-1 font-semibold text-base sm:text-lg",
                                             children: idx + 1
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/_components/AlurPendaftaran.tsx",
@@ -4550,7 +4523,7 @@ function AlurPendaftaran() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                             mode: "wait",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].ul, {
-                                className: "space-y-3",
+                                className: "space-y-2 sm:space-y-3",
                                 initial: {
                                     opacity: 0,
                                     y: 20
@@ -4567,7 +4540,7 @@ function AlurPendaftaran() {
                                     duration: 0.5
                                 },
                                 children: stepDetails[activeStep]?.map((text, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].li, {
-                                        className: "flex items-start space-x-3",
+                                        className: "flex items-start space-x-2 sm:space-x-3",
                                         initial: {
                                             opacity: 0,
                                             x: -10
@@ -4582,14 +4555,14 @@ function AlurPendaftaran() {
                                         },
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckSquare$3e$__["CheckSquare"], {
-                                                className: "flex-shrink-0 mt-0.5 w-5 h-5 text-red-500"
+                                                className: "flex-shrink-0 mt-0.5 w-4 sm:w-5 h-4 sm:h-5 text-red-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/AlurPendaftaran.tsx",
                                                 lineNumber: 134,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-700",
+                                                className: "text-gray-700 text-sm sm:text-base",
                                                 children: text
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/_components/AlurPendaftaran.tsx",
@@ -4619,7 +4592,7 @@ function AlurPendaftaran() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    className: "flex justify-center",
+                    className: "flex justify-center mt-8 md:mt-0",
                     initial: {
                         opacity: 0,
                         x: 50
@@ -4640,15 +4613,16 @@ function AlurPendaftaran() {
                             type: "spring",
                             stiffness: 300
                         },
+                        className: "w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px]",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "https://res.cloudinary.com/dvpb6z2oj/image/upload/Telemedicine_01_1_ue0yor",
                             alt: "Ilustrasi pendaftaran siswa",
                             width: 500,
                             height: 400,
-                            className: "drop-shadow-md"
+                            className: "drop-shadow-md w-full h-auto"
                         }, void 0, false, {
                             fileName: "[project]/src/app/_components/AlurPendaftaran.tsx",
-                            lineNumber: 153,
+                            lineNumber: 154,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
@@ -4703,7 +4677,7 @@ const Sambutan = ()=>{
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 id: "sambutan",
-                className: "relative bg-gradient-to-br from-secondary via-secondary to-primary/20 py-20 overflow-hidden",
+                className: "relative bg-gradient-to-br from-secondary via-secondary to-primary/20 py-12 sm:py-16 md:py-20 overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         className: "-top-[15px] left-0 absolute w-full overflow-hidden leading-none",
@@ -4785,10 +4759,10 @@ const Sambutan = ()=>{
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative mx-auto px-6 max-w-7xl container",
+                        className: "relative mx-auto px-4 sm:px-6 md:px-8 max-w-7xl container",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "mb-16 text-center",
+                                className: "mb-10 sm:mb-12 md:mb-16 text-center",
                                 initial: {
                                     opacity: 0,
                                     y: -30
@@ -4805,7 +4779,7 @@ const Sambutan = ()=>{
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
-                                        className: "mb-4 font-bold text-white text-5xl",
+                                        className: "mb-3 sm:mb-4 px-4 font-bold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl",
                                         initial: {
                                             opacity: 0,
                                             scale: 0.9
@@ -4828,7 +4802,7 @@ const Sambutan = ()=>{
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "bg-white/30 mx-auto rounded-full w-24 h-1",
+                                        className: "bg-white/30 mx-auto rounded-full w-16 sm:w-20 md:w-24 h-1",
                                         initial: {
                                             width: 0
                                         },
@@ -4854,7 +4828,7 @@ const Sambutan = ()=>{
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "items-center gap-12 grid lg:grid-cols-2",
+                                className: "items-center gap-8 sm:gap-10 md:gap-12 grid lg:grid-cols-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                         className: "relative",
@@ -4876,7 +4850,7 @@ const Sambutan = ()=>{
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "relative",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                className: "z-10 relative shadow-2xl rounded-3xl overflow-hidden",
+                                                className: "z-10 relative shadow-2xl rounded-2xl sm:rounded-3xl overflow-hidden",
                                                 initial: {
                                                     scale: 0.8,
                                                     opacity: 0
@@ -4911,7 +4885,7 @@ const Sambutan = ()=>{
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                        className: "bottom-0 left-0 absolute bg-gradient-to-t from-primary/95 to-transparent backdrop-blur-sm px-8 py-6 w-full",
+                                                        className: "bottom-0 left-0 absolute bg-gradient-to-t from-primary/95 to-transparent backdrop-blur-sm px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 w-full",
                                                         initial: {
                                                             y: 100,
                                                             opacity: 0
@@ -4929,7 +4903,7 @@ const Sambutan = ()=>{
                                                         },
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                className: "mb-1 font-bold text-white text-2xl",
+                                                                className: "mb-1 font-bold text-white text-lg sm:text-xl md:text-2xl",
                                                                 children: "Rahmat Dwi Djatmiko, S.Kom"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/_components/Smbutan.tsx",
@@ -4937,7 +4911,7 @@ const Sambutan = ()=>{
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-white/90 text-lg",
+                                                                className: "text-white/90 text-sm sm:text-base md:text-lg",
                                                                 children: "Kepala Sekolah"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/_components/Smbutan.tsx",
@@ -4967,7 +4941,7 @@ const Sambutan = ()=>{
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "relative",
+                                        className: "relative mt-8 lg:mt-0",
                                         initial: {
                                             opacity: 0,
                                             x: 50
@@ -4985,7 +4959,7 @@ const Sambutan = ()=>{
                                         },
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                className: "mb-6",
+                                                className: "mb-4 sm:mb-6",
                                                 initial: {
                                                     scale: 0,
                                                     rotate: -180
@@ -5002,7 +4976,7 @@ const Sambutan = ()=>{
                                                     once: true
                                                 },
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Quote$3e$__["Quote"], {
-                                                    className: "w-16 h-16 text-white/40"
+                                                    className: "w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 text-white/40"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/_components/Smbutan.tsx",
                                                     lineNumber: 141,
@@ -5014,7 +4988,7 @@ const Sambutan = ()=>{
                                                 columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                className: "space-y-6",
+                                                className: "space-y-4 sm:space-y-5 md:space-y-6",
                                                 initial: {
                                                     opacity: 0,
                                                     y: 30
@@ -5032,7 +5006,7 @@ const Sambutan = ()=>{
                                                 },
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "font-medium text-white/95 text-xl leading-relaxed",
+                                                        className: "font-medium text-white/95 text-base sm:text-lg md:text-xl leading-relaxed",
                                                         children: "Assalamu'alaikum Warahmatullahi Wabarakatuh,"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/_components/Smbutan.tsx",
@@ -5040,7 +5014,7 @@ const Sambutan = ()=>{
                                                         columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-white/90 text-lg leading-relaxed",
+                                                        className: "text-white/90 text-sm sm:text-base md:text-lg leading-relaxed",
                                                         children: [
                                                             "Puji syukur kehadirat Allah SWT yang telah memberikan rahmat dan karunia-Nya kepada kita semua. Selamat datang di ",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5059,7 +5033,7 @@ const Sambutan = ()=>{
                                                         columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-white/90 text-lg leading-relaxed",
+                                                        className: "text-white/90 text-sm sm:text-base md:text-lg leading-relaxed",
                                                         children: [
                                                             "Kami terus berinovasi dalam memberikan pendidikan berkualitas dengan memadukan",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -5096,7 +5070,7 @@ const Sambutan = ()=>{
                                                         columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-white/90 text-lg leading-relaxed",
+                                                        className: "text-white/90 text-sm sm:text-base md:text-lg leading-relaxed",
                                                         children: "Mari bersama-sama kita wujudkan visi menjadi lembaga pendidikan teknologi terdepan yang menghasilkan lulusan kompeten, berkarakter, dan siap bersaing di era digital global."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/_components/Smbutan.tsx",
@@ -5104,7 +5078,7 @@ const Sambutan = ()=>{
                                                         columnNumber: 15
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                                        className: "pt-4 font-semibold text-white text-xl",
+                                                        className: "pt-3 sm:pt-4 font-semibold text-white text-base sm:text-lg md:text-xl",
                                                         initial: {
                                                             opacity: 0
                                                         },
@@ -5131,7 +5105,7 @@ const Sambutan = ()=>{
                                                 columnNumber: 13
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                className: "flex items-center gap-4 mt-8",
+                                                className: "flex items-center gap-3 sm:gap-4 mt-6 sm:mt-8",
                                                 initial: {
                                                     opacity: 0,
                                                     y: 20
@@ -5159,7 +5133,7 @@ const Sambutan = ()=>{
                                                         className: "text-right",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "font-bold text-white text-lg",
+                                                                className: "font-bold text-white text-sm sm:text-base md:text-lg",
                                                                 children: "Rahmat Dwi Djatmiko, S.Kom"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/_components/Smbutan.tsx",
@@ -5167,7 +5141,7 @@ const Sambutan = ()=>{
                                                                 columnNumber: 17
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-white/80",
+                                                                className: "text-white/80 text-xs sm:text-sm md:text-base",
                                                                 children: "Kepala Sekolah"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/_components/Smbutan.tsx",

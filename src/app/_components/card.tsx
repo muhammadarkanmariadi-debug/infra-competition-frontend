@@ -1,26 +1,7 @@
 import Image from "next/image";
-import { LeaderComponent } from "./Leader";
+
 import Link from "next/link";
 
-export const CardLeader: React.FC<{ data: LeaderComponent }> = ({ data }) => {
-  return (
-    <div className="flex flex-col items-center">
-      <div className="shadow-md mb-4 rounded-full w-28 h-28 overflow-hidden">
-        <Image
-          src={data.image}
-          alt={data.name}
-          width={112}
-          height={112}
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <h3 className="font-semibold text-md">{data.name}</h3>
-      <p className="bg-red-100 mt-1 px-3 py-1 rounded-full text-red-600 text-sm">
-        {data.role}
-      </p>
-    </div>
-  );
-};
 
 export const CardTeam: React.FC<{
   data: { name: string; role: string; image: string };
@@ -119,10 +100,10 @@ export interface FAQCardProps {
 
 export function FAQCard({ profileImg, question, response }: FAQCardProps) {
   return (
-    <div className="flex flex-col items-end gap-3 mx-auto max-w-xl">
+    <div className="flex flex-col items-end gap-2 sm:gap-3 mx-auto px-2 sm:px-4 max-w-xl">
       {/* Question bubble */}
-      <div className="flex items-center gap-2">
-        <p className="bg-white/30 px-4 py-2 rounded-2xl text-white text-sm">
+      <div className="flex items-center gap-1.5 sm:gap-2">
+        <p className="bg-white/30 px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl sm:rounded-2xl text-white text-xs sm:text-sm">
           {question}
         </p>
         <Image
@@ -130,25 +111,25 @@ export function FAQCard({ profileImg, question, response }: FAQCardProps) {
           alt="Profile"
           width={40}
           height={40}
-          className="rounded-full"
+          className="rounded-full w-8 sm:w-10 h-8 sm:h-10"
         />
       </div>
 
       {/* Response card */}
-      <div className="flex items-start gap-3">
+      <div className="flex items-start gap-2 sm:gap-3">
         <Image
           src="/assets/image/tsp.png" // telkom 
           alt="Mascot"
           width={40}
           height={40}
-          className="rounded-md"
+          className="rounded-md w-8 sm:w-10 h-8 sm:h-10"
         />
-        <div className="flex flex-col gap-y-2">
+        <div className="flex flex-col gap-y-1.5 sm:gap-y-2">
 
         {response.map((item, index) => (
-          <div key={index} className="bg-white shadow-md p-4 rounded-xl">
+          <div key={index} className="bg-white shadow-md p-3 sm:p-4 rounded-lg sm:rounded-xl">
             <p
-              className="text-gray-700 text-sm"
+              className="text-gray-700 text-xs sm:text-sm leading-relaxed"
               dangerouslySetInnerHTML={{ __html: item }}
             />
           </div>

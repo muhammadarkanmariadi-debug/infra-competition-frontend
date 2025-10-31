@@ -254,20 +254,20 @@ function OrganisasiPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-white py-16 min-h-screen",
+                className: "bg-white py-10 sm:py-12 md:py-16 min-h-screen",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mx-auto px-6 max-w-7xl",
+                    className: "mx-auto px-4 sm:px-6 md:px-8 lg:px-10 max-w-7xl",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mb-20",
+                            className: "mb-12 sm:mb-16 md:mb-20",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex justify-center items-center gap-4 mb-8",
+                                    className: "flex justify-center items-center gap-3 sm:gap-4 mb-6 sm:mb-8",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-center items-center bg-black rounded-full w-14 h-14",
+                                            className: "flex justify-center items-center bg-black rounded-full w-12 sm:w-14 h-12 sm:h-14",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: "w-8 h-8 text-white",
+                                                className: "w-6 sm:w-8 h-6 sm:h-8 text-white",
                                                 fill: "none",
                                                 stroke: "currentColor",
                                                 viewBox: "0 0 24 24",
@@ -292,7 +292,7 @@ function OrganisasiPage() {
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                            className: "font-bold text-black text-5xl",
+                                            className: "font-bold text-black text-3xl sm:text-4xl md:text-5xl",
                                             children: "Organisasi"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/organisasi/page.tsx",
@@ -306,7 +306,7 @@ function OrganisasiPage() {
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mx-auto mb-8 max-w-3xl text-gray-600 text-center leading-relaxed",
+                                    className: "mx-auto mb-6 sm:mb-8 px-4 max-w-3xl text-gray-600 text-sm sm:text-base text-center leading-relaxed",
                                     children: "Struktur organisasi siswa, berbagai kegiatan yang dijalankan, serta peran penting Organisasi dalam membentuk kepemimpinan siswa di SMK Telkom Malang."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/organisasi/page.tsx",
@@ -314,18 +314,18 @@ function OrganisasiPage() {
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "gap-6 grid grid-cols-1 md:grid-cols-2",
+                                    className: "gap-4 sm:gap-6 grid grid-cols-1 md:grid-cols-2",
                                     children: organizations.map((org)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             href: `/organisasi/${org.id}`,
-                                            className: "group block bg-white hover:shadow-lg p-6 border border-gray-200 rounded-2xl transition-all duration-300",
+                                            className: "group block bg-white hover:shadow-lg p-4 sm:p-6 border border-gray-200 rounded-xl sm:rounded-2xl transition-all duration-300",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex justify-between items-center",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex flex-1 items-center gap-4",
+                                                        className: "flex flex-1 items-center gap-3 sm:gap-4",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex flex-shrink-0 justify-center items-center bg-gray-100 rounded-full w-16 h-16 overflow-hidden",
+                                                                className: "flex flex-shrink-0 justify-center items-center bg-gray-100 rounded-full w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 overflow-hidden",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                     src: org.logo,
                                                                     alt: `Logo ${org.name}`,
@@ -343,10 +343,10 @@ function OrganisasiPage() {
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex-1",
+                                                                className: "flex-1 min-w-0",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                        className: "mb-1 font-semibold text-black group-hover:text-primary text-xl transition-colors",
+                                                                        className: "mb-1 font-semibold text-black group-hover:text-primary text-base sm:text-lg md:text-xl truncate sm:whitespace-normal transition-colors",
                                                                         children: org.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/organisasi/page.tsx",
@@ -354,7 +354,7 @@ function OrganisasiPage() {
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-gray-500 text-sm line-clamp-2",
+                                                                        className: "text-gray-500 text-xs sm:text-sm line-clamp-2",
                                                                         children: org.short_description
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/organisasi/page.tsx",
@@ -374,7 +374,7 @@ function OrganisasiPage() {
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        className: "flex-shrink-0 ml-4 w-6 h-6 text-primary transition-transform group-hover:translate-x-1",
+                                                        className: "flex-shrink-0 ml-2 sm:ml-4 w-5 sm:w-6 h-5 sm:h-6 text-primary transition-transform group-hover:translate-x-1",
                                                         fill: "none",
                                                         stroke: "currentColor",
                                                         viewBox: "0 0 24 24",
@@ -419,12 +419,12 @@ function OrganisasiPage() {
                             className: "",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex justify-center items-center gap-4 mb-8",
+                                    className: "flex justify-center items-center gap-3 sm:gap-4 mb-6 sm:mb-8",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-center items-center bg-black rounded-full w-14 h-14",
+                                            className: "flex justify-center items-center bg-black rounded-full w-12 sm:w-14 h-12 sm:h-14",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: "w-8 h-8 text-white",
+                                                className: "w-6 sm:w-8 h-6 sm:h-8 text-white",
                                                 fill: "none",
                                                 stroke: "currentColor",
                                                 viewBox: "0 0 24 24",
@@ -449,7 +449,7 @@ function OrganisasiPage() {
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "font-bold text-black text-5xl text-center",
+                                            className: "font-bold text-black text-3xl sm:text-4xl md:text-5xl text-center",
                                             children: "Sub-organisasi"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/organisasi/page.tsx",
@@ -463,7 +463,7 @@ function OrganisasiPage() {
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mx-auto mb-8 max-w-4xl text-gray-600 text-center leading-relaxed",
+                                    className: "mx-auto mb-6 sm:mb-8 px-4 max-w-4xl text-gray-600 text-sm sm:text-base text-center leading-relaxed",
                                     children: "Sub-Organisasi adalah bagian penting dari organisasi siswa di SMK Telkom Malang, yang menampilkan beragam kegiatan dan inovasi yang dijalankan di bawah pengawasan OSIS dan MPK."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/organisasi/page.tsx",
@@ -471,18 +471,18 @@ function OrganisasiPage() {
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "gap-6 grid grid-cols-1 md:grid-cols-2",
+                                    className: "gap-4 sm:gap-6 grid grid-cols-1 md:grid-cols-2",
                                     children: subOrganisations.map((suborg)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             href: `/organisasi/${suborg.id}`,
-                                            className: "group block bg-white hover:shadow-lg p-6 border border-gray-200 rounded-2xl transition-all duration-300",
+                                            className: "group block bg-white hover:shadow-lg p-4 sm:p-6 border border-gray-200 rounded-xl sm:rounded-2xl transition-all duration-300",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex justify-between items-center",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex flex-1 items-center gap-4",
+                                                        className: "flex flex-1 items-center gap-3 sm:gap-4",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex flex-shrink-0 justify-center items-center bg-gray-100 rounded-full w-16 h-16 overflow-hidden",
+                                                                className: "flex flex-shrink-0 justify-center items-center bg-gray-100 rounded-full w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 overflow-hidden",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                     src: suborg.logo,
                                                                     alt: `Logo ${suborg.name}`,
@@ -500,10 +500,10 @@ function OrganisasiPage() {
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex-1",
+                                                                className: "flex-1 min-w-0",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                        className: "mb-1 font-semibold text-black group-hover:text-primary text-xl transition-colors",
+                                                                        className: "mb-1 font-semibold text-black group-hover:text-primary text-base sm:text-lg md:text-xl truncate sm:whitespace-normal transition-colors",
                                                                         children: suborg.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/organisasi/page.tsx",
@@ -511,7 +511,7 @@ function OrganisasiPage() {
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                        className: "text-gray-500 text-sm line-clamp-2",
+                                                                        className: "text-gray-500 text-xs sm:text-sm line-clamp-2",
                                                                         children: suborg.short_description
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/organisasi/page.tsx",
@@ -531,7 +531,7 @@ function OrganisasiPage() {
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        className: "flex-shrink-0 ml-4 w-6 h-6 text-primary transition-transform group-hover:translate-x-1",
+                                                        className: "flex-shrink-0 ml-2 sm:ml-4 w-5 sm:w-6 h-5 sm:h-6 text-primary transition-transform group-hover:translate-x-1",
                                                         fill: "none",
                                                         stroke: "currentColor",
                                                         viewBox: "0 0 24 24",

@@ -200,7 +200,7 @@ export default function News () {
                   >
                     <div className='relative mb-3 rounded-lg w-full h-48 overflow-hidden'>
                       <Image
-                        src={`http://localhost:8000${post.thumbnail}`}
+                        src={`${post.thumbnail}`}
                         fill
                         alt={post.title}
                         className='object-cover group-hover:scale-110 transition-transform duration-300'
@@ -211,8 +211,8 @@ export default function News () {
                       {post.title}
                     </h3>
 
-                    <p className='mb-3 text-gray-600 text-sm line-clamp-2'>
-                      {post.short_body}
+                    <p dangerouslySetInnerHTML={{ __html: post.short_body }} className='mb-3 text-gray-600 text-sm line-clamp-2'>
+                  
                     </p>
 
                     <div className='flex justify-between items-center'>

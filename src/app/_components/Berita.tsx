@@ -48,24 +48,24 @@ const Berita = () => {
   return (
     <motion.div
       id="berita"
-      className='py-20'
+      className='px-4 sm:px-6 py-12 sm:py-16 md:py-20'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       <motion.h1
-        className='font-[700] text-[48px] text-black text-center'
+        className='font-[700] text-black lg:text-[48px] text-2xl sm:text-3xl md:text-4xl text-center'
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         Berita Terbaru
       </motion.h1>
-      <motion.p className='mx-auto mt-4 max-w-2xl font-[400] text-gray-600 text-xl text-center'>
+      <motion.p className='mx-auto mt-3 sm:mt-4 px-4 max-w-2xl font-[400] text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl text-center'>
         Prestasi Moklet dan Berita terkini Seputar Moklet
       </motion.p>
       <motion.div
-        className='flex xl:flex-row flex-col justify-center items-center gap-10 mx-auto mt-10'
+        className='flex xl:flex-row flex-col justify-center items-center gap-6 sm:gap-8 md:gap-10 mx-auto mt-8 sm:mt-10'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
@@ -74,7 +74,7 @@ const Berita = () => {
           <motion.div
             onClick={() => handleCardClick(item.slug)}
             key={item.id}
-            className='bg-white shadow-md hover:shadow-2xl px-[16.5px] py-[22.5px] rounded-[18px] w-[350px] transition-shadow duration-300'
+            className='bg-white shadow-md hover:shadow-2xl px-4 sm:px-[16.5px] py-5 sm:py-[22.5px] rounded-2xl sm:rounded-[18px] w-full max-w-[350px] transition-shadow duration-300 cursor-pointer'
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -95,12 +95,12 @@ const Berita = () => {
                 alt={item.title}
                 width={339}
                 height={182}
-                className='rounded-[20px] w-[339px] h-[182px] object-cover'
+                className='rounded-xl sm:rounded-[20px] w-full h-auto object-cover'
               />
             </motion.div>
             <div className=''>
               <motion.div
-                className='flex flex-wrap gap-2 mt-[15px]'
+                className='flex flex-wrap gap-1.5 sm:gap-2 mt-3 sm:mt-[15px]'
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 + 0.2 }}
@@ -109,14 +109,14 @@ const Berita = () => {
                 {item.tags.split(',').slice(0, 2).map((tag: string, tagIndex: number) => (
                   <span
                     key={tagIndex}
-                    className='bg-primary/10 hover:bg-primary/20 px-4 py-1.5 rounded-full font-medium text-primary text-sm transition-colors cursor-pointer'
+                    className='bg-primary/10 hover:bg-primary/20 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full font-medium text-primary text-xs sm:text-sm transition-colors cursor-pointer'
                   >
                     {tag.trim()}
                   </span>
                 ))}
               </motion.div>
               <motion.h2
-                className='mt-[10px] font-[600] text-[22px] text-primary'
+                className='mt-2 sm:mt-[10px] font-[600] text-primary md:text-[22px] text-lg sm:text-xl line-clamp-2'
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
@@ -125,13 +125,13 @@ const Berita = () => {
                 {item.title}
               </motion.h2>
               <motion.p
-                className='font-[400] text-[15px] text-black'
+                className='font-[400] text-black sm:text-[15px] text-sm line-clamp-3 leading-relaxed'
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
                 viewport={{ once: true }}
               >
-                {item.short_body}...
+                <span dangerouslySetInnerHTML={{ __html: item.short_body }}></span>
               </motion.p>
             </div>
           </motion.div>

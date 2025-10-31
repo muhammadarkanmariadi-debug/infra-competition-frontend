@@ -12,7 +12,7 @@ import cn from '@/lib/clsx'
 
 import HamburgerIcon from './icons/HamburgerIcon'
 import { api } from './lib/api'
-  interface NavOption {
+interface NavOption {
   title: string
   href?: string
   dropdown?: DropdownItem[]
@@ -23,11 +23,7 @@ interface DropdownItem {
   href: string
 }
 
-
-
 export default function Navbar () {
-
-
   const pathname = usePathname()
   const [isExpanded, setIsExpanded] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -35,53 +31,62 @@ export default function Navbar () {
   const [mobileDropdown, setMobileDropdown] = useState<string | null>(null)
   const [closeTimeout, setCloseTimeout] = useState<NodeJS.Timeout | null>(null)
 
- 
-  
-  const navOptions: NavOption[] = useMemo(() => [
-    { 
-      title: 'Beranda', 
-      dropdown: [
-        { title: 'Beranda', href: '/' },
-        { title: 'Visi & Misi', href: '/#visi-misi' },
-        { title: 'Berita', href: '/#berita' },
-        { title: 'Sambutan Kepala Sekolah', href: '/#sambutan' },
-        { title: 'Keunggulan Kami', href: '/#why-us' },
-        { title: 'Statistik', href: '/#statistik' },
-        { title: 'Program Jurusan', href: '/#jurusan' },
-        { title: 'Video Profil', href: '/#video-profil' },
-        { title: 'Alur Pendaftaran', href: '/#alur-pendaftaran' },
-        { title: 'FAQ', href: '/#faq' },
-        { title: 'Aspirasi', href: '/#aspirasi' }
-      ]
-    },
-    {
-      title: 'Akademik',
-      dropdown: [
-        { title: 'MokletApps', href: '/https://app.smktelkom-mlg.sch.id/login' },
-        { title: 'Igracias', href: '/https://igracias.telkomschools.sch.id/ts/login/' },
-        { title: 'Mylms', href: '/https://mylms.telkomschools.sch.id/course/index.php?categoryid=1008' }
-      ]
-    },
-    { 
-      title: 'Program', 
-      dropdown: [
-        { title: 'RPL (Rekayasa Perangkat Lunak)', href: '/jurusan/1' },
-        { title: 'TKJ (Teknik Komputer dan Jaringan)', href: '/jurusan/2' },
-        { title: 'PG (Pengembangan Game)', href: '/jurusan/3' }
-      ]
-    },
-    {
-      title: 'Tentang Sekolah',
-      dropdown: [
-        { title: 'Berita Sekolah', href: '/posts' },
-        { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
-        { title: 'Organisasi', href: '/organisasi' },
-        { title: 'Sejarah', href: '/sejarah' }
-      ]
-    },
-    { title: 'Alumni', href: '/alumni'}
-  
-  ], [])
+  const navOptions: NavOption[] = useMemo(
+    () => [
+      {
+        title: 'Beranda',
+        dropdown: [
+          { title: 'Beranda', href: '/' },
+          { title: 'Visi & Misi', href: '/#visi-misi' },
+          { title: 'Berita', href: '/#berita' },
+          { title: 'Sambutan Kepala Sekolah', href: '/#sambutan' },
+          { title: 'Keunggulan Kami', href: '/#why-us' },
+          { title: 'Statistik', href: '/#statistik' },
+          { title: 'Program Jurusan', href: '/#jurusan' },
+          { title: 'Video Profil', href: '/#video-profil' },
+          { title: 'Alur Pendaftaran', href: '/#alur-pendaftaran' },
+          { title: 'FAQ', href: '/#faq' },
+          { title: 'Aspirasi', href: '/#aspirasi' }
+        ]
+      },
+      {
+        title: 'Akademik',
+        dropdown: [
+          {
+            title: 'MokletApps',
+            href: '/https://app.smktelkom-mlg.sch.id/login'
+          },
+          {
+            title: 'Igracias',
+            href: '/https://igracias.telkomschools.sch.id/ts/login/'
+          },
+          {
+            title: 'Mylms',
+            href: '/https://mylms.telkomschools.sch.id/course/index.php?categoryid=1008'
+          }
+        ]
+      },
+      {
+        title: 'Program',
+        dropdown: [
+          { title: 'RPL (Rekayasa Perangkat Lunak)', href: '/jurusan/1' },
+          { title: 'TKJ (Teknik Komputer dan Jaringan)', href: '/jurusan/2' },
+          { title: 'PG (Pengembangan Game)', href: '/jurusan/3' }
+        ]
+      },
+      { title: 'Alumni', href: '/alumni' },
+      {
+        title: 'Tentang Sekolah',
+        dropdown: [
+          { title: 'Berita Sekolah', href: '/posts' },
+          { title: 'Ekstrakurikuler', href: '/ekstrakurikuler' },
+          { title: 'Organisasi', href: '/organisasi' },
+          { title: 'Sejarah', href: '/sejarah' }
+        ]
+      }
+    ],
+    []
+  )
 
   useEffect(() => {
     function handleScroll () {
@@ -138,7 +143,7 @@ export default function Navbar () {
                 width={120}
                 height={50}
                 className={cn(
-                  `pointer-events-none h-[40px] object-contain transition-all duration-300 ${
+                  ` h-[40px] object-contain transition-all duration-300 ${
                     scrolled ? 'w-[120px]' : 'w-0'
                   }`
                 )}
@@ -148,7 +153,7 @@ export default function Navbar () {
           {navOptions.map(navOption => (
             <div
               key={navOption.title}
-              className='relative'
+              className='relative cursor-pointer'
               onMouseEnter={() =>
                 navOption.dropdown && handleMouseEnter(navOption.title)
               }
@@ -166,7 +171,7 @@ export default function Navbar () {
               ) : (
                 <button
                   className={cn(
-                    `flex items-center gap-1 py-2 rounded-full text-primary text-center transition-all duration-300 2xl:gap1-0`
+                    `flex items-center gap-1 py-2 rounded-full text-primary text-center transition-all duration-300 cursor-pointer 2xl:gap1-0`
                   )}
                 >
                   {navOption.title}
@@ -244,7 +249,7 @@ export default function Navbar () {
           </Link>
         </div>
         <button
-          className='xl:hidden block'
+          className='xl:hidden block cursor-pointer'
           onClick={() => setIsExpanded(!isExpanded)}
         >
           <HamburgerIcon />
@@ -265,13 +270,9 @@ export default function Navbar () {
               {navOption.href ? (
                 <Link
                   href={navOption.href}
-                  className={cn(
-                    `rounded-full text-center text-[16px] transition-all duration-300 hover:text-primary-400 ${
-                      pathname.split('/')[1] === navOption.href.split('/')[1]
-                        ? 'text-red-400'
-                        : ''
-                    }`
-                  )}
+                  className={
+                    `rounded-full text-[16px] hover:text-primary-400 text-center transition-all duration-300 text-primary`
+                  }
                   onClick={() => setIsExpanded(false)}
                 >
                   {navOption.title}

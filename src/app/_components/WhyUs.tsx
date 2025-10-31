@@ -36,16 +36,16 @@ export default function WhyUs() {
 
   return (
     <motion.div
-      className="bg-white mx-auto mt-16 pb-10 w-full max-w-[1280px]"
+      className="bg-white mx-auto mt-10 sm:mt-12 md:mt-16 pb-8 sm:pb-10 w-full max-w-[1280px]"
       id="why-us"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       {/* Judul */}
-      <div className="max-sm:px-3 text-center">
+      <div className="px-4 sm:px-6 text-center">
         <motion.h4
-          className="font-[500] text-[15px] text-gray-400"
+          className="font-[500] text-gray-400 md:text-[15px] text-xs sm:text-sm"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -53,7 +53,7 @@ export default function WhyUs() {
           Why Us?
         </motion.h4>
         <motion.h2
-          className="mt-2 font-[700] text-[32px] text-black sm:text-[40px]"
+          className="mt-2 font-[700] text-black md:text-[32px] lg:text-[40px] text-2xl sm:text-3xl"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -61,7 +61,7 @@ export default function WhyUs() {
           Mengapa Harus Moklet ?
         </motion.h2>
         <motion.p
-          className="mt-3 font-[400] text-[15px] text-black leading-[21px]"
+          className="mt-2 sm:mt-3 font-[400] text-black sm:text-[15px] text-sm leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
@@ -72,7 +72,7 @@ export default function WhyUs() {
 
       {/* Grid Card */}
       <motion.div
-        className="gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 px-6 lg:px-24 text-center"
+        className="gap-6 sm:gap-8 md:gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-8 sm:mt-10 px-4 sm:px-6 md:px-12 lg:px-24 text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.8 }}
@@ -88,12 +88,14 @@ export default function WhyUs() {
             whileHover={{ scale: 1.05 }}
           >
             {/* ✅ Rounded Full Circle */}
-            <div className="flex justify-center items-center bg-primary mb-5 rounded-full w-24 h-24">
-              {item.icon}
+            <div className="flex justify-center items-center bg-primary mb-4 sm:mb-5 rounded-full w-20 sm:w-24 h-20 sm:h-24">
+              <div className="">
+                {item.icon}
+              </div>
             </div>
 
-            <h3 className="font-bold text-[#333333] text-lg">{item.title}</h3>
-            <p className="mt-2 text-gray-600 text-sm">{item.description}</p>
+            <h3 className="font-bold text-[#333333] text-base sm:text-lg">{item.title}</h3>
+            <p className="mt-2 px-2 text-gray-600 text-xs sm:text-sm leading-relaxed">{item.description}</p>
           </motion.div>
         ))}
       </motion.div>

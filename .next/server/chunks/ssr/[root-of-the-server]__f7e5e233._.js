@@ -474,7 +474,7 @@ function News() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "relative mb-3 rounded-lg w-full h-48 overflow-hidden",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                        src: `http://localhost:8000${post.thumbnail}`,
+                                                        src: `${post.thumbnail}`,
                                                         fill: true,
                                                         alt: post.title,
                                                         className: "object-cover group-hover:scale-110 transition-transform duration-300"
@@ -497,8 +497,10 @@ function News() {
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "mb-3 text-gray-600 text-sm line-clamp-2",
-                                                    children: post.short_body
+                                                    dangerouslySetInnerHTML: {
+                                                        __html: post.short_body
+                                                    },
+                                                    className: "mb-3 text-gray-600 text-sm line-clamp-2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/post/[slug]/page.tsx",
                                                     lineNumber: 214,

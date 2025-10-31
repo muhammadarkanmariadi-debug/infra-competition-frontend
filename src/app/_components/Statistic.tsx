@@ -75,7 +75,7 @@ const CounterCard: React.FC<{ prestasi: Prestasi }> = ({ prestasi }) => {
   }, [prestasi.target])
   return (
     <motion.div
-      className='relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-18 border-4 border-gray-300/50 rounded-full w-[300px] h-[300px] text-center hover:scale-110 transition-all duration-500 transform'
+      className='relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-8 sm:p-12 md:p-16 lg:p-18 border-2 border-gray-300/50 sm:border-3 md:border-4 rounded-full w-[200px] sm:w-[250px] md:w-[280px] lg:w-[300px] h-[200px] sm:h-[250px] md:h-[280px] lg:h-[300px] text-center hover:scale-110 transition-all duration-500 transform'
       initial={{ opacity: 0, y: 50, scale: 0.8 }}
       whileInView={{
         opacity: 1,
@@ -94,17 +94,17 @@ const CounterCard: React.FC<{ prestasi: Prestasi }> = ({ prestasi }) => {
       transition={{ y: { duration: 2, repeat: Infinity, ease: 'easeInOut' } }}
     >
       {/* Decorative inner ring */}
-      <div className='absolute inset-4 border-2 border-gray-400/30 rounded-full'></div>
+      <div className='absolute inset-3 sm:inset-4 border-2 border-gray-400/30 rounded-full'></div>
       {/* Icon placeholder - replace with actual icon */}
-      <div className='top-4 left-1/2 absolute text-primary text-3xl -translate-x-1/2 transform'>
+      <div className='top-2 sm:top-3 md:top-4 left-1/2 absolute text-primary text-xl sm:text-2xl md:text-3xl -translate-x-1/2 transform'>
         🎓 {/* Example icon, replace with relevant ones */}
       </div>
-      <div className='flex flex-col justify-center items-center h-full'>
-        <div className='drop-shadow-lg font-bold text-primary text-5xl'>
+      <div className='flex flex-col justify-center items-center px-2 h-full'>
+        <div className='drop-shadow-lg font-bold text-primary text-3xl sm:text-4xl md:text-5xl'>
           {count}
           {prestasi.suffix}
         </div>
-        <h3 className='drop-shadow-md mt-2 font-bold text-gray-800 text-xl'>{prestasi.title}</h3>
+        <h3 className='drop-shadow-md mt-1 sm:mt-2 font-bold text-gray-800 text-xs sm:text-sm md:text-base lg:text-xl leading-tight'>{prestasi.title}</h3>
       </div>
       {/* Sparkle effects */}
       <motion.div
@@ -143,7 +143,7 @@ const CounterCard2: React.FC<{ murid: murid }> = ({ murid }) => {
   }, [murid.target])
   return (
     <motion.div
-      className='relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-18 border-4 border-gray-300/50 rounded-full w-[300px] h-[300px] text-center hover:scale-110 transition-all duration-500 transform'
+      className='relative bg-white shadow-2xl backdrop-blur-sm mx-auto p-8 sm:p-12 md:p-16 lg:p-18 border-2 border-gray-300/50 sm:border-3 md:border-4 rounded-full w-[200px] sm:w-[250px] md:w-[280px] lg:w-[300px] h-[200px] sm:h-[250px] md:h-[280px] lg:h-[300px] text-center hover:scale-110 transition-all duration-500 transform'
       initial={{ opacity: 0, y: 50, scale: 0.8 }}
       whileInView={{
         opacity: 1,
@@ -162,17 +162,17 @@ const CounterCard2: React.FC<{ murid: murid }> = ({ murid }) => {
       transition={{ y: { duration: 2, repeat: Infinity, ease: 'easeInOut' } }}
     >
       {/* Decorative inner ring */}
-      <div className='absolute inset-4 border-2 border-gray-400/30 rounded-full'></div>
+      <div className='absolute inset-3 sm:inset-4 border-2 border-gray-400/30 rounded-full'></div>
       {/* Icon placeholder - replace with actual icon */}
-      <div className='top-4 left-1/2 absolute text-primary text-3xl -translate-x-1/2 transform'>
+      <div className='top-2 sm:top-3 md:top-4 left-1/2 absolute text-primary text-xl sm:text-2xl md:text-3xl -translate-x-1/2 transform'>
         👨‍🎓 {/* Example icon, replace with relevant ones */}
       </div>
-      <div className='flex flex-col justify-center items-center h-full'>
-        <div className='drop-shadow-lg font-bold text-primary text-5xl'>
+      <div className='flex flex-col justify-center items-center px-2 h-full'>
+        <div className='drop-shadow-lg font-bold text-primary text-3xl sm:text-4xl md:text-5xl'>
           {count}
           {murid.suffix}
         </div>
-        <h3 className='drop-shadow-md mt-2 font-bold text-gray-800 text-xl'>{murid.title}</h3>
+        <h3 className='drop-shadow-md mt-1 sm:mt-2 font-bold text-gray-800 text-xs sm:text-sm md:text-base lg:text-xl leading-tight'>{murid.title}</h3>
       </div>
       {/* Sparkle effects */}
       <motion.div
@@ -240,13 +240,13 @@ const Statistic: React.FC = () => {
 
       {/* Judul */}
       <motion.div
-        className='pt-[60px] pb-[30px] text-center'
+        className='px-4 pt-[40px] sm:pt-[50px] md:pt-[60px] pb-[20px] sm:pb-[25px] md:pb-[30px] text-center'
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <motion.h4
-          className='font-medium text-[15px] text-white/60'
+          className='font-medium text-white/60 md:text-[15px] text-xs sm:text-sm'
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -254,7 +254,7 @@ const Statistic: React.FC = () => {
           Statistik Murid Kami
         </motion.h4>
         <motion.h1
-          className='font-bold text-[45px] text-white'
+          className='font-bold text-white lg:text-[45px] text-2xl sm:text-3xl md:text-4xl'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -263,16 +263,16 @@ const Statistic: React.FC = () => {
         </motion.h1>
       </motion.div>
 
-      <div className='py-10'>
+      <div className='py-6 sm:py-8 md:py-10'>
         <motion.div
-          className='flex xl:flex-row flex-col items-center my-10 pb-[30px] w-full'
+          className='flex xl:flex-row flex-col items-center my-6 sm:my-8 md:my-10 pb-[20px] sm:pb-[25px] md:pb-[30px] w-full'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.0 }}
         >
-          <div className='justify-center mx-auto px-6 w-full'>
+          <div className='justify-center mx-auto px-4 sm:px-6 w-full'>
             <motion.div
-              className='justify-center gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4'
+              className='justify-center gap-4 sm:gap-6 md:gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.2 }}
@@ -293,14 +293,14 @@ const Statistic: React.FC = () => {
         </motion.div>
 
         <motion.div
-          className='flex xl:flex flex-col justify-center items-center gap-20 pb-[30px]'
+          className='flex xl:flex flex-col justify-center items-center gap-10 sm:gap-15 md:gap-20 pb-[20px] sm:pb-[25px] md:pb-[30px]'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.0 }}
         >
           <div className='justify-between'>
             <motion.div
-              className='flex xl:flex-row flex-col justify-center gap-10 2xl:gap-80'
+              className='flex xl:flex-row flex-col justify-center gap-6 sm:gap-8 md:gap-10 2xl:gap-80 xl:gap-20'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.2 }}

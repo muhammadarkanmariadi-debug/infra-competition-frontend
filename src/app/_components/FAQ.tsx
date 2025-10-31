@@ -56,14 +56,14 @@ export default function Faq() {
           </svg>
         </motion.div>
         <motion.section 
-          className="relative bg-[#E55959] px-6 py-16 overflow-hidden"
+          className="relative bg-[#E55959] px-4 sm:px-6 md:px-8 py-10 sm:py-12 md:py-16 overflow-hidden"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           {/* Section Title */}
           <motion.h2 
-            className="mb-10 font-bold text-white text-3xl text-center"
+            className="mb-8 sm:mb-10 font-bold text-white text-2xl sm:text-3xl md:text-4xl text-center"
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -92,7 +92,7 @@ export default function Faq() {
               {dataFAQ.map((faq, index) => (
                 <motion.div 
                   key={index} 
-                  className="flex-shrink-0 px-2 w-full"
+                  className="flex-shrink-0 px-1 sm:px-2 w-full"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -107,7 +107,7 @@ export default function Faq() {
 
           {/* Slider Indicators */}
           <motion.div 
-            className="z-10 relative flex justify-center items-center gap-x-2 mt-8"
+            className="z-10 relative flex justify-center items-center gap-x-2 mt-6 sm:mt-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}

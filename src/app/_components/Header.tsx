@@ -74,7 +74,7 @@ export default function Header() {
 
 
         <div className='hidden lg:block'>
-          <div className='2xl:top-[-820px] xl:top-[600px] 2xl:left-[-100px] xl:left-[50px] xl:relative'>
+          <div className='2xl:top-[-820px] xl:top-[-700px] 2xl:left-[-100px] xl:left-[-150px] xl:relative xl'>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -197,7 +197,7 @@ export default function Header() {
               alt='panah kanan'
               width={161}
               height={32}
-              className='top-[485px] lg:top-[500px] 2xl:top-[650px] xl:top-[550px] right-[50px] 2xl:right-[500px] xl:right-[580px] absolute'
+              className='top-[485px] lg:top-[500px] 2xl:top-[650px] xl:top-[550px] right-[50px] 2xl:right-[500px] xl:right-[400px] absolute'
             />
           </motion.div>
         </div>

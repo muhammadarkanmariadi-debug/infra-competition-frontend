@@ -94,20 +94,20 @@ function BeritaPage() {
         className: "bg-white min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative bg-secondary mt-10 py-20 overflow-hidden",
+                className: "relative bg-secondary mt-10 py-12 sm:py-16 md:py-20 overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 opacity-10",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "top-0 left-1/4 absolute bg-white blur-3xl rounded-full w-96 h-96"
+                                className: "top-0 left-1/4 absolute bg-white blur-3xl rounded-full w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/posts/page.tsx",
                                 lineNumber: 62,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "right-1/4 bottom-0 absolute bg-white blur-3xl rounded-full w-96 h-96"
+                                className: "right-1/4 bottom-0 absolute bg-white blur-3xl rounded-full w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/posts/page.tsx",
                                 lineNumber: 63,
@@ -120,7 +120,7 @@ function BeritaPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative mx-auto px-6 max-w-7xl container",
+                        className: "relative mx-auto px-4 sm:px-6 md:px-8 max-w-7xl container",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                             className: "text-center",
                             initial: {
@@ -136,7 +136,7 @@ function BeritaPage() {
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    className: "inline-flex items-center gap-3 bg-white/20 shadow-lg backdrop-blur-sm mb-6 px-6 py-3 rounded-full",
+                                    className: "inline-flex items-center gap-2 sm:gap-3 bg-white/20 shadow-lg backdrop-blur-sm mb-4 sm:mb-6 px-4 sm:px-6 py-2 sm:py-3 rounded-full",
                                     initial: {
                                         opacity: 0,
                                         scale: 0.9
@@ -151,14 +151,14 @@ function BeritaPage() {
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$newspaper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Newspaper$3e$__["Newspaper"], {
-                                            className: "w-6 h-6 text-white"
+                                            className: "w-5 sm:w-6 h-5 sm:h-6 text-white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/posts/page.tsx",
                                             lineNumber: 79,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-semibold text-white",
+                                            className: "font-semibold text-white text-sm sm:text-base",
                                             children: "Berita & Artikel"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/posts/page.tsx",
@@ -172,7 +172,7 @@ function BeritaPage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
-                                    className: "mb-6 font-bold text-white text-5xl md:text-6xl",
+                                    className: "mb-4 sm:mb-6 px-4 font-bold text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl",
                                     initial: {
                                         opacity: 0,
                                         scale: 0.9
@@ -192,7 +192,7 @@ function BeritaPage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
-                                    className: "mx-auto mb-8 max-w-3xl text-white/90 text-xl",
+                                    className: "mx-auto mb-6 sm:mb-8 px-4 max-w-3xl text-white/90 text-sm sm:text-base md:text-lg lg:text-xl",
                                     initial: {
                                         opacity: 0,
                                         y: 20
@@ -229,9 +229,9 @@ function BeritaPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "bg-gray-50 py-8",
+                className: "bg-gray-50 py-6 sm:py-8",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mx-auto px-6 max-w-7xl",
+                    className: "mx-auto px-4 sm:px-6 md:px-8 max-w-7xl",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         className: "relative mx-auto max-w-2xl",
                         initial: {
@@ -248,7 +248,7 @@ function BeritaPage() {
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                className: "top-1/2 left-4 absolute w-5 h-5 text-gray-400 -translate-y-1/2"
+                                className: "top-1/2 left-3 sm:left-4 absolute w-4 sm:w-5 h-4 sm:h-5 text-gray-400 -translate-y-1/2"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/posts/page.tsx",
                                 lineNumber: 112,
@@ -257,7 +257,7 @@ function BeritaPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 type: "text",
                                 placeholder: "Cari berita berdasarkan judul...",
-                                className: "shadow-lg px-12 py-4 border-2 border-gray-200 focus:border-primary rounded-2xl focus:outline-none w-full transition-all",
+                                className: "shadow-lg px-10 sm:px-12 py-3 sm:py-4 border-2 border-gray-200 focus:border-primary rounded-xl sm:rounded-2xl focus:outline-none w-full text-sm sm:text-base transition-all",
                                 value: searchTerm,
                                 onChange: (e)=>setSearchTerm(e.target.value)
                             }, void 0, false, {
@@ -267,7 +267,7 @@ function BeritaPage() {
                             }, this),
                             searchTerm && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setSearchTerm(""),
-                                className: "top-1/2 right-4 absolute text-gray-400 hover:text-gray-600 -translate-y-1/2",
+                                className: "top-1/2 right-3 sm:right-4 absolute text-gray-400 hover:text-gray-600 text-lg sm:text-xl -translate-y-1/2",
                                 children: "✕"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/posts/page.tsx",
@@ -291,11 +291,11 @@ function BeritaPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "mx-auto px-6 py-16 max-w-7xl",
+                className: "mx-auto px-4 sm:px-6 md:px-8 py-10 sm:py-12 md:py-16 max-w-7xl",
                 children: isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex justify-center items-center py-20",
+                    className: "flex justify-center items-center py-12 sm:py-16 md:py-20",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "border-4 border-gray-200 border-t-primary rounded-full w-16 h-16 animate-spin"
+                        className: "border-4 border-gray-200 border-t-primary rounded-full w-12 sm:w-16 h-12 sm:h-16 animate-spin"
                     }, void 0, false, {
                         fileName: "[project]/src/app/posts/page.tsx",
                         lineNumber: 136,
@@ -309,7 +309,7 @@ function BeritaPage() {
                     children: filteredPosts.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "mb-8 text-gray-600",
+                                className: "mb-6 sm:mb-8 text-gray-600 text-sm sm:text-base",
                                 initial: {
                                     opacity: 0
                                 },
@@ -327,9 +327,9 @@ function BeritaPage() {
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+                                className: "gap-4 sm:gap-6 md:gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3",
                                 children: filteredPosts.map((post, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "group relative bg-white shadow-lg hover:shadow-2xl rounded-3xl overflow-hidden transition-all duration-300 cursor-pointer",
+                                        className: "group relative bg-white shadow-lg hover:shadow-2xl rounded-2xl sm:rounded-3xl overflow-hidden transition-all duration-300 cursor-pointer",
                                         initial: {
                                             opacity: 0,
                                             y: 30
@@ -351,7 +351,7 @@ function BeritaPage() {
                                         onClick: ()=>handleSelect(post.slug),
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "relative w-full h-56 overflow-hidden",
+                                                className: "relative w-full h-48 sm:h-52 md:h-56 overflow-hidden",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                         src: `
@@ -372,12 +372,12 @@ function BeritaPage() {
                                                         columnNumber: 25
                                                     }, this),
                                                     post.tags && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "bottom-4 left-4 absolute flex flex-wrap gap-2",
+                                                        className: "bottom-3 sm:bottom-4 left-3 sm:left-4 absolute flex flex-wrap gap-1.5 sm:gap-2",
                                                         children: post.tags.split(',').slice(0, 2).map((tag, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "flex items-center gap-1 bg-white/90 shadow-lg backdrop-blur-sm px-3 py-1 rounded-full font-medium text-primary text-xs",
+                                                                className: "flex items-center gap-1 bg-white/90 shadow-lg backdrop-blur-sm px-2 sm:px-3 py-1 rounded-full font-medium text-[10px] text-primary sm:text-xs",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tag$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tag$3e$__["Tag"], {
-                                                                        className: "w-3 h-3"
+                                                                        className: "w-2.5 sm:w-3 h-2.5 sm:h-3"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/posts/page.tsx",
                                                                         lineNumber: 181,
@@ -402,10 +402,10 @@ function BeritaPage() {
                                                 columnNumber: 23
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "p-6",
+                                                className: "p-4 sm:p-5 md:p-6",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "mb-3 font-bold text-gray-900 group-hover:text-primary text-xl line-clamp-2 transition-colors",
+                                                        className: "mb-2 sm:mb-3 font-bold text-gray-900 group-hover:text-primary text-base sm:text-lg md:text-xl line-clamp-2 transition-colors",
                                                         children: post.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/posts/page.tsx",
@@ -413,21 +413,23 @@ function BeritaPage() {
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "mb-4 text-gray-600 text-sm line-clamp-3 leading-relaxed",
-                                                        children: post.short_body
+                                                        dangerouslySetInnerHTML: {
+                                                            __html: post.short_body
+                                                        },
+                                                        className: "mb-3 sm:mb-4 text-gray-600 text-xs sm:text-sm line-clamp-3 leading-relaxed"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/posts/page.tsx",
                                                         lineNumber: 195,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex items-center gap-4 pt-4 border-gray-100 border-t text-gray-500 text-xs",
+                                                        className: "flex flex-wrap items-center gap-2 sm:gap-4 pt-3 sm:pt-4 border-gray-100 border-t text-[10px] text-gray-500 sm:text-xs",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "flex items-center gap-1",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
-                                                                        className: "w-4 h-4"
+                                                                        className: "w-3 sm:w-4 h-3 sm:h-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/posts/page.tsx",
                                                                         lineNumber: 202,
@@ -447,16 +449,17 @@ function BeritaPage() {
                                                                 columnNumber: 27
                                                             }, this),
                                                             post.author && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-1",
+                                                                className: "flex items-center gap-1 truncate",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                                                        className: "w-4 h-4"
+                                                                        className: "w-3 sm:w-4 h-3 sm:h-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/posts/page.tsx",
                                                                         lineNumber: 207,
                                                                         columnNumber: 31
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "truncate",
                                                                         children: post.author.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/posts/page.tsx",
@@ -476,7 +479,7 @@ function BeritaPage() {
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex items-center gap-2 group-hover:gap-3 mt-4 font-semibold text-primary text-sm transition-all",
+                                                        className: "flex items-center gap-2 group-hover:gap-3 mt-3 sm:mt-4 font-semibold text-primary text-xs sm:text-sm transition-all",
                                                         children: [
                                                             "Baca Selengkapnya",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {

@@ -73,16 +73,16 @@ export default function OrganisasiPage () {
       </section>
 
       {/* Container */}
-    <div className="bg-white py-16 min-h-screen">
-      <div className="mx-auto px-6 max-w-7xl">
+    <div className="bg-white py-10 sm:py-12 md:py-16 min-h-screen">
+      <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-10 max-w-7xl">
         
         {/* ========== ORGANISASI SECTION ========== */}
-        <div className="mb-20">
+        <div className="mb-12 sm:mb-16 md:mb-20">
           {/* Header */}
-          <div className="flex justify-center items-center gap-4 mb-8">
-            <div className="flex justify-center items-center bg-black rounded-full w-14 h-14">
+          <div className="flex justify-center items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div className="flex justify-center items-center bg-black rounded-full w-12 sm:w-14 h-12 sm:h-14">
               <svg
-                className="w-8 h-8 text-white"
+                className="w-6 sm:w-8 h-6 sm:h-8 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -95,27 +95,27 @@ export default function OrganisasiPage () {
                 />
               </svg>
             </div>
-            <h1 className="font-bold text-black text-5xl">Organisasi</h1>
+            <h1 className="font-bold text-black text-3xl sm:text-4xl md:text-5xl">Organisasi</h1>
           </div>
 
           {/* Description */}
-          <p className="mx-auto mb-8 max-w-3xl text-gray-600 text-center leading-relaxed">
+          <p className="mx-auto mb-6 sm:mb-8 px-4 max-w-3xl text-gray-600 text-sm sm:text-base text-center leading-relaxed">
             Struktur organisasi siswa, berbagai kegiatan yang dijalankan,
             serta peran penting Organisasi dalam membentuk kepemimpinan siswa
             di SMK Telkom Malang.
           </p>
 
           {/* OSIS & MPK Cards - Grid 2 Kolom */}
-          <div className="gap-6 grid grid-cols-1 md:grid-cols-2">
+          <div className="gap-4 sm:gap-6 grid grid-cols-1 md:grid-cols-2">
             {organizations.map((org) => (
               <Link
                 key={org.id}
                 href={`/organisasi/${org.id}`}
-                className="group block bg-white hover:shadow-lg p-6 border border-gray-200 rounded-2xl transition-all duration-300"
+                className="group block bg-white hover:shadow-lg p-4 sm:p-6 border border-gray-200 rounded-xl sm:rounded-2xl transition-all duration-300"
               >
                 <div className="flex justify-between items-center">
-                  <div className="flex flex-1 items-center gap-4">
-                    <div className="flex flex-shrink-0 justify-center items-center bg-gray-100 rounded-full w-16 h-16 overflow-hidden">
+                  <div className="flex flex-1 items-center gap-3 sm:gap-4">
+                    <div className="flex flex-shrink-0 justify-center items-center bg-gray-100 rounded-full w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 overflow-hidden">
                       <Image
                         src={org.logo}
                         alt={`Logo ${org.name}`}
@@ -124,17 +124,17 @@ export default function OrganisasiPage () {
                         className="object-contain"
                       />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="mb-1 font-semibold text-black group-hover:text-primary text-xl transition-colors">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="mb-1 font-semibold text-black group-hover:text-primary text-base sm:text-lg md:text-xl truncate sm:whitespace-normal transition-colors">
                         {org.name}
                       </h3>
-                      <p className="text-gray-500 text-sm line-clamp-2">
+                      <p className="text-gray-500 text-xs sm:text-sm line-clamp-2">
                         {org.short_description}
                       </p>
                     </div>
                   </div>
                   <svg
-                    className="flex-shrink-0 ml-4 w-6 h-6 text-primary transition-transform group-hover:translate-x-1"
+                    className="flex-shrink-0 ml-2 sm:ml-4 w-5 sm:w-6 h-5 sm:h-6 text-primary transition-transform group-hover:translate-x-1"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -155,10 +155,10 @@ export default function OrganisasiPage () {
         {/* ========== SUB-ORGANISASI SECTION ========== */}
         <div className="">
           {/* Header */}
-          <div className="flex justify-center items-center gap-4 mb-8">
-            <div className="flex justify-center items-center bg-black rounded-full w-14 h-14">
+          <div className="flex justify-center items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div className="flex justify-center items-center bg-black rounded-full w-12 sm:w-14 h-12 sm:h-14">
               <svg
-                className="w-8 h-8 text-white"
+                className="w-6 sm:w-8 h-6 sm:h-8 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -171,10 +171,10 @@ export default function OrganisasiPage () {
                 />
               </svg>
             </div>
-            <h2 className="font-bold text-black text-5xl text-center">Sub-organisasi</h2>
+            <h2 className="font-bold text-black text-3xl sm:text-4xl md:text-5xl text-center">Sub-organisasi</h2>
           </div>
           {/* Description */}
-          <p className="mx-auto mb-8 max-w-4xl text-gray-600 text-center leading-relaxed">
+          <p className="mx-auto mb-6 sm:mb-8 px-4 max-w-4xl text-gray-600 text-sm sm:text-base text-center leading-relaxed">
             Sub-Organisasi adalah bagian penting dari organisasi siswa di SMK
             Telkom Malang, yang menampilkan beragam kegiatan dan inovasi yang
             dijalankan di bawah pengawasan OSIS dan MPK.
@@ -182,16 +182,16 @@ export default function OrganisasiPage () {
 
 
           {/* Sub-organ Cards - Grid 2 Kolom */}
-          <div className="gap-6 grid grid-cols-1 md:grid-cols-2">
+          <div className="gap-4 sm:gap-6 grid grid-cols-1 md:grid-cols-2">
             {subOrganisations.map((suborg) => (
               <Link
                 key={suborg.id}
                 href={`/organisasi/${suborg.id}`}
-                className="group block bg-white hover:shadow-lg p-6 border border-gray-200 rounded-2xl transition-all duration-300"
+                className="group block bg-white hover:shadow-lg p-4 sm:p-6 border border-gray-200 rounded-xl sm:rounded-2xl transition-all duration-300"
               >
                 <div className="flex justify-between items-center">
-                  <div className="flex flex-1 items-center gap-4">
-                    <div className="flex flex-shrink-0 justify-center items-center bg-gray-100 rounded-full w-16 h-16 overflow-hidden">
+                  <div className="flex flex-1 items-center gap-3 sm:gap-4">
+                    <div className="flex flex-shrink-0 justify-center items-center bg-gray-100 rounded-full w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 overflow-hidden">
                       <Image
                         src={suborg.logo}
                         alt={`Logo ${suborg.name}`}
@@ -201,17 +201,17 @@ export default function OrganisasiPage () {
               
                       />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="mb-1 font-semibold text-black group-hover:text-primary text-xl transition-colors">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="mb-1 font-semibold text-black group-hover:text-primary text-base sm:text-lg md:text-xl truncate sm:whitespace-normal transition-colors">
                         {suborg.name}
                       </h3>
-                      <p className="text-gray-500 text-sm line-clamp-2">
+                      <p className="text-gray-500 text-xs sm:text-sm line-clamp-2">
                         {suborg.short_description}
                       </p>
                     </div>
                   </div>
                   <svg
-                    className="flex-shrink-0 ml-4 w-6 h-6 text-primary transition-transform group-hover:translate-x-1"
+                    className="flex-shrink-0 ml-2 sm:ml-4 w-5 sm:w-6 h-5 sm:h-6 text-primary transition-transform group-hover:translate-x-1"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

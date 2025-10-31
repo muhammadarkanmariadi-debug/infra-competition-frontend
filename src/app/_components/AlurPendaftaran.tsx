@@ -37,12 +37,12 @@ export default function AlurPendaftaran() {
   return (
     <motion.section
       id="alur-pendaftaran"
-      className="bg-white py-20"
+      className="bg-white py-12 sm:py-16 md:py-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="items-center gap-10 grid md:grid-cols-2 mx-auto px-6 container">
+      <div className="items-center gap-6 sm:gap-8 md:gap-10 grid md:grid-cols-2 mx-auto px-4 sm:px-6 md:px-8 lg:px-10 container">
         {/* Kiri: konten teks */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -50,7 +50,7 @@ export default function AlurPendaftaran() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.h2
-            className="mb-2 font-bold text-gray-900 text-6xl"
+            className="mb-2 font-bold text-gray-900 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -58,7 +58,7 @@ export default function AlurPendaftaran() {
             Alur Pendaftaran
           </motion.h2>
           <motion.p
-            className="mb-6 font-light text-gray-600 text-4xl"
+            className="mb-4 sm:mb-6 font-light text-gray-600 text-2xl sm:text-3xl md:text-4xl"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -66,7 +66,7 @@ export default function AlurPendaftaran() {
             bagaimana?
           </motion.p>
           <motion.p
-            className="mb-8 max-w-lg text-gray-600 text-xl"
+            className="mb-6 sm:mb-8 max-w-lg text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -77,7 +77,7 @@ export default function AlurPendaftaran() {
 
           {/* Langkah-langkah */}
           <motion.div
-            className="gap-3 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-4 mb-8"
+            className="gap-2 sm:gap-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mb-6 sm:mb-8"
             initial="hidden"
             animate="visible"
             variants={{
@@ -94,7 +94,7 @@ export default function AlurPendaftaran() {
               <motion.button
                 key={idx}
                 onClick={() => setActiveStep(idx)}
-                className={`py-10 rounded-lg border text-sm font-medium transition-all duration-200 ${
+                className={`py-6 sm:py-8 md:py-10 rounded-lg border text-xs sm:text-sm font-medium transition-all duration-200 ${
                   activeStep === idx
                     ? "bg-secondary text-white shadow-md"
                     : "bg-white text-gray-800 border-gray-200 hover:bg-gray-100"
@@ -107,7 +107,7 @@ export default function AlurPendaftaran() {
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="mb-1 font-semibold text-lg">{idx + 1}</div>
+                <div className="mb-1 font-semibold text-base sm:text-lg">{idx + 1}</div>
                 {step}
               </motion.button>
             ))}
@@ -117,7 +117,7 @@ export default function AlurPendaftaran() {
           <AnimatePresence mode="wait">
             <motion.ul
               key={activeStep}
-              className="space-y-3"
+              className="space-y-2 sm:space-y-3"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
@@ -126,13 +126,13 @@ export default function AlurPendaftaran() {
               {stepDetails[activeStep]?.map((text, i) => (
                 <motion.li
                   key={i}
-                  className="flex items-start space-x-3"
+                  className="flex items-start space-x-2 sm:space-x-3"
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                 >
-                  <CheckSquare className="flex-shrink-0 mt-0.5 w-5 h-5 text-red-500" />
-                  <span className="text-gray-700">{text}</span>
+                  <CheckSquare className="flex-shrink-0 mt-0.5 w-4 sm:w-5 h-4 sm:h-5 text-red-500" />
+                  <span className="text-gray-700 text-sm sm:text-base">{text}</span>
                 </motion.li>
               ))}
             </motion.ul>
@@ -141,7 +141,7 @@ export default function AlurPendaftaran() {
 
         {/* Kanan: ilustrasi */}
         <motion.div
-          className="flex justify-center"
+          className="flex justify-center mt-8 md:mt-0"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -149,13 +149,14 @@ export default function AlurPendaftaran() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
+            className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px]"
           >
             <Image
               src="https://res.cloudinary.com/dvpb6z2oj/image/upload/Telemedicine_01_1_ue0yor"
               alt="Ilustrasi pendaftaran siswa"
               width={500}
               height={400}
-              className="drop-shadow-md"
+              className="drop-shadow-md w-full h-auto"
             />
           </motion.div>
         </motion.div>

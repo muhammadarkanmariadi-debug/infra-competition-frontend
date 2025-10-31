@@ -108,12 +108,12 @@ console.log('Current orgs:', orgs)
       </section>
 
       {/* Ekstrakurikuler Cards */}
-      <section className='md:mx-50 xl:mx-50 px-6 py-20'>
-        <div className='gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+      <section className='mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-12 sm:py-16 md:py-20 max-w-7xl'>
+        <div className='gap-6 sm:gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
              {orgs.map((org, index) => (
                       <motion.div
                         key={org.id}
-                        className="group relative bg-gray-100 rounded-2xl h-96 overflow-hidden transition-all cursor-pointer"
+                        className="group relative bg-gray-100 rounded-2xl h-80 sm:h-96 overflow-hidden transition-all cursor-pointer"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ 
                           opacity: 1, 
@@ -156,13 +156,13 @@ console.log('Current orgs:', orgs)
                         {/* Box putih bawah */}
                         <div className="z-20 relative bg-secondary pl-2 h-[30%] transition-colors duration-300">
                           <motion.h2 
-                            className="mb-2 px-2 py-2 font-bold text-white text-xl"
+                            className="mb-1 sm:mb-2 px-2 py-1.5 sm:py-2 font-bold text-white text-lg sm:text-xl"
                             initial={{ y: 0 }}
                             whileHover={{ y: -2 }}
                           >
                             {org.name}
                           </motion.h2>
-                          <p className="mt-[-8px] px-2 max-w-xs text-white text-sm line-clamp-3">
+                          <p className="mt-[-4px] sm:mt-[-8px] px-2 text-white text-xs sm:text-sm line-clamp-2 sm:line-clamp-3">
                             {org.description}
                           </p>
                           
